@@ -1,9 +1,6 @@
 library(VennDiagram)
-<<<<<<< HEAD
-#draw.triple.venn(65, 75, 85, 35, 15, 25, 5, c("First", "Second", "Third"))
-=======
+
 draw.triple.venn(65, 75, 85, 35, 15, 25, 5, c("First", "Second", "Third"))
->>>>>>> aa2ae0fd746260d2c18ec47f8c259c372ec6ef05
 
 ############# Venn diagrams for Galbraith ############# 
 ####################################################### 
