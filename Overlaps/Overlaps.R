@@ -1,6 +1,21 @@
 library(VennDiagram)
+library(readr)
 
 draw.triple.venn(65, 75, 85, 35, 15, 25, 5, c("First", "Second", "Third"))
+
+#######################################################
+# Get overlap between all genes between two studies
+dataT = read.delim(file="../N_V/data/AllLaneCount.txt",row.names=1,stringsAsFactors = FALSE)
+dataG = read_delim("../VirusHoneyBee/data/GSE65659_AntiviralResponseReadCounts.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
+dataG <- as.data.frame(dataG)
+
+# namesG has length 15314; namesT has length 11825
+namesT = rownames(dataT)
+namesG = unname(sapply(dataG$id, function(x) strsplit(strsplit(x, "[|]")[[1]][3], "[-]")[[1]][1]))
+
+N = intersect(namesG, namesT)
+N = length(N)
+#######################################################
 
 ############# Venn diagrams for Galbraith ############# 
 ####################################################### 
@@ -28,17 +43,29 @@ intgE = length(gE)
 intgEB = length(gEB)
 intgL = length(gL)
 
-intgDE = length(intersect(gD, gE))
-intgDEB = length(intersect(gD, gEB))
-intgDL = length(intersect(gD, gL))
-intgEEB = length(intersect(gE, gEB))
-intgEL = length(intersect(gE, gL))
-intgEBL = length(intersect(gEB, gL))
-intgDEEB = length(intersect(intersect(gD, gE), gEB))
-intgDEL = length(intersect(intersect(gD, gE), gL))
-intgDEBL = length(intersect(intersect(gD, gEB), gL))
-intgEEBL = length(intersect(intersect(gE, gEB), gL))
-intgDEEBL = length(intersect(intersect(gE, gEB), intersect(gD, gL)))
+gDE = intersect(gD, gE)
+gDEB = intersect(gD, gEB)
+gDL = intersect(gD, gL)
+gEEB = intersect(gE, gEB)
+gEL = intersect(gE, gL)
+gEBL = intersect(gEB, gL)
+gDEEB = intersect(intersect(gD, gE), gEB)
+gDEL = intersect(intersect(gD, gE), gL)
+gDEBL = intersect(intersect(gD, gEB), gL)
+gEEBL = intersect(intersect(gE, gEB), gL)
+gDEEBL = intersect(intersect(gE, gEB), intersect(gD, gL))
+
+intgDE = length(gDE)
+intgDEB = length(gDEB)
+intgDL = length(gDL)
+intgEEB = length(gEEB)
+intgEL = length(gEL)
+intgEBL = length(gEBL)
+intgDEEB = length(gDEEB)
+intgDEL = length(gDEL)
+intgDEBL = length(gDEBL)
+intgEEBL = length(gEEBL)
+intgDEEBL = length(gDEEBL)
 
 fileName = paste(getwd(), "/Venn_Galbraith.jpg", sep="")
 jpeg(fileName)
@@ -48,19 +75,19 @@ invisible(dev.off())
 ############### Venn diagrams for Toth ############## 
 ##################################################### 
 
-tDESeq = readRDS("../NC_NR_VC_VR/DESeq2/Method2/dataMetrics.Rds")
+tDESeq = readRDS("../N_V/DESeq2/Method1/dataMetrics.Rds")
 tDESeq = tDESeq[["N_V"]]
 tD = tDESeq[which(tDESeq$padj <0.05),]$ID
 
-tEdgeR = readRDS("../NC_NR_VC_VR/EdgeR/edgeR-Virus/dataMetrics.Rds")
+tEdgeR = readRDS("../N_V/EdgeR/edgeR/dataMetrics.Rds")
 tEdgeR = tEdgeR[["N_V"]]
 tE = tEdgeR[which(tEdgeR$FDR <0.05),]$ID
 
-tEdgeRB = readRDS("../NC_NR_VC_VR/EdgeR/edgeR-btwnLane-Virus/dataMetrics.Rds")
+tEdgeRB = readRDS("../N_V/EdgeR/edgeR-btwnLane/dataMetrics.Rds")
 tEdgeRB = tEdgeRB[["N_V"]]
 tEB = tEdgeRB[which(tEdgeRB$FDR <0.05),]$ID
 
-tLimma = readRDS("../NC_NR_VC_VR/LimmaVoom/dataMetrics.Rds")
+tLimma = readRDS("../N_V/LimmaVoom/dataMetrics.Rds")
 tLimma = tLimma[["N_V"]]
 tL = tLimma[which(tLimma$adj.P.Val <0.05),]$ID
 
@@ -69,17 +96,29 @@ inttE = length(tE)
 inttEB = length(tEB)
 inttL = length(tL)
 
-inttDE = length(intersect(tD, tE))
-inttDEB = length(intersect(tD, tEB))
-inttDL = length(intersect(tD, tL))
-inttEEB = length(intersect(tE, tEB))
-inttEL = length(intersect(tE, tL))
-inttEBL = length(intersect(tEB, tL))
-inttDEEB = length(intersect(intersect(tD, tE), tEB))
-inttDEL = length(intersect(intersect(tD, tE), tL))
-inttDEBL = length(intersect(intersect(tD, tEB), tL))
-inttEEBL = length(intersect(intersect(tE, tEB), tL))
-inttDEEBL = length(intersect(intersect(tE, tEB), intersect(tD, tL)))
+tDE = intersect(tD, tE)
+tDEB = intersect(tD, tEB)
+tDL = intersect(tD, tL)
+tEEB = intersect(tE, tEB)
+tEL = intersect(tE, tL)
+tEBL = intersect(tEB, tL)
+tDEEB = intersect(intersect(tD, tE), tEB)
+tDEL = intersect(intersect(tD, tE), tL)
+tDEBL = intersect(intersect(tD, tEB), tL)
+tEEBL = intersect(intersect(tE, tEB), tL)
+tDEEBL = intersect(intersect(tE, tEB), intersect(tD, tL))
+
+inttDE = length(tDE)
+inttDEB = length(tDEB)
+inttDL = length(tDL)
+inttEEB = length(tEEB)
+inttEL = length(tEL)
+inttEBL = length(tEBL)
+inttDEEB = length(tDEEB)
+inttDEL = length(tDEL)
+inttDEBL = length(tDEBL)
+inttEEBL = length(tEEBL)
+inttDEEBL = length(tDEEBL)
 
 fileName = paste(getwd(), "/Venn_Toth.jpg", sep="")
 jpeg(fileName)
@@ -97,17 +136,34 @@ invisible(dev.off())
 gD2 = sapply(gD, function(x) strsplit(strsplit(x, "[|]")[[1]][3], "[-]")[[1]][1])
 fileName = paste(getwd(), "/Venn_DESeq2.jpg", sep="")
 jpeg(fileName)
-draw.pairwise.venn(area1=intgD, area2=inttD, cross.area = length(intersect(gD2, tD)), category=c("g-DESeq2", "t-DESeq2"))
+DcrossArea = length(intersect(gD2, tD))
+draw.pairwise.venn(area1=intgD, area2=inttD, cross.area = DcrossArea, category=c("g-DESeq2", "t-DESeq2"))
 invisible(dev.off())
+
+# Overlap between T and G for DESeq2 is significant at p-value < 2.2e-16
+# 11825 | 16 | 992 | 27
+fisher.test(matrix(c(N, intgD-DcrossArea, inttD-DcrossArea, DcrossArea), nrow=2), alternative="greater")
 
 gE2 = sapply(gE, function(x) strsplit(strsplit(x, "[|]")[[1]][3], "[-]")[[1]][1])
 fileName = paste(getwd(), "/Venn_EdgeR.jpg", sep="")
 jpeg(fileName)
+EcrossArea = length(intersect(gE2, tE))
 draw.pairwise.venn(area1=intgE, area2=inttE, cross.area = length(intersect(gE2, tE)), category=c("g-EdgeR", "t-EdgeR"))
 invisible(dev.off())
+
+# Overlap between T and G for EdgeR is significant at p-value = 9.501e-10
+# 11825 | 9 | 653 | 11
+fisher.test(matrix(c(N, intgE-EcrossArea, inttE-EcrossArea, EcrossArea), nrow=2), alternative="greater")
 
 gEB2 = sapply(gEB, function(x) strsplit(strsplit(x, "[|]")[[1]][3], "[-]")[[1]][1])
 fileName = paste(getwd(), "/Venn_EdgeR-btwn.jpg", sep="")
 jpeg(fileName)
+EBcrossArea = length(intersect(gEB2, tEB))
 draw.pairwise.venn(area1=intgEB, area2=inttEB, cross.area = length(intersect(gEB2, tEB)), category=c("g-EdgeR-btwn", "t-EdgeR-btwn"))
 invisible(dev.off())
+
+# Overlap between T and G for EdgeR-btwn is significant at p-value = 4.32e-05
+# 11825 | 7 | 3317 | 13
+fisher.test(matrix(c(N, intgEB-EBcrossArea, inttEB-EBcrossArea, EBcrossArea), nrow=2), alternative="greater")
+
+
