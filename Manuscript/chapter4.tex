@@ -1,0 +1,231 @@
+\documentclass[11pt,a4paper,oldfontcommands,openany]{memoir}
+\usepackage{graphicx}
+\usepackage[]{color}
+\usepackage{courier}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[breakable, theorems, skins]{tcolorbox}
+\usepackage[]{media9}
+\usepackage{lipsum}
+\tcbset{enhanced}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\DeclareRobustCommand{\mybox}[2][gray!15]{%
+\begin{tcolorbox}[   %% Adjust the following parameters at will.
+        breakable,
+        left=0pt,
+        right=0pt,
+        top=0pt,
+        bottom=0pt,
+        colback=#1,
+        colframe=#1,
+        width=\dimexpr\textwidth\relax, 
+        enlarge left by=0mm,
+        boxsep=5pt,
+        arc=0pt,outer arc=0pt,
+        ]
+        #2
+\end{tcolorbox}
+}
+
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+\setlength{\parindent}{0pt} % Remove indent at new paragraphs
+\setcounter{secnumdepth}{4}  % Remove section numbering at certain depth # If zero, then no numbering of sections
+\setcounter{tocdepth}{4} % Determines number of subsections that will have tabs
+\usepackage{tabu}
+\usepackage{url}
+
+\usepackage[round]{natbib}   % omit 'round' option if you prefer square brackets
+\bibliographystyle{plainnat}
+
+\usepackage{fixltx2e}
+%\usepackage{graphicx}	% For external pictures
+\usepackage{float}
+\usepackage{subfig}	% Add subfigures within figures
+\usepackage{verbatim}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{amssymb,amsbsy,amsmath}
+\usepackage{epsfig}
+\usepackage[left=3cm,top=3cm,bottom=3.5cm,right=3cm]{geometry} % For easy document margins
+%\usepackage{fancyhdr} % For customization of header/footer
+\usepackage{adjustbox}
+\usepackage{framed}
+\usepackage{enumitem}
+\usepackage{caption}
+\numberwithin{equation}{section} % Equation numbers relative to sections
+
+%%%%% NEW ADDED FROM THESIS.TEX %%%%% 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+%\usepackage[dvips]{graphicx}
+%\usepackage{times} %clash
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\newcommand{\code}[1]{{\texttt{#1}}}
+\newcommand{\pkg}[1]{{\texttt{#1}}}
+\newcommand{\class}[1]{{\textit{#1}}}
+\newcommand{\R}{{\normalfont\textsf{R }}{}}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
+
+\begin{document}
+
+\sloppy
+
+%%%%%%%%%%%%%%%%%%%%% TITLE PAGE %%%%%%%%%%%%%%%%%%%%%
+
+% {
+% \centering
+% ~\vspace{\fill}
+% 
+% \vspace{2.5cm}
+% 
+% {\LARGE Thesis Proposal}
+% 
+% \vspace{1cm}
+% 
+% {\LARGE\textbf{Visualization methods for genealogical and RNA-sequencing datasets}}
+% 
+% \vspace{1cm}
+% 
+% {\LARGE Lindsay Rutter}
+% 
+% \vspace{4cm}
+% 
+% {\LARGE Program of Study Committee:}
+% 
+% \vspace{1cm}
+% 
+% {\LARGE Dianne Cook (Major Professor)}
+% 
+% \vspace{.25cm}
+% 
+% {\LARGE Amy Toth (Major Professor)}
+% 
+% \vspace{.25cm}
+% 
+% {\LARGE Heike Hofmann}
+% 
+% \vspace{.25cm}
+% 
+% {\LARGE Daniel Nettleton}
+% 
+% \vspace{.25cm}
+% 
+% {\LARGE James Reecy}
+% 
+% \vspace{2.5cm}
+% 
+% {\centerline{\large May 16, 2016}}
+% }
+% 
+% \clearpage
+%\cleardoublepage
+
+%%% CHAPTER'S STYLE
+\chapterstyle{bianchi}
+\setsecheadstyle{\Large\bfseries\sffamily\raggedright}
+\setsubsecheadstyle{\large\bfseries\sffamily\raggedright}
+\setsubsubsecheadstyle{\bfseries\sffamily\raggedright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\tableofcontents
+
+\setlength{\parskip}{10pt} % Inter-paragraph spacing
+
+%%% ADDED FROM THESIS.TEX %%%%%%%%%
+\OnehalfSpacing
+
+\chapter{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Background to data visualization}
+
+\citealt{ped}
+%\ref{sec:ggenealogy}
+% \code{ggparcoord}
+% \Figure \ref{fig:porcupine}
+
+% \begin{figure}[H]
+% \centering
+%     \begin{framed}
+%     \includegraphics[width=0.8\textwidth]{porcupine}
+%     \end{framed}
+%     \caption{Three}
+%     \label{fig:porcupine}
+% \end{figure}
+
+% \section{Literature review}
+% \label{sec:litReview}
+
+% \pkg{R} statistical programming language allows for tools to be distributed and modified at ease, encourages cross-platform collaboration, and provides a foundation for effective and aesthetic data visualization from the grammar of graphics. There are several useful \pkg{R} packages that offer tools for analyzing and visualizing genealogical datasets. Here, we introduce these packages, and emphasize the shortcomings for which our package \pkg{ggenealogy} brings to this collection of work.
+
+%\clearpage
+
+%\begin{enumerate}
+%\item The data can be viewed at \url{http://shiny.soybase.org/CNV/}.
+%\end{enumerate}
+
+% \begin{tabular}{|p{2.6cm}|p{5.65cm}|p{5.65cm}|}
+%  \hline
+%  & \textbf{Drumming Treatment (D)} & \textbf{No Drumming Treatment (N)} \\ 
+%  \hline
+%  \textbf{Restricted} & \textbf{DR} & \textbf{NR} \\ 
+%  \textbf{Nutrition (R)}& Predict most worker-like & Predict some worker-like \\
+%  & gene expression & gene expression \\
+%  \hline
+%  \textbf{Unrestricted} & \textbf{DU} & \textbf{NU} \\ 
+%  \textbf{Nutrition (U)} & Predict some worker-like & Predict least worker-like \\
+%  & gene expression & gene expression \\
+%  \hline
+% \end{tabular}
+
+\bibliography{chapter4}
+
+\end{document}
