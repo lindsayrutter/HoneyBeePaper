@@ -1,4 +1,4 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{35}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -27,6 +27,37 @@ D.~Caron and R.~Sagili.
 \newblock {Honey bee colony mortality in the Pacific Northwest: Winter
   2009/2010}.
 \newblock \emph{Am Bee J}, 151:\penalty0 73--76, 2011.
+
+\bibitem[Carrillo-Tripp et~al.(2016)Carrillo-Tripp, Dolezal, Goblirsch, Miller,
+  Toth, and Bonning]{carrillo}
+J.~Carrillo-Tripp, A.G. Dolezal, M.J. Goblirsch, W.A. Miller, A.L. Toth, and
+  B.C. Bonning.
+\newblock {In vivo and in vitro infection dynamics of honey bee viruses}.
+\newblock \emph{Sci Rep}, 6:\penalty0 22265, 2016.
+
+\bibitem[Chen et~al.(2014)Chen, Pettis, Corona, Chen, Li, and Spivak]{winter}
+Y.P. Chen, J.S. Pettis, M.~Corona, W.P. Chen, C.J. Li, and M.~Spivak.
+\newblock {Israeli acute paralysis virus: Epidemiology, pathogenesis and
+  implications for honey bee health}.
+\newblock \emph{Plos Pathog}, 10:\penalty0 e1004261, 2014.
+
+\bibitem[Cornman et~al.(2012)Cornman, Tarpy, Chen, Jeffreys, Lopez, and
+  Pettis]{iapvCCD3}
+R.S. Cornman, D.R. Tarpy, Y.~Chen, L.~Jeffreys, D.~Lopez, and J.S. Pettis.
+\newblock {Pathogen webs in collapsing honey bee colonies}.
+\newblock \emph{Plos One}, 7:\penalty0 e43562, 2012.
+
+\bibitem[Cox-Foster et~al.(2007)Cox-Foster, Conlan, Holmes, Palacios, Evans,
+  Moran, Quan, Briese, Hornig, Geiser, Martinson, vanEngelsdorp, Kalkstein,
+  Drysdale, Hui, Zhai, Cui, Hutchison, Simons, Egholm, Pettis, and
+  Lipkin]{iapvCCD}
+D.L. Cox-Foster, S.~Conlan, E.C. Holmes, G.~Palacios, J.D. Evans, N.A. Moran,
+  P-L. Quan, T.~Briese, M.~Hornig, D.M. Geiser, V.~Martinson, D.~vanEngelsdorp,
+  A.L. Kalkstein, A.~Drysdale, J.~Hui, J.~Zhai, L.~Cui, S.K. Hutchison, J.F.
+  Simons, M.~Egholm, J.S. Pettis, and W.I. Lipkin.
+\newblock {A metagenomic survey of microbes in honey bee colony collapse
+  disorder}.
+\newblock \emph{Science}, 318:\penalty0 283–287, 2007.
 
 \bibitem[Crailsheim(1992)]{jelly2}
 K.~Crailsheim.
@@ -72,6 +103,12 @@ M.H. Haydak.
 \newblock {Honey bee nutrition}.
 \newblock \emph{Annu Rev Entomol}, 15:\penalty0 143--156, 1970.
 
+\bibitem[Hou et~al.(2014)Hou, Rivkin, Slabezki, and Chejanovsky]{iapvCCD2}
+C.~Hou, H.~Rivkin, Y.~Slabezki, and N.~Chejanovsky.
+\newblock {Dynamics of the presence of israeli acute paralysis virus in honey
+  bee colonies with colony collapse disorder}.
+\newblock \emph{Viruses}, 6:\penalty0 2012–2027, 2014.
+
 \bibitem[Klein et~al.(2007)Klein, Vaissière, Cane, Steffan-Dewenter,
   Cunningham, Kremen, and Tscharntke]{ccd4}
 A-M. Klein, B.E. Vaissière, J.H. Cane, I.~Steffan-Dewenter, S.A. Cunningham,
@@ -96,6 +133,19 @@ M.~Laurent, P.~Hendrikx, M.~Ribiere-Chabert, and M-P. Chauzat.
   2012–2014}.
 \newblock \emph{Epilobee}, 2013:\penalty0 44, 2016.
 
+\bibitem[Maori et~al.(2009)Maori, Paldi, Shafir, Kalev, Tsur, Glick, and
+  Sela]{symptoms}
+E.~Maori, N.~Paldi, S.~Shafir, H.~Kalev, E.~Tsur, E.~Glick, and I.~Sela.
+\newblock {IAPV, a bee-affecting virus associated with Colony Collapse Disorder
+  can be silenced by dsRNA ingestion}.
+\newblock \emph{Insect Mol Biol}, 18:\penalty0 55--60, 2009.
+
+\bibitem[Miranda et~al.(2010)Miranda, Cordoni, and Budge]{fam}
+J.R.~De Miranda, G.~Cordoni, and G.~Budge.
+\newblock {The acute bee paralysis virus-Kashmir bee virus-Israeli acute
+  paralysis virus complex}.
+\newblock \emph{J Invertebr Pathol}, 103:\penalty0 S30–47, 2010.
+
 \bibitem[Naug(2009)]{undeveloped}
 D.~Naug.
 \newblock {Nutritional stress due to habitat loss may explain recent honeybee
@@ -115,6 +165,12 @@ S.G. Potts, J.C. Biesmeijer, C.~Kremen, P.~Neumann, O.~Schweiger, and W.E.
 \newblock \emph{Global pollinator declines: trends, impacts and drivers},
   25:\penalty0 345--353, 2010.
 
+\bibitem[Rosenkranz et~al.(2010)Rosenkranz, Aumeier, and
+  Ziegelmann]{miteSpread}
+P.~Rosenkranz, P.~Aumeier, and B.~Ziegelmann.
+\newblock {Biology and control of Varroa destructor}.
+\newblock \emph{J Invertebr Pathol}, 103:\penalty0 S96--S119, 2010.
+
 \bibitem[Roulston and Buchmann(2000)]{source}
 T.H. Roulston and S.L. Buchmann.
 \newblock {A phylogenetic reconsideration of the pollen starch-pollination
@@ -132,6 +188,13 @@ J.O. Schmidt, S.C. Thoenes, and M.D. Levin.
 \newblock {Survival of honey bees, Apis mellifera (Hymenoptera: Apidae), fed
   various pollen sources}.
 \newblock \emph{J. Econ. Entomol.}, 80:\penalty0 176–183, 1987.
+
+\bibitem[Shen et~al.(2005)Shen, Cui, Ostiguy, and Cox-Foster]{miteVirus}
+M.Q. Shen, L.W. Cui, N.~Ostiguy, and D.~Cox-Foster.
+\newblock {Intricate transmission routes and interactions between picorna-like
+  viruses (Kashmir bee virus and sacbrood virus) with the honeybee host and the
+  parasitic varroa mite}.
+\newblock \emph{J Gen Virol}, 86:\penalty0 2281--2289, 2005.
 
 \bibitem[Spivak et~al.(2011)Spivak, Mader, Vaughan, and Euliss]{factors2}
 M.~Spivak, E.~Mader, M.~Vaughan, and N.H. Euliss.
@@ -151,5 +214,25 @@ D.~vanEngelsdorp, J.D. Evans, C.~Saegerman, C.~Mullin, E.~Haubruge, B.K.
   Tarpy, and J.S. Pettis.
 \newblock {Colony collapse disorder: A descriptive study}.
 \newblock \emph{PLos One}, 4:\penalty0 e6481, 2009.
+
+\bibitem[Weinberg and Madel(1985)]{hemolymph}
+K.P. Weinberg and G.~Madel.
+\newblock {The influence of the mite Varroa Jacobsoni Oud. on the protein
+  concentration and the haemolymph volume of the brood of worker bees and
+  drones of the honey bee Apis Mellifera L}.
+\newblock \emph{Apidologie}, 16:\penalty0 421--436, 1985.
+
+\bibitem[Yang and Cox-Foster(2007)]{miteVirus2}
+X.~Yang and D.~Cox-Foster.
+\newblock {Effects of parasitization by Varroa destructor on survivorship and
+  physiological traits of Apis mellifera in correlation with viral incidence
+  and microbial challenge}.
+\newblock \emph{Parasitology}, 134:\penalty0 405--412, 2007.
+
+\bibitem[Yang and Cox-Foster(2005)]{miteVirus3}
+X.L. Yang and D.L. Cox-Foster.
+\newblock {Impact of an ectoparasite on the immunity and pathology of an
+  invertebrate: Evidence for host immunosuppression and viral amplification}.
+\newblock \emph{P Natl Acad Sci USA}, 102:\penalty0 7470--7475, 2005.
 
 \end{thebibliography}
