@@ -1,0 +1,80 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bond et~al.(2014)Bond, Plattner, and Hunt]{ccd6}
+J.~Bond, K.~Plattner, and K.~Hunt.
+\newblock \emph{Fruit and Tree Nuts Outlook: Economic Insight U.S. Pollination-
+  Services Market}.
+\newblock USDA. Economic Research Service Situation and Outlook FTS-357SA,
+  2014.
+
+\bibitem[Caron and Sagili(2011)]{ccd5}
+D.~Caron and R.~Sagili.
+\newblock {Honey bee colony mortality in the Pacific Northwest: Winter
+  2009/2010}.
+\newblock \emph{Am Bee J}, 151:\penalty0 73--76, 2011.
+
+\bibitem[Gallai et~al.(2009)Gallai, Salles, Settele, and Vaissière]{ccd7}
+N.~Gallai, J-M. Salles, J.~Settele, and B.B. Vaissière.
+\newblock {Economic valuation of the vulnerability of world agriculture
+  confronted with pollinator decline}.
+\newblock \emph{Ecol. Econ.}, 68:\penalty0 810–821, 2009.
+
+\bibitem[Goulson et~al.(2015)Goulson, Nicholls, Botías, and
+  Rotheray]{interacting}
+D.~Goulson, E.~Nicholls, C.~Botías, and E.L. Rotheray.
+\newblock {Bee declines driven by combined stress from parasites, pesticides,
+  and lack of flowers}.
+\newblock \emph{Science}, 347:\penalty0 1255957, 2015.
+
+\bibitem[Klein et~al.(2007)Klein, Vaissière, Cane, Steffan-Dewenter,
+  Cunningham, Kremen, and Tscharntke]{ccd4}
+A-M. Klein, B.E. Vaissière, J.H. Cane, I.~Steffan-Dewenter, S.A. Cunningham,
+  C.~Kremen, and T.~Tscharntke.
+\newblock {Importance of pollinators in changing landscapes for world crops}.
+\newblock \emph{Proc Biol Sci}, 274:\penalty0 303–313, 2007.
+
+\bibitem[Kulhanek et~al.(2017)Kulhanek, Steinhauer, Rennich, Caron, Sagili,
+  Pettis, Ellis, Wilson, Wilkes, Tarpy, Rose, Lee, Rangel, and
+  vanEngelsdorp]{ccd2}
+K.~Kulhanek, N.~Steinhauer, K.~Rennich, D.M. Caron, R.R. Sagili, J.S. Pettis,
+  J.D. Ellis, M.E. Wilson, J.T. Wilkes, D.R. Tarpy, R.~Rose, K.~Lee, J.~Rangel,
+  and D.~vanEngelsdorp.
+\newblock {A national survey of managed honey bee 2014–2015 annual colony
+  losses in the USA}.
+\newblock \emph{Journal of Apicultural Research}, 56:\penalty0 328--340, 2017.
+
+\bibitem[Laurent et~al.(2016)Laurent, Hendrikx, Ribiere-Chabert, and
+  Chauzat]{ccd3}
+M.~Laurent, P.~Hendrikx, M.~Ribiere-Chabert, and M-P. Chauzat.
+\newblock {A pan-European epidemiological study on honeybee colony losses
+  2012–2014}.
+\newblock \emph{Epilobee}, 2013:\penalty0 44, 2016.
+
+\bibitem[Potts et~al.(2010)Potts, Biesmeijer, Kremen, Neumann, Schweiger, and
+  Kunin]{factors}
+S.G. Potts, J.C. Biesmeijer, C.~Kremen, P.~Neumann, O.~Schweiger, and W.E.
+  Kunin.
+\newblock {}.
+\newblock \emph{Global pollinator declines: trends, impacts and drivers},
+  25:\penalty0 345--353, 2010.
+
+\bibitem[Spivak et~al.(2011)Spivak, Mader, Vaughan, and Euliss]{factors2}
+M.~Spivak, E.~Mader, M.~Vaughan, and N.H. Euliss.
+\newblock {The Plight of the Bees}.
+\newblock \emph{Environ Sci Technol}, 45:\penalty0 34--38, 2011.
+
+\bibitem[vanEngelsdorp et~al.(2009)vanEngelsdorp, Evans, Saegerman, Mullin,
+  Haubruge, Nguyen, Frazier, Frazier, Cox-Foster, Chen, Underwood, Tarpy, and
+  Pettis]{ccd1}
+D.~vanEngelsdorp, J.D. Evans, C.~Saegerman, C.~Mullin, E.~Haubruge, B.K.
+  Nguyen, M.~Frazier, J.~Frazier, D.~Cox-Foster, Y.~Chen, R.~Underwood, D.R.
+  Tarpy, and J.S. Pettis.
+\newblock {Colony collapse disorder: A descriptive study}.
+\newblock \emph{PLoS One}, 4:\penalty0 e6481, 2009.
+
+\end{thebibliography}
