@@ -233,8 +233,20 @@ Want to better understand underlying mechanisms from what Adam found. One way to
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\b \cf0 \cb10 4. Methods
+\b \cf0 \cb10 4. Me
+\b0 t
+\b hods
 \b0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+- BeeBase Version 3.2\
+- I was just going through this.\'a0 The issue was the poor quality samples causing problems with it.\'a0 \'a0On page 13 of my notes, I ran GSNAP on Sample 365 to get the 78% value (I note below) and then used htseq to get a similar value, so I think that approach is correct.\'a0Did you remap all the samples yourself? I can't find a table showing the mapping % for each sample.\
+- Samples were originally collected from the cages by collecting 6\'a0 live bees from each cage 36 hours post inoculation; sampled in tubes then put into dry ice then into a -80 freezer until processing.\'a0 15 cages/treatment were originally sampled.\
+- Samples were randomly selected from within the treatment groups (I.e, random cages selected from the original 15 possible). RNA from a pool of 2 randomly selected bees (from an original pool of 6) was extracted, DNAse treated, quantified and sent to sequencing (details below).\'a0\'a0\
+- RNA was extracted using Qiagen RNeasy MiniKit followed by Qiagen DNase treatment. Samples were suspended in water to 200-400 ng/ul.\'a0 All samples were then tested on a bioanalyzer at the DNA core facility to ensure quality (RIN>8).\'a0 \'a0I can provide more info from my lab notebook if you need it.\
+- Illumina HiSeq, done at the ISU DNA Facility, single end 100 cycle.\'a0 I can send you the 'receipt' for the facility if you need it. Started Jan 14, 2016\
+- I used GMAP followed by GSNAP. Can provide more info if necessary (commands are in that note file, but I know its hard to understand in the current format).\
+- I would have to go through for each sample (did you do this, too?).\'a0 The one I have a record of (using GSNAP to align) was 78.5% mapped + 15.84% multiply mapped.\'a0 Is this what you are looking for?\
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 \cf0 \cb12 - For the gene ontology (GO) analysis, D. melanogaster orthologs of the differentially expressed genes were uploaded to DAVID Bioinformatics Resources 6.7[56]. The overrepresented GO terms of differentially expressed genes during viral infection were determined using a back- ground list of all genes expressed among the samples. To refine the list of GO terms, the significant terms (FDR < 0.05) that were generated using DAVID Bioinformatics Resources were imported into REVIGO [57], which clusters the GO terms using semantic similarity measures }
