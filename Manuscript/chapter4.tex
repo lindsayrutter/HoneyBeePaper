@@ -6,6 +6,10 @@
 \usepackage[breakable, theorems, skins]{tcolorbox}
 \usepackage[]{media9}
 \usepackage{lipsum}
+
+\usepackage{lineno} %% LINE COUNTS
+\linenumbers %% LINE COUNTS
+
 \tcbset{enhanced}
 %% maxwidth is the original width if it is less than linewidth
 %% otherwise use linewidth (to make sure the graphics do not exceed the margin)
@@ -228,8 +232,7 @@ Following up on these phenotypic findings from our previous study, we now aim to
 
 In this study, we examine how monofloral diets and viral innoculation influence gene expression patterns in honeybees by focusing on four treatment groups (Cistus diet without IAPV exposure, Castanea diet without IAPV exposure, Cistus diet with IAPV exposure, and Castanea diet with IAPV exposure). We conduct RNA-sequencing analysis on a randomly selected subset of the honeybees we used in our previous study (as is further described in our methods section). We then examine pairwise combinations of treatment groups, the main effect of monofloral diet, the main effect of IAPV exposure, and the interactive effect of the two factors on gene expression patterns.
 
-We also compare the main effect of IAPV exposure in our dataset to that obtained in a previous study conducted by Galbraith and colleagues (\citealt{galbraith}). While our study examined honeybees from polyandrous colonies, the Galbraith study examined honeybees from single-drone colonies. As a consequence, our honeybees will have on average about 75\% genetic variance, and the honeybees from the Galbraith study will have about 25\% genetic variance (\citealt{sisters}). We should therefore expect that the Galbraith study may generate data with lower signal:to:noise ratios than our data due to the lower genetic variation between its replicates. At the same time, our honeybees will be more likely to display the health benefits gained from increased genotypic variation within colonies, including decreased parasitic load (\citealt{multParasite}), increased tolerance to environmental changes (\citealt{divHyp2}), and increasead colony performance (\citealt{geneticDiverse}, \citealt{geneticDiverse2}). Given that honeybees are naturally very polyandrous (\citealt{patriline}), our honeybees may also reflect more realistic environmental and genetic simulations. Taken together, each study provides a different point of value: Our study likely presents less artificial data while the Galbraith data likely presents less messy data. We wish to examine how the gene expression effects of IAPV innoculation compare between these two studies that used such different experimental designs. Namely, we use visualization techniques to assess the signal:to:noise ratios between these two datasets, and differential gene expression (DEG) analyses to assess any overlaps between these two datasets.
-
+We also compare the main effect of IAPV exposure in our dataset to that obtained in a previous study conducted by Galbraith and colleagues (\citealt{galbraith}). While our study examines honeybees from polyandrous colonies, the Galbraith study examined honeybees from single-drone colonies. As a consequence, our honeybees will have an average of about 75\% genetic variance, and the honeybees from the Galbraith study will have an average of about 25\% genetic variance (\citealt{sisters}). We should therefore expect that the Galbraith study may generate data with lower signal:to:noise ratios than our data due to the lower genetic variation between its replicates. At the same time, our honeybees will be more likely to display the health benefits gained from increased genotypic variance within colonies, including decreased parasitic load (\citealt{multParasite}), increased tolerance to environmental changes (\citealt{divHyp2}), and increasead colony performance (\citealt{geneticDiverse}, \citealt{geneticDiverse2}). Given that honeybees are naturally very polyandrous (\citealt{patriline}), our honeybees may also reflect more realistic environmental and genetic simulations. Taken together, each study provides a different point of value: Our study likely presents less artificial data while the Galbraith data likely presents less messy data. We wish to explore how the gene expression effects of IAPV innoculation compare between these two studies that used such different experimental designs. To achieve this objective, we use visualization techniques to assess the signal:to:noise ratio between these two datasets, and differential gene expression (DEG) analyses to determine any significantly overlapping genes of interest between these two datasets. It is our hope that this aspect of our study may shine light on how experimental designs that control genetic variability to different extents might affect the resulting gene expression data in honeybees.
 
 \section{Methods}
 
@@ -239,9 +242,13 @@ The procedures we used to prepare virus inoculum, infect and feed caged honeybee
 
 Fifteen cages per treatment were originally sampled. Six live honeybees from each cage were randomly selected 36 hours post inoculation and placed into tubes. Tubes were kept on dry ice and then transferred into a -80C freezer until processing. Eight cages were randomly selected from the original 15 cages, and 2 honeybees per cage were randomly selected from the original six live honeybees per cage. RNA from each pool of two honeybees were extracted using Qiagen RNeasy MiniKit followed by Qiagen DNase treatment. Samples were suspended in water to 200-400 ng/$\mu$l. All samples were then tested on a Bioanalyzer at the DNA core facility to ensure quality (RIN>8).
 
+@@@ Which body tissue was used for RNA extraction?
+
 \subsection{Gene expression}
 
 Samples were sequenced starting on January 14, 2016 at the Iowa State University DNA Facility (Platform: Illumina HiSeq Sequencing; Category: Single End 100 cycle sequencing). Reads were aligned to the BeeBase Version 3.2 genome (\citealt{hbGenome}) from the Hymenoptera Genome Database (\citealt{hymenopteraDB}) using the programs GMAP and GSNAP (\citealt{gsnap}). We tested all six pairwise combinations of treatments for DEGs (pairwise DEGs). We also tested the diet main effect (diet DEGs), virus main effect (virus DEGs), and interaction term for DEGs (interaction DEGs). We then also tested for virus main effect DEGs (virus DEGs) in public data derived from a previous study exploring the gene expression of IAPV virus infection in honeybees (\citealt{galbraith}). We tested each DEG analysis using recommended parameters with DESeq2 (\citealt{deseq2}), edgeR (\citealt{edger}), and LimmaVoom (\citealt{limma}). In all cases, we used a false discovery rate (FDR) threshold of 0.05 (\citealt{benjamini}). Fisher's exact test was used to determine significant overlaps between DEG sets (whether from the same dataset but across different analysis pipelines or from different datasets across the same analysis pipelines). 
+
+@@@ What percent of reads mapped?
 
 \subsection{Visualization}
 
