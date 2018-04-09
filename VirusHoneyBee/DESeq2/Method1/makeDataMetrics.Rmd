@@ -51,12 +51,16 @@ for (i in 1:(length(uTreat)-1)){
     res <- results(dds, contrast=c("treatment",uTreat[i],uTreat[j]))
     hist(res$pvalue, breaks=20, col="grey", main=paste("pvalue for", uTreat[i], "and", uTreat[j]))
     degLength <- length(which((res@listData)$padj <0.05))
-    allPairs = rbind(allPairs, data.frame(Treatment1 = uTreat[i], Treatment2 = uTreat[j], NumberDEG = degLength))
-    
+
     metrics = as.data.frame(res@listData)
     metrics = cbind(ID = res@rownames, metrics)
     metrics$ID = as.character(metrics$ID)
     dataMetrics[[paste0(uTreat[i], "_", uTreat[j])]] <- metrics
+    
+    t1Length <- length(which(metrics[which(metrics$padj <0.05),]$log2FoldChange>0))
+    t2Length <- length(which(metrics[which(metrics$padj <0.05),]$log2FoldChange<0))
+    
+    allPairs = rbind(allPairs, data.frame(Treatment1 = uTreat[i], Treatment2 = uTreat[j], NumberDEG = degLength, Treatment1Larger = t1Length, Treatment2Larger = t2Length))
   }
 }
 allPairs <- allPairs[order(allPairs$NumberDEG),]

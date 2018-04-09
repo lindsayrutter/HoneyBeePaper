@@ -1,5 +1,6 @@
 library(VennDiagram)
 library(readr)
+library(readxl)
 
 #draw.triple.venn(65, 75, 85, 35, 15, 25, 5, c("First", "Second", "Third"))
 
@@ -166,6 +167,33 @@ invisible(dev.off())
 # 11825 | 7 | 3317 | 13
 fisher.test(matrix(c(N, intgEB-EBcrossArea, inttEB-EBcrossArea, EBcrossArea), nrow=2), alternative="greater")
 
+############### Venn diagrams for Supplemental Galbraith versus Toth per Method ############## 
+##############################################################################################
+
+# Keep 753 DEGs from Galbraith paper
+gDSupp = read_excel("../VirusHoneyBee/GalbraithSuppFile.xlsx")
+gDSupp = as.data.frame(gDSupp)
+
+keepColNms <- gDSupp[3,]
+keepColNms <- as.data.frame(keepColNms)
+colnames(keepColNms) <- NULL
+keepColNms <- unlist(keepColNms)
+
+keepDEGs <- gDSupp[4:(4+753-1),]
+keepDEGs <- as.data.frame(keepDEGs)
+colnames(keepDEGs) <- keepColNms
+
+# Extract 753 IDs from Galbraith paper
+gDSupp = keepDEGs$id
+gDSupp = unname(sapply(gDSupp, function(x) strsplit(strsplit(x, "[|]")[[1]][3], "[-]")[[1]][1]))
+
+gtDSupp = intersect(gDSupp, gD2)
+draw.pairwise.venn(area1=length(gD), area2=length(gDSupp), cross.area = length(gtDSupp), category=c("Galbraith Us", "Galbraith Supp"))
+invisible(dev.off())
+
+###################### Save GO Terms ##################### 
+##########################################################
+  
 # Save GO 
 gD = sapply(gD, function(x) strsplit(strsplit(x, "[|]")[[1]][3], "[-]")[[1]][1])
 gE = sapply(gE, function(x) strsplit(strsplit(x, "[|]")[[1]][3], "[-]")[[1]][1])
