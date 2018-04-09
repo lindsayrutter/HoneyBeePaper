@@ -35,7 +35,7 @@ data <- as.matrix(data)
 
 coldata = data.frame(row.names = colnames(data), virus = unlist(lapply(colnames(data), function (x) substring(unlist(strsplit(x, "[.]"))[1],1,1))), diet = unlist(lapply(colnames(data), function (x) substring(unlist(strsplit(x, "[.]"))[1],2,2))), treatment = unlist(lapply(colnames(data), function (x) unlist(strsplit(x, "[.]"))[1])))
 
-dds = DESeqDataSetFromMatrix(countData = data, colData = coldata, design = ~ virus + diet)
+dds = DESeqDataSetFromMatrix(countData = data, colData = coldata, design = ~ virus + diet + virus*diet)
 
 dds <- DESeq(dds)
 
