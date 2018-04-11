@@ -1,5 +1,5 @@
 ---
-title: "Honey Bees - edgeR"
+title: "Honey Bees - edgeR-btwnLane"
 author: Lindsay Rutter
 output:
   packagedocs::package_docs:
@@ -40,7 +40,8 @@ edgeR vignette states that a gene is required to have a count of 5-10 in a libra
 
 ```{r}
 minLib <- min(y$samples$lib.size)
-keep <- rowSums(cpm(y)>4) >= 6
+nRep = length(lapply(colnames(beeCounts), function (x) unlist(strsplit(x, "[.]"))[1])) / length(unique(lapply(colnames(beeCounts), function (x) unlist(strsplit(x, "[.]"))[1])))
+keep <- rowSums(cpm(y)>round(minLib/1000000)) >= nRep/2
 # Number of genes 15,314--> 8,672
 y <- y[keep, , keep.lib.sizes=FALSE]
 ```

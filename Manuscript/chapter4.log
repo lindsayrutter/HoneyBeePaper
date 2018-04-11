@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  9 APR 2018 15:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  10 APR 2018 16:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2002,6 +2002,16 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 225.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `pcr' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2012,7 +2022,7 @@ Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[6] <Images/4panels.png, id=318, 552.1428pt x 428.802pt>
+[6] <Images/4panels.png, id=322, 552.1428pt x 428.802pt>
 File: Images/4panels.png Graphic file (type png)
 
 <use Images/4panels.png>
@@ -2038,29 +2048,31 @@ Package rerunfilecheck Info: File `chapter4.out' has not changed.
 (rerunfilecheck)             Checksum: FEA50E1E0C5D49927689D58623AF2B00;931.
  ) 
 Here is how much of TeX's memory you used:
- 38405 strings out of 492995
- 730730 string characters out of 6132704
- 980628 words of memory out of 5000000
- 41234 multiletter control sequences out of 15000+600000
- 553753 words of font info for 113 fonts, out of 8000000 for 9000
+ 38447 strings out of 492995
+ 731314 string characters out of 6132704
+ 980655 words of memory out of 5000000
+ 41267 multiletter control sequences out of 15000+600000
+ 554437 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,11n,85p,10368b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfsi1440.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfso2488.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb></usr/local
-/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/cm-super/sfti2074.pfb>
-Output written on chapter4.pdf (12 pages, 309502 bytes).
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
+exlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/cm-super/sfsi1440.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive/20
+17/texmf-dist/fonts/type1/public/cm-super/sfso2488.pfb></usr/local/texlive/2017
+/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2017/texmf
+-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2017/texmf-dis
+t/fonts/type1/public/cm-super/sfti2074.pfb></usr/local/texlive/2017/texmf-dist/
+fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on chapter4.pdf (12 pages, 319607 bytes).
 PDF statistics:
- 406 PDF objects out of 1000 (max. 8388607)
- 375 compressed objects within 4 object streams
- 89 named destinations out of 1000 (max. 500000)
- 19066 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 415 PDF objects out of 1000 (max. 8388607)
+ 383 compressed objects within 4 object streams
+ 90 named destinations out of 1000 (max. 500000)
+ 19578 words of extra memory for PDF output out of 20736 (max. 10000000)
 

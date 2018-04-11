@@ -144,13 +144,15 @@ beeCounts &lt;- as.matrix(beeCounts)
 y &lt;- DGEList(counts=beeCounts)</code></pre>
 <p>edgeR vignette states that a gene is required to have a count of 5-10 in a library to be considered expressed in that library. Here minLib is equal to 6.44187510^{6}. A CPM of 4 corresponds to a count of ~1 in the minimum number of samples in a group (6). So, I keep only rows that have that. This reduces the number of genes from 15,314 to 8,672.</p>
 <pre class="r"><code>minLib &lt;- min(y$samples$lib.size)
-keep &lt;- rowSums(cpm(y)&gt;6) &gt;= 3
+nRep = length(lapply(colnames(beeCounts), function (x) unlist(strsplit(x, &quot;[.]&quot;))[1])) / length(unique(lapply(colnames(beeCounts), function (x) unlist(strsplit(x, &quot;[.]&quot;))[1])))
+keep &lt;- rowSums(cpm(y)&gt;round(minLib/1000000)) &gt;= nRep/2
 # Number of genes 15,314--&gt; 8,672
 y &lt;- y[keep, , keep.lib.sizes=FALSE]</code></pre>
 <p>Next, I used edgeR normalization.</p>
 <pre class="r"><code>y[[1]] &lt;- betweenLaneNormalization(y[[1]], which=&quot;full&quot;, round=FALSE)</code></pre>
 <p>I can create boxplot and RLE boxplot.</p>
 <pre class="r"><code>ggparcoord(data.frame(log(y[[1]]/colMeans(y[[1]]))), columns=1:6, alphaLines=0, boxplot=TRUE, scale=&quot;globalminmax&quot;) + coord_flip()</code></pre>
+<pre><code>Warning: Removed 6 rows containing non-finite values (stat_boxplot).</code></pre>
 <p><img src="makeDataMetrics_files/figure-html/unnamed-chunk-4-1.png" width="960" /></p>
 <p>I can create MDS plots of interest.</p>
 <pre class="r"><code>allGroups &lt;- c(rep(&quot;C&quot;,3), rep(&quot;T&quot;,3))
@@ -202,7 +204,7 @@ allPairs &lt;- allPairs[order(allPairs$NumberDEG),]
 saveRDS(dataMetrics, file=&quot;dataMetrics.Rds&quot;)</code></pre>
 <pre class="r"><code>allPairs</code></pre>
 <pre><code>  Treatment1 Treatment2 NumberDEG FirstLarger SecondLarger
-1          C          T      3330         377         2953</code></pre>
+1          C          T      3518         370         3145</code></pre>
 
 
       </div>

@@ -144,7 +144,8 @@ beeCounts &lt;- as.matrix(beeCounts)
 y &lt;- DGEList(counts=beeCounts)</code></pre>
 <p>edgeR vignette states that a gene is required to have a count of 5-10 in a library to be considered expressed in that library. Here minLib is equal to 4.01639410^{6}. A CPM of 4 corresponds to a count of ~1 in the minimum number of samples in a group (6). So, I keep only rows that have that. This reduces the number of genes from 15,314 to 8,672.</p>
 <pre class="r"><code>minLib &lt;- min(y$samples$lib.size)
-keep &lt;- rowSums(cpm(y)&gt;4) &gt;= 6
+nRep = length(lapply(colnames(beeCounts), function (x) unlist(strsplit(x, &quot;[.]&quot;))[1])) / length(unique(lapply(colnames(beeCounts), function (x) unlist(strsplit(x, &quot;[.]&quot;))[1])))
+keep &lt;- rowSums(cpm(y)&gt;round(minLib/1000000)) &gt;= nRep/2
 # Number of genes 15,314--&gt; 8,672
 y &lt;- y[keep, , keep.lib.sizes=FALSE]</code></pre>
 <p>Next, I used edgeR normalization.</p>
