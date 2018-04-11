@@ -129,7 +129,12 @@ datas[nID,1:nColumns] <- 0
 boxDat <- melt(datas, id.vars="ID")
 colnames(boxDat) <- c("ID", "Sample", "Count")
 
-sigDatas = datas[which(metricsAll[["C_T"]]$FDR<0.05),]
+# WRONG!!!!!!!!!!!
+###sigDatas = datas[which(metricsAll[["C_T"]]$FDR<0.05),]
+
+sigID = metricsAll[["C_T"]][which(metricsAll[["C_T"]]$FDR<0.05),]$ID
+sigDatas = datas[which(rownames(datas) %in% sigID),]
+
 dendo = sigDatas
 rownames(dendo) = NULL
 d = dist(as.matrix(dendo))

@@ -90,7 +90,7 @@ pair1 <- strsplit(currPair, "_")[[1]][1]
 pair2 <- strsplit(currPair, "_")[[1]][2]
 
 metrics <- metricsAll[[currPair]]
-data <- as.data.frame(readRDS("../../../data/data.Rds"))
+data <- as.data.frame(readRDS("../data.Rds"))
 data <- data[,which(sapply(colnames(data), function(x) unlist(strsplit(x,"[.]"))[1]) %in% c(pair1, pair2))]
 data<- cbind(ID = rownames(data), data)
 data$ID <- as.character(data$ID)

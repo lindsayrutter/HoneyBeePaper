@@ -76,8 +76,8 @@ getPCP <- function(nC){
   ggBP
   invisible(dev.off())
 
-   jpeg(file = paste(getwd(), "/", outDir, "/", plotName, "_", nC, ".jpg", sep=""), width=1000, height=700)
-  p = do.call("grid.arrange", c(plot_clusters, ncol=ceiling(nC/2)))
+   jpeg(file = paste(getwd(), "/", outDir, "/", plotName, "_", nC, ".jpg", sep=""), width=1000, height=1400)
+  p = do.call("grid.arrange", c(plot_clusters, ncol=2))
    invisible(dev.off())
 }
   
@@ -90,7 +90,7 @@ pair1 <- strsplit(currPair, "_")[[1]][1]
 pair2 <- strsplit(currPair, "_")[[1]][2]
 
 metrics <- metricsAll[[currPair]]
-data <- as.data.frame(readRDS("../../../data/data.Rds"))
+data <- as.data.frame(readRDS("../data.Rds"))
 data <- data[,which(sapply(colnames(data), function(x) unlist(strsplit(x,"[.]"))[1]) %in% c(pair1, pair2))]
 data<- cbind(ID = rownames(data), data)
 data$ID <- as.character(data$ID)
@@ -129,7 +129,11 @@ datas[nID,1:nColumns] <- 0
 boxDat <- melt(datas, id.vars="ID")
 colnames(boxDat) <- c("ID", "Sample", "Count")
 
-sigDatas = datas[which(metricsAll[["C_T"]]$FDR<0.05),]
+#### WRONG!!!!!!!!
+#sigDatas = datas[which(metricsAll[["C_T"]]$FDR<0.05),]
+sigID = metricsAll[["C_T"]][which(metricsAll[["C_T"]]$FDR<0.05),]$ID
+sigDatas = datas[which(rownames(datas) %in% sigID),]
+
 dendo = sigDatas
 rownames(dendo) = NULL
 d = dist(as.matrix(dendo))
