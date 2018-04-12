@@ -75,10 +75,11 @@ group &lt;- factor(c(rep(&quot;C&quot;,3), rep(&quot;T&quot;,3)))
 x$samples$group &lt;- group</code></pre>
 <p>Transform and remove low counts.</p>
 <pre class="r"><code>cpm &lt;- cpm(x)
-keep.exprs &lt;- rowSums(cpm&gt;1)&gt;=4 # tried filtering up to 24 and not much difference
+nRep = length(lapply(colnames(beeCounts), function (x) unlist(strsplit(x, &quot;[.]&quot;))[1])) / length(unique(lapply(colnames(beeCounts), function (x) unlist(strsplit(x, &quot;[.]&quot;))[1])))
+keep.exprs &lt;- rowSums(cpm&gt;1)&gt;=nRep # tried filtering up to 24 and not much difference
 x &lt;- x[keep.exprs,, keep.lib.sizes=FALSE] # 15,314 to 10,654
 dim(x)</code></pre>
-<pre><code>[1] 9142    6</code></pre>
+<pre><code>[1] 9624    6</code></pre>
 <pre class="r"><code>x &lt;- calcNormFactors(x, method = &quot;TMM&quot;)</code></pre>
 <p>Make boxplots</p>
 <pre class="r"><code>ggparcoord(data.frame(log(x[[1]]/colMeans(x[[1]]))), columns=1:6, alphaLines=0, boxplot=TRUE, scale=&quot;globalminmax&quot;) + coord_flip()</code></pre>

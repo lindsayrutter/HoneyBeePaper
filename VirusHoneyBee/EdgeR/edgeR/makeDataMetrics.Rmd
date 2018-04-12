@@ -73,7 +73,6 @@ Copying Section (3.3.1 in edgeR vignette)
 
 ```{r}
 Group = factor(c(rep("C",3), rep("T",3)))
-#targets <- data.frame(rownames=paste0("Sample",1:24), Group = Group)
 design <- model.matrix(~0+Group, data=y$samples)
 colnames(design) <- levels(Group)
 y <- estimateDisp(y, design)

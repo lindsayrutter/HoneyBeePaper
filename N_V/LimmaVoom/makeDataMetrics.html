@@ -72,19 +72,18 @@ beeCounts &lt;- as.matrix(beeCounts)
 x &lt;- DGEList(counts=beeCounts)
 
 group &lt;- factor(c(rep(&quot;N&quot;,12), rep(&quot;V&quot;,12)))
-x$samples$group &lt;- group
-lane &lt;- as.factor(c(&quot;L12&quot;,&quot;L12&quot;,&quot;L12&quot;,&quot;L12&quot;,&quot;L34&quot;,&quot;L34&quot;,&quot;L12&quot;,&quot;L12&quot;,&quot;L34&quot;,&quot;L34&quot;,&quot;L34&quot;,&quot;L34&quot;,&quot;L12&quot;,&quot;L12&quot;,&quot;L12&quot;,&quot;L12&quot;,&quot;L34&quot;,&quot;L34&quot;,&quot;L12&quot;,&quot;L12&quot;,&quot;L34&quot;,&quot;L34&quot;,&quot;L34&quot;,&quot;L34&quot;))
-x$samples$lane &lt;- lane</code></pre>
+x$samples$group &lt;- group</code></pre>
 <p>Transform and remove low counts.</p>
 <pre class="r"><code>cpm &lt;- cpm(x)
-keep.exprs &lt;- rowSums(cpm&gt;1)&gt;=4 # tried filtering up to 24 and not much difference
+nRep = length(lapply(colnames(beeCounts), function (x) unlist(strsplit(x, &quot;[.]&quot;))[1])) / length(unique(lapply(colnames(beeCounts), function (x) unlist(strsplit(x, &quot;[.]&quot;))[1])))
+keep.exprs &lt;- rowSums(cpm&gt;1)&gt;=nRep # tried filtering up to 24 and not much difference
 x &lt;- x[keep.exprs,, keep.lib.sizes=FALSE] # 15,314 to 10,654
 dim(x)</code></pre>
-<pre><code>[1] 10654    24</code></pre>
+<pre><code>[1] 9971   24</code></pre>
 <pre class="r"><code>x &lt;- calcNormFactors(x, method = &quot;TMM&quot;)</code></pre>
 <p>Make boxplots</p>
 <pre class="r"><code>ggparcoord(data.frame(log(x[[1]]/colMeans(x[[1]]))), columns=1:24, alphaLines=0, boxplot=TRUE, scale=&quot;globalminmax&quot;) + coord_flip()</code></pre>
-<pre><code>Warning: Removed 918 rows containing non-finite values (stat_boxplot).</code></pre>
+<pre><code>Warning: Removed 174 rows containing non-finite values (stat_boxplot).</code></pre>
 <p><img src="makeDataMetrics_files/figure-html/unnamed-chunk-3-1.png" width="960" /></p>
 <p>Create MDS plots</p>
 <pre class="r"><code>library(RColorBrewer)
@@ -93,18 +92,11 @@ par(mfrow=c(1,2))
 col.group &lt;- group
 levels(col.group) &lt;-  brewer.pal(nlevels(col.group), &quot;Set1&quot;)</code></pre>
 <pre><code>Warning in brewer.pal(nlevels(col.group), &quot;Set1&quot;): minimal value for n is 3, returning requested palette with 3 different levels</code></pre>
-<pre class="r"><code>col.group &lt;- as.character(col.group)
-col.lane &lt;- lane
-levels(col.lane) &lt;-  brewer.pal(nlevels(col.lane), &quot;Set2&quot;)</code></pre>
-<pre><code>Warning in brewer.pal(nlevels(col.lane), &quot;Set2&quot;): minimal value for n is 3, returning requested palette with 3 different levels</code></pre>
-<pre class="r"><code>col.lane &lt;- as.character(col.lane)</code></pre>
+<pre class="r"><code>col.group &lt;- as.character(col.group)</code></pre>
 <pre class="r"><code>plotMDS(lcpm, labels=colnames(lcpm), col=col.group)</code></pre>
 <p><img src="makeDataMetrics_files/figure-html/unnamed-chunk-5-1.png" width="960" /></p>
-<pre class="r"><code>plotMDS(lcpm, labels=colnames(lcpm), col=col.lane, dim=c(3,4))</code></pre>
-<p><img src="makeDataMetrics_files/figure-html/unnamed-chunk-6-1.png" width="960" /></p>
-<pre class="r"><code>glMDSPlot(lcpm, labels=paste(group, lane, colnames(lcpm), sep=&quot;_&quot;), groups=x$samples[,c(1,4)], launch=FALSE)</code></pre>
-<p>Create design matrix. There are many ways to setup a design matrix. Here, we removed the intercept from group (the first factor), but kept the intercept from lane. This allows us to do contrasts with group more easily.</p>
-<pre class="r"><code>design &lt;- model.matrix(~0+group+lane)
+<p>Create design matrix. There are many ways to setup a design matrix. Here, we removed the intercept from group (the first factor). This allows us to do contrasts with group more easily.</p>
+<pre class="r"><code>design &lt;- model.matrix(~0+group)
 colnames(design) &lt;- gsub(&quot;group&quot;, &quot;&quot;, colnames(design))
 
 contr.matrix &lt;- makeContrasts(
@@ -116,13 +108,13 @@ vfit &lt;- lmFit(v, design)
 vfit &lt;- contrasts.fit(vfit, contrasts=contr.matrix)
 efit &lt;- eBayes(vfit)
 plotSA(efit, main=&quot;Final model: Mean−variance trend&quot;)</code></pre>
-<p><img src="makeDataMetrics_files/figure-html/unnamed-chunk-9-1.png" width="960" /></p>
+<p><img src="makeDataMetrics_files/figure-html/unnamed-chunk-7-1.png" width="960" /></p>
 <p>For a quick look at differential expression levels, the number of significantly up- and down-regulated genes can be summarised in a table. Significance is defined using an adjusted p-value cutoff that is set at 5% by default. For the comparison between expression levels in basal and LP, 4,127 genes are found to be down-regulated in basal relative to LP and 4,298 genes are up-regulated in basal relative to LP – a total of 8,425 DE genes.</p>
 <pre class="r"><code>summary(decideTests(efit))</code></pre>
-<pre><code>         N_V
-Down       0
-NotSig 10654
-Up         0</code></pre>
+<pre><code>        N_V
+Down      0
+NotSig 9971
+Up        0</code></pre>
 <pre class="r"><code>pairNames &lt;- colnames(contr.matrix)
 metrics &lt;- list()
 for (i in 1:length(pairNames)) {
