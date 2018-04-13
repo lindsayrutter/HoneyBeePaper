@@ -60,9 +60,8 @@
 <div id="content-top"></div>
 <p><meta http-equiv="content-type" content="text/html;charset=utf-8" /></p>
 <p>Try new paper (<a href="https://www.bioconductor.org/help/workflows/RNAseq123/" class="uri">https://www.bioconductor.org/help/workflows/RNAseq123/</a>)</p>
-<pre class="r"><code>library(limma)</code></pre>
-<pre><code>Warning: package &#39;limma&#39; was built under R version 3.4.2</code></pre>
-<pre class="r"><code>library(Glimma)
+<pre class="r"><code>library(limma)
+library(Glimma)
 library(GGally)
 library(ggplot2)
 library(edgeR)
@@ -124,10 +123,10 @@ plotSA(efit, main=&quot;Final model: Mean−variance trend&quot;)</code></pre>
 <p><img src="makeDataMetrics_files/figure-html/unnamed-chunk-9-1.png" width="960" /></p>
 <p>For a quick look at differential expression levels, the number of significantly up- and down-regulated genes can be summarised in a table. Significance is defined using an adjusted p-value cutoff that is set at 5% by default. For the comparison between expression levels in basal and LP, 4,127 genes are found to be down-regulated in basal relative to LP and 4,298 genes are up-regulated in basal relative to LP – a total of 8,425 DE genes.</p>
 <pre class="r"><code>summary(decideTests(efit))</code></pre>
-<pre><code>   NC_NR NC_VC NC_VR NR_VC NR_VR VC_VR
--1   139     0    47   140     0     1
-0  10296 10654 10499 10423 10654 10643
-1    219     0   108    91     0    10</code></pre>
+<pre><code>       NC_NR NC_VC NC_VR NR_VC NR_VR VC_VR
+Down     139     0    47   140     0     1
+NotSig 10296 10654 10499 10423 10654 10643
+Up       219     0   108    91     0    10</code></pre>
 <pre class="r"><code>pairNames &lt;- colnames(contr.matrix)
 metrics &lt;- list()
 for (i in 1:length(pairNames)) {

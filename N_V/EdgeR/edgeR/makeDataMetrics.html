@@ -152,8 +152,8 @@ y &lt;- y[keep, , keep.lib.sizes=FALSE]</code></pre>
 <p>Next, I used edgeR normalization.</p>
 <pre class="r"><code>y &lt;- calcNormFactors(y)</code></pre>
 <p>I can create boxplot and RLE boxplot.</p>
-<pre class="r"><code>ggparcoord(data.frame(log(y[[1]]/colMeans(y[[1]]))), columns=1:6, alphaLines=0, boxplot=TRUE, scale=&quot;globalminmax&quot;) + coord_flip()</code></pre>
-<pre><code>Warning: Removed 8 rows containing non-finite values (stat_boxplot).</code></pre>
+<pre class="r"><code>ggparcoord(data.frame(log(y[[1]]/colMeans(y[[1]]))), columns=1:24, alphaLines=0, boxplot=TRUE, scale=&quot;globalminmax&quot;) + coord_flip()</code></pre>
+<pre><code>Warning: Removed 28 rows containing non-finite values (stat_boxplot).</code></pre>
 <p><img src="makeDataMetrics_files/figure-html/unnamed-chunk-4-1.png" width="960" /></p>
 <p>I can create MDS plots of interest.</p>
 <pre class="r"><code>allGroups &lt;- c(rep(&quot;N&quot;,12), rep(&quot;V&quot;,12))
@@ -189,8 +189,8 @@ for (i in 1:(ncol(fit)-1)){
     lrt5 &lt;- lrt[which(lrt$FDR&lt;0.05),]
     
     df &lt;- y[[1]][rownames(y[[1]]) %in% rownames(lrt5), c(which(sapply(colnames(y[[1]]), function(x) strsplit(x, &quot;[.]&quot;)[[1]][1]) %in% (colnames(fit)[i])), which(sapply(colnames(y[[1]]), function(x) strsplit(x, &quot;[.]&quot;)[[1]][1]) %in% (colnames(fit)[j])))]
-    firstLarger &lt;- length(which(apply(df, 1, function(x) mean(x[1:3]) &gt; mean(x[4:6]))))
-    secondLarger &lt;- length(which(apply(df, 1, function(x) mean(x[1:3]) &lt; mean(x[4:6]))))
+    firstLarger &lt;- length(which(lrt5$logFC&gt;0))
+    secondLarger &lt;- length(which(lrt5$logFC&lt;0))
     
     lrtLength &lt;- nrow(lrt5)
     allPairs = rbind(allPairs, data.frame(Treatment1 = factor(colnames(fit)[i]), Treatment2 = factor(colnames(fit)[j]), NumberDEG = lrtLength, FirstLarger = firstLarger, SecondLarger = secondLarger))
@@ -204,7 +204,7 @@ allPairs &lt;- allPairs[order(allPairs$NumberDEG),]
 saveRDS(dataMetrics, file=&quot;dataMetrics.Rds&quot;)</code></pre>
 <pre class="r"><code>allPairs</code></pre>
 <pre><code>  Treatment1 Treatment2 NumberDEG FirstLarger SecondLarger
-1          N          V        20          16            3</code></pre>
+1          N          V        20           3           17</code></pre>
 
 
       </div>

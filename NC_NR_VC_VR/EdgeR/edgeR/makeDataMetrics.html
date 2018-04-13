@@ -61,7 +61,6 @@
 <p><meta http-equiv="content-type" content="text/html;charset=utf-8" /></p>
 <pre class="r"><code>library(edgeR)</code></pre>
 <pre><code>Loading required package: limma</code></pre>
-<pre><code>Warning: package &#39;limma&#39; was built under R version 3.4.2</code></pre>
 <pre class="r"><code>library(ggplot2)
 library(GGally)
 library(EDASeq)</code></pre>
@@ -189,8 +188,8 @@ for (i in 1:(ncol(fit)-1)){
     lrt5 &lt;- lrt[which(lrt$FDR&lt;0.05),]
     
     df &lt;- y[[1]][rownames(y[[1]]) %in% rownames(lrt5), c(which(sapply(colnames(y[[1]]), function(x) strsplit(x, &quot;[.]&quot;)[[1]][1]) %in% (colnames(fit)[i])), which(sapply(colnames(y[[1]]), function(x) strsplit(x, &quot;[.]&quot;)[[1]][1]) %in% (colnames(fit)[j])))]
-    firstLarger &lt;- length(which(apply(df, 1, function(x) mean(x[1:6]) &gt; mean(x[7:12]))))
-    secondLarger &lt;- length(which(apply(df, 1, function(x) mean(x[1:6]) &lt; mean(x[7:12]))))
+    firstLarger &lt;- length(which(lrt5$logFC&gt;0))
+    secondLarger &lt;- length(which(lrt5$logFC&lt;0))
     
     lrtLength &lt;- nrow(lrt5)
     allPairs = rbind(allPairs, data.frame(Treatment1 = factor(colnames(fit)[i]), Treatment2 = factor(colnames(fit)[j]), NumberDEG = lrtLength, FirstLarger = firstLarger, SecondLarger = secondLarger))

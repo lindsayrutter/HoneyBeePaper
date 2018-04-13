@@ -59,11 +59,89 @@
       
 <div id="content-top"></div>
 <p><meta http-equiv="content-type" content="text/html;charset=utf-8" /></p>
-<pre class="r"><code>library(DESeq2)
-library(gplots)
-library(RColorBrewer)
-library(data.table)
-library(ggplot2)
+<pre class="r"><code>library(DESeq2)</code></pre>
+<pre><code>Loading required package: S4Vectors</code></pre>
+<pre><code>Loading required package: stats4</code></pre>
+<pre><code>Loading required package: BiocGenerics</code></pre>
+<pre><code>Loading required package: parallel</code></pre>
+<pre><code>
+Attaching package: &#39;BiocGenerics&#39;</code></pre>
+<pre><code>The following objects are masked from &#39;package:parallel&#39;:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB</code></pre>
+<pre><code>The following objects are masked from &#39;package:stats&#39;:
+
+    IQR, mad, sd, var, xtabs</code></pre>
+<pre><code>The following objects are masked from &#39;package:base&#39;:
+
+    anyDuplicated, append, as.data.frame, cbind, colMeans,
+    colnames, colSums, do.call, duplicated, eval, evalq, Filter,
+    Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax,
+    pmax.int, pmin, pmin.int, Position, rank, rbind, Reduce,
+    rowMeans, rownames, rowSums, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which, which.max, which.min</code></pre>
+<pre><code>
+Attaching package: &#39;S4Vectors&#39;</code></pre>
+<pre><code>The following object is masked from &#39;package:base&#39;:
+
+    expand.grid</code></pre>
+<pre><code>Loading required package: IRanges</code></pre>
+<pre><code>Loading required package: GenomicRanges</code></pre>
+<pre><code>Loading required package: GenomeInfoDb</code></pre>
+<pre><code>Loading required package: SummarizedExperiment</code></pre>
+<pre><code>Loading required package: Biobase</code></pre>
+<pre><code>Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    &#39;browseVignettes()&#39;. To cite Bioconductor, see
+    &#39;citation(&quot;Biobase&quot;)&#39;, and for packages &#39;citation(&quot;pkgname&quot;)&#39;.</code></pre>
+<pre><code>Loading required package: DelayedArray</code></pre>
+<pre><code>Loading required package: matrixStats</code></pre>
+<pre><code>
+Attaching package: &#39;matrixStats&#39;</code></pre>
+<pre><code>The following objects are masked from &#39;package:Biobase&#39;:
+
+    anyMissing, rowMedians</code></pre>
+<pre><code>
+Attaching package: &#39;DelayedArray&#39;</code></pre>
+<pre><code>The following objects are masked from &#39;package:matrixStats&#39;:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges</code></pre>
+<pre><code>The following object is masked from &#39;package:base&#39;:
+
+    apply</code></pre>
+<pre class="r"><code>library(gplots)</code></pre>
+<pre><code>
+Attaching package: &#39;gplots&#39;</code></pre>
+<pre><code>The following object is masked from &#39;package:IRanges&#39;:
+
+    space</code></pre>
+<pre><code>The following object is masked from &#39;package:S4Vectors&#39;:
+
+    space</code></pre>
+<pre><code>The following object is masked from &#39;package:stats&#39;:
+
+    lowess</code></pre>
+<pre class="r"><code>library(RColorBrewer)
+library(data.table)</code></pre>
+<pre><code>
+Attaching package: &#39;data.table&#39;</code></pre>
+<pre><code>The following object is masked from &#39;package:SummarizedExperiment&#39;:
+
+    shift</code></pre>
+<pre><code>The following object is masked from &#39;package:GenomicRanges&#39;:
+
+    shift</code></pre>
+<pre><code>The following object is masked from &#39;package:IRanges&#39;:
+
+    shift</code></pre>
+<pre><code>The following objects are masked from &#39;package:S4Vectors&#39;:
+
+    first, second</code></pre>
+<pre class="r"><code>library(ggplot2)
 
 thisPath &lt;- getwd()
 
@@ -90,24 +168,28 @@ for (i in 1:(length(uTreat)-1)){
     res &lt;- results(dds, contrast=c(&quot;treatment&quot;,uTreat[i],uTreat[j]))
     hist(res$pvalue, breaks=20, col=&quot;grey&quot;, main=paste(&quot;pvalue for&quot;, uTreat[i], &quot;and&quot;, uTreat[j]))
     degLength &lt;- length(which((res@listData)$padj &lt;0.05))
-    allPairs = rbind(allPairs, data.frame(Treatment1 = uTreat[i], Treatment2 = uTreat[j], NumberDEG = degLength))
     
     metrics = as.data.frame(res@listData)
     metrics = cbind(ID = res@rownames, metrics)
     metrics$ID = as.character(metrics$ID)
     dataMetrics[[paste0(uTreat[i], &quot;_&quot;, uTreat[j])]] &lt;- metrics
+    
+    t1Length &lt;- length(which(metrics[which(metrics$padj &lt;0.05),]$log2FoldChange&gt;0))
+    t2Length &lt;- length(which(metrics[which(metrics$padj &lt;0.05),]$log2FoldChange&lt;0))
+    
+    allPairs = rbind(allPairs, data.frame(Treatment1 = uTreat[i], Treatment2 = uTreat[j], NumberDEG = degLength, Treatment1Larger = t1Length, Treatment2Larger = t2Length))
   }
 }</code></pre>
 <p><img src="makeDataMetrics_files/figure-html/unnamed-chunk-2-1.png" width="960" /><img src="makeDataMetrics_files/figure-html/unnamed-chunk-2-2.png" width="960" /><img src="makeDataMetrics_files/figure-html/unnamed-chunk-2-3.png" width="960" /><img src="makeDataMetrics_files/figure-html/unnamed-chunk-2-4.png" width="960" /><img src="makeDataMetrics_files/figure-html/unnamed-chunk-2-5.png" width="960" /><img src="makeDataMetrics_files/figure-html/unnamed-chunk-2-6.png" width="960" /></p>
 <pre class="r"><code>allPairs &lt;- allPairs[order(allPairs$NumberDEG),]
 allPairs</code></pre>
-<pre><code>  Treatment1 Treatment2 NumberDEG
-2         NC         VC         0
-5         NR         VR       178
-6         VC         VR       376
-3         NC         VR       774
-1         NC         NR       941
-4         NR         VC       955</code></pre>
+<pre><code>  Treatment1 Treatment2 NumberDEG Treatment1Larger Treatment2Larger
+2         NC         VC         0                0                0
+5         NR         VR       178               26              152
+6         VC         VR       376              247              129
+3         NC         VR       774              496              278
+1         NC         NR       941              601              340
+4         NR         VC       955              415              540</code></pre>
 <pre class="r"><code>saveRDS(dataMetrics, file=&quot;dataMetrics.Rds&quot;)</code></pre>
 <pre class="r"><code>plotDispEsts(dds, ylim = c(1e-6, 1e1))</code></pre>
 <p><img src="makeDataMetrics_files/figure-html/unnamed-chunk-3-1.png" width="960" /></p>
