@@ -115,6 +115,18 @@ plotSA(efit, main=&quot;Final model: Mean−variance trend&quot;)</code></pre>
 Down    193
 NotSig 8929
 Up       20</code></pre>
+<pre class="r"><code>countDF &lt;- as.data.frame(decideTests(efit)@.Data)
+GLC1 &lt;- rownames(countDF)[which(countDF==1)]
+GLV1 &lt;- rownames(countDF)[which(countDF==-1)]
+GL_VIRUS1 &lt;- c(GLC1, GLV1)
+
+GLC &lt;- unname(sapply(GLC1, function(x) strsplit(strsplit(x, &quot;[|]&quot;)[[1]][3], &quot;[-]&quot;)[[1]][1]))
+GLV &lt;- unname(sapply(GLV1, function(x) strsplit(strsplit(x, &quot;[|]&quot;)[[1]][3], &quot;[-]&quot;)[[1]][1]))
+GL_VIRUS &lt;- unname(sapply(GL_VIRUS1, function(x) strsplit(strsplit(x, &quot;[|]&quot;)[[1]][3], &quot;[-]&quot;)[[1]][1])) 
+
+saveRDS(GLC, file=&quot;GLC.Rds&quot;)
+saveRDS(GLV, file=&quot;GLV.Rds&quot;)
+saveRDS(GL_VIRUS, file=&quot;GL_VIRUS.Rds&quot;)</code></pre>
 <pre class="r"><code>pairNames &lt;- colnames(contr.matrix)
 metrics &lt;- list()
 for (i in 1:length(pairNames)) {

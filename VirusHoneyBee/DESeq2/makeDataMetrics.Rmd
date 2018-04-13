@@ -61,6 +61,19 @@ for (i in 1:(length(uTreat)-1)){
     t1Length <- length(which(metrics[which(metrics$padj <0.05),]$log2FoldChange>0))
     t2Length <- length(which(metrics[which(metrics$padj <0.05),]$log2FoldChange<0))
     
+    GDC1 <- metrics[which(metrics[which(metrics$padj <0.05),]$log2FoldChange>0),]$ID
+    GDV1 <- metrics[which(metrics[which(metrics$padj <0.05),]$log2FoldChange<0),]$ID
+    GD_VIRUS1 <- metrics[which(metrics$padj <0.05),]$ID
+    
+    GDV <- unname(sapply(GDV1, function(x) strsplit(strsplit(x, "[|]")[[1]][3], "[-]")[[1]][1]))
+    GDC <- unname(sapply(GDC1, function(x) strsplit(strsplit(x, "[|]")[[1]][3], "[-]")[[1]][1]))
+    GD_VIRUS <- unname(sapply(GD_VIRUS1, function(x) strsplit(strsplit(x, "[|]")[[1]][3], "[-]")[[1]][1]))    
+    
+    saveRDS(GDV, file="GDV.Rds")
+    saveRDS(GDC, file="GDC.Rds")
+    saveRDS(GD_VIRUS, file="GD_VIRUS.Rds")
+    
+    
     allPairs = rbind(allPairs, data.frame(Treatment1 = uTreat[i], Treatment2 = uTreat[j], NumberDEG = degLength, Treatment1Larger = t1Length, Treatment2Larger = t2Length))
   }
 }

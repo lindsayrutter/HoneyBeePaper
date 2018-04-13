@@ -192,6 +192,18 @@ for (i in 1:(ncol(fit)-1)){
     firstLarger &lt;- length(which(lrt5$logFC&gt;0)) 
     secondLarger &lt;- length(which(lrt5$logFC&lt;0)) 
     
+    GEC1 &lt;- rownames(lrt5[which(lrt5$logFC&gt;0),])
+    GEV1 &lt;- rownames(lrt5[which(lrt5$logFC&lt;0),])
+    GE_VIRUS1 &lt;- rownames(lrt5)
+    
+    GEC &lt;- unname(sapply(GEC1, function(x) strsplit(strsplit(x, &quot;[|]&quot;)[[1]][3], &quot;[-]&quot;)[[1]][1]))
+    GEV &lt;- unname(sapply(GEV1, function(x) strsplit(strsplit(x, &quot;[|]&quot;)[[1]][3], &quot;[-]&quot;)[[1]][1]))
+    GE_VIRUS &lt;- unname(sapply(GE_VIRUS1, function(x) strsplit(strsplit(x, &quot;[|]&quot;)[[1]][3], &quot;[-]&quot;)[[1]][1]))    
+    
+    saveRDS(GEC, file=&quot;GEC.Rds&quot;)
+    saveRDS(GEV, file=&quot;GEV.Rds&quot;)
+    saveRDS(GE_VIRUS, file=&quot;GE_VIRUS.Rds&quot;)
+    
     lrtLength &lt;- nrow(lrt5)
     allPairs = rbind(allPairs, data.frame(Treatment1 = factor(colnames(fit)[i]), Treatment2 = factor(colnames(fit)[j]), NumberDEG = lrtLength, FirstLarger = firstLarger, SecondLarger = secondLarger))
     
