@@ -61,12 +61,14 @@ for (i in 1:(length(uTreat)-1)){
     t1Length <- length(which(metrics[which(metrics$padj <0.05),]$log2FoldChange>0))
     t2Length <- length(which(metrics[which(metrics$padj <0.05),]$log2FoldChange<0))
     
-    RDV <- metrics[which(metrics[which(metrics$padj <0.05),]$log2FoldChange>0),]$ID
-    RDN <- metrics[which(metrics[which(metrics$padj <0.05),]$log2FoldChange<0),]$ID
-    RD_VIRUS <- metrics[which(metrics$padj <0.05),]$ID
+    sigMetrics <- metrics[which(metrics$padj <0.05),]
+    RDN <- sigMetrics[which(sigMetrics$log2FoldChange>0),]$ID
+    RDV <- sigMetrics[which(sigMetrics$log2FoldChange<0),]$ID
+    RD_VIRUS_TOTAL <- metrics[which(metrics$padj <0.05),]$ID
+    
     saveRDS(RDV, file="RDV.Rds")
     saveRDS(RDN, file="RDN.Rds")
-    saveRDS(RD_VIRUS, file="RD_VIRUS.Rds")
+    saveRDS(RD_VIRUS_TOTAL, file="RD_VIRUS_TOTAL.Rds")
     
     allPairs = rbind(allPairs, data.frame(Treatment1 = uTreat[i], Treatment2 = uTreat[j], NumberDEG = degLength, Treatment1Larger = t1Length, Treatment2Larger = t2Length))
   }

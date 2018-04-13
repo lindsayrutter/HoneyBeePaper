@@ -183,12 +183,14 @@ for (i in 1:(length(uTreat)-1)){
     t1Length &lt;- length(which(metrics[which(metrics$padj &lt;0.05),]$log2FoldChange&gt;0))
     t2Length &lt;- length(which(metrics[which(metrics$padj &lt;0.05),]$log2FoldChange&lt;0))
     
-    RDV &lt;- metrics[which(metrics[which(metrics$padj &lt;0.05),]$log2FoldChange&gt;0),]$ID
-    RDN &lt;- metrics[which(metrics[which(metrics$padj &lt;0.05),]$log2FoldChange&lt;0),]$ID
-    RD_VIRUS &lt;- metrics[which(metrics$padj &lt;0.05),]$ID
+    sigMetrics &lt;- metrics[which(metrics$padj &lt;0.05),]
+    RDN &lt;- sigMetrics[which(sigMetrics$log2FoldChange&gt;0),]$ID
+    RDV &lt;- sigMetrics[which(sigMetrics$log2FoldChange&lt;0),]$ID
+    RD_VIRUS_TOTAL &lt;- metrics[which(metrics$padj &lt;0.05),]$ID
+    
     saveRDS(RDV, file=&quot;RDV.Rds&quot;)
     saveRDS(RDN, file=&quot;RDN.Rds&quot;)
-    saveRDS(RD_VIRUS, file=&quot;RD_VIRUS.Rds&quot;)
+    saveRDS(RD_VIRUS_TOTAL, file=&quot;RD_VIRUS_TOTAL.Rds&quot;)
     
     allPairs = rbind(allPairs, data.frame(Treatment1 = uTreat[i], Treatment2 = uTreat[j], NumberDEG = degLength, Treatment1Larger = t1Length, Treatment2Larger = t2Length))
   }

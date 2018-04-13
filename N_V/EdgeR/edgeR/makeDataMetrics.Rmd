@@ -106,10 +106,10 @@ for (i in 1:(ncol(fit)-1)){
     
     REN <- rownames(lrt5[which(lrt5$logFC>0),])
     REV <- rownames(lrt5[which(lrt5$logFC<0),])
-    RE_VIRUS <- rownames(lrt5)
+    RE_VIRUS_TOTAL <- rownames(lrt5)
     saveRDS(REN, file="REN.Rds")
     saveRDS(REV, file="REV.Rds")
-    saveRDS(RE_VIRUS, file="RE_VIRUS.Rds")
+    saveRDS(RE_VIRUS_TOTAL, file="RE_VIRUS_TOTAL.Rds")
     
     lrtLength <- nrow(lrt5)
     allPairs = rbind(allPairs, data.frame(Treatment1 = factor(colnames(fit)[i]), Treatment2 = factor(colnames(fit)[j]), NumberDEG = lrtLength, FirstLarger = firstLarger, SecondLarger = secondLarger))

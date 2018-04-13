@@ -183,12 +183,14 @@ for (i in 1:(length(uTreat)-1)){
     t1Length &lt;- length(which(metrics[which(metrics$padj &lt;0.05),]$log2FoldChange&gt;0))
     t2Length &lt;- length(which(metrics[which(metrics$padj &lt;0.05),]$log2FoldChange&lt;0))
     
-    RDC &lt;- metrics[which(metrics[which(metrics$padj &lt;0.05),]$log2FoldChange&gt;0),]$ID
-    RDR &lt;- metrics[which(metrics[which(metrics$padj &lt;0.05),]$log2FoldChange&lt;0),]$ID
-    RD_DIET &lt;- metrics[which(metrics$padj &lt;0.05),]$ID
+    sigMetrics &lt;- metrics[which(metrics$padj &lt;0.05),]
+    RDC &lt;- sigMetrics[which(sigMetrics$log2FoldChange&gt;0),]$ID
+    RDR &lt;- sigMetrics[which(sigMetrics$log2FoldChange&lt;0),]$ID
+    RD_DIET_TOTAL &lt;- metrics[which(metrics$padj &lt;0.05),]$ID
+    
     saveRDS(RDC, file=&quot;RDC.Rds&quot;)
     saveRDS(RDR, file=&quot;RDR.Rds&quot;)
-    saveRDS(RD_DIET, file=&quot;RD_DIET.Rds&quot;)
+    saveRDS(RD_DIET_TOTAL, file=&quot;RD_DIET_TOTAL.Rds&quot;)
     
     allPairs = rbind(allPairs, data.frame(Treatment1 = uTreat[i], Treatment2 = uTreat[j], NumberDEG = degLength, Treatment1Larger = t1Length, Treatment2Larger = t2Length))
   }
