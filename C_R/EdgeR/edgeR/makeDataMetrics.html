@@ -192,6 +192,13 @@ for (i in 1:(ncol(fit)-1)){
     firstLarger &lt;-  length(which(lrt5$logFC&gt;0))
     secondLarger &lt;-  length(which(lrt5$logFC&lt;0))
     
+    REC &lt;- rownames(lrt5[which(lrt5$logFC&gt;0),])
+    RER &lt;- rownames(lrt5[which(lrt5$logFC&lt;0),])
+    RE_DIET &lt;- rownames(lrt5)
+    saveRDS(REC, file=&quot;REC.Rds&quot;)
+    saveRDS(RER, file=&quot;RER.Rds&quot;)
+    saveRDS(RE_DIET, file=&quot;RE_DIET.Rds&quot;)
+    
     lrtLength &lt;- nrow(lrt5)
     allPairs = rbind(allPairs, data.frame(Treatment1 = factor(colnames(fit)[i]), Treatment2 = factor(colnames(fit)[j]), NumberDEG = lrtLength, FirstLarger = firstLarger, SecondLarger = secondLarger))
     

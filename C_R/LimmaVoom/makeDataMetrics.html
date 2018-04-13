@@ -115,6 +115,14 @@ plotSA(efit, main=&quot;Final model: Mean−variance trend&quot;)</code></pre>
 Down    789
 NotSig 8331
 Up      851</code></pre>
+<pre class="r"><code>countDF &lt;- as.data.frame(decideTests(efit)@.Data)
+RLC &lt;- rownames(countDF)[which(countDF==1)]
+RLR &lt;- rownames(countDF)[which(countDF==-1)]
+RL_DIET &lt;- c(RLC, RLR)
+
+saveRDS(RLC, file=&quot;RLC.Rds&quot;)
+saveRDS(RLR, file=&quot;RLR.Rds&quot;)
+saveRDS(RL_DIET, file=&quot;RL_DIET.Rds&quot;)</code></pre>
 <pre class="r"><code>pairNames &lt;- colnames(contr.matrix)
 metrics &lt;- list()
 for (i in 1:length(pairNames)) {

@@ -90,6 +90,14 @@ For a quick look at differential expression levels, the number of significantly 
 
 ```{r}
 summary(decideTests(efit))
+countDF <- as.data.frame(decideTests(efit)@.Data)
+RLC <- rownames(countDF)[which(countDF==1)]
+RLR <- rownames(countDF)[which(countDF==-1)]
+RL_DIET <- c(RLC, RLR)
+
+saveRDS(RLC, file="RLC.Rds")
+saveRDS(RLR, file="RLR.Rds")
+saveRDS(RL_DIET, file="RL_DIET.Rds")
 ```
 
 ```{r}
