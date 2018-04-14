@@ -31,7 +31,7 @@ GL_TOTAL <- readRDS("../VirusHoneyBee/LimmaVoom/GL_TOTAL.Rds")
 
 #######################################################
 # Get overlap between all genes between two studies
-# namesG has length 15314; namesR has length 11825
+# namesG has length 15314; namesR has length 15314
 # Overlap has 11825
 
 dataR = read.delim(file="../N_V/data/AllLaneCount.txt",row.names=1,stringsAsFactors = FALSE)
@@ -164,6 +164,96 @@ length(intersect(REV, RDN))
 
 
 
+
+
+
+
+
+
+
+
+############### Venn diagrams for Rutter and Galbraith, DEL (Total) ##############
+
+int_GD_RD_TOTAL = intersect(GD_TOTAL, RD_VIRUS_TOTAL)
+int_GD_RE_TOTAL = intersect(GD_TOTAL, RE_VIRUS_TOTAL)
+int_GE_RD_TOTAL = intersect(GE_TOTAL, RD_VIRUS_TOTAL)
+int_GE_RE_TOTAL = intersect(GE_TOTAL, RE_VIRUS_TOTAL)
+int_GL_RD_TOTAL = intersect(GL_TOTAL, RD_VIRUS_TOTAL)
+int_GL_RE_TOTAL = intersect(GL_TOTAL, RE_VIRUS_TOTAL)
+
+int_GD_GE_RD_TOTAL = Reduce(intersect, list(GD_TOTAL, GE_TOTAL, RD_VIRUS_TOTAL))
+int_GD_GE_RE_TOTAL = Reduce(intersect, list(GD_TOTAL, GE_TOTAL, RE_VIRUS_TOTAL))
+int_GD_GL_RD_TOTAL = Reduce(intersect, list(GD_TOTAL, GL_TOTAL, RD_VIRUS_TOTAL))
+int_GD_GL_RE_TOTAL = Reduce(intersect, list(GD_TOTAL, GL_TOTAL, RE_VIRUS_TOTAL))
+int_GD_RD_RE_TOTAL = Reduce(intersect, list(GD_TOTAL, RD_VIRUS_TOTAL, RE_VIRUS_TOTAL))
+int_GE_GL_RD_TOTAL = Reduce(intersect, list(GE_TOTAL, GL_TOTAL, RD_VIRUS_TOTAL))
+int_GE_GL_RE_TOTAL = Reduce(intersect, list(GE_TOTAL, GL_TOTAL, RE_VIRUS_TOTAL))
+int_GE_RD_RE_TOTAL = Reduce(intersect, list(GE_TOTAL, RD_VIRUS_TOTAL, RE_VIRUS_TOTAL))
+int_GL_RD_RE_TOTAL = Reduce(intersect, list(GL_TOTAL, RD_VIRUS_TOTAL, RE_VIRUS_TOTAL))
+
+int_GD_GE_GL_RD_TOTAL = Reduce(intersect, list(GD_TOTAL, GE_TOTAL, GL_TOTAL, RD_VIRUS_TOTAL))
+int_GD_GE_GL_RE_TOTAL = Reduce(intersect, list(GD_TOTAL, GE_TOTAL, GL_TOTAL, RE_VIRUS_TOTAL))
+int_GD_GE_RD_RE_TOTAL = Reduce(intersect, list(GD_TOTAL, GE_TOTAL, RD_VIRUS_TOTAL, RE_VIRUS_TOTAL))
+int_GD_GL_RD_RE_TOTAL = Reduce(intersect, list(GD_TOTAL, GL_TOTAL, RD_VIRUS_TOTAL, RE_VIRUS_TOTAL))
+int_GE_GL_RD_RE_TOTAL = Reduce(intersect, list(GE_TOTAL, GL_TOTAL, RD_VIRUS_TOTAL, RE_VIRUS_TOTAL))
+int_GD_GE_GL_RD_RE_TOTAL = Reduce(intersect, list(GD_TOTAL, GE_TOTAL, GL_TOTAL, RD_VIRUS_TOTAL, RE_VIRUS_TOTAL))
+
+# Reference five-set diagram
+venn.plot <- draw.quintuple.venn(
+  area1 = length(GD_TOTAL),
+  area2 = length(GE_TOTAL),
+  area3 = length(GL_TOTAL),
+  area4 = length(RD_VIRUS_TOTAL),
+  area5 = length(RE_VIRUS_TOTAL),
+  n12 = length(int_GD_GE_TOTAL),
+  n13 = length(int_GD_GL_TOTAL),
+  n14 = length(int_GD_RD_TOTAL),
+  n15 = length(int_GD_RE_TOTAL),
+  n23 = length(int_GE_GL_TOTAL),
+  n24 = length(int_GE_RD_TOTAL),
+  n25 = length(int_GE_RE_TOTAL),
+  n34 = length(int_GL_RD_TOTAL),
+  n35 = length(int_GL_RE_TOTAL),
+  n45 = length(int_RD_RE_VIRUS_TOTAL),
+  n123 = length(int_GD_GE_GL_TOTAL),
+  n124 = length(int_GD_GE_RD_TOTAL),
+  n125 = length(int_GD_GE_RE_TOTAL),
+  n134 = length(int_GD_GL_RD_TOTAL),
+  n135 = length(int_GD_GL_RE_TOTAL),
+  n145 = length(int_GD_RD_RE_TOTAL),
+  n234 = length(int_GE_GL_RD_TOTAL),
+  n235 = length(int_GE_GL_RE_TOTAL),
+  n245 = length(int_GE_RD_RE_TOTAL),
+  n345 = length(int_GL_RD_RE_TOTAL),
+  n1234 = length(int_GD_GE_GL_RD_TOTAL),
+  n1235 = length(int_GD_GE_GL_RE_TOTAL),
+  n1245 = length(int_GD_GE_RD_RE_TOTAL),
+  n1345 = length(int_GD_GL_RD_RE_TOTAL),
+  n2345 = length(int_GE_GL_RD_RE_TOTAL),
+  n12345 = length(int_GD_GE_GL_RD_RE_TOTAL),
+  category = c("", "", " ", " ", " "),
+  fill = c("dodgerblue", "goldenrod1", "darkorange1", "seagreen3", "orchid3"),
+  cat.col = c("dodgerblue", "goldenrod1", "darkorange1", "seagreen3", "orchid3"),
+  cat.cex = 2,
+  margin = 0.05,
+  cex = c(1.5, 1.5, 1.5, 1.5, 1.5, 1, 0.8, 1, 0.8, 1, 0.8, 1, 0.8, 1, 0.8, 
+          1, 0.55, 1, 0.55, 1, 0.55, 1, 0.55, 1, 0.55, 1, 1, 1, 1, 1, 1.5),
+  ind = TRUE
+);
+
+tiff(filename = "Quintuple_Venn_diagram.jpg", compression = "lzw");
+grid.draw(venn.plot);
+dev.off();
+
+
+
+
+
+
+
+
+
+
 ############### Venn diagrams for Supplemental Galbraith versus Toth per Method ############## 
 
 # Keep 753 DEGs from Galbraith paper
@@ -189,19 +279,90 @@ jpeg(fileName)
 draw.pairwise.venn(area1=length(GD_TOTAL), area2=length(gDSupp), cross.area = length(gtDSupp), category=c("Galbraith Us", "Galbraith Supp"))
 invisible(dev.off())
 
+# Extract 607 Upregeulated IDs from Galbraith paper
+gDSuppUp = keepDEGs[which(keepDEGs$`up/down`=="+"),]$id
+gDSuppUp = unname(sapply(gDSuppUp, function(x) strsplit(strsplit(x, "[|]")[[1]][3], "[-]")[[1]][1]))
+gtDSuppUpp = intersect(gDSuppUp, GDV)
 
+fileName = paste(getwd(), "/Venn_Galbraith_GalbraithSupp_VirusUp.jpg", sep="")
+jpeg(fileName)
+draw.pairwise.venn(area1=length(GDV), area2=length(gDSuppUp), cross.area = length(gtDSuppUpp), category=c("Galbraith Us", "Galbraith Supp"))
+invisible(dev.off())
 
+# Extract 146 Upregeulated IDs from Galbraith paper
+gDSuppDown = keepDEGs[which(keepDEGs$`up/down`=="-"),]$id
+gDSuppDown = unname(sapply(gDSuppDown, function(x) strsplit(strsplit(x, "[|]")[[1]][3], "[-]")[[1]][1]))
+gtDSuppDown = intersect(gDSuppDown, GDC)
 
+fileName = paste(getwd(), "/Venn_Galbraith_GalbraithSupp_VirusDown.jpg", sep="")
+jpeg(fileName)
+draw.pairwise.venn(area1=length(GDC), area2=length(gDSuppDown), cross.area = length(gtDSuppDown), category=c("Galbraith Us", "Galbraith Supp"))
+invisible(dev.off())
+
+# No cases where upregulated in one study (Galbriath, Rutter) and downregulated in another
+length(intersect(gDSuppUp, GDC))
+length(intersect(gDSuppDown, GDV))
 
 
 ############### Venn diagrams for DESeq (Total) Rutter vs. Galbraith ##############
 
-intD = intersect(RD_VIRUS_TOTAL, GD_TOTAL)
-
-fileName = paste(getwd(), "/Venn_GR_DESeq.jpg", sep="")
+fileName = paste(getwd(), "/Venn_GR_DESeq_Total.jpg", sep="")
 jpeg(fileName)
-draw.pairwise.venn(area1=length(GD_TOTAL), area2=length(RD_VIRUS_TOTAL), cross.area = length(intD), category=c("Galbraith Us", "Galbraith Supp"))
+draw.pairwise.venn(area1=length(GD_TOTAL), area2=length(RD_VIRUS_TOTAL), cross.area = length(intersect(RD_VIRUS_TOTAL, GD_TOTAL)), category=c("Galbraith", "Rutter"))
 invisible(dev.off())
+
+############### Venn diagrams for DESeq (Virus) Rutter vs. Galbraith ##############
+
+fileName = paste(getwd(), "/Venn_GR_DESeq_Virus.jpg", sep="")
+jpeg(fileName)
+draw.pairwise.venn(area1=length(GDV), area2=length(RDV), cross.area = length(intersect(RDV, GDV)), category=c("Galbraith", "Rutter"))
+invisible(dev.off())
+
+############### Venn diagrams for DESeq (Healthy) Rutter vs. Galbraith ##############
+
+fileName = paste(getwd(), "/Venn_GR_DESeq_Healthy.jpg", sep="")
+jpeg(fileName)
+draw.pairwise.venn(area1=length(GDC), area2=length(RDN), cross.area = length(intersect(RDN, GDC)), category=c("Galbraith", "Rutter"))
+invisible(dev.off())
+
+############### Rutter vs. Galbriath DESeq (overlaps between up and down) ############## 
+
+# One overlap!
+length(intersect(RDV, GDC))
+length(intersect(RDN, GDV)) # One overlap!
+
+
+
+
+
+
+
+############### Venn diagrams for EdgeR (Total) Rutter vs. Galbraith ##############
+
+fileName = paste(getwd(), "/Venn_GR_EdgeR_Total.jpg", sep="")
+jpeg(fileName)
+draw.pairwise.venn(area1=length(GE_TOTAL), area2=length(RE_VIRUS_TOTAL), cross.area = length(intersect(RE_VIRUS_TOTAL, GE_TOTAL)), category=c("Galbraith", "Rutter"))
+invisible(dev.off())
+
+############### Venn diagrams for EdgeR (Virus) Rutter vs. Galbraith ##############
+
+fileName = paste(getwd(), "/Venn_GR_EdgeR_Virus.jpg", sep="")
+jpeg(fileName)
+draw.pairwise.venn(area1=length(GEV), area2=length(REV), cross.area = length(intersect(REV, GEV)), category=c("Galbraith", "Rutter"))
+invisible(dev.off())
+
+############### Venn diagrams for EdgeR (Healthy) Rutter vs. Galbraith ##############
+
+fileName = paste(getwd(), "/Venn_GR_EdgeR_Healthy.jpg", sep="")
+jpeg(fileName)
+draw.pairwise.venn(area1=length(GEC), area2=length(REN), cross.area = length(intersect(REN, GEC)), category=c("Galbraith", "Rutter"))
+invisible(dev.off())
+
+############### Rutter vs. Galbriath DESeq (overlaps between up and down) ############## 
+
+# One overlap!
+length(intersect(REV, GDC))
+length(intersect(GEV, REN)) # One overlap!
 
 
 
