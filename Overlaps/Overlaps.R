@@ -327,9 +327,8 @@ invisible(dev.off())
 
 ############### Rutter vs. Galbriath DESeq (overlaps between up and down) ############## 
 
-# One overlap!
 length(intersect(RDV, GDC))
-length(intersect(RDN, GDV)) # One overlap!
+length(intersect(RDN, GDV)) # One overlap! ("GB51305")
 
 
 
@@ -360,9 +359,8 @@ invisible(dev.off())
 
 ############### Rutter vs. Galbriath DESeq (overlaps between up and down) ############## 
 
-# One overlap!
 length(intersect(REV, GDC))
-length(intersect(GEV, REN)) # One overlap!
+length(intersect(GEV, REN)) # One overlap! ("GB51305")
 
 
 

@@ -1,0 +1,2 @@
+ID	Gene Name	Species	GOTERM_BP_DIRECT
+GB47407	histone H4(LOC406132)	Apis mellifera	GO:0006334~nucleosome assembly,GO:0006352~DNA-templated transcription, initiation,

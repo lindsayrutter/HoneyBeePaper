@@ -57,8 +57,12 @@ for (i in 1:(length(uTreat)-1)){
     metrics$ID = as.character(metrics$ID)
     dataMetrics[[paste0(uTreat[i], "_", uTreat[j])]] <- metrics
     
-    t1Length <- length(which(metrics[which(metrics$padj <0.05),]$log2FoldChange>0))
-    t2Length <- length(which(metrics[which(metrics$padj <0.05),]$log2FoldChange<0))
+    sigMet <- metrics[which(metrics$padj <0.05),]
+    t1Length <- length(which(sigMet$log2FoldChange>0))
+    t2Length <- length(which(sigMet$log2FoldChange<0))
+    
+    saveRDS(sigMet[which(sigMet$log2FoldChange>0),]$ID, file=paste0(uTreat[i], "_", uTreat[j], "_", uTreat[i], ".Rds"))
+    saveRDS(sigMet[which(sigMet$log2FoldChange<0),]$ID, file=paste0(uTreat[i], "_", uTreat[j], "_", uTreat[j], ".Rds"))
     
     allPairs = rbind(allPairs, data.frame(Treatment1 = uTreat[i], Treatment2 = uTreat[j], NumberDEG = degLength, Treatment1Larger = t1Length, Treatment2Larger = t2Length))
   }

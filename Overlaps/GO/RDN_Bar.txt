@@ -1,0 +1,3 @@
+ID	Gene Name	Species	GOTERM_BP_DIRECT
+GB41545	MD-2-related lipid-recognition protein-like(LOC409187)	Apis mellifera	GO:0032367~intracellular cholesterol transport,
+GB54503	thioredoxin domain-containing protein(LOC411255)	Apis mellifera	GO:0045454~cell redox homeostasis,

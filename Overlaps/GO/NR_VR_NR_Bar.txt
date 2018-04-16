@@ -1,0 +1,8 @@
+ID	Gene Name	Species	GOTERM_BP_DIRECT
+GB48335	40S ribosomal protein S19-like(LOC410024)	Apis mellifera	GO:0006412~translation,
+GB52179	UDP-glucuronosyltransferase 2C1(LOC725997)	Apis mellifera	GO:0008152~metabolic process,
+GB41203	cuticular protein analogous to peritrophins 3-C(Cpap3-c)	Apis mellifera	GO:0006030~chitin metabolic process,
+GB48215	endoplasmic reticulum resident protein 44(LOC552191)	Apis mellifera	GO:0045454~cell redox homeostasis,
+GB49112	probable uridine-cytidine kinase(LOC410076)	Apis mellifera	GO:0006238~CMP salvage,GO:0044206~UMP salvage,
+GB53312	putative glycerol kinase 5(LOC408989)	Apis mellifera	GO:0005975~carbohydrate metabolic process,
+GB54503	thioredoxin domain-containing protein(LOC411255)	Apis mellifera	GO:0045454~cell redox homeostasis,
