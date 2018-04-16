@@ -30,6 +30,39 @@ GLC <- readRDS("../VirusHoneyBee/LimmaVoom/GLC.Rds")
 GL_TOTAL <- readRDS("../VirusHoneyBee/LimmaVoom/GL_TOTAL.Rds")
 
 #######################################################
+
+NC_NR_NC <- readRDS("../NC_NR_VC_VR/DESeq2/Method1/NC_NR_NC.Rds") #601
+NC_NR_NR <- readRDS("../NC_NR_VC_VR/DESeq2/Method1/NC_NR_NR.Rds") #340
+VC_VR_VC <- readRDS("../NC_NR_VC_VR/DESeq2/Method1/VC_VR_VC.Rds") #247
+VC_VR_VR <- readRDS("../NC_NR_VC_VR/DESeq2/Method1/VC_VR_VR.Rds") #129
+NC_NR_Total <- c(NC_NR_NC, NC_NR_NR) #941
+VC_VR_Total <- c(VC_VR_VC, VC_VR_VR) #376
+
+
+fileName = paste(getwd(), "/Venn_NC_NR_VC_VR_Total.jpg", sep="")
+jpeg(fileName)
+draw.pairwise.venn(area1=length(NC_NR_Total), area2=length(VC_VR_Total), cross.area=length(intersect(NC_NR_Total, VC_VR_Total)), c("NC_NR_Total", "VC_VR_Total"))
+invisible(dev.off())
+
+fileName = paste(getwd(), "/Venn_NC_VC.jpg", sep="")
+jpeg(fileName)
+draw.pairwise.venn(area1=length(NC_NR_NC), area2=length(VC_VR_VC), cross.area=length(intersect(NC_NR_NC, VC_VR_VC)), c("NC", "VC"))
+invisible(dev.off())
+
+fileName = paste(getwd(), "/Venn_NR_VR.jpg", sep="")
+jpeg(fileName)
+draw.pairwise.venn(area1=length(NC_NR_NR), area2=length(VC_VR_VR), cross.area=length(intersect(NC_NR_NR, VC_VR_VR)), c("NR", "VR"))
+invisible(dev.off())
+
+intNCVC = NC_NR_NC[which(NC_NR_NC %in% intersect(NC_NR_NC, VC_VR_VC))]
+NCminInt = NC_NR_NC[-which(NC_NR_NC %in% intersect(NC_NR_NC, VC_VR_VC))]
+VCminInt = VC_VR_VC[-which(VC_VR_VC %in% intersect(NC_NR_NC, VC_VR_VC))]
+
+saveRDS(intNCVC, file="intNCVC.Rds")
+saveRDS(NCminInt, file="NCminInt.Rds")
+saveRDS(VCminInt, file="VCminInt.Rds")
+
+#######################################################
 # Get overlap between all genes between two studies
 # namesG has length 15314; namesR has length 15314
 # Overlap has 11825
