@@ -38,7 +38,6 @@ VC_VR_VR <- readRDS("../NC_NR_VC_VR/DESeq2/Method1/VC_VR_VR.Rds") #129
 NC_NR_Total <- c(NC_NR_NC, NC_NR_NR) #941
 VC_VR_Total <- c(VC_VR_VC, VC_VR_VR) #376
 
-
 fileName = paste(getwd(), "/Venn_NC_NR_VC_VR_Total.jpg", sep="")
 jpeg(fileName)
 draw.pairwise.venn(area1=length(NC_NR_Total), area2=length(VC_VR_Total), cross.area=length(intersect(NC_NR_Total, VC_VR_Total)), c("NC_NR_Total", "VC_VR_Total"))
@@ -61,10 +60,20 @@ VCminInt = VC_VR_VC[-which(VC_VR_VC %in% intersect(NC_NR_NC, VC_VR_VC))]
 saveRDS(intNCVC, file="intNCVC.Rds")
 saveRDS(NCminInt, file="NCminInt.Rds")
 saveRDS(VCminInt, file="VCminInt.Rds")
+saveRDS(NC_NR_Total, file="NC_NR_Total.Rds")
+saveRDS(VC_VR_Total, file="VC_VR_Total.Rds")
+
+intNCNRVCVR = NC_NR_Total[which(NC_NR_Total %in% intersect(NC_NR_Total, VC_VR_Total))]
+NCNRminInt = NC_NR_Total[-which(NC_NR_Total %in% intersect(NC_NR_Total, VC_VR_Total))]
+VCVRminInt = VC_VR_Total[-which(VC_VR_Total %in% intersect(NC_NR_Total, VC_VR_Total))]
+
+saveRDS(intNCNRVCVR, file="intNCNRVCVR.Rds")
+saveRDS(NCNRminInt, file="NCNRminInt.Rds")
+saveRDS(VCVRminInt, file="VCVRminInt.Rds")
 
 #######################################################
 # Get overlap between all genes between two studies
-# namesG has length 15314; namesR has length 15314
+# namesG has length 11825; namesR has length 15314
 # Overlap has 11825
 
 dataR = read.delim(file="../N_V/data/AllLaneCount.txt",row.names=1,stringsAsFactors = FALSE)
