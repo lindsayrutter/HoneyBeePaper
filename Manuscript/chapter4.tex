@@ -260,12 +260,35 @@ Comment on (Figure \ref{fig:4panels}) @@@
   \label{fig:4panels}
 \end{figure}
 
-\subsection{Main effect results}
+\subsection{Main effect DEG results}
 
-We observed a substantially larger number of DEGs in our diet main effect (n = 1914) than in our virus main effect (n = 43) (Table \ref{tbl:mainEffectDEGs}A and B). In the diet factor, there were more Castanea DEGs (n = 1033) than Rockrose DEGs (n = 881). In the virus factor, there were more virus-exposed DEGs (n = 38) than control DEGs (n = 5). While these reported DEGs numbers are from the DESeq2 package, we saw similar trends for the edgeR and limma package results (Table \ref{tbl:mainEffectDEGs}A and B). Pathway 
+We observed a substantially larger number of DEGs in our diet main effect (n = 1914) than in our virus main effect (n = 43) (Table \ref{tbl:mainEffectDEGs}A and B). In the diet factor, there were more Castanea DEGs (n = 1033) than Rockrose DEGs (n = 881). In the virus factor, there were more virus-exposed DEGs (n = 38) than control DEGs (n = 5). While these reported DEGs numbers are from the DESeq2 package, we saw similar trends for the edgeR and limma package results (Table \ref{tbl:mainEffectDEGs}A and B).
 
+Pathway analysis of the Castanea DEGs revealed enriched (Benjamini correction < 0.05) Wnt signaling, hippo signaling, and dorso-ventral axis formation pathways, as well as pathways related to circadian rhythm, mRNA surveillance, insulin resistance, inositol phosphate metabolism, FoxO signaling, ECM-receptor interaction, phototransduction, Notch signaling, JaK-STAT signaling, MAPK signaling, and carbon metabolism (Table \ref{tbl:CastaneaPathways}). Pathway analysis of the Rockrose DEGs revealed pathways related to terpenoid backbone biosynthesis, homologous recombination, SNARE interactions in vesicular transport, aminoacyl-tRNA biosynthesis, Fanconi anemia, and pyrimidine metabolism (Table \ref{tbl:RockrosePathways}).
 
+@@@ Not enough DEGs to form pathways for virus @@@
 
+\subsection{Interaction DEG results}
+
+No interaction DEGs were observed between the diet and virus factors of the study, in any of the pipelines (DESeq2, edgeR, limma).
+
+\subsection{Pairwise comparison DEG results}
+
+The number of DEGs across the six treatment pairings between the diet and virus factor ranged from 0 to 941 (Table \ref{tbl:pairDEGs}). Some of the trends observed in the main effect comparisons persisted: The diet level appeared to have greater influence on the number of DEGs than the virus level. Across every pair comparing the Castanea and Rockrose levels, regardless of the virus level, the number of Castanea-related DEGs was higher than the number of Rockrose-related DEGs (Table \ref{tbl:pairDEGs} C, D, E, F). For the pairs in which the diet level was controlled, the virus-exposed treatment showed equal to or more DEGs than the control treatment (Table \ref{tbl:pairDEGs} A, B). There were no DEGs between the treatment pair controlling for the control level of the virus effect (Table \ref{tbl:pairDEGs} A). These trends were observed for all three pipelines used (DESeq2, edgeR, and limma). 
+
+\subsection{Comparison with Galbraith study}
+
+Differences between signal to noise ratio
+
+Figure \ref{fig:pcpGalbraith}
+Figure \ref{fig:pcpRutterVirus}
+Figure \ref{fig:pcpRutterDiet}
+
+Overlap between studies Figure \ref{fig:GRVenn}.
+
+27 genes overlapped ("GB40006" "GB41739" "GB42046" "GB42048" "GB42313" "GB43783" "GB43784" "GB45462" "GB45704" "GB47214" "GB47381" "GB47407" "GB48747" "GB48755" "GB49920" "GB50178" "GB50401" "GB50550" "GB50813" "GB50955" "GB51305" "GB52281" "GB52441" "GB52449" "GB53500" "GB53833" "GB55188")
+
+26 genes overlapped virus ("GB40006" "GB41739" "GB42046" "GB42048" "GB42313" "GB43783" "GB43784" "GB45462" "GB45704" "GB47214" "GB47381" "GB47407" "GB48747" "GB48755" "GB49920" "GB50178" "GB50401" "GB50550" "GB50813" "GB50955" "GB52281" "GB52441" "GB52449" "GB53500" "GB53833" "GB55188")
 
 \section{Discussion}
 
@@ -291,21 +314,56 @@ We observed a substantially larger number of DEGs in our diet main effect (n = 1
 
 \section{Appendix}
 
-
-
-% \begin{table}
-%   \caption{A stunning table}
-%   \label{tbl:excel-table}
-%   \includegraphics[width=\linewidth]{excel-table}
-% \end{table}
-
-
-
 \begin{table}[H]
   \includegraphics[width=0.65\textwidth]{Images/mainEffectDEGs}
   \caption{Number of DEGs across three analysis pipelines for (A) the diet effect in our study, (B) the virus main effect in our study, and (C) the virus main effect in the Galbraith study.}
   \label{tbl:mainEffectDEGs}
 \end{table}
+
+\begin{table}[H]
+  \includegraphics[width=\textwidth]{Images/CastaneaPathways}
+  \caption{Pathways related to diet main effect Castanea DEGs.}
+  \label{tbl:CastaneaPathways}
+\end{table}
+
+\begin{table}[H]
+  \includegraphics[width=\textwidth]{Images/CastaneaPathways}
+  \caption{Pathways related to diet main effect Rockrose DEGs.}
+  \label{tbl:RockrosePathways}
+\end{table}
+
+\begin{table}[H]
+  \includegraphics[width=0.65\textwidth]{Images/pairDEGs}
+  \caption{Number of DEGs across three analysis pipelines for all six treatment pair combinations between the diet and virus factor.}
+  \label{tbl:pairDEGs}
+\end{table}
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=\textwidth]{../VirusHoneyBee/DESeq2/ClusterStandard/Clustering_data_FDR_05/C_T_4.jpg}
+  \caption{Parallel coordinate plots of DEGs between the virus-infected and control groups of the Galbraith study.}
+  \label{fig:pcpGalbraith}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=\textwidth]{../N_V/DESeq2/ClusterStandard/Clustering_data_FDR_05/N_V_4.jpg}
+  \caption{Parallel coordinate plots of DEGs between the virus-infected and control groups of our study.}
+  \label{fig:pcpRutterVirus}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{../C_R/DESeq2/ClusterStandard/Clustering_data_FDR_05/C_R_6.jpg}
+  \caption{Parallel coordinate plots of DEGs between the Castanea and Rockrose groups of our study.}
+  \label{fig:pcpRutterDiet}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{Images/GRVenn}
+  \caption{Venn diagrams comparing the DEG overlaps of the diet and treatment groups between the Galbraith study and our study. Top row left to right: DESeq results for all DEGs, virus DEGs, and control DEGs. Bottom row left to right: EdgeR results for all DEGs, virus DEGs, and control DEGs.}
+  \label{fig:GRVenn}
+\end{figure}
+
 
 \bibliography{chapter4}
 
