@@ -14,7 +14,15 @@ d$Treatment = as.factor(d$Treatment)
 colnames(d)[2] = "Day3Mortality"
 levels(d$Treatment) <- c('NC', 'NR', 'VC', 'VR')
 
+d$Virus = sapply(d$Treatment, function(x) substr(x, 1, 1))
+d$Diet = sapply(d$Treatment, function(x) substr(x, 2, 2))
+d$Virus = as.factor(d$Virus)
+d$Diet = as.factor(d$Diet)
+
 a <- aov(Day3Mortality~Treatment, data=d)
+
+aov.out = aov(Day3Mortality ~ Virus * Diet, data=d)
+
 tHSD <- TukeyHSD(a, ordered = FALSE, conf.level = 0.95)
 
 generate_label_df1 <- function(HSD, flev){
@@ -52,7 +60,14 @@ colnames(d)[2] = "logIAPV"
 levels(d$treatment) <- c('NC', 'NR', 'VC', 'VR')
 colnames(d)[1] <- "Treatment"
 
+
+d$Virus = sapply(d$Treatment, function(x) substr(x, 1, 1))
+d$Diet = sapply(d$Treatment, function(x) substr(x, 2, 2))
+d$Virus = as.factor(d$Virus)
+d$Diet = as.factor(d$Diet)
+
 a <- aov(logIAPV~Treatment, data=d)
+aov.out = aov(logIAPV ~ Virus * Diet, data=d)
 tHSD <- TukeyHSD(a, ordered = FALSE, conf.level = 0.95)
 
 generate_label_df2 <- function(HSD, flev){

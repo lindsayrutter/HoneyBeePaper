@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 APR 2018 09:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 APR 2018 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2022,33 +2022,33 @@ Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[6] <Images/4panels.png, id=350, 552.1428pt x 428.802pt>
-File: Images/4panels.png Graphic file (type png)
+[6] <Images/mortality.png, id=348, 655.248pt x 376.2858pt>
+File: Images/mortality.png Graphic file (type png)
 
-<use Images/4panels.png>
-Package pdftex.def Info: Images/4panels.png used on input line 257.
-(pdftex.def)             Requested size: 326.39433pt x 253.48825pt.
+<use Images/mortality.png>
+Package pdftex.def Info: Images/mortality.png used on input line 257.
+(pdftex.def)             Requested size: 407.99136pt x 234.29956pt.
 
-Underfull \vbox (badness 1852) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7 <./Images/4panels.png>]
+ [7 <./Images/mortality.png>]
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
+
+
+[8]
 Underfull \hbox (badness 1629) in paragraph at lines 289--290
 []\T1/cmr/m/n/10.95 (+20) 27 genes over-lapped ("GB40006" "GB41739" "GB42046" "
 GB42048" "GB42313"
  []
 
-
-Overfull \vbox (13.59999pt too high) has occurred while \output is active []
-
-
-[8] <Images/mainEffectDEGs.png, id=382, 464.937pt x 330.033pt>
+<Images/mainEffectDEGs.png, id=380, 464.937pt x 330.033pt>
 File: Images/mainEffectDEGs.png Graphic file (type png)
 
 <use Images/mainEffectDEGs.png>
 Package pdftex.def Info: Images/mainEffectDEGs.png used on input line 318.
 (pdftex.def)             Requested size: 277.41176pt x 196.92853pt.
 
-<Images/CastaneaPathways.png, id=383, 722.7pt x 702.4644pt>
+<Images/CastaneaPathways.png, id=381, 722.7pt x 702.4644pt>
 File: Images/CastaneaPathways.png Graphic file (type png)
 
 <use Images/CastaneaPathways.png>
@@ -2070,7 +2070,7 @@ Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
 [10 <./Images/CastaneaPathways.png>]
-<Images/pairDEGs.png, id=394, 467.346pt x 675.0018pt>
+<Images/pairDEGs.png, id=393, 467.346pt x 675.0018pt>
 File: Images/pairDEGs.png Graphic file (type png)
 
 <use Images/pairDEGs.png>
@@ -2081,7 +2081,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11]
 <../VirusHoneyBee/DESeq2/ClusterStandard/Clustering_data_FDR_05/C_T_4.jpg, id=3
-99, 1003.75pt x 702.625pt>
+98, 1003.75pt x 702.625pt>
 File: ../VirusHoneyBee/DESeq2/ClusterStandard/Clustering_data_FDR_05/C_T_4.jpg 
 Graphic file (type jpg)
 
@@ -2097,7 +2097,7 @@ Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
 [12 <./Images/pairDEGs.png>]
-<../N_V/DESeq2/ClusterStandard/Clustering_data_FDR_05/N_V_4.jpg, id=405, 1003.7
+<../N_V/DESeq2/ClusterStandard/Clustering_data_FDR_05/N_V_4.jpg, id=404, 1003.7
 5pt x 702.625pt>
 File: ../N_V/DESeq2/ClusterStandard/Clustering_data_FDR_05/N_V_4.jpg Graphic fi
 le (type jpg)
@@ -2111,7 +2111,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13 <../VirusHoneyBee/DESeq2/ClusterStandard/Clustering_data_FDR_05/C_T_4.jpg>
 ]
-<../C_R/DESeq2/ClusterStandard/Clustering_data_FDR_05/C_R_6.jpg, id=411, 1003.7
+<../C_R/DESeq2/ClusterStandard/Clustering_data_FDR_05/C_R_6.jpg, id=410, 1003.7
 5pt x 1053.9375pt>
 File: ../C_R/DESeq2/ClusterStandard/Clustering_data_FDR_05/C_R_6.jpg Graphic fi
 le (type jpg)
@@ -2128,7 +2128,7 @@ Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
 [14 <../N_V/DESeq2/ClusterStandard/Clustering_data_FDR_05/N_V_4.jpg>]
-<Images/GRVenn.png, id=416, 676.929pt x 378.6948pt>
+<Images/GRVenn.png, id=415, 676.929pt x 378.6948pt>
 File: Images/GRVenn.png Graphic file (type png)
  <use Images/GRVenn.png>
 Package pdftex.def Info: Images/GRVenn.png used on input line 362.
@@ -2161,8 +2161,8 @@ Package rerunfilecheck Info: File `chapter4.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  38523 strings out of 492995
- 733366 string characters out of 6132704
- 982903 words of memory out of 5000000
+ 733378 string characters out of 6132704
+ 982691 words of memory out of 5000000
  41310 multiletter control sequences out of 15000+600000
  554437 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2181,10 +2181,10 @@ mf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2017/texmf
 ist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2017/texmf-dis
 t/fonts/type1/public/cm-super/sfti2074.pfb></usr/local/texlive/2017/texmf-dist/
 fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on chapter4.pdf (21 pages, 2192518 bytes).
+Output written on chapter4.pdf (21 pages, 2184769 bytes).
 PDF statistics:
- 518 PDF objects out of 1000 (max. 8388607)
- 465 compressed objects within 5 object streams
+ 517 PDF objects out of 1000 (max. 8388607)
+ 464 compressed objects within 5 object streams
  112 named destinations out of 1000 (max. 500000)
  19653 words of extra memory for PDF output out of 20736 (max. 10000000)
 
