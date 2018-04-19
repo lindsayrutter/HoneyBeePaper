@@ -52,6 +52,7 @@ getPCP <- function(nC){
     plotDEG(data = plotDatas, dataMetrics = scatMatMetrics, option="scatterPoints", threshVar = "padj", threshVal = 0.05, degPointColor = colList[i+1], fileName=fileName)
     
     x$ID = xNames
+    saveRDS(xNames, file=paste0("Sig_", nC,"_", i,".Rds"))
     
     pcpDat <- melt(x[,c(1:(nColumns+1))], id.vars="ID")
     colnames(pcpDat) <- c("ID", "Sample", "Count")
@@ -130,6 +131,9 @@ boxDat <- melt(datas, id.vars="ID")
 colnames(boxDat) <- c("ID", "Sample", "Count")
 
 sigDatas = datas[which(metricsAll[["C_T"]]$padj<0.05),]
+
+saveRDS(sigDatas$ID, file="Sig.Rds")
+
 dendo = sigDatas
 rownames(dendo) = NULL
 d = dist(as.matrix(dendo))

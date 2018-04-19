@@ -40,6 +40,8 @@ getPCP <- function(nC){
     x$cluster = "color"
     x$cluster2 = factor(x$cluster)
     xNames = rownames(x)
+    
+    saveRDS(xNames, file=paste0("Sig_", nC, "_", i, ".Rds"))
     xFDR = metrics[which(metrics$ID %in% xNames),]$padj
     scatMatMetrics = list()
     scatMatMetrics[[currPair]] = metrics[which(metrics$ID %in% xNames),]
@@ -90,7 +92,7 @@ pair1 <- strsplit(currPair, "_")[[1]][1]
 pair2 <- strsplit(currPair, "_")[[1]][2]
 
 metrics <- metricsAll[[currPair]]
-data <- as.data.frame(readRDS("../../../data/data.Rds"))
+data <- as.data.frame(readRDS("../../data/data.Rds"))
 data <- data[,which(sapply(colnames(data), function(x) unlist(strsplit(x,"[.]"))[1]) %in% c(pair1, pair2))]
 data<- cbind(ID = rownames(data), data)
 data$ID <- as.character(data$ID)
@@ -134,6 +136,8 @@ dendo = sigDatas
 rownames(dendo) = NULL
 d = dist(as.matrix(dendo))
 hc = hclust(d, method="ward.D")
+
+saveRDS(sigDatas$ID, file="Sig.Rds")
 
 plotName = currPair
 outDir = "Clustering_data_FDR_05"
