@@ -132,6 +132,28 @@ boxDat <- melt(datas, id.vars="ID")
 colnames(boxDat) <- c("ID", "Sample", "Count")
 
 sigDatas = datas[which(metricsAll[["N_V"]]$padj<0.05),]
+
+#### Plot SM ######################## 
+
+xNames = rownames(sigDatas)
+xFDR = metrics[which(metrics$ID %in% xNames),]$padj
+scatMatMetrics = list()
+scatMatMetrics[[currPair]] = metrics[which(metrics$ID %in% xNames),]
+scatMatMetrics[[currPair]]$FDR = 10e-10
+scatMatMetrics[[currPair]]$ID = as.factor(as.character(scatMatMetrics[[currPair]]$ID))
+plotDatas = datas[, c(ncol(datas), 1:ncol(datas)-1)]
+
+plotDatas2 = plotDatas[,c(1,11:13,23:25)]
+
+logData2 = logData[,c(1,11:13,23:25)]
+
+ret <- plotDEG(data = logData2, dataMetrics = scatMatMetrics, option="scatterPoints", threshVar = "padj", threshVal = 0.05, degPointColor = "lawngreen")
+
+#, fileName=fileName)
+#degPointColor = colList[i+1],
+
+#####################################
+
 dendo = sigDatas
 rownames(dendo) = NULL
 d = dist(as.matrix(dendo))

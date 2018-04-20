@@ -19,6 +19,8 @@ getPCP <- function(nC){
   
   set.seed(1)
   colList = scales::hue_pal()(nC+1)
+  colList[2] = "#E9AA0D"
+  colList[3] = "#EA502F"
   k = cutree(hc, k=nC)
   
   yMin = min(sigDatas[,1:nColumns])
@@ -49,7 +51,7 @@ getPCP <- function(nC){
     plotDatas = datas[, c(ncol(datas), 1:ncol(datas)-1)]
     
     fileName = paste(getwd(), "/", outDir, "/", currPair, "_SM_", nC, "_", i, ".jpg", sep="")
-    plotDEG(data = plotDatas, dataMetrics = scatMatMetrics, option="scatterPoints", threshVar = "padj", threshVal = 0.05, degPointColor = colList[i+1], fileName=fileName)
+    ret <- plotDEG(data = plotDatas, dataMetrics = scatMatMetrics, option="scatterPoints", threshVar = "padj", threshVal = 0.05, degPointColor = colList[i+1], fileName=fileName)
     
     x$ID = xNames
     saveRDS(xNames, file=paste0("Sig_", nC,"_", i,".Rds"))

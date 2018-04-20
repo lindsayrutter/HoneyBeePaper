@@ -241,6 +241,10 @@ We used @@@ visualization tools from @@@ and visual inference techniques to asse
 
 DEGs were uploaded as a background list to DAVID Bioinformatics Resources 6.7 (\citealt{davidBio}, \citealt{davidBio2}). The overrepresented gene ontology (GO) terms of DEGs were identified using the BEEBASE\_ID identifier. To fine-tune the GO term list, only significant terms (FDR < 0.05) and those correlating to Biological Processes were considered. The refined GO term list was then imported into REVIGO (\citealt{revigo}), which uses semantic similarity measures to cluster long lists of GO terms. @@@ Pathways analysis @@@
 
+\subsection{Detecting resilience versus resistance}
+
+To investigate whether the protective effect of good diet is due to direct, specific effects on immune function (resistance), or if it is due to indirect effects of good nutrition on energy availability and vigor (resilience), we created contrasts of interest (Table \ref{tbl:contrasts}). In particular, we assigned ``resistance" genes to be the ones that were upregulated in the Castanea group within the virus infected bees but not upregulated in the Castanea group within the non-infected bees. We also assigned "resilience" genes to be the ones that were upregulated in the Castanea group for both the virus infected bees and non-infected bees. We then determined how many genes fell into these two categories and analyzed their GO terminologies.
+
 \section{Results}
 
 \subsection{Phenotypic results}
@@ -278,17 +282,21 @@ The number of DEGs across the six treatment pairings between the diet and virus 
 
 \subsection{Comparison with Galbraith study}
 
-Differences between signal to noise ratio
+We wished to explore the signal:to:noise ratio between the Galbraith dataset and our dataset. Basic MDS plots are constructed during the DESeq2 analysis pipeline, and we could immediately determine that the Galraith dataset may better separate the infected and uninfected honeybees better than our dataset (Figure \ref{fig:mdsPlots}). We also noted that the first replicate of both treatment groups in the Galbraith data did not cluster as cleanly in the MDS plots. However, through this automatically-generated plot, we can only visualize information at the sample level. Wanting to learn more about the data at the gene level, we continued with additional visualization techniques.
 
-Figure \ref{fig:pcpGalbraith}
-Figure \ref{fig:pcpRutterVirus}
-Figure \ref{fig:pcpRutterDiet}
+We used parallel coordinate lines superimposed onto boxplots to visualize the DEGs that came out of the DESeq2 package. The background boxplot represents the distribution of all genes in the data, and each parallel coordinate line represents one DEG. To reduce overlapping of parallel coordinate lines, we often use hierarchical clustering techniques to separate DEGs into common patterns. See more information about this plotting method and the ideal visual structure of DEGs in our earlier chapter.
 
-Overlap between studies Figure \ref{fig:GRVenn}.
+We see that the 1,019 DEGs from the Galbraith dataset form pretty clean-looking visual displays (Figure \ref{fig:pcpGalbraith}). We do see that the first replicate of the virus group appears somewhat inconsistent with the other virus replicates in Cluster 2, confirming that this trend in the data that we saw in the MDS plot carried through into the DEG results. In contrast, we see that the 43 virus-related DEGs from our dataset do not look as clean in their visual displays (Figure \ref{fig:pcpRutterVirus}). The replicates appear strikingly inconsistent and there is not always such a large difference between treatment groups. We see a similar finding when we also examine a larger subset of 1,914 diet-related DEGs from our study. 
 
-27 genes overlapped ("GB40006" "GB41739" "GB42046" "GB42048" "GB42313" "GB43783" "GB43784" "GB45462" "GB45704" "GB47214" "GB47381" "GB47407" "GB48747" "GB48755" "GB49920" "GB50178" "GB50401" "GB50550" "GB50813" "GB50955" "GB51305" "GB52281" "GB52441" "GB52449" "GB53500" "GB53833" "GB55188")
+We also used litre plots to examine the structure of individual DEGs: We see that indeed the individual DEGs from our data (Figure \ref{fig:litreClusterRutter}) show less consistent replications and less differences between the treatment groups compared to the individual DEGs from the Galbraith data (Figure \ref{fig:litreCluster1} and Figure \ref{fig:litreCluster2}). For the Galbraith data, we examined individual DEGs from the first cluster (Figure \ref{fig:litreCluster1}) and second cluster (Figure \ref{fig:litreCluster2}) because the second cluster was a bit less ideal due to its inconsistent first replicate of the treatment group.
 
-26 genes overlapped virus ("GB40006" "GB41739" "GB42046" "GB42048" "GB42313" "GB43783" "GB43784" "GB45462" "GB45704" "GB47214" "GB47381" "GB47407" "GB48747" "GB48755" "GB49920" "GB50178" "GB50401" "GB50550" "GB50813" "GB50955" "GB52281" "GB52441" "GB52449" "GB53500" "GB53833" "GB55188")
+Finally, we looked at scatterplot matrices to assess the DEGs. We created standardized scatterplot matrices for each of the four clusters (Figure \ref{fig:pcpGalbraith}) of the Galbriath data (Figures \ref{fig:GalbraithClust1SM}, \ref{fig:GalbraithClust2SM}, \ref{fig:GalbraithClust3SM}, and \ref{fig:GalbraithClust4SM}). We also created standardized scatterplot matrices for our data. However, as our dataset contained 24 samples, we would need to include 276 scatterplots in our matrix, which would not be helpful. As a result, we created four scatterplot matrices of our data, each with subsets of 6 samples to be more comparable to the Galbraith data (Figures \ref{fig:RutterSM1}, \ref{fig:RutterSM2}, \ref{fig:RutterSM3}, and \ref{fig:RutterSM4}). We can again confirm through these plots that the DEGs from the Galbraith data appeared more as expected: Deviating more from the \textit{x=y} line in the treatment scatterplots while staying close to the \textit{x=y} line in replicate scatterplots.
+
+Despite the DEGs from the Galbraith dataset displaying the expected patterns more than those from our dataset, there was significant overlap in the DEGs between the two studies (Figure \ref{fig:GRVenn}).
+
+\subsection{Resilience versus resistance}
+
+Figure \ref{fig:revigo}
 
 \section{Discussion}
 
@@ -369,6 +377,134 @@ Overlap between studies Figure \ref{fig:GRVenn}.
   \caption{Known functions of the mapped subset of 43 DEGs in the virus main effect of our study. Whether the gene was overrepresented in the virus or non-virus group is also indicated for both our study and the Galbraith study. Functionalities were extracted from Flybase, National Center for Biotechnology Information, and The European Bioinformatics Institute databases.}
   \label{tbl:virusGenes}
 \end{table}
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{Images/mdsPlots}
+  \caption{MDS plots constructed from DESeq2 package for the Galbraith dataset (A) and our dataset (B).}
+  \label{fig:mdsPlots}
+\end{figure}
+
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{Images/litreCluster2}
+  \caption{Example litre plots of the nine DEGs with the lowest FDR values from Cluster 1 (back in Figure \ref{fig:pcpGalbraith}) of the Galbraith dataset.}
+  \label{fig:litreCluster2}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{Images/litreCluster1}
+  \caption{Example litre plots of the nine DEGs with the lowest FDR values from Cluster 2 (back in Figure \ref{fig:pcpGalbraith}) of the Galbraith dataset.}
+  \label{fig:litreCluster1}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{Images/litreClusterRutter}
+  \caption{Example litre plots of the nine DEGs with the lowest FDR values from the 43 DEGs of our dataset.}
+  \label{fig:litreClusterRutter}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{Images/GalbraithClust1SM}
+  \caption{The DEGs from the first cluster of the Galbraith dataset (back in Figure \ref{fig:pcpGalbraith}) superimposed onto all genes in the form of a scatterplot matrix. The data has been standardized.}
+  \label{fig:GalbraithClust1SM}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{Images/GalbraithClust2SM}
+  \caption{The DEGs from the second cluster of the Galbraith dataset (back in Figure \ref{fig:pcpGalbraith}) superimposed onto all genes in the form of a scatterplot matrix. The data has been standardized.}
+  \label{fig:GalbraithClust2SM}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{Images/GalbraithClust3SM}
+  \caption{The DEGs from the third cluster of the Galbraith dataset (back in Figure \ref{fig:pcpGalbraith}) superimposed onto all genes in the form of a scatterplot matrix. The data has been standardized.}
+  \label{fig:GalbraithClust3SM}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{Images/GalbraithClust4SM}
+  \caption{The DEGs from the fourth cluster of the Galbraith dataset (back in Figure \ref{fig:pcpGalbraith}) superimposed onto all genes in the form of a scatterplot matrix. The data has been standardized.}
+  \label{fig:GalbraithClust4SM}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{Images/RutterSM1}
+  \caption{The 43 virus-related DEGs from our dataset superimposed onto all genes in the form of a scatterplot matrix. Only replicates 1, 2, and 3 are shown from both treatment groups. The data has been standardized.}
+  \label{fig:RutterSM1}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{Images/RutterSM2}
+  \caption{The 43 virus-related DEGs from our dataset superimposed onto all genes in the form of a scatterplot matrix. Only replicates 4, 5, and 6 are shown from both treatment groups. The data has been standardized.}
+  \label{fig:RutterSM2}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{Images/RutterSM3}
+  \caption{The 43 virus-related DEGs from our dataset superimposed onto all genes in the form of a scatterplot matrix. Only replicates 7, 8, and 9 are shown from both treatment groups. The data has been standardized.}
+  \label{fig:RutterSM3}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{Images/RutterSM4}
+  \caption{The 43 virus-related DEGs from our dataset superimposed onto all genes in the form of a scatterplot matrix. Only replicates 10, 11, and 12 are shown from both treatment groups. The data has been standardized.}
+  \label{fig:RutterSM4}
+\end{figure}
+
+
+
+
+
+\begin{table}[H]
+  \includegraphics[width=\textwidth]{Images/NCNRNCPathways}
+  \caption{Pathways analysis results for the  601 DEGs that were upregulated in the NC treatment in the NC versus NR treatment pair analysis.}
+  \label{tbl:NCNRNCPathways}
+\end{table}
+
+\begin{table}[H]
+  \includegraphics[width=\textwidth]{Images/NCNRNRPathways}
+  \caption{Pathways analysis results for the 340 DEGs that were upregulated in the NR treatment in the NC versus NR treatment pair analysis.}
+  \label{tbl:NCNRNRPathways}
+\end{table}
+
+\begin{table}[H]
+  \includegraphics[width=\textwidth]{Images/VCVRVCPathways}
+  \caption{Pathways analysis results for the 247 DEGs that were upregulated in the VC treatment in the VC versus VR treatment pair analysis.}
+  \label{tbl:VCVRVCPathways}
+\end{table}
+
+\begin{table}[H]
+  \includegraphics[width=\textwidth]{Images/VCVRVRPathways}
+  \caption{Pathways analysis results for the 129 DEGs that were upregulated in the VR treatment in the VC versus VR treatment pair analysis.}
+  \label{tbl:VCVRVRPathways}
+\end{table}
+
+\begin{figure}[H]
+  \includegraphics[width=0.8\textwidth]{Images/revigo}
+  \caption{Gene ontology results for the 122 DEGs related to our ``resilience" hypothesis (A) and for the 125 DEGs related to our ``resistance" hypothesis (B).}
+  \label{fig:revigo}
+\end{figure}
+
+\begin{table}[H]
+\begin{tabular}{ | m{5cm} | m{0.9cm}| m{5.5cm} | m{2cm} | } 
+\hline
+Contrast & DEGs & Interpretation & Results \\ 
+\hline
+V vs N & 43 & Genes that change expression due to virus effect regardless of diet status in bees & Table \ref{tbl:virusGenes} \\ 
+\hline
+NC vs NR & 941 & Genes that change expression due to diet effect in uninfected bees & Tables \ref{tbl:NCNRNCPathways} and \ref{tbl:NCNRNRPathways} \\ 
+\hline
+VC vs VR & 376 & Genes that change expression due to diet effect in infected bees & Tables \ref{tbl:VCVRVCPathways} and \ref{tbl:VCVRVRPathways} \\ 
+\hline
+VC upregulated in VC vs VR overlaped with NC upregulated in NC vs NR & 122 & ``Resilience'' genes that are turned on by good diet regardless of virus infection status in bees & Figure \ref{fig:revigo}A \\
+\hline
+VC upregulated in VC vs VR but NC is not upregulated in NC vs NR & 125 & ``Resistance'' genes that are turned on by good diet only in infected bees & Figure \ref{fig:revigo}B \\
+\hline
+\end{tabular}
+\caption{Contrasts in our study for assessing GO and pathways analysis.}
+  \label{tbl:contrasts}
+\end{table}
+
 
 \bibliography{chapter4}
 
