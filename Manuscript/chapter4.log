@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 APR 2018 08:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  21 APR 2018 02:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2019,57 +2019,69 @@ Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
 [4] [5]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[6] <Images/mortality.png, id=358, 655.248pt x 376.2858pt>
+[6] <Images/mortality.png, id=350, 655.248pt x 376.2858pt>
 File: Images/mortality.png Graphic file (type png)
 
 <use Images/mortality.png>
-Package pdftex.def Info: Images/mortality.png used on input line 261.
+Package pdftex.def Info: Images/mortality.png used on input line 263.
 (pdftex.def)             Requested size: 407.99136pt x 234.29956pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-
-LaTeX Warning: Reference `tlb:virusGenes' on page 8 undefined on input line 273
-.
+Underfull \vbox (badness 1748) has occurred while \output is active []
 
 
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
 [8 <./Images/mortality.png>] [9]
-<Images/mainEffectDEGs.png, id=412, 473.6094pt x 332.442pt>
-File: Images/mainEffectDEGs.png Graphic file (type png)
-
-<use Images/mainEffectDEGs.png>
-Package pdftex.def Info: Images/mainEffectDEGs.png used on input line 331.
-(pdftex.def)             Requested size: 277.41176pt x 194.72887pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[10] <Images/CastaneaPathways.png, id=431, 722.7pt x 702.4644pt>
-File: Images/CastaneaPathways.png Graphic file (type png)
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
 
-<use Images/CastaneaPathways.png>
-Package pdftex.def Info: Images/CastaneaPathways.png used on input line 337.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
+
+ []
+
+<Images/mainEffectDEGs.png, id=422, 473.6094pt x 332.442pt>
+File: Images/mainEffectDEGs.png Graphic file (type png)
+
+<use Images/mainEffectDEGs.png>
+Package pdftex.def Info: Images/mainEffectDEGs.png used on input line 320.
+(pdftex.def)             Requested size: 277.41176pt x 194.72887pt.
+
+<Images/ChestnutPathways.png, id=423, 722.7pt x 702.4644pt>
+File: Images/ChestnutPathways.png Graphic file (type png)
+
+<use Images/ChestnutPathways.png>
+Package pdftex.def Info: Images/ChestnutPathways.png used on input line 326.
 (pdftex.def)             Requested size: 426.79135pt x 414.847pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11 <./Images/mainEffectDEGs.png>]
-File: Images/CastaneaPathways.png Graphic file (type png)
- <use Images/CastaneaPathways.png>
-Package pdftex.def Info: Images/CastaneaPathways.png used on input line 343.
+File: Images/ChestnutPathways.png Graphic file (type png)
+ <use Images/ChestnutPathways.png>
+Package pdftex.def Info: Images/ChestnutPathways.png used on input line 332.
 (pdftex.def)             Requested size: 426.79135pt x 414.847pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2078,25 +2090,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[12 <./Images/CastaneaPathways.png>]
-<Images/pairDEGs.png, id=442, 436.9926pt x 676.4472pt>
+[12 <./Images/ChestnutPathways.png>]
+<Images/pairDEGs.png, id=434, 436.9926pt x 676.4472pt>
 File: Images/pairDEGs.png Graphic file (type png)
 
 <use Images/pairDEGs.png>
-Package pdftex.def Info: Images/pairDEGs.png used on input line 349.
+Package pdftex.def Info: Images/pairDEGs.png used on input line 338.
 (pdftex.def)             Requested size: 277.41176pt x 429.43599pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
 <../VirusHoneyBee/DESeq2/ClusterStandard/Clustering_data_FDR_05/C_T_4.jpg, id=4
-49, 1003.75pt x 702.625pt>
+40, 1003.75pt x 702.625pt>
 File: ../VirusHoneyBee/DESeq2/ClusterStandard/Clustering_data_FDR_05/C_T_4.jpg 
 Graphic file (type jpg)
 
 <use ../VirusHoneyBee/DESeq2/ClusterStandard/Clustering_data_FDR_05/C_T_4.jpg>
 Package pdftex.def Info: ../VirusHoneyBee/DESeq2/ClusterStandard/Clustering_dat
-a_FDR_05/C_T_4.jpg used on input line 356.
+a_FDR_05/C_T_4.jpg used on input line 345.
 (pdftex.def)             Requested size: 426.79135pt x 298.75641pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2106,28 +2118,28 @@ Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
 [14 <./Images/pairDEGs.png>]
-<../N_V/DESeq2/ClusterStandard/Clustering_data_FDR_05/N_V_4.jpg, id=455, 1003.7
+<../N_V/DESeq2/ClusterStandard/Clustering_data_FDR_05/N_V_4.jpg, id=447, 1003.7
 5pt x 702.625pt>
 File: ../N_V/DESeq2/ClusterStandard/Clustering_data_FDR_05/N_V_4.jpg Graphic fi
 le (type jpg)
 
 <use ../N_V/DESeq2/ClusterStandard/Clustering_data_FDR_05/N_V_4.jpg>
 Package pdftex.def Info: ../N_V/DESeq2/ClusterStandard/Clustering_data_FDR_05/N
-_V_4.jpg used on input line 363.
+_V_4.jpg used on input line 352.
 (pdftex.def)             Requested size: 426.79135pt x 298.75641pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15 <../VirusHoneyBee/DESeq2/ClusterStandard/Clustering_data_FDR_05/C_T_4.jpg>
 ]
-<../C_R/DESeq2/ClusterStandard/Clustering_data_FDR_05/C_R_6.jpg, id=460, 1003.7
+<../C_R/DESeq2/ClusterStandard/Clustering_data_FDR_05/C_R_6.jpg, id=454, 1003.7
 5pt x 1053.9375pt>
 File: ../C_R/DESeq2/ClusterStandard/Clustering_data_FDR_05/C_R_6.jpg Graphic fi
 le (type jpg)
 
 <use ../C_R/DESeq2/ClusterStandard/Clustering_data_FDR_05/C_R_6.jpg>
 Package pdftex.def Info: ../C_R/DESeq2/ClusterStandard/Clustering_data_FDR_05/C
-_R_6.jpg used on input line 369.
+_R_6.jpg used on input line 358.
 (pdftex.def)             Requested size: 426.79135pt x 448.13461pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2137,27 +2149,27 @@ Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
 [16 <../N_V/DESeq2/ClusterStandard/Clustering_data_FDR_05/N_V_4.jpg>]
-<Images/GRVenn.png, id=465, 676.929pt x 378.6948pt>
+<Images/GRVenn.png, id=461, 677.4108pt x 190.311pt>
 File: Images/GRVenn.png Graphic file (type png)
  <use Images/GRVenn.png>
-Package pdftex.def Info: Images/GRVenn.png used on input line 375.
-(pdftex.def)             Requested size: 426.79135pt x 238.76389pt.
+Package pdftex.def Info: Images/GRVenn.png used on input line 364.
+(pdftex.def)             Requested size: 426.79135pt x 119.90236pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17 <../C_R/DESeq2/ClusterStandard/Clustering_data_FDR_05/C_R_6.jpg>]
-<Images/virusGenes.png, id=471, 722.7pt x 286.1892pt>
+<Images/virusGenes.png, id=467, 722.7pt x 286.1892pt>
 File: Images/virusGenes.png Graphic file (type png)
 
 <use Images/virusGenes.png>
-Package pdftex.def Info: Images/virusGenes.png used on input line 381.
+Package pdftex.def Info: Images/virusGenes.png used on input line 370.
 (pdftex.def)             Requested size: 426.79135pt x 169.01172pt.
 
-<Images/mdsPlots.png, id=472, 595.023pt x 847.0044pt>
+<Images/mdsPlots.png, id=468, 595.023pt x 847.0044pt>
 File: Images/mdsPlots.png Graphic file (type png)
 
 <use Images/mdsPlots.png>
-Package pdftex.def Info: Images/mdsPlots.png used on input line 387.
+Package pdftex.def Info: Images/mdsPlots.png used on input line 376.
 (pdftex.def)             Requested size: 426.79135pt x 607.54219pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2167,21 +2179,22 @@ Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
 [18 <./Images/GRVenn.png> <./Images/virusGenes.png>]
-<Images/litreCluster2.png, id=479, 657.1752pt x 672.5928pt>
+Overfull \vbox (25.43826pt too high) has occurred while \output is active []
+
+
+[19 <./Images/mdsPlots.png>]
+<Images/litreCluster2.png, id=481, 657.1752pt x 672.5928pt>
 File: Images/litreCluster2.png Graphic file (type png)
 
 <use Images/litreCluster2.png>
-Package pdftex.def Info: Images/litreCluster2.png used on input line 394.
+Package pdftex.def Info: Images/litreCluster2.png used on input line 382.
 (pdftex.def)             Requested size: 426.79135pt x 436.81067pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19 <./Images/mdsPlots.png>] <Images/litreCluster1.png, id=488, 667.7748pt x 6
-83.6742pt>
+<Images/litreCluster1.png, id=484, 667.7748pt x 683.6742pt>
 File: Images/litreCluster1.png Graphic file (type png)
 
 <use Images/litreCluster1.png>
-Package pdftex.def Info: Images/litreCluster1.png used on input line 400.
+Package pdftex.def Info: Images/litreCluster1.png used on input line 388.
 (pdftex.def)             Requested size: 426.79135pt x 436.96579pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2191,11 +2204,11 @@ Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
 [20 <./Images/litreCluster2.png>]
-<Images/litreClusterRutter.png, id=496, 657.657pt x 674.0382pt>
+<Images/litreClusterRutter.png, id=494, 657.657pt x 674.0382pt>
 File: Images/litreClusterRutter.png Graphic file (type png)
 
 <use Images/litreClusterRutter.png>
-Package pdftex.def Info: Images/litreClusterRutter.png used on input line 406.
+Package pdftex.def Info: Images/litreClusterRutter.png used on input line 394.
 (pdftex.def)             Requested size: 426.79135pt x 437.44083pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2205,7 +2218,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: Images/GalbraithClust1SM.png Graphic file (type png)
 
 <use Images/GalbraithClust1SM.png>
-Package pdftex.def Info: Images/GalbraithClust1SM.png used on input line 412.
+Package pdftex.def Info: Images/GalbraithClust1SM.png used on input line 400.
 (pdftex.def)             Requested size: 426.79135pt x 416.28835pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2219,7 +2232,7 @@ Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 File: Images/GalbraithClust2SM.png Graphic file (type png)
 
 <use Images/GalbraithClust2SM.png>
-Package pdftex.def Info: Images/GalbraithClust2SM.png used on input line 418.
+Package pdftex.def Info: Images/GalbraithClust2SM.png used on input line 406.
 (pdftex.def)             Requested size: 426.79135pt x 416.28835pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2229,7 +2242,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: Images/GalbraithClust3SM.png Graphic file (type png)
 
 <use Images/GalbraithClust3SM.png>
-Package pdftex.def Info: Images/GalbraithClust3SM.png used on input line 424.
+Package pdftex.def Info: Images/GalbraithClust3SM.png used on input line 412.
 (pdftex.def)             Requested size: 426.79135pt x 416.28835pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2243,7 +2256,7 @@ Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 File: Images/GalbraithClust4SM.png Graphic file (type png)
 
 <use Images/GalbraithClust4SM.png>
-Package pdftex.def Info: Images/GalbraithClust4SM.png used on input line 430.
+Package pdftex.def Info: Images/GalbraithClust4SM.png used on input line 418.
 (pdftex.def)             Requested size: 426.79135pt x 416.28835pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2253,7 +2266,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: Images/RutterSM1.png Graphic file (type png)
 
 <use Images/RutterSM1.png>
-Package pdftex.def Info: Images/RutterSM1.png used on input line 436.
+Package pdftex.def Info: Images/RutterSM1.png used on input line 424.
 (pdftex.def)             Requested size: 426.79135pt x 420.73404pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2267,7 +2280,7 @@ Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 File: Images/RutterSM2.png Graphic file (type png)
 
 <use Images/RutterSM2.png>
-Package pdftex.def Info: Images/RutterSM2.png used on input line 442.
+Package pdftex.def Info: Images/RutterSM2.png used on input line 430.
 (pdftex.def)             Requested size: 426.79135pt x 420.73404pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2277,7 +2290,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: Images/RutterSM3.png Graphic file (type png)
 
 <use Images/RutterSM3.png>
-Package pdftex.def Info: Images/RutterSM3.png used on input line 448.
+Package pdftex.def Info: Images/RutterSM3.png used on input line 436.
 (pdftex.def)             Requested size: 426.79135pt x 420.73404pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2291,7 +2304,7 @@ Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 File: Images/RutterSM4.png Graphic file (type png)
 
 <use Images/RutterSM4.png>
-Package pdftex.def Info: Images/RutterSM4.png used on input line 454.
+Package pdftex.def Info: Images/RutterSM4.png used on input line 442.
 (pdftex.def)             Requested size: 426.79135pt x 420.73404pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2301,7 +2314,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: Images/NCNRNCPathways.png Graphic file (type png)
 
 <use Images/NCNRNCPathways.png>
-Package pdftex.def Info: Images/NCNRNCPathways.png used on input line 464.
+Package pdftex.def Info: Images/NCNRNCPathways.png used on input line 452.
 (pdftex.def)             Requested size: 426.79135pt x 259.49277pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2315,123 +2328,121 @@ Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 File: Images/NCNRNRPathways.png Graphic file (type png)
 
 <use Images/NCNRNRPathways.png>
-Package pdftex.def Info: Images/NCNRNRPathways.png used on input line 470.
+Package pdftex.def Info: Images/NCNRNRPathways.png used on input line 458.
 (pdftex.def)             Requested size: 426.79135pt x 62.02786pt.
 
 <Images/VCVRVCPathways.png, id=566, 722.7pt x 95.3964pt>
 File: Images/VCVRVCPathways.png Graphic file (type png)
 
 <use Images/VCVRVCPathways.png>
-Package pdftex.def Info: Images/VCVRVCPathways.png used on input line 476.
+Package pdftex.def Info: Images/VCVRVCPathways.png used on input line 464.
 (pdftex.def)             Requested size: 426.79135pt x 56.33722pt.
 
 <Images/VCVRVRPathways.png, id=567, 722.7pt x 48.18pt>
 File: Images/VCVRVRPathways.png Graphic file (type png)
 
 <use Images/VCVRVRPathways.png>
-Package pdftex.def Info: Images/VCVRVRPathways.png used on input line 482.
+Package pdftex.def Info: Images/VCVRVRPathways.png used on input line 470.
 (pdftex.def)             Requested size: 426.79135pt x 28.45313pt.
 
-<Images/revigo.png, id=568, 383.9946pt x 706.8006pt>
-File: Images/revigo.png Graphic file (type png)
- <use Images/revigo.png>
-Package pdftex.def Info: Images/revigo.png used on input line 488.
-(pdftex.def)             Requested size: 341.43437pt x 628.50052pt.
-
-Underfull \vbox (badness 1558) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31 <./Images/NCNRNCPathways.png> <./Images/NCNRNRPathways.png> <./Images/VCVR
-VCPathways.png> <./Images/VCVRVRPathways.png>]
-Overfull \vbox (5.59657pt too high) has occurred while \output is active []
+VCPathways.png>] <Images/revigo.png, id=579, 383.9946pt x 706.8006pt>
+File: Images/revigo.png Graphic file (type png)
+
+<use Images/revigo.png>
+Package pdftex.def Info: Images/revigo.png used on input line 476.
+(pdftex.def)             Requested size: 341.43437pt x 628.50052pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[32 <./Images/revigo.png>]
-Overfull \hbox (2.37866pt too wide) in paragraph at lines 496--496
+[32 <./Images/VCVRVRPathways.png>]
+Overfull \vbox (5.59657pt too high) has occurred while \output is active []
+
+
+[33 <./Images/revigo.png>]
+Overfull \hbox (2.37866pt too wide) in paragraph at lines 484--484
 []|\T1/cmr/m/n/10.95 (-20) DEGs| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--501
+Underfull \hbox (badness 10000) in paragraph at lines 488--489
 []|\T1/cmr/m/n/10.95 (+20) Tables [][]1.6[][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--503
+Underfull \hbox (badness 10000) in paragraph at lines 490--491
 []|\T1/cmr/m/n/10.95 (+20) Tables [][]1.8[][]
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 504--504
-\T1/cmr/m/n/10.95 (+20) over-laped with NC up-reg-u-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 504--505
+Underfull \hbox (badness 10000) in paragraph at lines 492--493
 []|\T1/cmr/m/n/10.95 (+20) Figure
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--507
+Underfull \hbox (badness 10000) in paragraph at lines 494--495
 []|\T1/cmr/m/n/10.95 (+20) Figure
  []
 
 
-Overfull \hbox (4.47534pt too wide) in paragraph at lines 494--509
+Overfull \hbox (4.47534pt too wide) in paragraph at lines 482--497
 [][] 
  []
 
-(./chapter4.bbl [33] [34
+(./chapter4.bbl
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
-] [35] [36] [37])
+
+[34] [35
+
+] [36] [37] [38])
 
 Class memoir Warning: The material used in the headers is too large
 (27.2pt) for the given head height (13.6pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 516.
+(in both cases you will find help in the memoir manual). on input line 504.
 
-[38]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 516.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 516.
+[39]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 504.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 504.
  (./chapter4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 516.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 516.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 504.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 504.
 Package rerunfilecheck Info: File `chapter4.out' has not changed.
-(rerunfilecheck)             Checksum: 9F7D1395322E72F8346258FA5DC79107;1491.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: 1120DEACA602DF085E846FCEA764DFDF;1414.
  ) 
 Here is how much of TeX's memory you used:
- 38678 strings out of 492995
- 736666 string characters out of 6132704
- 989761 words of memory out of 5000000
- 41406 multiletter control sequences out of 15000+600000
- 555341 words of font info for 118 fonts, out of 8000000 for 9000
+ 38673 strings out of 492995
+ 736572 string characters out of 6132704
+ 1008726 words of memory out of 5000000
+ 41402 multiletter control sequences out of 15000+600000
+ 554616 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,11n,85p,10368b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
+exlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texliv
-e/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/
-2017/texmf-dist/fonts/type1/public/cm-super/sfsi1440.pfb></usr/local/texlive/20
-17/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive/2017
-/texmf-dist/fonts/type1/public/cm-super/sfso2488.pfb></usr/local/texlive/2017/t
-exmf-dist/fonts/type1/public/cm-super/sfss0700.pfb></usr/local/texlive/2017/tex
-mf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2017/texmf
--dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2017/texmf-d
-ist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2017/texmf-dis
-t/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2017/texmf-dist/
-fonts/type1/public/cm-super/sfti2074.pfb></usr/local/texlive/2017/texmf-dist/fo
-nts/type1/urw/courier/ucrr8a.pfb>
-Output written on chapter4.pdf (38 pages, 6140402 bytes).
+ive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/cm-super/sfsi1440.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive/20
+17/texmf-dist/fonts/type1/public/cm-super/sfso2488.pfb></usr/local/texlive/2017
+/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2017/texmf
+-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2017/texmf-dis
+t/fonts/type1/public/cm-super/sfti2074.pfb></usr/local/texlive/2017/texmf-dist/
+fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on chapter4.pdf (39 pages, 6069439 bytes).
 PDF statistics:
- 702 PDF objects out of 1000 (max. 8388607)
- 588 compressed objects within 6 object streams
+ 703 PDF objects out of 1000 (max. 8388607)
+ 586 compressed objects within 6 object streams
  150 named destinations out of 1000 (max. 500000)
- 20271 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 19751 words of extra memory for PDF output out of 20736 (max. 10000000)
 

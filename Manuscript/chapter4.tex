@@ -212,9 +212,9 @@ Details of the procedures we used to prepare virus inoculum, infect and feed cag
 
 \subsection{Design of two-factor experiment}
 
-There are several reasons why we focused only on diet quality (monofloral diets) as opposed to diet diversity (monofloral diets versus polyfloral diets). First, when assessing diet diversity, a sugar diet is often used as a control. However, such an experimental design does not reflect real-world conditions for honeybees as they rarely face a total lack of pollen (\citealt{DiPasquale}). Second, in studies that compared honeybee health using monofloral and polyfloral diets at the same time, if the polyfloral diet and one of the high-quality monofloral diets both exhibited similarly beneficial effects, then it was difficult for the authors to assess if the polyfloral diet was better than most of the monofloral diets because of its diversity or because it contained as a subset the high-quality monofloral diet (\citealt{DiPasquale}). Third, colonies used for pollination in agricultural areas (monoculture) face less diversified pollens (according to Brodschneider, 2010). Pollinating areas are currently undergoing landscape alteration and agriculture intensification, and bees are increasingly faced with less diversified diets (monoculture) (\citealt{landscape1}, \citealt{brodschneider}). As a result, there is a need to better understand how monofloral diets affect honeybee health as a step toward mitigating the negative impact of human activity on the honeybee population.
+There are several reasons why, in the current study, we focused only on diet quality (monofloral diets) as opposed to diet diversity (monofloral diets versus polyfloral diets). First, when assessing diet diversity, a sugar diet is often used as a control. However, such an experimental design does not reflect real-world conditions for honeybees as they rarely face a total lack of pollen (\citealt{DiPasquale}). Second, in studies that compared honeybee health using monofloral and polyfloral diets at the same time, if the polyfloral diet and one of the high-quality monofloral diets both exhibited similarly beneficial effects, then it was difficult for the authors to assess if the polyfloral diet was better than most of the monofloral diets because of its diversity or because it contained as a subset the high-quality monofloral diet (\citealt{DiPasquale}). Third, colonies used for pollination in agricultural areas (monoculture) face less diversified pollens (according to Brodschneider, 2010). Pollinating areas are currently undergoing landscape alteration and agriculture intensification, and bees are increasingly faced with less diversified diets (monoculture) (\citealt{landscape1}, \citealt{brodschneider}). As a result, there is a need to better understand how monofloral diets affect honeybee health as a step toward mitigating the negative impact of human activity on the honeybee population.
 
-Consequently, for our nutrition factor, we examined two monofloral pollen diets, Cistus (Rockrose) and Castanea (Chestnut). Cistus pollen is generally considered less nutritious than Castanea pollen due to its lower levels of protein, amino acids, antioxidants, calcium, and iron (\citealt{DiPasquale}, \citealt{adamInt}). For our virus factor, one level contained bees that were infected with IAPV and another level contained bees that were not infected with IAPV. This experimental design resulted in four treatment groups (Cistus pollen without IAPV exposure, Castanea pollen without IAPV exposure, Cistus pollen with IAPV exposure, and Castanea pollen with IAPV exposure) that allowed us to assess main effects and interactive effects between diet quality and IAPV infection in honeybees.
+Consequently, for our nutrition factor, we examined two monofloral pollen diets, Rockrose (Cistus) and Chestnut (Chestnut). Rockrose pollen is generally considered less nutritious than Chestnut pollen due to its lower levels of protein, amino acids, antioxidants, calcium, and iron (\citealt{DiPasquale}, \citealt{adamInt}). For our virus factor, one level contained bees that were infected with IAPV and another level contained bees that were not infected with IAPV. This experimental design resulted in four treatment groups (Rockrose pollen without IAPV exposure, Chestnut pollen without IAPV exposure, Rockrose pollen with IAPV exposure, and Chestnut pollen with IAPV exposure) that allowed us to assess main effects and interactive effects between diet quality and IAPV infection in honeybees.
 
 \subsection{RNA extraction}
 
@@ -222,28 +222,28 @@ Fifteen cages per treatment were originally sampled. Six live honeybees from eac
 
 \subsection{Gene expression}
 
-Samples were sequenced starting on January 14, 2016 at the Iowa State University DNA Facility (Platform: Illumina HiSeq Sequencing; Category: Single End 100 cycle sequencing). A standard Illumina mRNA library was prepared by the DNA facility. Reads were aligned to the BeeBase Version 3.2 genome (\citealt{hbGenome}) from the Hymenoptera Genome Database (\citealt{hymenopteraDB}) using the programs GMAP and GSNAP (\citealt{gsnap}). We tested all six pairwise combinations of treatments for DEGs (pairwise DEGs). We also tested the diet main effect (diet DEGs), virus main effect (virus DEGs), and interaction term for DEGs (interaction DEGs). We then also tested for virus main effect DEGs (virus DEGs) in public data derived from a previous study exploring the gene expression of IAPV virus infection in honeybees (\citealt{galbraith}). We tested each DEG analysis using recommended parameters with DESeq2 (\citealt{deseq2}), edgeR (\citealt{edger}), and LimmaVoom (\citealt{limma}). In all cases, we used a false discovery rate (FDR) threshold of 0.05 (\citealt{benjamini}). Fisher's exact test was used to determine significant overlaps between DEG sets (whether from the same dataset but across different analysis pipelines or from different datasets across the same analysis pipelines). The \pkg{eulerr} shiny application was used to construct Venn diagram overlap images (\citealt{euler}). In the main section of our paper and in subsequent analyses, we focus on the DEG results from DESeq2 (\citealt{deseq2}) as this pipeline was also used in the Galbraith study (\citealt{galbraith}).
+Samples were sequenced starting on January 14, 2016 at the Iowa State University DNA Facility (Platform: Illumina HiSeq Sequencing; Category: Single End 100 cycle sequencing). A standard Illumina mRNA library was prepared by the DNA facility. Reads were aligned to the BeeBase Version 3.2 genome (\citealt{hbGenome}) from the Hymenoptera Genome Database (\citealt{hymenopteraDB}) using the programs GMAP and GSNAP (\citealt{gsnap}). There were four lanes of sequencing with 24 samples per lane. Each sample was run twice. Approximately 75-90\% of reads were mapped to the honeybee genome. Each lane produced around 13 million single-end 100 basepair reads. We tested all six pairwise combinations of treatments for DEGs (pairwise DEGs). We also tested the diet main effect (diet DEGs), virus main effect (virus DEGs), and interaction term for DEGs (interaction DEGs). We then also tested for virus main effect DEGs (virus DEGs) in public data derived from a previous study exploring the gene expression of IAPV virus infection in honeybees (\citealt{galbraith}). We tested each DEG analysis using recommended parameters with DESeq2 (\citealt{deseq2}), edgeR (\citealt{edger}), and LimmaVoom (\citealt{limma}). In all cases, we used a false discovery rate (FDR) threshold of 0.05 (\citealt{benjamini}). Fisher's exact test was used to determine significant overlaps between DEG sets (whether from the same dataset but across different analysis pipelines or from different datasets across the same analysis pipelines). The \pkg{eulerr} shiny application was used to construct Venn diagram overlap images (\citealt{euler}). In the main section of our paper and in subsequent analyses, we focus on the DEG results from DESeq2 (\citealt{deseq2}) as this pipeline was also used in the Galbraith study (\citealt{galbraith}).
 
-@@@ What percent of reads mapped?
-@@@ Total number of raw reads
-@@@ How many lanes
-@@@ How many samples per lane
+
+
 
 \subsection{Comparison to previous studies on transcriptomic response to viral infection}
 
-We also compare the main effect of IAPV exposure in our dataset to that obtained in a previous study conducted by Galbraith and colleagues (\citealt{galbraith}). While our study examines honeybees from polyandrous colonies, the Galbraith study examined honeybees from single-drone colonies. As a consequence, our honeybees will have an average of about 75\% genetic variance, and the honeybees from the Galbraith study will have an average of about 25\% genetic variance (\citealt{sisters}). We should therefore expect that the Galbraith study may generate data with lower signal:to:noise ratios than our data due to the lower genetic variation between its replicates. At the same time, our honeybees will be more likely to display the health benefits gained from increased genotypic variance within colonies, including decreased parasitic load (\citealt{multParasite}), increased tolerance to environmental changes (\citealt{divHyp2}), and increasead colony performance (\citealt{geneticDiverse}, \citealt{geneticDiverse2}). Given that honeybees are naturally very polyandrous (\citealt{patriline}), our honeybees may also reflect more realistic environmental and genetic simulations. Taken together, each study provides a different point of value: Our study likely presents less artificial data while the Galbraith data likely presents less messy data. We wish to explore how the gene expression effects of IAPV innoculation compare between these two studies that used such different experimental designs. To achieve this objective, we use visualization techniques to assess the signal:to:noise ratio between these two datasets, and differential gene expression (DEG) analyses to determine any significantly overlapping genes of interest between these two datasets. It is our hope that this aspect of our study may shine light on how experimental designs that control genetic variability to different extents might affect the resulting gene expression data in honeybees.
+We also compare the main effect of IAPV exposure in our dataset to that obtained in a previous study conducted by Galbraith and colleagues (\citealt{galbraith}) who also addressed honey bee transcriptomic responses to virus infection.
+
+While our study examines honeybees from polyandrous colonies, the Galbraith study examined honeybees from single-drone colonies. As a consequence, the honeybees in our study will be on average 25\% genetically identical, whereas honeybees from the Galbraith study will be on average 75\% genetically identical (\citealt{sisters}). We should therefore expect that the Galbraith study may generate data with lower signal:to:noise ratios than our data due to the lower genetic variation between its replicates. At the same time, our honeybees will be more likely to display the health benefits gained from increased genotypic variance within colonies, including decreased parasitic load (\citealt{multParasite}), increased tolerance to environmental changes (\citealt{divHyp2}), and increasead colony performance (\citealt{geneticDiverse}, \citealt{geneticDiverse2}). Given that honeybees are naturally very polyandrous (\citealt{patriline}), our honeybees may also reflect more realistic environmental and genetic simulations. Taken together, each study provides a different point of value: Our study likely presents less artificial data while the Galbraith data likely presents less messy data. We wish to explore how the gene expression effects of IAPV innoculation compare between these two studies that used such different experimental designs. To achieve this objective, we use visualization techniques to assess the signal:to:noise ratio between these two datasets, and differential gene expression (DEG) analyses to determine any significantly overlapping genes of interest between these two datasets. It is our hope that this aspect of our study may shine light on how experimental designs that control genetic variability to different extents might affect the resulting gene expression data in honeybees.
 
 \subsection{Visualization}
 
-We used @@@ visualization tools from @@@ and visual inference techniques to assess the signal:to:noise ratio in the datasets and to assess the suitability of the DEG calls. 
+We used visualization tools from the DESeq2 package, visualization tools from our work-in-progress bigPint package, and visual inference techniques to assess the signal:to:noise ratio in the datasets and to assess the suitability of the DEG calls. 
 
 \subsection{Gene Ontology}
 
-DEGs were uploaded as a background list to DAVID Bioinformatics Resources 6.7 (\citealt{davidBio}, \citealt{davidBio2}). The overrepresented gene ontology (GO) terms of DEGs were identified using the BEEBASE\_ID identifier. To fine-tune the GO term list, only significant terms (FDR < 0.05) and those correlating to Biological Processes were considered. The refined GO term list was then imported into REVIGO (\citealt{revigo}), which uses semantic similarity measures to cluster long lists of GO terms. @@@ Pathways analysis @@@
+DEGs were uploaded as a background list to DAVID Bioinformatics Resources 6.7 (\citealt{davidBio}, \citealt{davidBio2}). The overrepresented gene ontology (GO) terms of DEGs were identified using the BEEBASE\_ID identifier. To fine-tune the GO term list, only terms correlating to Biological Processes were considered. The refined GO term list was then imported into REVIGO (\citealt{revigo}), which uses semantic similarity measures to cluster long lists of GO terms.
 
 \subsection{Detecting resilience versus resistance}
 
-To investigate whether the protective effect of good diet is due to direct, specific effects on immune function (resistance), or if it is due to indirect effects of good nutrition on energy availability and vigor (resilience), we created contrasts of interest (Table \ref{tbl:contrasts}). In particular, we assigned ``resistance" genes to be the ones that were upregulated in the Castanea group within the virus infected bees but not upregulated in the Castanea group within the non-infected bees. We also assigned "resilience" genes to be the ones that were upregulated in the Castanea group for both the virus infected bees and non-infected bees. We then determined how many genes fell into these two categories and analyzed their GO terminologies.
+To investigate whether the protective effect of good diet is due to direct, specific effects on immune function (resistance), or if it is due to indirect effects of good nutrition on energy availability and vigor (resilience), we created contrasts of interest (Table \ref{tbl:contrasts}). In particular, we assigned ``resistance candidate genes" to be the ones that were upregulated in the Chestnut group within the virus infected bees but not upregulated in the Chestnut group within the non-infected bees. We also assigned "resilience candidate genes" to be the ones that were upregulated in the Chestnut group for both the virus infected bees and non-infected bees. Our interpretation of these genes is that they represent genes that are constitutively activated in bees fed a high quality diet, regardless of whether they are experiencing infection or not. We then determined how many genes fell into these two categories and analyzed their GO terminologies.
 
 \section{Results}
 
@@ -251,73 +251,82 @@ To investigate whether the protective effect of good diet is due to direct, spec
 
 We reanalyzed our previously published dataset with a subset more relevant to our RNA-sequencing approaches in the current study that have a more focused question regarding diet quality. We briefly show it again here to inform the RNA-seq comparison because we reduced the number of treatments (from eight to four) from the original published data (\citealt{adamInt}).
 
-Mortality rates of honeybees 72 hour post-inoculation significantly differed among the treatment groups (mixed model ANOVA across all treatment groups, df=3, 55; F=10.07; p<2.18e-05). The effect of virus treatment (mixed model ANOVA, df=1, 55; F=24.343; p<7.84e-06) and diet treatment (mixed model ANOVA, df=1, 55; F=5.796; p<0.0194) were significant, but the interaction between the two factors (mixed model ANOVA, df=1, 55; F=0.062, p=0.8039) was not significant. The virus treatment was significant: For a given diet, honeybees exposed to the virus showed significantly higher mortality rate than honeybees not exposed to the virus (Tukey HSD, p<0.05). Without virus exposure, there was only a numerical reduction in mortality rate for bees fed Castanea pollen compared to Rockrose pollen (Tukey HSD, p>0.05). Similarly, with virus exposure, there was only a numerical reduction in mortality rate for bees fed Castanea pollen compared to Rockrose pollen (Tukey HSD, p>0.05). Overall, we discovered that the higher-quality Castanea diet had the ability to numerically reduce mortality in the presence of IAPV infection compared to the lower-quality Rockrose diet (Figure \ref{fig:mortality} A).
+Mortality rates of honeybees 72 hour post-inoculation significantly differed among the treatment groups (mixed model ANOVA across all treatment groups, df=3, 55; F=10.07; p<2.18e-05). The effect of virus treatment (mixed model ANOVA, df=1, 55; F=24.343; p<7.84e-06) and diet treatment (mixed model ANOVA, df=1, 55; F=5.796; p<0.0194) were significant, but the interaction between the two factors (mixed model ANOVA, df=1, 55; F=0.062, p=0.8039) was not significant. The virus treatment was significant: For a given diet, honeybees exposed to the virus showed significantly higher mortality rate than honeybees not exposed to the virus (Tukey HSD, p<0.05). In comparing mortality levels based on pairwise comparisons, we found that bees fed Rockrose pollen had significantly elevated mortality with virus infection compared to uninfected controls. However, bees fed Castanea pollen had no significant difference in mortality between virus infected and control groups. These results suggest the high quality Castanea diet can ``rescue'' virus induced mortality (Figure \ref{fig:mortality}A).
 
-IAPV titer volumes of honeybees 72 hour post-inoculation significantly differed among the treatment groups (mixed model ANOVA across all treatment groups, df=3, 34; F=6.096; p<0.00196). The effect of virus treatment (mixed model ANOVA, df=1, 34; F=15.686; p<0.000362) was significant, but the diet treatment (mixed model ANOVA, df=1, 34; F=1.898; p>0.05) and the interaction between the two factors (mixed model ANOVA, df=1, 34; F=0.702, p>0.05) were not significant. Honeybees that were infected with the virus and fed a poor-quality Rockrose diet showed significant increases in IAPV titer volumes compared to honeybees that were not infected with the virus regardless of their diet quality (Tukey HSD, p<0.05). Overall, we discovered that the higher-quality Castanea diet had the ability to numerically reduce IAPV titer volume for both infected and non-infected honeybees (Figure \ref{fig:mortality} B).
+IAPV titer volumes of honeybees 72 hour post-inoculation significantly differed among the treatment groups (mixed model ANOVA across all treatment groups, df=3, 34; F=6.096; p<0.00196). The effect of virus treatment (mixed model ANOVA, df=1, 34; F=15.686; p<0.000362) was significant, but the diet treatment (mixed model ANOVA, df=1, 34; F=1.898; p>0.05) and the interaction between the two factors (mixed model ANOVA, df=1, 34; F=0.702, p>0.05) were not significant. Honeybees that were infected with the virus and fed a poor-quality Rockrose diet showed significant increases in IAPV titer volumes compared to honeybees that were not infected with the virus regardless of their diet quality (Tukey HSD, p<0.05). Overall, we interpreted this effect to mean that Rockrose pollen could not ``rescue'' high virus titers resulting from the inoculation treatment, whereas Castanea pollen could (Figure \ref{fig:mortality}B).
 
 \begin{figure}[H]
 \centering
   \begin{framed}
   \includegraphics[width=\textwidth]{Images/mortality}
   \end{framed}
-  \caption{Mortality rates (A) and IAPV titers (B) for the four treatment groups.}
+  \caption{Mortality rates (A) and IAPV titers (B) for the four treatment groups. ``N" represent non-inoculation, ``V'' represents viral inoculation, ``C'' represents Chestnut pollen, and ``R'' represents Rockrose pollen. The mortality rate data included 59 samples with 15 replicates per treatment group, except for the ``NC'' group having 14 replicates. The IAPV titer data included 38 samples with 10 replicates per treatment group, except for the ``NR'' group having 8 replicates. ANOVA values and p-values for the statistical tests are listed in the text of the paper. The letters above the bars represent Tukey honest significant differences with a confidence level of 95\%.}
   \label{fig:mortality}
 \end{figure}
 
 \subsection{Main effect DEG results}
 
-We observed a substantially larger number of DEGs in our diet main effect (n = 1914) than in our virus main effect (n = 43) (Table \ref{tbl:mainEffectDEGs}A and B). In the diet factor, there were more Castanea DEGs (n = 1033) than Rockrose DEGs (n = 881). In the virus factor, there were more virus-exposed DEGs (n = 38) than control DEGs (n = 5). While these reported DEGs numbers are from the DESeq2 package, we saw similar trends for the edgeR and limma package results (Table \ref{tbl:mainEffectDEGs}A and B).
+We observed a substantially larger number of DEGs in our diet main effect (n = 1914) than in our virus main effect (n = 43) (Table \ref{tbl:mainEffectDEGs}A and B). In the diet factor, there were more Chestnut-upregulated DEGs (n = 1033) than Rockrose-upregulated DEGs (n = 881). In the virus factor, there were more virus-upregulated DEGs (n = 38) than control-upregulated DEGs (n = 5). While these reported DEGs numbers are from the DESeq2 package, we saw similar trends for the edgeR and limma package results (Table \ref{tbl:mainEffectDEGs}A and B).
 
-Pathway analysis of the Castanea DEGs revealed enriched (Benjamini correction < 0.05) Wnt signaling, hippo signaling, and dorso-ventral axis formation, as well as pathways related to circadian rhythm, mRNA surveillance, insulin resistance, inositol phosphate metabolism, FoxO signaling, ECM-receptor interaction, phototransduction, Notch signaling, JaK-STAT signaling, MAPK signaling, and carbon metabolism (Table \ref{tbl:CastaneaPathways}). Pathway analysis of the Rockrose DEGs revealed pathways related to terpenoid backbone biosynthesis, homologous recombination, SNARE interactions in vesicular transport, aminoacyl-tRNA biosynthesis, Fanconi anemia, and pyrimidine metabolism (Table \ref{tbl:RockrosePathways}).
+GO analysis of the Chestnut-upregulated DEGs revealed the following enriched categories (Benjamini correction < 0.05): Wnt signaling, hippo signaling, and dorso-ventral axis formation, as well as pathways related to circadian rhythm, mRNA surveillance, insulin resistance, inositol phosphate metabolism, FoxO signaling, ECM-receptor interaction, phototransduction, Notch signaling, JaK-STAT signaling, MAPK signaling, and carbon metabolism (Table \ref{tbl:ChestnutPathways}). GO analysis of the Rockrose DEGs revealed pathways related to terpenoid backbone biosynthesis, homologous recombination, SNARE interactions in vesicular transport, aminoacyl-tRNA biosynthesis, Fanconi anemia, and pyrimidine metabolism (Table \ref{tbl:RockrosePathways}).
 
-It was difficult to perform a pathway analysis with so few DEGs (n = 43) in our virus main effect study. As a result, we focused on individual genes and their known functionalities (Table \ref{tbl:virusGenes}). Of the 43 virus-related DEGs, only 10 of them successfully mapped with DAVID software. These genes had implications in the recognition of pathogen-related lipid products and the cleaving of transcripts from viruses, as well as involvement in ubiquitin and proteosome pathways, transcription pathways, apoptopic pathways, oxidoreductase processes, and several more functions (Table \ref{tlb:virusGenes}).
-
-\subsection{Interaction DEG results}
+With so few DEGs (n = 43) in our virus main effect study, we focused on individual genes and their known functionalities (Table \ref{tbl:virusGenes}). Of the 43 virus-related DEGs, only 10 had GO assignments within the DAVID database. These genes had implications in the recognition of pathogen-related lipid products and the cleaving of transcripts from viruses, as well as involvement in ubiquitin and proteosome pathways, transcription pathways, apoptopic pathways, oxidoreductase processes, and several more functions (Table \ref{tbl:virusGenes}).
 
 No interaction DEGs were observed between the diet and virus factors of the study, in any of the pipelines (DESeq2, edgeR, limma).
 
 \subsection{Pairwise comparison DEG results}
 
-The number of DEGs across the six treatment pairings between the diet and virus factor ranged from 0 to 941 (Table \ref{tbl:pairDEGs}). Some of the trends observed in the main effect comparisons persisted: The diet level appeared to have greater influence on the number of DEGs than the virus level. Across every pair comparing the Castanea and Rockrose levels, regardless of the virus level, the number of Castanea-related DEGs was higher than the number of Rockrose-related DEGs (Table \ref{tbl:pairDEGs} C, D, E, F). For the pairs in which the diet level was controlled, the virus-exposed treatment showed equal to or more DEGs than the control treatment (Table \ref{tbl:pairDEGs} A, B). There were no DEGs between the treatment pair controlling for the control level of the virus effect (Table \ref{tbl:pairDEGs} A). These trends were observed for all three pipelines used (DESeq2, edgeR, and limma). 
+The number of DEGs across the six treatment pairings between the diet and virus factor ranged from 0 to 941 (Table \ref{tbl:pairDEGs}). Some of the trends observed in the main effect comparisons persisted: The diet level appeared to have greater influence on the number of DEGs than the virus level. Across every pair comparing the Chestnut and Rockrose levels, regardless of the virus level, the number of Chestnut-upregulated DEGs was higher than the number of Rockrose-upregulated DEGs (Table \ref{tbl:pairDEGs} C, D, E, F). For the pairs in which the diet level was controlled, the virus-exposed treatment showed equal to or more DEGs than the control treatment (Table \ref{tbl:pairDEGs} A, B). There were no DEGs between the treatment pair controlling for the control level of the virus effect (Table \ref{tbl:pairDEGs} A). These trends were observed for all three pipelines used (DESeq2, edgeR, and limma). 
 
 \subsection{Comparison with Galbraith study}
 
-We wished to explore the signal:to:noise ratio between the Galbraith dataset and our dataset. Basic MDS plots are constructed during the DESeq2 analysis pipeline, and we could immediately determine that the Galraith dataset may better separate the infected and uninfected honeybees better than our dataset (Figure \ref{fig:mdsPlots}). We also noted that the first replicate of both treatment groups in the Galbraith data did not cluster as cleanly in the MDS plots. However, through this automatically-generated plot, we can only visualize information at the sample level. Wanting to learn more about the data at the gene level, we continued with additional visualization techniques.
+We wished to explore the signal:to:noise ratio between the Galbraith dataset and our dataset. Basic MDS plots were constructed with the DESeq2 analysis pipeline, and we could immediately determine that the Galbraith dataset may better separate the infected and uninfected honeybees better than our dataset (Figure \ref{fig:mdsPlots}). We also noted that the first replicate of both treatment groups in the Galbraith data did not cluster as cleanly in the MDS plots. However, through this automatically-generated plot, we can only visualize information at the sample level. Wanting to learn more about the data at the gene level, we continued with additional visualization techniques.
 
-We used parallel coordinate lines superimposed onto boxplots to visualize the DEGs that came out of the DESeq2 package. The background boxplot represents the distribution of all genes in the data, and each parallel coordinate line represents one DEG. To reduce overlapping of parallel coordinate lines, we often use hierarchical clustering techniques to separate DEGs into common patterns. See more information about this plotting method and the ideal visual structure of DEGs in our earlier chapter.
+We used parallel coordinate lines superimposed onto boxplots to visualize the DEGs associated with virus infection in the two studies. The background boxplot represents the distribution of all genes in the data, and each parallel coordinate line represents one DEG. To reduce overlapping of parallel coordinate lines, we often use hierarchical clustering techniques to separate DEGs into common patterns. See more information about this plotting method and the ideal visual structure of DEGs in our earlier chapter @@@.
 
-We see that the 1,019 DEGs from the Galbraith dataset form pretty clean-looking visual displays (Figure \ref{fig:pcpGalbraith}). We do see that the first replicate of the virus group appears somewhat inconsistent with the other virus replicates in Cluster 2, confirming that this trend in the data that we saw in the MDS plot carried through into the DEG results. In contrast, we see that the 43 virus-related DEGs from our dataset do not look as clean in their visual displays (Figure \ref{fig:pcpRutterVirus}). The replicates appear strikingly inconsistent and there is not always such a large difference between treatment groups. We see a similar finding when we also examine a larger subset of 1,914 diet-related DEGs from our study. 
+We see that the 1,019 DEGs from the Galbraith dataset form relatively clean-looking visual displays (Figure \ref{fig:pcpGalbraith}). We do see that the first replicate of the virus group appears somewhat inconsistent with the other virus replicates in Cluster 2, confirming that this trend in the data that we saw in the MDS plot carried through into the DEG results. In contrast, we see that the 43 virus-related DEGs from our dataset do not look as clean in their visual displays (Figure \ref{fig:pcpRutterVirus}). The replicates appear somewhat inconsistent in their esimated expression levels and there is not always such a large difference between treatment groups. We see a similar finding when we also examine a larger subset of 1,914 diet-related DEGs from our study. 
 
 We also used litre plots to examine the structure of individual DEGs: We see that indeed the individual DEGs from our data (Figure \ref{fig:litreClusterRutter}) show less consistent replications and less differences between the treatment groups compared to the individual DEGs from the Galbraith data (Figure \ref{fig:litreCluster1} and Figure \ref{fig:litreCluster2}). For the Galbraith data, we examined individual DEGs from the first cluster (Figure \ref{fig:litreCluster1}) and second cluster (Figure \ref{fig:litreCluster2}) because the second cluster was a bit less ideal due to its inconsistent first replicate of the treatment group.
 
-Finally, we looked at scatterplot matrices to assess the DEGs. We created standardized scatterplot matrices for each of the four clusters (Figure \ref{fig:pcpGalbraith}) of the Galbriath data (Figures \ref{fig:GalbraithClust1SM}, \ref{fig:GalbraithClust2SM}, \ref{fig:GalbraithClust3SM}, and \ref{fig:GalbraithClust4SM}). We also created standardized scatterplot matrices for our data. However, as our dataset contained 24 samples, we would need to include 276 scatterplots in our matrix, which would not be helpful. As a result, we created four scatterplot matrices of our data, each with subsets of 6 samples to be more comparable to the Galbraith data (Figures \ref{fig:RutterSM1}, \ref{fig:RutterSM2}, \ref{fig:RutterSM3}, and \ref{fig:RutterSM4}). We can again confirm through these plots that the DEGs from the Galbraith data appeared more as expected: Deviating more from the \textit{x=y} line in the treatment scatterplots while staying close to the \textit{x=y} line in replicate scatterplots.
+Finally, we looked at scatterplot matrices to assess the DEGs. We created standardized scatterplot matrices for each of the four clusters (Figure \ref{fig:pcpGalbraith}) of the Galbriath data (Figures \ref{fig:GalbraithClust1SM}, \ref{fig:GalbraithClust2SM}, \ref{fig:GalbraithClust3SM}, and \ref{fig:GalbraithClust4SM}). We also created standardized scatterplot matrices for our data. However, as our dataset contained 24 samples, we would need to include 276 scatterplots in our matrix, which would be too numerous to allow for efficient visual assessment of the data. As a result, we created four scatterplot matrices of our data, each with subsets of 6 samples to be more comparable to the Galbraith data (Figures \ref{fig:RutterSM1}, \ref{fig:RutterSM2}, \ref{fig:RutterSM3}, and \ref{fig:RutterSM4}). We can again confirm through these plots that the DEGs from the Galbraith data appeared more as expected: Deviating more from the \textit{x=y} line in the treatment scatterplots while staying close to the \textit{x=y} line in replicate scatterplots.
 
 Despite the DEGs from the Galbraith dataset displaying the expected patterns more than those from our dataset, there was significant overlap in the DEGs between the two studies (Figure \ref{fig:GRVenn}).
 
 \subsection{Resilience versus resistance}
 
-Figure \ref{fig:revigo}
+Within our ``resilience" gene ontologies, we found functions related to metabolism (such as carbohydrate metabolism, fructose metabolism, and chitin metabolism). However, we also discovered gene ontologies related to RNA polyerase II transcription and immune response (Figure \ref{fig:revigo}A). Within our ``resistance" gene ontologies, we found functions related to metabolism (such as carboyhydrate metabolism, chitin metabolism, and general metabolism).  (Figure \ref{fig:revigo}B). 
 
 \section{Discussion}
 
+Challenges to honey bee health are a growing concern, in particular the combined, interactive effects of nutritional stress and pathogens (Dolezal and Toth 2018). In this study, we used RNA-sequencing to probe mechanisms underlying honey bee responses to two effects, diet quality and infection with the major virus of concern, IAPV. In general, we found a major nutritional transcriptomic response, with nearly 2,000 transcripts changing in response to diet quality (rockrose/poor diet versus chestnut/good diet). The majority of these genes were upregulated in response to high quality diet, and these genes were enriched for functions (Table \ref{tbl:ChestnutPathways}) such as nutrient signaling (insulin resistance) metabolism, and immune response (Notch signaling and JaK-STAT pathways). These data suggest high quality nutrition may allow bees to alter their metabolism, favoring investment of energy into innate immune responses.  
+
+Somewhat surprisingly, the transcriptomic response to virus infection in our experiment was fairly limited. We found only 43 transcripts to be differentially expressed, some with known immune functions (Table \ref{tbl:virusGenes}) such as argonaute-2 and a gene with similarity to MD-2 lipid recognition protein, as well as additional genes related to transcriptional regulation, and muscle contraction.  The small number of DEGs in this study may be partly explained by the large amount of noise in the data (Figures \ref{fig:pcpRutterVirus}, \ref{fig:litreClusterRutter}, \ref{fig:RutterSM1}, \ref{fig:RutterSM2}, \ref{fig:RutterSM3}, \ref{fig:RutterSM4}).
+
+Given the noisy nature of our data, and our desire to hone in on genes with real expression differences, we compared our data to Galbraith et al. (2017), a study that also examined bees’ response to viral infection.  In contrast to our study, Galbraith et al. identified a large number of virus responsive trancripts, and generally had less noise in their data (Figures X, X, X).  To identify the most reliable virus-responsive genes from our study, we looked for overlap in the DEGs associated with virus infection on both experiments.  We found a large, statistically significant overlap, with 26/38 (68%) of virus-responsive DEGs from our study also showing response to virus infection in Galbraith et al. (2017, Figure 1.5).  This result gives us confidence that, although noisy, we were able to uncover consistent, replicable gene expression responses to virus infection.  
+
+** paragraph here to talk about the importance and utility of data visualization in RNA-seq data.  For Lindsay to write.
+
+One of the goals of this study was to use our RNA-seq data to assess whether transcriptomic responses to diet quality and virus infection provide insight into whether high quality diet can buffer bees from pathogen stress via mechanisms of “resistance” or “resilience”.  We attempted to address this through specific gene expression contrasts (Table 1.10, Figure 1.18), accompanied by GO analysis of the associated gene lists.  We an approximately equal number of resistance (n=122) and resilience (n=125) related candidate genes, suggesting both processes may be playing significant roles in dietary buffering from pathogen infection.  Resilience candidate genes had functions related to carbohydrate metabolism, chitin metabolism, immune response, and regulation of transcription.  Resistance candidate genes had functions related to several forms of metabolism (chitin, carbohydrate), regulation of transcription, and cell adhesion.  
+
+Overall, these data suggest complex transcriptomic responses to multiple stressors in honey bees.  Diet has the potential for large and profound effects on transcriptional responses in honey bees, and differences in diet may set up the potential for both resistance and resilience to virus infection.   
 
 
 
 
 
-% \begin{tabular}{|p{2.6cm}|p{5.65cm}|p{5.65cm}|}
-%  \hline
-%  & \textbf{Drumming Treatment (D)} & \textbf{No Drumming Treatment (N)} \\ 
-%  \hline
-%  \textbf{Restricted} & \textbf{DR} & \textbf{NR} \\ 
-%  \textbf{Nutrition (R)}& Predict most worker-like & Predict some worker-like \\
-%  & gene expression & gene expression \\
-%  \hline
-%  \textbf{Unrestricted} & \textbf{DU} & \textbf{NU} \\ 
-%  \textbf{Nutrition (U)} & Predict some worker-like & Predict least worker-like \\
-%  & gene expression & gene expression \\
-%  \hline
-% \end{tabular}
+
+
+1) Diet effect seemed larger by number of DEGs than virus effect \\
+
+2) No interaction terms in DEGs \\
+
+3) Elaborate more on the GOs that came out of different contrasts \\
+
+4) Possible preliminary evidence for resilience effects, whereby immune-related genes are turned on by good diet in preparation to defend against viral attacks \\
+
+5) Galbraith data was much cleaner as expected due to 75 percent genetic similarity. However, we had significant overlap in the virus-related DEGs. Possible avenue for future studies to explore as the intersection DEGs between these two studies may represent those that are reliable (well-controlled study) and relevant (study conducted in more realistic environmental settings).
+
+
 
 
 \section{Appendix}
@@ -329,14 +338,14 @@ Figure \ref{fig:revigo}
 \end{table}
 
 \begin{table}[H]
-  \includegraphics[width=\textwidth]{Images/CastaneaPathways}
-  \caption{Pathways related to diet main effect Castanea DEGs.}
-  \label{tbl:CastaneaPathways}
+  \includegraphics[width=\textwidth]{Images/ChestnutPathways}
+  \caption{Pathways related to diet main effect Chestnut-upregulated DEGs.}
+  \label{tbl:ChestnutPathways}
 \end{table}
 
 \begin{table}[H]
-  \includegraphics[width=\textwidth]{Images/CastaneaPathways}
-  \caption{Pathways related to diet main effect Rockrose DEGs.}
+  \includegraphics[width=\textwidth]{Images/ChestnutPathways}
+  \caption{Pathways related to diet main effect Rockrose-upregulated DEGs.}
   \label{tbl:RockrosePathways}
 \end{table}
 
@@ -349,26 +358,26 @@ Figure \ref{fig:revigo}
 \begin{figure}[H]
 \centering
   \includegraphics[width=\textwidth]{../VirusHoneyBee/DESeq2/ClusterStandard/Clustering_data_FDR_05/C_T_4.jpg}
-  \caption{Parallel coordinate plots of DEGs between the virus-infected and control groups of the Galbraith study.}
+  \caption{Parallel coordinate plots of the 1,019 DEGs after hiearchical clustering of size four between the virus-infected and control groups of the Galbraith study. Here ``C'' represents control, and ``T'' represents treatment of virus. Clusters 1, 3, and 4 seem to represent DEGs that were overexpressed in the virus innoculated group, and Cluster 2 seems to represent DEGs that were overexpressed in the control group. In general, the DEGs appeared as expected, but there is rather noticeable deviation of the first replicate from the virus-treated sample (``T.1'') from the other virus-treated replicates in Cluster 2. Cluster 4 also has some inconsistent replicates across the virus-treated replicates.}
   \label{fig:pcpGalbraith}
 \end{figure}
 
 \begin{figure}[H]
 \centering
   \includegraphics[width=\textwidth]{../N_V/DESeq2/ClusterStandard/Clustering_data_FDR_05/N_V_4.jpg}
-  \caption{Parallel coordinate plots of DEGs between the virus-infected and control groups of our study.}
+  \caption{Parallel coordinate plots of the 43 DEGs after hiearchical clustering of size four between the virus-infected and control groups of our study. Here ``N'' represents non-infected control group, and ``V'' represents treatment of virus. We see from this plot that the DEG designations for this dataset do not appear as clean compared to what we saw in the Galbraith dataset in Figure \ref{fig:pcpGalbraith}.}
   \label{fig:pcpRutterVirus}
 \end{figure}
 
 \begin{figure}[H]
   \includegraphics[width=\textwidth]{../C_R/DESeq2/ClusterStandard/Clustering_data_FDR_05/C_R_6.jpg}
-  \caption{Parallel coordinate plots of DEGs between the Castanea and Rockrose groups of our study.}
+  \caption{Parallel coordinate plots of the 1,914 DEGs after hiearchical clustering of size six between the Chestnut and Rockrose groups of our study. Here ``N'' represents non-infected control group, and ``V'' represents treatment of virus. We see from this plot that the DEG designations for this dataset do not appear as clean compared to what we saw in the Galbraith dataset in Figure \ref{fig:pcpGalbraith}.}
   \label{fig:pcpRutterDiet}
 \end{figure}
 
 \begin{figure}[H]
   \includegraphics[width=\textwidth]{Images/GRVenn}
-  \caption{Venn diagrams comparing the DEG overlaps of the diet and treatment groups between the Galbraith study and our study. Top row left to right: DESeq results for all DEGs, virus DEGs, and control DEGs. Bottom row left to right: EdgeR results for all DEGs, virus DEGs, and control DEGs.}
+  \caption{Venn diagrams comparing the virus-related DEG overlaps between the Galbraith study (labeled as ``G'') and our study (labeled as ``R''). From left to right: Total virus-related DEGs (subplot A), virus-upregulated DEGs (subplot B), control-upregulated DEGs (subplot C). Both the total virus-related and virus-upregulated DEGs showed significant overlap between the studies (p-value < 2.2e-16) as per Fisher's Exact Test for Count Data. There was one gene that was virus-upregulated in the Galbraith study but control-upregulated in our study.}
   \label{fig:GRVenn}
 \end{figure}
 
@@ -380,74 +389,73 @@ Figure \ref{fig:revigo}
 
 \begin{figure}[H]
   \includegraphics[width=\textwidth]{Images/mdsPlots}
-  \caption{MDS plots constructed from DESeq2 package for the Galbraith dataset (A) and our dataset (B).}
+  \caption{MDS plots constructed from DESeq2 package for the Galbraith dataset for non-infected control ``C'' and virus treated ``T'' samples (A) and our dataset for the non-infected control ``N'' and virus treated ``V'' samples (B). the x-axis represents the principal component with the most variation and the y-axis repesents the principal component with the second-most variation.}
   \label{fig:mdsPlots}
 \end{figure}
 
-
 \begin{figure}[H]
   \includegraphics[width=\textwidth]{Images/litreCluster2}
-  \caption{Example litre plots of the nine DEGs with the lowest FDR values from Cluster 1 (back in Figure \ref{fig:pcpGalbraith}) of the Galbraith dataset.}
+  \caption{Example litre plots of the nine DEGs with the lowest FDR values from Cluster 1 (originally shown in Figure \ref{fig:pcpGalbraith}) of the Galbraith dataset. ``C'' represents non-infected control samples and ``T'' represents virus-treated samples. Most of the light orange points (representing the nine combinations of samples between treatment groups for a given DEG} deviate from the \textit{x=y} line in a cluster as expected.
   \label{fig:litreCluster2}
 \end{figure}
 
 \begin{figure}[H]
   \includegraphics[width=\textwidth]{Images/litreCluster1}
-  \caption{Example litre plots of the nine DEGs with the lowest FDR values from Cluster 2 (back in Figure \ref{fig:pcpGalbraith}) of the Galbraith dataset.}
+  \caption{Example litre plots of the nine DEGs with the lowest FDR values from Cluster 2 (originally shown in Figure \ref{fig:pcpGalbraith}) of the Galbraith dataset. ``C'' represents non-infected control samples and ``T'' represents virus-treated samples. Most of the dark orange points (representing all combinations of samples between treatment groups for a given DEG} deviate from the \textit{x=y} line in a cluster as expected. However, they are not as tightly clustered together compared to what we saw in the example litre plots of Cluster 1 (shown in Figure \ref{fig:litreCluster2}). As a result, what we see in these litre plots reflects what we saw in the parallel coordinate lines of Figure \ref{fig:pcpGalbraith}: The replicate consistency in the Cluster 2 DEGs is not as clean as that in the Cluster 1 DEGs, but is still relatively clean.
   \label{fig:litreCluster1}
 \end{figure}
 
 \begin{figure}[H]
   \includegraphics[width=\textwidth]{Images/litreClusterRutter}
-  \caption{Example litre plots of the nine DEGs with the lowest FDR values from the 43 DEGs of our dataset.}
+  \caption{Example litre plots of the nine DEGs with the lowest FDR values from the 43 DEGs of our dataset. ``N'' represents non-infected control samples and ``V'' represents virus-treated samples. Most of the magenta points (representing the 144 combinations of samples between treatment groups for a given DEG) do not reflect the expected pattern as clearly compared to what we saw in the litre plots of the Galbraith data. They are not as clustered together (representing replicate inconsistency) and they sometimes overlap the \textit{x=y} line (representing lack of difference between treatment groups). This finding reflects what we saw in the messy looking parallel coordinate lines of Figure \ref{fig:pcpGalbraith}}.
   \label{fig:litreClusterRutter}
 \end{figure}
 
 \begin{figure}[H]
   \includegraphics[width=\textwidth]{Images/GalbraithClust1SM}
-  \caption{The DEGs from the first cluster of the Galbraith dataset (back in Figure \ref{fig:pcpGalbraith}) superimposed onto all genes in the form of a scatterplot matrix. The data has been standardized.}
+  \caption{The 327 DEGs from the first cluster of the Galbraith dataset (shown in Figure \ref{fig:pcpGalbraith}) superimposed as light orange dots onto all genes as black dots in the form of a scatterplot matrix. The data has been standardized. ``C'' represents non-infected control samples and ``T'' represents virus-treated samples. We confirm that the DEGs mostly follow the expected structure, with their placement deviating from the \textit{x=y} line in the treatment scatterplots, but adhering to the \textit{x=y} line in the replicate scatterplots.}
   \label{fig:GalbraithClust1SM}
 \end{figure}
 
 \begin{figure}[H]
   \includegraphics[width=\textwidth]{Images/GalbraithClust2SM}
-  \caption{The DEGs from the second cluster of the Galbraith dataset (back in Figure \ref{fig:pcpGalbraith}) superimposed onto all genes in the form of a scatterplot matrix. The data has been standardized.}
+  \caption{The 365 DEGs from the second cluster of the Galbraith dataset (shown in Figure \ref{fig:pcpGalbraith}) superimposed as dark orange dots onto all genes as black dots in the form of a scatterplot matrix. The data has been standardized. ``C'' represents non-infected control samples and ``T'' represents virus-treated samples. We confirm that the DEGs mostly follow the expected structure, with their placement deviating from the \textit{x=y} line in the treatment scatterplots, but adhering to the \textit{x=y} line in the replicate scatterplots. We also see again that the first replicate from the virus-treated sample (``T.1'') may be somewhat inconsistent in these DEGs, as its presence in the replicate scatterplots results in the DEGs unexpectedly deviating from the \textit{x=y} line and its presence in the treatment scatterplots results in the DEGs unexpectedly adhering to the \textit{x=y} line.}
   \label{fig:GalbraithClust2SM}
 \end{figure}
 
 \begin{figure}[H]
   \includegraphics[width=\textwidth]{Images/GalbraithClust3SM}
-  \caption{The DEGs from the third cluster of the Galbraith dataset (back in Figure \ref{fig:pcpGalbraith}) superimposed onto all genes in the form of a scatterplot matrix. The data has been standardized.}
+  \caption{The 224 DEGs from the third cluster of the Galbraith dataset (shown in Figure \ref{fig:pcpGalbraith}) superimposed as turquoise dots onto all genes as black dots in the form of a scatterplot matrix. The data has been standardized. ``C'' represents non-infected control samples and ``T'' represents virus-treated samples. We confirm that the DEGs mostly follow the expected structure, with their placement deviating from the \textit{x=y} line in the treatment scatterplots, but adhering to the \textit{x=y} line in the replicate scatterplots.}
   \label{fig:GalbraithClust3SM}
 \end{figure}
 
 \begin{figure}[H]
   \includegraphics[width=\textwidth]{Images/GalbraithClust4SM}
-  \caption{The DEGs from the fourth cluster of the Galbraith dataset (back in Figure \ref{fig:pcpGalbraith}) superimposed onto all genes in the form of a scatterplot matrix. The data has been standardized.}
+  \caption{The 103 DEGs from the fourth cluster of the Galbraith dataset (shown in Figure \ref{fig:pcpGalbraith}) superimposed as pink dots onto all genes as black dots in the form of a scatterplot matrix. The data has been standardized. ``C'' represents non-infected control samples and ``T'' represents virus-treated samples. We confirm that the DEGs mostly follow the expected structure, with their placement deviating from the \textit{x=y} line in the treatment scatterplots, but adhering to the \textit{x=y} line in the replicate scatterplots. We also see that the second replicate from the virus-treated sample (``T.2'') may be somewhat inconsistent in these DEGs, as its presence in the replicate scatterplots results in the DEGs unexpectedly deviating from the \textit{x=y} line and its presence in the treatment scatterplots results in the DEGs unexpectedly adhering to the \textit{x=y} line.}
   \label{fig:GalbraithClust4SM}
 \end{figure}
 
 \begin{figure}[H]
   \includegraphics[width=\textwidth]{Images/RutterSM1}
-  \caption{The 43 virus-related DEGs from our dataset superimposed onto all genes in the form of a scatterplot matrix. Only replicates 1, 2, and 3 are shown from both treatment groups. The data has been standardized.}
+  \caption{The 43 virus-related DEGs from our dataset superimposed onto all genes in the form of a scatterplot matrix. Only replicates 1, 2, and 3 are shown from both treatment groups. The data has been standardized. ``N'' represents non-infected control samples and ``V'' represents virus-treated samples. We see that, compared to the scatterplot matrices from the Galbraith data, the 43 DEGs from this subset of six samples from our data do not paint as clear of a picture, somtimes unexpectedly deviating from the \textit{x=y} line in the replicate plots and sometimes unexpectedly adhering to the \textit{x=y} line in the treatment plots.}
   \label{fig:RutterSM1}
 \end{figure}
 
 \begin{figure}[H]
   \includegraphics[width=\textwidth]{Images/RutterSM2}
-  \caption{The 43 virus-related DEGs from our dataset superimposed onto all genes in the form of a scatterplot matrix. Only replicates 4, 5, and 6 are shown from both treatment groups. The data has been standardized.}
+  \caption{The 43 virus-related DEGs from our dataset superimposed onto all genes in the form of a scatterplot matrix. Only replicates 4, 5, and 6 are shown from both treatment groups. The data has been standardized. ``N'' represents non-infected control samples and ``V'' represents virus-treated samples. We see that, compared to the scatterplot matrices from the Galbraith data, the 43 DEGs from this subset of six samples from our data do not paint as clear of a picture, somtimes unexpectedly deviating from the \textit{x=y} line in the replicate plots and sometimes unexpectedly adhering to the \textit{x=y} line in the treatment plots.}
   \label{fig:RutterSM2}
 \end{figure}
 
 \begin{figure}[H]
   \includegraphics[width=\textwidth]{Images/RutterSM3}
-  \caption{The 43 virus-related DEGs from our dataset superimposed onto all genes in the form of a scatterplot matrix. Only replicates 7, 8, and 9 are shown from both treatment groups. The data has been standardized.}
+  \caption{The 43 virus-related DEGs from our dataset superimposed onto all genes in the form of a scatterplot matrix. Only replicates 7, 8, and 9 are shown from both treatment groups. The data has been standardized. ``N'' represents non-infected control samples and ``V'' represents virus-treated samples. We see that, compared to the scatterplot matrices from the Galbraith data, the 43 DEGs from this subset of six samples from our data do not paint as clear of a picture, somtimes unexpectedly deviating from the \textit{x=y} line in the replicate plots and sometimes unexpectedly adhering to the \textit{x=y} line in the treatment plots.}
   \label{fig:RutterSM3}
 \end{figure}
 
 \begin{figure}[H]
   \includegraphics[width=\textwidth]{Images/RutterSM4}
-  \caption{The 43 virus-related DEGs from our dataset superimposed onto all genes in the form of a scatterplot matrix. Only replicates 10, 11, and 12 are shown from both treatment groups. The data has been standardized.}
+  \caption{The 43 virus-related DEGs from our dataset superimposed onto all genes in the form of a scatterplot matrix. Only replicates 10, 11, and 12 are shown from both treatment groups. The data has been standardized. ``N'' represents non-infected control samples and ``V'' represents virus-treated samples. We see that, compared to the scatterplot matrices from the Galbraith data, the 43 DEGs from this subset of six samples from our data do not paint as clear of a picture, somtimes unexpectedly deviating from the \textit{x=y} line in the replicate plots and sometimes unexpectedly adhering to the \textit{x=y} line in the treatment plots.}
   \label{fig:RutterSM4}
 \end{figure}
 
@@ -457,31 +465,31 @@ Figure \ref{fig:revigo}
 
 \begin{table}[H]
   \includegraphics[width=\textwidth]{Images/NCNRNCPathways}
-  \caption{Pathways analysis results for the  601 DEGs that were upregulated in the NC treatment in the NC versus NR treatment pair analysis.}
+  \caption{GO analysis results for the 601 DEGs that were upregulated in the NC treatment in the NC versus NR treatment pair analysis. These DEGs represent genes that are upregulated when non-infected honeybees are given high quality Chestnut pollen compared to being given low quality Rockrose pollen.}
   \label{tbl:NCNRNCPathways}
 \end{table}
 
 \begin{table}[H]
   \includegraphics[width=\textwidth]{Images/NCNRNRPathways}
-  \caption{Pathways analysis results for the 340 DEGs that were upregulated in the NR treatment in the NC versus NR treatment pair analysis.}
+  \caption{GO analysis results for the 340 DEGs that were upregulated in the NR treatment in the NC versus NR treatment pair analysis. These DEGs represent genes that are upregulated when non-infected honeybees are given low quality Rockrose pollen compared to being given high quality Chestnut pollen.}
   \label{tbl:NCNRNRPathways}
 \end{table}
 
 \begin{table}[H]
   \includegraphics[width=\textwidth]{Images/VCVRVCPathways}
-  \caption{Pathways analysis results for the 247 DEGs that were upregulated in the VC treatment in the VC versus VR treatment pair analysis.}
+  \caption{GO analysis results for the 247 DEGs that were upregulated in the VC treatment in the VC versus VR treatment pair analysis. These DEGs represent genes that are upregulated when infected honeybees are given high quality Chestnut pollen compared to being given low quality Rockrose pollen.}
   \label{tbl:VCVRVCPathways}
 \end{table}
 
 \begin{table}[H]
   \includegraphics[width=\textwidth]{Images/VCVRVRPathways}
-  \caption{Pathways analysis results for the 129 DEGs that were upregulated in the VR treatment in the VC versus VR treatment pair analysis.}
+  \caption{GO analysis results for the 129 DEGs that were upregulated in the VR treatment in the VC versus VR treatment pair analysis. These DEGs represent genes that are upregulated when infected honeybees are given low quality Rockrose pollen compared to being given high quality Chestnut pollen.}
   \label{tbl:VCVRVRPathways}
 \end{table}
 
 \begin{figure}[H]
   \includegraphics[width=0.8\textwidth]{Images/revigo}
-  \caption{Gene ontology results for the 122 DEGs related to our ``resilience" hypothesis (A) and for the 125 DEGs related to our ``resistance" hypothesis (B).}
+  \caption{GO analysis results for the 122 DEGs related to our ``resilience" hypothesis (A) and for the 125 DEGs related to our ``resistance" hypothesis (B).}
   \label{fig:revigo}
 \end{figure}
 
@@ -496,7 +504,7 @@ NC vs NR & 941 & Genes that change expression due to diet effect in uninfected b
 \hline
 VC vs VR & 376 & Genes that change expression due to diet effect in infected bees & Tables \ref{tbl:VCVRVCPathways} and \ref{tbl:VCVRVRPathways} \\ 
 \hline
-VC upregulated in VC vs VR overlaped with NC upregulated in NC vs NR & 122 & ``Resilience'' genes that are turned on by good diet regardless of virus infection status in bees & Figure \ref{fig:revigo}A \\
+VC upregulated in VC vs VR overlapped with NC upregulated in NC vs NR & 122 & ``Resilience'' genes that are turned on by good diet regardless of virus infection status in bees & Figure \ref{fig:revigo}A \\
 \hline
 VC upregulated in VC vs VR but NC is not upregulated in NC vs NR & 125 & ``Resistance'' genes that are turned on by good diet only in infected bees & Figure \ref{fig:revigo}B \\
 \hline

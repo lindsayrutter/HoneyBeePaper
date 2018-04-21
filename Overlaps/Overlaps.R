@@ -86,6 +86,25 @@ namesG = unname(sapply(dataG$id, function(x) strsplit(strsplit(x, "[|]")[[1]][3]
 N = intersect(namesG, namesR)
 N = length(N)
 
+
+###### Test overlap
+
+# p-value < 2.2e-16, odds ratio 20.10211
+int = length(intersect(GD_TOTAL, RD_VIRUS_TOTAL))
+GRTotal <- matrix(c(N, length(GD_TOTAL)-int, length(RD_VIRUS_TOTAL)-int, int), nrow = 2)
+fisher.test(GRTotal, alternative = "greater")
+
+# p-value < 2.2e-16, odds ratio 33.3018
+int = length(intersect(GDV, RDV))
+GRVirus <- matrix(c(N, length(GDV)-int, length(RDV)-int, int), nrow = 2)
+fisher.test(GRVirus, alternative = "greater")
+
+# p-value < 1, odds ratio 0
+int = length(intersect(GDC, RDN))
+GRControl <- matrix(c(N, length(GDC)-int, length(RDN)-int, int), nrow = 2)
+fisher.test(GRControl, alternative = "greater")
+
+
 ############# Venn diagrams for Galbraith (Total) ############# 
 
 int_GD_GE_TOTAL = intersect(GD_TOTAL, GE_TOTAL)
