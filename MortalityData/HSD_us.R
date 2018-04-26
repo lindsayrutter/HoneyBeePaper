@@ -11,7 +11,7 @@ d = d[which(d$Treatment %in% c("None Chestnut", "None Rockrose", "Virus Chestnut
 d$Treatment
 
 d$Treatment = as.factor(d$Treatment)
-colnames(d)[2] = "Day3Mortality"
+colnames(d)[3] = "Day3Mortality"
 levels(d$Treatment) <- c('NC', 'NR', 'VC', 'VR')
 
 d$Virus = sapply(d$Treatment, function(x) substr(x, 1, 1))
@@ -23,7 +23,8 @@ a <- aov(Day3Mortality~Treatment, data=d)
 
 aov.out = aov(Day3Mortality ~ Virus * Diet, data=d)
 
-tHSD <- TukeyHSD(a, ordered = FALSE, conf.level = 0.95)
+tHSD <- TukeyHSD(a, ordered = TRUE, conf.level = 0.95)
+#tHSD <- TukeyHSD(aov.out, ordered = FALSE, conf.level = 0.95)
 
 generate_label_df1 <- function(HSD, flev){
   # Extract labels and factor levels from Tukey post-hoc 
@@ -47,6 +48,8 @@ generate_label_df1 <- function(HSD, flev){
 }
 
 plotMortality = ggplot(d, aes(x=Treatment, y=Day3Mortality)) + geom_boxplot(fill="palegreen2") + geom_text(data = generate_label_df1(tHSD, 'Treatment'), aes(x = plot.labels, y = V1, label = labels)) + ylab("Day 3 Mortality Rate")
+
+#plotMortality = ggplot(d, aes(x=Treatment, y=Day3Mortality)) + geom_boxplot(fill="palegreen2") + geom_text(data = generate_label_df1(tHSD, 'Virus:Diet'), aes(x = plot.labels, y = V1, label = labels)) + ylab("Day 3 Mortality Rate")
 
 d <- read_csv("logIAPV.csv")
 d = as.data.frame(d)
