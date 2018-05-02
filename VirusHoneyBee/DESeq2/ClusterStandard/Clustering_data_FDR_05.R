@@ -37,7 +37,8 @@ getPCP <- function(nC){
   }
   
   plot_clusters = lapply(1:nC, function(i){
-    x = as.data.frame(sigDatas[which(k==i),])
+    j = rev(order(table(k)))[i]
+    x = as.data.frame(sigDatas[which(k==j),])
     nGenes = nrow(x)
     x$cluster = "color"
     x$cluster2 = factor(x$cluster)
@@ -61,7 +62,7 @@ getPCP <- function(nC){
     boxDat$Sample <- as.character(boxDat$Sample)
     pcpDat$Sample <- as.character(pcpDat$Sample)
     
-    p = ggplot(boxDat, aes_string(x = 'Sample', y = 'Count')) + geom_boxplot() + geom_line(data=pcpDat, aes_string(x = 'Sample', y = 'Count', group = 'ID'), colour = colList[i+1], alpha=0.15) + xlab(paste("Cluster ", i, " (n=", format(nGenes, big.mark=",", scientific=FALSE), ")",sep="")) + ylab("Count")
+    p = ggplot(boxDat, aes_string(x = 'Sample', y = 'Count')) + geom_boxplot() + geom_line(data=pcpDat, aes_string(x = 'Sample', y = 'Count', group = 'ID'), colour = colList[i+1], alpha=0.15) + xlab(paste("Cluster ", i, " (n=", format(nGenes, big.mark=",", scientific=FALSE), ")",sep="")) + ylab("Count") + theme(text = element_text(size=20), axis.text.x = element_text(angle=90, hjust=1))
     
     fileName = paste(getwd(), "/", outDir, "/", plotName, "_", nC, "_", i, ".jpg", sep="")
     jpeg(fileName)

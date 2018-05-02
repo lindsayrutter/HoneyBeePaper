@@ -35,7 +35,8 @@ getPCP <- function(nC){
   }
   
   plot_clusters = lapply(1:nC, function(i){
-    x = as.data.frame(sigDatas[which(k==i),])
+    j = rev(order(table(k)))[i]
+    x = as.data.frame(sigDatas[which(k==j),])
     nGenes = nrow(x)
     x$cluster = "color"
     x$cluster2 = factor(x$cluster)
@@ -60,7 +61,10 @@ getPCP <- function(nC){
     boxDat$Sample <- as.character(boxDat$Sample)
     pcpDat$Sample <- as.character(pcpDat$Sample)
     
-    p = ggplot(boxDat, aes_string(x = 'Sample', y = 'Count')) + geom_boxplot() + geom_line(data=pcpDat, aes_string(x = 'Sample', y = 'Count', group = 'ID'), colour = colList[i+1]) + xlab(paste("Cluster ", i, " (n=", format(nGenes, big.mark=",", scientific=FALSE), ")",sep="")) + ylab("Count")
+    boxDat$Sample <- as.factor(boxDat$Sample)
+    levels(boxDat$Sample) <- levels(boxDat$Sample)[c(1,5:12,2:4, 13,17:24,14:16)]
+    
+    p = ggplot(boxDat, aes_string(x = 'Sample', y = 'Count')) + geom_boxplot() + geom_line(data=pcpDat, aes_string(x = 'Sample', y = 'Count', group = 'ID'), colour = colList[i+1], size=1) + xlab(paste("Cluster ", i, " (n=", format(nGenes, big.mark=",", scientific=FALSE), ")",sep="")) + ylab("Count") + theme(text = element_text(size=20), axis.text.x = element_text(angle=90, hjust=1))
     
     fileName = paste(getwd(), "/", outDir, "/", plotName, "_", nC, "_", i, ".jpg", sep="")
     jpeg(fileName)
@@ -80,7 +84,7 @@ getPCP <- function(nC){
 
    jpeg(file = paste(getwd(), "/", outDir, "/", plotName, "_", nC, ".jpg", sep=""), width=1000, height=700)
   p = do.call("grid.arrange", c(plot_clusters, ncol=ceiling(nC/2)))
-   invisible(dev.off())
+  invisible(dev.off())
 }
   
 i=1

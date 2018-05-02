@@ -20,8 +20,9 @@ d$Diet = sapply(d$Treatment, function(x) substr(x, 2, 2))
 d$Virus = as.factor(d$Virus)
 d$Diet = as.factor(d$Diet)
 
+mortcomp = lme(Day3Mortality ~ Diet*Virus, data=d, random = ~1|Experiment) 
 mortcomp2 = lme(Day3Mortality ~ Treatment, data=d, random = ~1|Experiment) 
-anova(mortcomp2)
+anova(mortcomp)
 summary(glht(mortcomp2, linfct=mcp(Treatment="Tukey")))
 
 labelDF = data.frame(plot.labels=c("NR","VC","VR","NC"), labels = c("ab","bc","c","a"), V1 = c(0.22, 0.479, 0.793, 0.164))
