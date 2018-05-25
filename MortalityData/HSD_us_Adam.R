@@ -3,6 +3,7 @@ library(ggplot2)
 library(multcompView)
 library(readr)
 library(multcomp)
+library(nlme)
 
 d <- read_csv("day3Mortality.csv")
 d = as.data.frame(d)
@@ -25,9 +26,21 @@ mortcomp2 = lme(Day3Mortality ~ Treatment, data=d, random = ~1|Experiment)
 anova(mortcomp)
 summary(glht(mortcomp2, linfct=mcp(Treatment="Tukey")))
 
+# Mortality (All)
 labelDF = data.frame(plot.labels=c("NR","VC","VR","NC"), labels = c("ab","bc","c","a"), V1 = c(0.22, 0.479, 0.793, 0.164))
+plotMortality = ggplot(d, aes(x=Treatment, y=Day3Mortality)) + geom_boxplot(fill="palegreen2") + geom_text(data = labelDF, aes(x = plot.labels, y = V1, label = labels)) + ylab("Day 3 Mortality Rate") + theme_gray() + ylim(0,0.8)
 
-plotMortality = ggplot(d, aes(x=Treatment, y=Day3Mortality)) + geom_boxplot(fill="palegreen2") + geom_text(data = labelDF, aes(x = plot.labels, y = V1, label = labels)) + ylab("Day 3 Mortality Rate")
+# Mortality (N vs V)
+mortcomp2 = lme(Day3Mortality ~ Virus, data=d, random = ~1|Experiment) 
+summary(glht(mortcomp2, linfct=mcp(Virus="Tukey")))
+labelDF = data.frame(plot.labels=c("N","V"), labels = c("a","b"), V1 = c(0.22, 0.52))
+plotMortality2 = ggplot(d, aes(x=Virus, y=Day3Mortality)) + geom_boxplot(fill="palegreen2") + geom_text(data = labelDF, aes(x = plot.labels, y = V1, label = labels)) + theme_gray() + ylim(0,0.8) +theme(axis.title.y=element_blank())
+
+# Mortality (R vs C)
+mortcomp2 = lme(Day3Mortality ~ Diet, data=d, random = ~1|Experiment) 
+summary(glht(mortcomp2, linfct=mcp(Diet="Tukey")))
+labelDF = data.frame(plot.labels=c("C","R"), labels = c("a","a"), V1 = c(0.48, 0.54))
+plotMortality3 = ggplot(d, aes(x=Diet, y=Day3Mortality)) + geom_boxplot(fill="palegreen2") + geom_text(data = labelDF, aes(x = plot.labels, y = V1, label = labels)) + theme_gray() + ylim(0,0.8)+theme(axis.title.y=element_blank())
 
 ###### Plot IAPV Values ########
 
@@ -52,7 +65,22 @@ mortcomp2 = lme(logIAPV ~ Treatment, data=d, random = ~1|Experiment)
 anova(mortcomp2)
 summary(glht(mortcomp2, linfct=mcp(Treatment="Tukey")))
 
-
+# IAPV (All)
 labelDF = data.frame(plot.labels=c("NR","VC","VR","NC"), labels = c("a","ab","b","a"), V1 = c(4.2, 5.3, 8.52, 3.8))
+plotIAPV = ggplot(d, aes(x=Treatment, y=logIAPV)) + geom_boxplot(fill="paleturquoise2") + geom_text(data = labelDF, aes(x = plot.labels, y = V1, label = labels)) + ylab("Log IAPV Titer") +theme_gray() +ylim(2,9)
 
-plotMortality = ggplot(d, aes(x=Treatment, y=logIAPV)) + geom_boxplot(fill="paleturquoise2") + geom_text(data = labelDF, aes(x = plot.labels, y = V1, label = labels)) + ylab("Log IAPV Titer")
+# IAPV (N vs V)
+mortcomp2 = lme(logIAPV ~ Virus, data=d, random = ~1|Experiment) 
+summary(glht(mortcomp2, linfct=mcp(Virus="Tukey")))
+labelDF = data.frame(plot.labels=c("N","V"), labels = c("a","b"), V1 = c(4.3, 8.5))
+plotIAPV2 = ggplot(d, aes(x=Virus, y=logIAPV)) + geom_boxplot(fill="paleturquoise2") + geom_text(data = labelDF, aes(x = plot.labels, y = V1, label = labels)) +theme_gray() + theme(axis.title.y=element_blank()) +ylim(2,9)
+
+# IAPV (R vs C)
+mortcomp2 = lme(logIAPV ~ Diet, data=d, random = ~1|Experiment) 
+summary(glht(mortcomp2, linfct=mcp(Diet="Tukey")))
+labelDF = data.frame(plot.labels=c("C","R"), labels = c("a","a"), V1 = c(4.3, 8.5))
+plotIAPV3 = ggplot(d, aes(x=Diet, y=logIAPV)) + geom_boxplot(fill="paleturquoise2") + geom_text(data = labelDF, aes(x = plot.labels, y = V1, label = labels)) +theme_gray() + theme(axis.title.y=element_blank()) +ylim(2,9)
+
+require(gridExtra)
+# View the first case
+plotMortalityFinal <- plot_grid(plotMortality, plotMortality2, plotMortality3, labels=c("A", "B", "C"), ncol = 3, nrow = 1, label_size=12) + theme(plot.background = element_rect(size=0.1,linetype="solid",color="black"))
