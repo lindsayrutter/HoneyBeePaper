@@ -43,6 +43,7 @@ jpeg(fileName)
 draw.pairwise.venn(area1=length(NC_NR_Total), area2=length(VC_VR_Total), cross.area=length(intersect(NC_NR_Total, VC_VR_Total)), c("NC_NR_Total", "VC_VR_Total"))
 invisible(dev.off())
 
+# Contains the 122 and 125 DEG groups
 fileName = paste(getwd(), "/Venn_NC_VC.jpg", sep="")
 jpeg(fileName)
 draw.pairwise.venn(area1=length(NC_NR_NC), area2=length(VC_VR_VC), cross.area=length(intersect(NC_NR_NC, VC_VR_VC)), c("NC", "VC"))
