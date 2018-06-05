@@ -42,7 +42,7 @@ getPCP <- function(nC){
     x$cluster2 = factor(x$cluster)
     xNames = rownames(x)
     
-    saveRDS(xNames, file=paste0("Sig_", nC, "_", i, ".Rds"))
+    saveRDS(xNames, file=paste0(outDir, "/Sig_", nC, "_", i, ".Rds"))
     xFDR = metrics[which(metrics$ID %in% xNames),]$padj
     scatMatMetrics = list()
     scatMatMetrics[[currPair]] = metrics[which(metrics$ID %in% xNames),]
@@ -62,7 +62,7 @@ getPCP <- function(nC){
     pcpDat$Sample <- as.character(pcpDat$Sample)
     
     boxDat$Sample <- as.factor(boxDat$Sample)
-    levels(boxDat$Sample) <- levels(boxDat$Sample)[c(1,5:12,2:4, 13,17:24,14:16)]
+    #levels(boxDat$Sample) <- levels(boxDat$Sample)[c(1,5:12,2:4, 13,17:24,14:16)]
     
     p = ggplot(boxDat, aes_string(x = 'Sample', y = 'Count')) + geom_boxplot() + geom_line(data=pcpDat, aes_string(x = 'Sample', y = 'Count', group = 'ID'), colour = colList[i+1], size=1) + xlab(paste("Cluster ", i, " (n=", format(nGenes, big.mark=",", scientific=FALSE), ")",sep="")) + ylab("Count") + theme(text = element_text(size=20), axis.text.x = element_text(angle=90, hjust=1))
     
@@ -88,7 +88,7 @@ getPCP <- function(nC){
 }
   
 i=1
-metricsAll <- readRDS("../dataMetrics.Rds")
+metricsAll <- readRDS("../N_V/DESeq2/dataMetrics.Rds")
 pairs <- names(metricsAll)
 currPair <- pairs[i]
 
@@ -96,8 +96,8 @@ pair1 <- strsplit(currPair, "_")[[1]][1]
 pair2 <- strsplit(currPair, "_")[[1]][2]
 
 metrics <- metricsAll[[currPair]]
-data <- as.data.frame(readRDS("../../data/data.Rds"))
-data <- data[,which(sapply(colnames(data), function(x) unlist(strsplit(x,"[.]"))[1]) %in% c(pair1, pair2))]
+data <- as.data.frame(readRDS("../NC_NR_VC_VR/data/data.Rds"))
+# data <- data[,which(sapply(colnames(data), function(x) unlist(strsplit(x,"[.]"))[1]) %in% c(pair1, pair2))]
 data <- cbind(ID = rownames(data), data)
 data$ID <- as.character(data$ID)
 nms <- colnames(data[-1])
@@ -135,7 +135,9 @@ datas[nID,1:nColumns] <- 0
 boxDat <- melt(datas, id.vars="ID")
 colnames(boxDat) <- c("ID", "Sample", "Count")
 
-sigDatas = datas[which(metricsAll[["N_V"]]$padj<0.05),]
+resistance <- readRDS("resistance.Rds")
+
+sigDatas = datas[which(data$ID %in% resistance),]
 
 #### Plot SM ######################## 
 
@@ -147,11 +149,11 @@ scatMatMetrics[[currPair]]$FDR = 10e-10
 scatMatMetrics[[currPair]]$ID = as.factor(as.character(scatMatMetrics[[currPair]]$ID))
 plotDatas = datas[, c(ncol(datas), 1:ncol(datas)-1)]
 
-plotDatas2 = plotDatas[,c(1,11:13,23:25)]
+#plotDatas2 = plotDatas[,c(1,11:13,23:25)]
 
-logData2 = logData[,c(1,11:13,23:25)]
+#logData2 = logData[,c(1,11:13,23:25)]
 
-ret <- plotDEG(data = logData2, dataMetrics = scatMatMetrics, option="scatterPoints", threshVar = "padj", threshVal = 0.05, degPointColor = "lawngreen")
+#ret <- plotDEG(data = logData2, dataMetrics = scatMatMetrics, option="scatterPoints", threshVar = "padj", threshVal = 0.05, degPointColor = "lawngreen")
 
 #, fileName=fileName)
 #degPointColor = colList[i+1],
@@ -163,10 +165,10 @@ rownames(dendo) = NULL
 d = dist(as.matrix(dendo))
 hc = hclust(d, method="ward.D")
 
-saveRDS(sigDatas$ID, file="Sig.Rds")
-
 plotName = currPair
-outDir = "Clustering_data_FDR_05"
+outDir = "Clustering_Resistance"
+
+saveRDS(sigDatas$ID, file=paste0(outDir, "/Sig.Rds"))
 
 fileName = paste(getwd(), "/", outDir, "/", currPair, "_dendogram.jpg", sep="")
 jpeg(fileName)

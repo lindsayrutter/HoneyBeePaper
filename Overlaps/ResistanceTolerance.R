@@ -1,12 +1,8 @@
 library(readr)
 
-tolerance <- readRDS("intNCVC.Rds") #122
-resistance <- readRDS("VCminInt.Rds") #125
-virus <- readRDS("../N_V/DESeq2/RD_VIRUS_TOTAL.Rds") #43
-virus_4_1 <- readRDS("../N_V/DESeq2/ClusterStandard/Sig_4_1.Rds") #28
-
-
-
+# tolerance <- readRDS("intNCVC.Rds") #122
+# resistance <- readRDS("VCminInt.Rds") #125
+# virus <- readRDS("../N_V/DESeq2/RD_VIRUS_TOTAL.Rds") #43
 
 #data <- as.data.frame(readRDS("../N_V/data/data.Rds"))
 data <- as.data.frame(readRDS("../NC_NR_VC_VR/data/data.Rds"))
@@ -21,15 +17,20 @@ data <- as.data.frame(readRDS("../NC_NR_VC_VR/data/data.Rds"))
 # dds = DESeqDataSetFromMatrix(countData = data, colData = coldata, design = ~ treatment)
 # dds <- DESeq(dds)
 
-
-
-data_virus_4_1 <- data[which(rownames(data) %in% virus_4_1),]
+rsq <- function (x, y) cor(x, y) ^ 2
 
 Variables <- read_csv("~/HoneyBeePaper/Variables.csv")
-View(Variables)
-varIAPV <- Variables[,c(2,7)]
+varIAPV <- as.data.frame(Variables[,7])[,1]
 
-R2_row1 = as.matrix(cbind(as.numeric(data_virus_4_1[1,]), as.numeric(unlist(varIAPV[,2]))))
-corr(R2_row1) # from boot package
-
+RSQ_virus_4 = list()
+for (i in 1:4){
+  temp <- readRDS(paste0("../N_V/DESeq2/ClusterStandard/Sig_4_", i, ".Rds"))
+  temp2 <- data[which(rownames(data) %in% temp),]
+  
+  temp3 = c()
+  for (j in 1:nrow(temp2)){
+    temp3[j] <- rsq(as.numeric(temp2[j,]), varIAPV)
+  }
+  RSQ_virus_4[[i]] <- temp3
+}
 
