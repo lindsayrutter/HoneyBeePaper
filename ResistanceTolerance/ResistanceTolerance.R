@@ -1,13 +1,9 @@
 library(readr)
-source("functionRT.R")
+library(ggplot2)
+library(EDASeq)
+source("functionRT_IAPV.R")
 
-# tolerance <- readRDS("intNCVC.Rds") #122
-# resistance <- readRDS("VCminInt.Rds") #125
-# virus <- readRDS("../N_V/DESeq2/RD_VIRUS_TOTAL.Rds") #43
-
-#data <- as.data.frame(readRDS("../N_V/data/data.Rds"))
 data <- as.data.frame(readRDS("../NC_NR_VC_VR/data/data.Rds"))
-
 
 # Next lines to standardize
 RowSD = function(x) {
