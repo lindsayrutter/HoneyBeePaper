@@ -9,6 +9,7 @@ library(data.table)
 library(RColorBrewer)
 library(Hmisc)
 library(shinycssloaders)
+library(EDASeq)
 
 options(spinner.color.background="#F5F5F5")
 
