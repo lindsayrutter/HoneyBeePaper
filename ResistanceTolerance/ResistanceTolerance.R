@@ -3,15 +3,10 @@ library(ggplot2)
 library(EDASeq)
 library(dplyr)
 library(genefilter)
+library(nlme)
 source("functionRT_IAPV.R")
 
 data <- as.data.frame(readRDS("../NC_NR_VC_VR/data/data.Rds"))
-
-# Another approach?
-# data <- as.matrix(data)
-# coldata = data.frame(row.names = colnames(data), treatment = unlist(lapply(colnames(data), function (x) unlist(strsplit(x, "[.]"))[1])))
-# dds = DESeqDataSetFromMatrix(countData = data, colData = coldata, design = ~ treatment)
-# dds <- DESeq(dds)
 
 type = "Raw"
 functionRT(data=data, type=type)
@@ -31,7 +26,6 @@ RowSD = function(x) {
   sqrt(rowSums((x - rowMeans(x))^2)/(dim(x)[2] - 1))
 }
 colData <- colnames(data)
-# rownames(data) <- data_Rownames
 # Normalize for sequencing depth and other distributional differences between lanes
 data <- betweenLaneNormalization(as.matrix(data), which="full", round=FALSE)
 data = as.data.frame(data)
