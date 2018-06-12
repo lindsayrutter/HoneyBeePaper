@@ -48,20 +48,21 @@ backBoxForager2 <- data.frame(Antenna=Antenna, Ganglia=Ganglia, Hypopharyngeal=H
 backBoxForager <- melt(backBoxForager2)
 colnames(backBoxForager) <- c("Tissue", "Count")
 backBoxForager$Count <- log(backBoxForager$Count + 1)
+backBoxForager$Cluster <- "allData"
 
-ggplot(backBoxForager, aes(x = Tissue, y = Count)) + geom_boxplot() + theme(axis.text.x=element_text(angle=90))
+png(paste0('All_Foragers.jpg'))
+print({
+  ggplot(backBoxForager, aes(x = Tissue, y = Count)) + geom_boxplot() + theme(axis.text.x=element_text(angle=90))
+})
+dev.off()
 
 ###########################################################
 
 totalClusterBox = data.frame()
 i=1
 clusterVec = c("noninfected", "infected", "chestnut", "rockrose", "tolerance", "resistance")
-#for (cluster in c(noninfected, infected, chestnut, rockrose, tolerance, resistance)){
 for (cluster in clusterVec){
-  print("start")
-  print(str(get(cluster)))
-  geneCluster <- geneTable[which(geneTable$BeeBase %in% get(cluster)),] #get()
-  print(nrow(geneCluster))
+  geneCluster <- geneTable[which(geneTable$BeeBase %in% get(cluster)),]
   colnames(geneCluster)[2] = "Entrez"
   johnsonCluster <- as.data.frame(johnson[which(johnson$Entrez %in% geneCluster$Entrez),])
   johnsonCluster[,2:ncol(johnsonCluster)] <- as.data.frame(sapply(johnsonCluster[,2:ncol(johnsonCluster)], as.numeric))
@@ -90,8 +91,20 @@ for (cluster in clusterVec){
   totalClusterBox = rbind(totalClusterBox, clusterBox)
   
   i=i+1
-  print("here")
 }
 
 
-ggplot(clusterBox, aes(x = Tissue, y = Count)) + geom_boxplot() + theme(axis.text.x=element_text(angle=90))
+TissueVec <- c("Antenna", "Ganglia", "Hypopharyngeal", "Mandibular", "Midgut", "Malpighian", "Muscle", "Nasonov", "Sting", "Brain")
+
+i=1
+for (tissue in TissueVec){
+  tissueBox = data.frame()
+  tissueBox = rbind(tissueBox, backBoxForager[which(backBoxForager$Tissue==tissue),])
+  tissueBox = rbind(tissueBox, totalClusterBox[which(totalClusterBox$Tissue==tissue),])
+  png(paste0(TissueVec[i], '_Foragers.jpg'))
+  print({
+    ggplot(tissueBox, aes(x = Cluster, y = Count)) + geom_boxplot() + theme(axis.text.x=element_text(angle=90)) +labs(title=TissueVec[i]) 
+  })
+  dev.off()
+  i=i+1
+}
