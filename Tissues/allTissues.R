@@ -93,12 +93,19 @@ for (cluster in clusterVec){
 }
 
 TissueVec <- c("Antenna", "Ganglia", "Hypopharyngeal", "Mandibular", "Midgut", "Malpighian", "Muscle", "Nasonov", "Sting", "Brain")
+heatmapDat <- data.frame()
 
 i=1
 for (tissue in TissueVec){
   tissueBox = data.frame()
   tissueBox = rbind(tissueBox, backBox[which(backBox$Tissue==tissue),])
   tissueBox = rbind(tissueBox, totalClusterBox[which(totalClusterBox$Tissue==tissue),])
+  
+  tissueBox$Cluster = as.factor(tissueBox$Cluster)
+  kruskal.test(Count ~ Cluster, data = tissueBox)
+  output <- pairwise.wilcox.test(tissueBox$Count, tissueBox$Cluster, p.adjust.method = "BH")
+  heatmapDat <- rbind(heatmapDat, data.frame(levels(tissueBox$Cluster)[-1], TissueVec[i], output[[3]][1:6]))
+  
   png(paste0(TissueVec[i], '_All.jpg'))
   print({
     ggplot(tissueBox, aes(x = Cluster, y = Count)) + geom_boxplot() + theme(axis.text.x=element_text(angle=90)) +labs(title=TissueVec[i]) 
@@ -106,3 +113,12 @@ for (tissue in TissueVec){
   dev.off()
   i=i+1
 }
+
+colnames(heatmapDat) <- c("Group", "Tissue", "pvalue")
+h <- ggplot(heatmapDat, aes(Group, Tissue )) + geom_tile(aes(fill = pvalue), color = "white") + scale_fill_gradient(low = "black", high = "white", trans = "log") + theme(legend.title = element_text(size = 10), legend.text = element_text(size = 12), plot.title = element_text(size=16), axis.title=element_text(size=14,face="bold"), axis.text.x = element_text(angle = 90, hjust = 1)) + labs(fill = "kruskalPvalue") + ggtitle("All")
+
+png(paste0('Heatmap_All.jpg'))
+print({
+  h 
+})
+dev.off()
