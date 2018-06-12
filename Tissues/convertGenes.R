@@ -28,6 +28,7 @@ colnames(johnson)[1] = "Entrez"
 johnsonCluster <- as.data.frame(johnson[which(johnson$Entrez %in% geneCluster$Entrez),])
 johnsonCluster[,2:ncol(johnsonCluster)] <- as.data.frame(sapply(johnsonCluster[,2:ncol(johnsonCluster)], as.numeric))
 
+###########################################################
 # Boxplot background Data
 backBoxForager <- johnson[which(johnson$Entrez %in% geneTable$Entrez),2:ncol(backBoxForager)]
 backBoxForager <- backBoxForager[,grep("Forager", colnames(backBoxForager), ignore.case=TRUE)]
@@ -50,3 +51,27 @@ colnames(backBoxForager) <- c("Tissue", "Count")
 backBoxForager$Count <- log(backBoxForager$Count + 1)
 
 ggplot(backBoxForager, aes(x = Tissue, y = Count)) + geom_boxplot() + theme(axis.text.x=element_text(angle=90))
+
+###########################################################
+# Boxplot foreground cluster
+clusterBox <- johnsonCluster[which(johnson$Entrez %in% geneTable$Entrez),2:ncol(johnsonCluster)]
+clusterBox <- clusterBox[,grep("Forager", colnames(clusterBox), ignore.case=TRUE)]
+
+Antenna <- as.numeric(unlist(clusterBox[,grep("Antenna", colnames(clusterBox), ignore.case=TRUE)]))
+Ganglia <- as.numeric(unlist(clusterBox[,grep("Ganglia", colnames(clusterBox), ignore.case=TRUE)]))
+Hypopharyngeal <- as.numeric(unlist(clusterBox[,grep("Hypopharyngeal", colnames(clusterBox), ignore.case=TRUE)]))
+Mandibular <- as.numeric(unlist(clusterBox[,grep("Mandibular", colnames(clusterBox), ignore.case=TRUE)]))
+Midgut <- as.numeric(unlist(clusterBox[,grep("Midgut", colnames(clusterBox), ignore.case=TRUE)]))
+Malpighian <- as.numeric(unlist(clusterBox[,grep("Malpighian", colnames(clusterBox), ignore.case=TRUE)]))
+Muscle <- as.numeric(unlist(clusterBox[,grep("Muscle", colnames(clusterBox), ignore.case=TRUE)]))
+Nasonov <- as.numeric(unlist(clusterBox[,grep("Nasonov", colnames(clusterBox), ignore.case=TRUE)]))
+Sting <- as.numeric(unlist(clusterBox[,grep("Sting", colnames(clusterBox), ignore.case=TRUE)]))
+Brain <- as.numeric(unlist(clusterBox[,grep("Brain", colnames(clusterBox), ignore.case=TRUE)]))
+
+clusterBox2 <- data.frame(Antenna=Antenna, Ganglia=Ganglia, Hypopharyngeal=Hypopharyngeal, Mandibular=Mandibular, Midgut=Midgut, Malpighian=Malpighian, Muscle=Muscle, Nasonov=Nasonov, Sting=Sting, Brain=Brain)
+
+clusterBox <- melt(clusterBox2)
+colnames(clusterBox) <- c("Tissue", "Count")
+clusterBox$Count <- log(clusterBox$Count + 1)
+
+ggplot(clusterBox, aes(x = Tissue, y = Count)) + geom_boxplot() + theme(axis.text.x=element_text(angle=90))
