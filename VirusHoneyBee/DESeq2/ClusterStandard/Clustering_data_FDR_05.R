@@ -50,6 +50,8 @@ getPCP <- function(nC){
     scatMatMetrics[[currPair]]$ID = as.factor(as.character(scatMatMetrics[[currPair]]$ID))
     
     plotDatas = datas[, c(ncol(datas), 1:ncol(datas)-1)]
+    plotData = data[,c(9,1:6)]
+    plotData[,c(2:7)] <- log(plotData[,c(2:7)] +1)
     
     fileName = paste(getwd(), "/", outDir, "/", currPair, "_SM_", nC, "_", i, ".jpg", sep="")
     ret <- plotDEG(data = plotDatas, dataMetrics = scatMatMetrics, option="scatterPoints", threshVar = "padj", threshVal = 0.05, degPointColor = colList[i+1], fileName=fileName)

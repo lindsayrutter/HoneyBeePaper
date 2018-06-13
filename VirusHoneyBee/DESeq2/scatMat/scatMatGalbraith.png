@@ -1,0 +1,27 @@
+library(rtracklayer)
+library(Rsamtools)
+library(grid)
+library(GenomicAlignments)
+library(ggplot2)
+library(GGally)
+library(edgeR)
+library(stringr)
+library(EDASeq)
+library(dplyr)
+library(matrixStats)
+library(gridExtra)
+library(reshape2)
+library(scales)
+library(bigPint)
+library(matrixStats)
+
+metricsAll <- readRDS("../dataMetrics.Rds")
+pairs <- names(metricsAll)
+data <- as.data.frame(readRDS("../data.Rds"))
+data<- cbind(ID = rownames(data), data)
+data$ID <- as.character(data$ID)
+
+logData = data
+logData[,-1] <- log(data[,-1]+1)
+
+ret <- plotScatterStatic(logData, option="point", pointSize=0.5)
