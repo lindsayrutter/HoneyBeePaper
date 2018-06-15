@@ -9,5 +9,7 @@ library(bigPint)
 thisPath <- getwd()
 
 beeCounts <- readRDS("../../data/data.Rds")
+beeCounts <- cbind(ID=rownames(beeCounts), beeCounts)
+beeCounts$ID <- as.character(beeCounts$ID)
 
-plotPermutations(beeCounts, nPerm = 10, topThresh = 50, option="log", outDir = getwd())
+plotPermutationsD(beeCounts, nPerm = 10, topThresh = 50, option="log", outDir = getwd())
