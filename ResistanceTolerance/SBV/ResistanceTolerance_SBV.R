@@ -4,22 +4,22 @@ library(EDASeq)
 library(dplyr)
 library(genefilter)
 library(nlme)
-source("functionRT_IAPV.R")
+source("functionRT_SBV.R")
 
-data <- as.data.frame(readRDS("../NC_NR_VC_VR/data/data.Rds"))
+data <- as.data.frame(readRDS("../../NC_NR_VC_VR/data/data.Rds"))
 
-RawPVal = data.frame()
+PVal = data.frame()
 type = "Raw"
-RawPVal <- functionRT(data=data, type=type, RawPVal=RawPVal)
+PVal <- functionRT(data=data, type=type, PVal=PVal)
 
 type = "BLN"
 dataBTN <- betweenLaneNormalization(as.matrix(data), which="full", round=FALSE)
 dataBTN = as.data.frame(dataBTN)
-RawPVal <- functionRT(data=dataBTN, type=type, RawPVal=RawPVal)
+PVal <- functionRT(data=dataBTN, type=type, PVal=PVal)
 
 type = "Log"
 dataLog <- log(data+1)
-RawPVal <- functionRT(data=dataLog, type=type, RawPVal=RawPVal)
+PVal <- functionRT(data=dataLog, type=type, PVal=PVal)
 
 type = "Standardize"
 # Next lines to standardize
@@ -43,4 +43,6 @@ nID <- which(is.nan(datas$NC.1))
 datas[nID,] <- 0
 datas <- datas[,1:24]
 rownames(datas) <- rowNamesDat
-RawPVal_IAPV <- functionRT(data=datas, type=type, RawPVal=RawPVal)
+PVal_SBV <- functionRT(data=datas, type=type, PVal=PVal)
+
+saveRDS(PVal_SBV, "PVal_SBV.Rds")

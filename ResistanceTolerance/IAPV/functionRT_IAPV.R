@@ -1,4 +1,4 @@
-functionRT <- function(data, type, RawPVal){
+functionRT <- function(data, type, PVal){
   rsq <- function (x, y) cor(x, y) ^ 2
   
   Variables <- read_csv("~/HoneyBeePaper/Variables.csv")
@@ -8,7 +8,7 @@ functionRT <- function(data, type, RawPVal){
   colnames(boxVirus) <- c("Group", "R2_IAPV")
   allVirus <- c()
   for (i in 1:4){
-    temp <- readRDS(paste0("../N_V/DESeq2/ClusterStandard/Sig_4_", i, ".Rds"))
+    temp <- readRDS(paste0("../../N_V/DESeq2/ClusterStandard/Sig_4_", i, ".Rds"))
     temp2 <- data[which(rownames(data) %in% temp),]
     temp3 = c()
     allVirus <- c(allVirus, temp)
@@ -24,7 +24,7 @@ functionRT <- function(data, type, RawPVal){
   colnames(boxTolerance) <- c("Group", "R2_IAPV")
   allTolerance <- c()
   for (i in 1:4){
-    temp <- readRDS(paste0("../ResistanceTolerance/Clustering_Tolerance/Sig_4_", i, ".Rds"))
+    temp <- readRDS(paste0("../../ResistanceTolerance/Clustering_Tolerance/Sig_4_", i, ".Rds"))
     temp2 <- data[which(rownames(data) %in% temp),]
     temp3 = c()
     allTolerance <- c(allTolerance, temp)
@@ -40,7 +40,7 @@ functionRT <- function(data, type, RawPVal){
   colnames(boxResistance) <- c("Group", "R2_IAPV")
   allResistance <- c()
   for (i in 1:4){
-    temp <- readRDS(paste0("../ResistanceTolerance/Clustering_Resistance/Sig_4_", i, ".Rds"))
+    temp <- readRDS(paste0("../../ResistanceTolerance/Clustering_Resistance/Sig_4_", i, ".Rds"))
     temp2 <- data[which(rownames(data) %in% temp),]
     temp3 = c()
     allResistance <- c(allResistance, temp)
@@ -95,7 +95,7 @@ functionRT <- function(data, type, RawPVal){
     # Test populations are not identical not assuming normality or equal variance
     kruskal.test(R2_IAPV ~ Group, data = plotVirus)
     output <- pairwise.wilcox.test(plotVirus$R2_IAPV, plotVirus$Group, p.adjust.method = "BH")
-    RawPVal <- rbind(RawPVal, data.frame(Method = rep(type,4), Type = rep("virus", 4), PVal = c(signif(output[[3]][4],3), signif(output[[3]][8],3), signif(output[[3]][12],3), signif(output[[3]][16],3))))
+    PVal <- rbind(PVal, data.frame(Method = rep(type,4), Type = rep("virus", 4), Cluster = c(1,2,3,4), PVal = c(signif(output[[3]][4],3), signif(output[[3]][8],3), signif(output[[3]][12],3), signif(output[[3]][16],3))))
     label1 = paste0(as.character(length(which(plotVirus$Group=="virus1"))), "\n", as.character(signif(output[[3]][4],3)))
     label2 = paste0(as.character(length(which(plotVirus$Group=="virus2"))), "\n", as.character(signif(output[[3]][8],3)))
     label3 = paste0(as.character(length(which(plotVirus$Group=="virus3"))), "\n", as.character(signif(output[[3]][12],3)))
@@ -111,7 +111,7 @@ functionRT <- function(data, type, RawPVal){
     # Test populations are not identical not assuming normality or equal variance
     kruskal.test(R2_IAPV ~ Group, data = plotTolerance)
     output <- pairwise.wilcox.test(plotTolerance$R2_IAPV, plotTolerance$Group, p.adjust.method = "BH")
-    RawPVal <- rbind(RawPVal, data.frame(Method = rep(type,4), Type = rep("tolerance", 4), PVal = c(signif(output[[3]][4],3), signif(output[[3]][8],3), signif(output[[3]][12],3), signif(output[[3]][16],3))))
+    PVal <- rbind(PVal, data.frame(Method = rep(type,4), Type = rep("tolerance", 4), Cluster = c(1,2,3,4), PVal = c(signif(output[[3]][4],3), signif(output[[3]][8],3), signif(output[[3]][12],3), signif(output[[3]][16],3))))
     label1 = paste0(as.character(length(which(plotTolerance$Group=="tolerance1"))), "\n", as.character(signif(output[[3]][4],3)))
     label2 = paste0(as.character(length(which(plotTolerance$Group=="tolerance2"))), "\n", as.character(signif(output[[3]][8],3)))
     label3 = paste0(as.character(length(which(plotTolerance$Group=="tolerance3"))), "\n", as.character(signif(output[[3]][12],3)))
@@ -127,7 +127,7 @@ functionRT <- function(data, type, RawPVal){
     # Test populations are not identical not assuming normality or equal variance
     kruskal.test(R2_IAPV ~ Group, data = plotResistance)
     output <- pairwise.wilcox.test(plotResistance$R2_IAPV, plotResistance$Group, p.adjust.method = "BH")
-    RawPVal <- rbind(RawPVal, data.frame(Method = rep(type,4), Type = rep("resistance", 4), PVal = c(signif(output[[3]][4],3), signif(output[[3]][8],3), signif(output[[3]][12],3), signif(output[[3]][16],3))))
+    PVal <- rbind(PVal, data.frame(Method = rep(type,4), Type = rep("resistance", 4), Cluster = c(1,2,3,4), PVal = c(signif(output[[3]][4],3), signif(output[[3]][8],3), signif(output[[3]][12],3), signif(output[[3]][16],3))))
     label1 = paste0(as.character(length(which(plotResistance$Group=="resistance1"))), "\n", as.character(signif(output[[3]][4],3)))
     label2 = paste0(as.character(length(which(plotResistance$Group=="resistance2"))), "\n", as.character(signif(output[[3]][8],3)))
     label3 = paste0(as.character(length(which(plotResistance$Group=="resistance3"))), "\n", as.character(signif(output[[3]][12],3)))
@@ -136,5 +136,5 @@ functionRT <- function(data, type, RawPVal){
     ggplot(plotResistance, aes(x=Group, y=R2_IAPV)) + geom_boxplot(fill="palegreen2") + geom_text(data = labelDF, aes(x = plot.labels, y = V1, label = labels)) + ylab("R2 with IAPV titers") + theme_gray()
   })
   dev.off()  
-return(RawPVal)
+return(PVal)
   }
