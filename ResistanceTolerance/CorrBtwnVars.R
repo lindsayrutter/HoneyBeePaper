@@ -19,3 +19,20 @@ output[,8] <- as.numeric(output[,8])
 output[,9] <- as.numeric(output[,9])
 
 ggpairs(output[,c(5:7)])
+
+data=output[,c(5:7)]
+
+require(datasets)
+#data("swiss")
+require(GGally)
+require(ggplot2)
+
+my_fn <- function(data, mapping, ...){
+  p <- ggplot(data = data, mapping = mapping) + 
+    geom_point() + 
+    geom_smooth(method=lm, fill="blue", color="blue", ...)
+  p
+}
+
+g = ggpairs(data, lower = list(continuous = my_fn))
+g
