@@ -17,7 +17,7 @@ colnames(geneTable)[2] = "Entrez"
 colnames(geneTable)[6] = "BeeBase"
 geneTable <- geneTable[which(geneTable$BeeBase %in% grep("GB", geneTable$BeeBase, value=TRUE)),]
 geneTable$BeeBase <- unlist(lapply(geneTable$BeeBase, function (x) unlist(strsplit(x, "[:]"))[2]))
-# Only 8764 of the 15,314 Rutter BeeBase IDs are in the conversion table
+# Only 8764 of the 15,314 Rutter BeeBase IDs are in the conversion table (convert between EntrezID and BeeBase)
 geneTable <- geneTable[which(geneTable$BeeBase %in% rutterAll),]
 
 johnson <- read_excel("Table_S1.xlsx")
@@ -26,11 +26,14 @@ attributes(colJohnson) <- NULL
 colnames(johnson) <- colJohnson
 johnson <- johnson[3:nrow(johnson),]
 colnames(johnson)[1] = "Entrez"
+write.csv(johnson, "johnson.csv")
 
 ###########################################################
 # Boxplot background Data
+# Only 8739 Johnson Entrez is in geneTable Entrez
 backBox <- johnson[which(johnson$Entrez %in% geneTable$Entrez),2:ncol(johnson)]
 
+# All 6 values for each tissue type for each gene
 Antenna <- as.numeric(unlist(backBox[,grep("Antenna", colnames(backBox), ignore.case=TRUE)]))
 Ganglia <- as.numeric(unlist(backBox[,grep("Ganglia", colnames(backBox), ignore.case=TRUE)]))
 Hypopharyngeal <- as.numeric(unlist(backBox[,grep("Hypopharyngeal", colnames(backBox), ignore.case=TRUE)]))
@@ -47,7 +50,7 @@ backBox2 <- data.frame(Antenna=Antenna, Ganglia=Ganglia, Hypopharyngeal=Hypophar
 backBox <- melt(backBox2)
 colnames(backBox) <- c("Tissue", "Count")
 backBox$Count <- log(backBox$Count + 1)
-backBox$Cluster <- "allData"
+backBox$Group <- "allData"
 
 png(paste0('All.jpg'))
 print({
@@ -57,37 +60,37 @@ dev.off()
 
 ###########################################################
 
-totalClusterBox = data.frame()
+totalGroupBox = data.frame()
 i=1
-clusterVec = c("noninfected", "infected", "chestnut", "rockrose", "tolerance", "resistance")
-for (cluster in clusterVec){
-  geneCluster <- geneTable[which(geneTable$BeeBase %in% get(cluster)),]
-  colnames(geneCluster)[2] = "Entrez"
-  johnsonCluster <- as.data.frame(johnson[which(johnson$Entrez %in% geneCluster$Entrez),])
-  johnsonCluster[,2:ncol(johnsonCluster)] <- as.data.frame(sapply(johnsonCluster[,2:ncol(johnsonCluster)], as.numeric))
+GroupVec = c("noninfected", "infected", "chestnut", "rockrose", "tolerance", "resistance")
+for (Group in GroupVec){
+  geneGroup <- geneTable[which(geneTable$BeeBase %in% get(Group)),]
+  colnames(geneGroup)[2] = "Entrez"
+  johnsonGroup <- as.data.frame(johnson[which(johnson$Entrez %in% geneGroup$Entrez),])
+  johnsonGroup[,2:ncol(johnsonGroup)] <- as.data.frame(sapply(johnsonGroup[,2:ncol(johnsonGroup)], as.numeric))
   
-  # Boxplot foreground cluster
-  clusterBox <- johnsonCluster[,2:ncol(johnsonCluster)]
-  clusterBox <- clusterBox[,grep("Forager", colnames(clusterBox), ignore.case=TRUE)]
+  # Boxplot foreground Group
+  GroupBox <- johnsonGroup[,2:ncol(johnsonGroup)]
+  GroupBox <- GroupBox[,grep("Forager", colnames(GroupBox), ignore.case=TRUE)]
   
-  Antenna <- as.numeric(unlist(clusterBox[,grep("Antenna", colnames(clusterBox), ignore.case=TRUE)]))
-  Ganglia <- as.numeric(unlist(clusterBox[,grep("Ganglia", colnames(clusterBox), ignore.case=TRUE)]))
-  Hypopharyngeal <- as.numeric(unlist(clusterBox[,grep("Hypopharyngeal", colnames(clusterBox), ignore.case=TRUE)]))
-  Mandibular <- as.numeric(unlist(clusterBox[,grep("Mandibular", colnames(clusterBox), ignore.case=TRUE)]))
-  Midgut <- as.numeric(unlist(clusterBox[,grep("Midgut", colnames(clusterBox), ignore.case=TRUE)]))
-  Malpighian <- as.numeric(unlist(clusterBox[,grep("Malpighian", colnames(clusterBox), ignore.case=TRUE)]))
-  Muscle <- as.numeric(unlist(clusterBox[,grep("Muscle", colnames(clusterBox), ignore.case=TRUE)]))
-  Nasonov <- as.numeric(unlist(clusterBox[,grep("Nasonov", colnames(clusterBox), ignore.case=TRUE)]))
-  Sting <- as.numeric(unlist(clusterBox[,grep("Sting", colnames(clusterBox), ignore.case=TRUE)]))
-  Brain <- as.numeric(unlist(clusterBox[,grep("Brain", colnames(clusterBox), ignore.case=TRUE)]))
+  Antenna <- as.numeric(unlist(GroupBox[,grep("Antenna", colnames(GroupBox), ignore.case=TRUE)]))
+  Ganglia <- as.numeric(unlist(GroupBox[,grep("Ganglia", colnames(GroupBox), ignore.case=TRUE)]))
+  Hypopharyngeal <- as.numeric(unlist(GroupBox[,grep("Hypopharyngeal", colnames(GroupBox), ignore.case=TRUE)]))
+  Mandibular <- as.numeric(unlist(GroupBox[,grep("Mandibular", colnames(GroupBox), ignore.case=TRUE)]))
+  Midgut <- as.numeric(unlist(GroupBox[,grep("Midgut", colnames(GroupBox), ignore.case=TRUE)]))
+  Malpighian <- as.numeric(unlist(GroupBox[,grep("Malpighian", colnames(GroupBox), ignore.case=TRUE)]))
+  Muscle <- as.numeric(unlist(GroupBox[,grep("Muscle", colnames(GroupBox), ignore.case=TRUE)]))
+  Nasonov <- as.numeric(unlist(GroupBox[,grep("Nasonov", colnames(GroupBox), ignore.case=TRUE)]))
+  Sting <- as.numeric(unlist(GroupBox[,grep("Sting", colnames(GroupBox), ignore.case=TRUE)]))
+  Brain <- as.numeric(unlist(GroupBox[,grep("Brain", colnames(GroupBox), ignore.case=TRUE)]))
   
-  clusterBox2 <- data.frame(Antenna=Antenna, Ganglia=Ganglia, Hypopharyngeal=Hypopharyngeal, Mandibular=Mandibular, Midgut=Midgut, Malpighian=Malpighian, Muscle=Muscle, Nasonov=Nasonov, Sting=Sting, Brain=Brain)
+  GroupBox2 <- data.frame(Antenna=Antenna, Ganglia=Ganglia, Hypopharyngeal=Hypopharyngeal, Mandibular=Mandibular, Midgut=Midgut, Malpighian=Malpighian, Muscle=Muscle, Nasonov=Nasonov, Sting=Sting, Brain=Brain)
   
-  clusterBox <- melt(clusterBox2)
-  colnames(clusterBox) <- c("Tissue", "Count")
-  clusterBox$Cluster <- c(clusterVec[i])
-  clusterBox$Count <- log(clusterBox$Count + 1)
-  totalClusterBox = rbind(totalClusterBox, clusterBox)
+  GroupBox <- melt(GroupBox2)
+  colnames(GroupBox) <- c("Tissue", "Count")
+  GroupBox$Group <- c(GroupVec[i])
+  GroupBox$Count <- log(GroupBox$Count + 1)
+  totalGroupBox = rbind(totalGroupBox, GroupBox)
   
   i=i+1
 }
@@ -99,16 +102,16 @@ i=1
 for (tissue in TissueVec){
   tissueBox = data.frame()
   tissueBox = rbind(tissueBox, backBox[which(backBox$Tissue==tissue),])
-  tissueBox = rbind(tissueBox, totalClusterBox[which(totalClusterBox$Tissue==tissue),])
+  tissueBox = rbind(tissueBox, totalGroupBox[which(totalGroupBox$Tissue==tissue),])
   
-  tissueBox$Cluster = as.factor(tissueBox$Cluster)
-  kruskal.test(Count ~ Cluster, data = tissueBox)
-  output <- pairwise.wilcox.test(tissueBox$Count, tissueBox$Cluster, p.adjust.method = "BH")
-  heatmapDat <- rbind(heatmapDat, data.frame(levels(tissueBox$Cluster)[-1], TissueVec[i], output[[3]][1:6]))
+  tissueBox$Group = as.factor(tissueBox$Group)
+  #kruskal.test(Count ~ Group, data = tissueBox)
+  output <- pairwise.wilcox.test(tissueBox$Count, tissueBox$Group, p.adjust.method = "BH") #alternative="greater"
+  heatmapDat <- rbind(heatmapDat, data.frame(levels(tissueBox$Group)[-1], TissueVec[i], output[[3]][1:6]))
   
   png(paste0(TissueVec[i], '_All.jpg'))
   print({
-    ggplot(tissueBox, aes(x = Cluster, y = Count)) + geom_boxplot() + theme(axis.text.x=element_text(angle=90)) +labs(title=TissueVec[i]) 
+    ggplot(tissueBox, aes(x = Group, y = Count)) + geom_boxplot() + theme(axis.text.x=element_text(angle=90)) +labs(title=TissueVec[i]) 
   })
   dev.off()
   i=i+1
