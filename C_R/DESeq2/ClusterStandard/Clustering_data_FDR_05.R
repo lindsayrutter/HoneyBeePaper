@@ -35,7 +35,8 @@ getPCP <- function(nC){
   }
   
   plot_clusters = lapply(1:nC, function(i){
-    x = as.data.frame(sigDatas[which(k==i),])
+    j = rev(order(table(k)))[i]
+    x = as.data.frame(sigDatas[which(k==j),])
     nGenes = nrow(x)
     x$cluster = "color"
     x$cluster2 = factor(x$cluster)

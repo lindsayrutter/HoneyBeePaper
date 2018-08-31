@@ -13,13 +13,15 @@ library(shinycssloaders)
 options(spinner.color.background="#F5F5F5")
 
 dat <- readRDS("data.Rds")
+dat <- as.data.frame(dat)
 dat$ID <- rownames(dat)
 dat <- dat[,c(7,1:6)]
 
 dat[,-1] <- log(dat[,-1]+1)
 datCol <- colnames(dat)[-which(colnames(dat) %in% "ID")]
 myPairs <- unique(sapply(datCol, function(x) unlist(strsplit(x,"[.]"))[1]))
-load("SigCluster1.rda")
+load("SigCluster2.rda")
+names(metrics) <- "N_V"
 myMetrics <- colnames(metrics[[1]])[-which(colnames(metrics[[1]]) %in% "ID")]
 values <- reactiveValues(x=0, selPair=NULL, selMetric=NULL, selOrder=NULL)
 

@@ -28,15 +28,15 @@ summary(glht(mortcomp2, linfct=mcp(Treatment="Tukey")))
 
 # Mortality (All)
 labelDF = data.frame(plot.labels=c("NR","VC","VR","NC"), labels = c("ab","bc","c","a"), V1 = c(0.22, 0.479, 0.793, 0.164))
-plotMortality = ggplot(d, aes(x=Treatment, y=Day3Mortality)) + geom_boxplot(fill="palegreen2") + geom_text(data = labelDF, aes(x = plot.labels, y = V1, label = labels)) + ylab("Day 3 Mortality Rate") + theme_gray() + ylim(0,0.8)
+plotMortality = ggplot(d, aes(x=Treatment, y=Day3Mortality)) + geom_boxplot(fill="palegreen2") + geom_text(data = labelDF, size = 8, aes(x = plot.labels, y = V1, label = labels)) + ylab("Day 3 Mortality Rate") + theme_gray() + ylim(0,0.8) + theme(text=element_text(size=20))
 
 # Mortality (N vs V)
 labelDF = data.frame(plot.labels=c("N","V"), labels = c("a","b"), V1 = c(0.22, 0.52))
-plotMortality2 = ggplot(d, aes(x=Virus, y=Day3Mortality)) + geom_boxplot(fill="palegreen2") + geom_text(data = labelDF, aes(x = plot.labels, y = V1, label = labels)) + theme_gray() + ylim(0,0.8) +theme(axis.title.y=element_blank())
+plotMortality2 = ggplot(d, aes(x=Virus, y=Day3Mortality)) + geom_boxplot(fill="palegreen2") + geom_text(data = labelDF, size = 8, aes(x = plot.labels, y = V1, label = labels)) + theme_gray() + ylim(0,0.8) +theme(axis.title.y=element_blank(), text=element_text(size=20))
 
 # Mortality (R vs C)
 labelDF = data.frame(plot.labels=c("C","R"), labels = c("a","b"), V1 = c(0.48, 0.54))
-plotMortality3 = ggplot(d, aes(x=Diet, y=Day3Mortality)) + geom_boxplot(fill="palegreen2") + geom_text(data = labelDF, aes(x = plot.labels, y = V1, label = labels)) + theme_gray() + ylim(0,0.8)+theme(axis.title.y=element_blank())
+plotMortality3 = ggplot(d, aes(x=Diet, y=Day3Mortality)) + geom_boxplot(fill="palegreen2") + geom_text(data = labelDF, size = 8, aes(x = plot.labels, y = V1, label = labels)) + theme_gray() + ylim(0,0.8)+theme(axis.title.y=element_blank(), text=element_text(size=20))
 
 ###### Plot IAPV Values ########
 
@@ -63,15 +63,15 @@ anova(mortcomp)
 summary(glht(mortcomp2, linfct=mcp(Treatment="Tukey")))
 
 # IAPV (All)
-labelDF = data.frame(plot.labels=c("NR","VC","VR","NC"), labels = c("a","ab","b","a"), V1 = c(4.2, 5.3, 8.52, 3.8))
-plotIAPV = ggplot(d, aes(x=Treatment, y=logIAPV)) + geom_boxplot(fill="paleturquoise2") + geom_text(data = labelDF, aes(x = plot.labels, y = V1, label = labels)) + ylab("Log IAPV Titer") +theme_gray() +ylim(2,9)
+labelDF = data.frame(plot.labels=c("NR","VC","VR","NC"), labels = c("a","ab","b","a"), V1 = c(4.25, 5.35, 8.57, 3.85))
+plotIAPV = ggplot(d, aes(x=Treatment, y=logIAPV)) + geom_boxplot(fill="paleturquoise2") + geom_text(data = labelDF, size = 8, aes(x = plot.labels, y = V1, label = labels)) + ylab("Log IAPV Titer") +theme_gray() + theme(text=element_text(size=20)) + ylim(2,9)
 
 # IAPV (N vs V)
-labelDF = data.frame(plot.labels=c("N","V"), labels = c("a","b"), V1 = c(4.3, 8.5))
-plotIAPV2 = ggplot(d, aes(x=Virus, y=logIAPV)) + geom_boxplot(fill="paleturquoise2") + geom_text(data = labelDF, aes(x = plot.labels, y = V1, label = labels)) +theme_gray() + theme(axis.title.y=element_blank()) +ylim(2,9)
+labelDF = data.frame(plot.labels=c("N","V"), labels = c("a","b"), V1 = c(4.3, 8.7))
+plotIAPV2 = ggplot(d, aes(x=Virus, y=logIAPV)) + geom_boxplot(fill="paleturquoise2") + geom_text(data = labelDF, size = 8, aes(x = plot.labels, y = V1, label = labels)) +theme_gray() + theme(axis.title.y=element_blank(), text=element_text(size=20)) +ylim(2,9)
 
 # IAPV (R vs C)
-labelDF = data.frame(plot.labels=c("C","R"), labels = c("a","a"), V1 = c(4.3, 8.5))
-plotIAPV3 = ggplot(d, aes(x=Diet, y=logIAPV)) + geom_boxplot(fill="paleturquoise2") + geom_text(data = labelDF, aes(x = plot.labels, y = V1, label = labels)) +theme_gray() + theme(axis.title.y=element_blank()) +ylim(2,9)
+labelDF = data.frame(plot.labels=c("C","R"), labels = c("a","a"), V1 = c(4.3, 8.7))
+plotIAPV3 = ggplot(d, aes(x=Diet, y=logIAPV)) + geom_boxplot(fill="paleturquoise2") + geom_text(data = labelDF, size = 8, aes(x = plot.labels, y = V1, label = labels)) +theme_gray() + theme(axis.title.y=element_blank(), text=element_text(size=20)) +ylim(2,9)
 
 

@@ -147,11 +147,15 @@ scatMatMetrics[[currPair]]$FDR = 10e-10
 scatMatMetrics[[currPair]]$ID = as.factor(as.character(scatMatMetrics[[currPair]]$ID))
 plotDatas = datas[, c(ncol(datas), 1:ncol(datas)-1)]
 
+#logData2 = logData[,c(1,11:13,23:25)]
+
+cluster <- readRDS("Sig_4_1.Rds")
+
 plotDatas2 = plotDatas[,c(1,11:13,23:25)]
 
-logData2 = logData[,c(1,11:13,23:25)]
+scatMatMetrics[["N_V"]] <- scatMatMetrics[["N_V"]][which(scatMatMetrics[["N_V"]]$ID %in% cluster),]
 
-ret <- plotDEG(data = logData2, dataMetrics = scatMatMetrics, option="scatterPoints", threshVar = "padj", threshVal = 0.05, degPointColor = "lawngreen")
+ret <- plotDEG(data = plotDatas2, dataMetrics = scatMatMetrics, option="scatterPoints", threshVar = "padj", threshVal = 0.05, degPointColor = "#C11B8D")
 
 #, fileName=fileName)
 #degPointColor = colList[i+1],

@@ -9,6 +9,7 @@ library(data.table)
 library(RColorBrewer)
 library(Hmisc)
 library(shinycssloaders)
+library(EDASeq)
 
 options(spinner.color.background="#F5F5F5")
 
@@ -16,7 +17,35 @@ dat <- readRDS("data.Rds")
 dat$ID <- rownames(dat)
 dat <- dat[,c(7,1:6)]
 
-dat[,-1] <- log(dat[,-1]+1)
+
+
+
+#standardization
+RowSD = function(x) {
+  sqrt(rowSums((x - rowMeans(x))^2)/(dim(x)[2] - 1))
+}
+dat_Rownames <- dat$ID
+dat = dat[,-1]
+rownames(dat) <- dat_Rownames
+dat <- betweenLaneNormalization(as.matrix(dat), which="full", round=FALSE)
+dat = as.data.frame(dat)
+dat = mutate(dat, mean = (C.1+C.2+C.3+T.1+T.2+T.3)/6, stdev = RowSD(cbind(C.1,C.2,C.3,T.1,T.2,T.3)))
+rownames(dat)=dat_Rownames
+dat$ID <- dat_Rownames
+datqps <- t(apply(as.matrix(dat[,1:6]), 1, scale))
+datqps <- as.data.frame(datqps)
+colnames(datqps) <- colnames(dat[,1:6])
+datqps$ID <- rownames(datqps)
+nID <- which(is.nan(datqps$S1.1))
+datqps[nID,1:6] <- 0
+data <- datqps[,c(7,1:6)]
+dat <- data
+
+
+
+
+
+#dat[,-1] <- log(dat[,-1]+1)
 datCol <- colnames(dat)[-which(colnames(dat) %in% "ID")]
 myPairs <- unique(sapply(datCol, function(x) unlist(strsplit(x,"[.]"))[1]))
 load("Sigmetrics.rda")

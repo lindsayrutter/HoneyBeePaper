@@ -135,7 +135,7 @@ datas[nID,1:nColumns] <- 0
 boxDat <- melt(datas, id.vars="ID")
 colnames(boxDat) <- c("ID", "Sample", "Count")
 
-sigDatas = datas[which(metricsAll[["C_T"]]$padj<0.05),]
+sigDatas = datas[which(metricsAll[["N_V"]]$padj<0.05),]
 
 saveRDS(sigDatas$ID, file="Sig.Rds")
 
