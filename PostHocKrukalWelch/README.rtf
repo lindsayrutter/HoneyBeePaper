@@ -1,0 +1,24 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;}
+\margl1440\margr1440\vieww14960\viewh10600\viewkind0
+\deftab720
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 \CocoaLigature0 This PostHocAnalyses.zip file contains two subfolders with preliminary efforts toward two post hoc analyses we had in question:\
+\
+1) R2 subfolder\
+\
+This subfolder attempts to investigate the 43 virus DEGs in Figure 1.4, the 122 tolerance DEGs in Figure 2.15, and the 125 resistance DEGs in Figure 2.16 (Figures in paper.pdf). These DEGs had some inconsistent replicates (and some outliers) that may have driven their DEG calls. We wanted to see if the DEGs may correlate with IAPV titers, SBV titers, and mortality rates (quantitative variables obtained for all 24 samples).\
+\
+I created the figures in the R2 subfolder as follows (See Resistance_IAPV_Raw.jpg as an example). In this example, the first boxplot represents the 37 genes in Cluster 1 resistance DEGs, the second box plot represents the 35 genes in Cluster 2 resistance DEGs, the third box plot represents the 29 genes in Cluster 3 resistance DEGs, and the fourth box plot represents the 24 genes in Cluster 4 resistance DEGs. You can verify these numbers across the four clusters of the resistance DEGs again in Figure 2.16 (paper.pdf). The last box plot represents the remaining 13,763 genes in the entire data that were not part of the previous four clusters of resistance DEGs.\
+\
+For each gene in each box plot, I calculated an R^2 value to estimate the correlation between its 24 raw read counts and the IAPV titers for the 24 samples. So, each y-axis value in the box plot is an R^2 value between the 24 read counts of a gene and the 24 IAPV values. As you can see from the side-by-side box plot (Resistance_IAPV_Raw.jpg), the R^2 values were in general very low (R^2 < 0.1). However, the R^2 values for the resistance DEGs (first four box plots) seem higher than the R^2 values in the rest of the data (fifth boxplot). I used a Kruskal test (testing if two populations are identical not assuming normality or equal variance) to compare each of the first four box plots (a cluster of DEGs) with the fifth box plot (rest of the data). The resulting p-value is listed for each comparison (from left to right 3.63e-09, 3.81e-08, 6.73e-08, and 1.4e-06). So, even though the R^2 values are low, it does seem that the R^2 value distribution is significantly different between each of the four DEG clusters and the rest of the data.\
+\
+I did this procedure for many combinations. Basically, I looked at three levels of physiological measurement (IAPV titer, SBV titer, and mortality rate), three levels of DEG results (virus-related DEGs, resistance DEGs, and tolerance DEGs), and three levels of read count processing (raw, log, and standardized). So, this lead to 27 combinations of levels, as you can see by the 27 .jpg files in the R2 subfolder.\
+\
+Each of these 27 combinations created 4 p-values (comparison of each of the four cluster R2 values with the data R2 values). So, there are 108 p-values from this analysis. You can see this more clearly in the R2_PValues.csv file, organized by descending p-value. It seems overall that IAPV and SBV have significantly larger R^2 correlations with the tolerance, virus, and resistance DEGs than the rest of the data, and that mortality shows the same trend but not as clearly as IAPV and SBV. I guess we should expect to see the same trends for the physiological levels (IAPV, SBV, and mortality) because they are correlated with each other (see CorrBtwnVars.png).\
+\
+I am not sure what to think of my statistical approach to this post-hoc question (Do the virus, tolerance, or resistance DEG read count values correlate with the IAPV, SBV, or mortality values?) I do not know if the approach is statistically sound (performing Kruskal tests on R2 values). Even if it is sound, I do not know how to interpret the significantly increased R^2 values in general for the DEGs versus the rest of the data in terms of correlating to IAPV, SBV, and mortality. All R^2 values are small, so even if there is a significant difference, none of the DEGs themselves had large R^2 values with IAPV, SBV, and mortality. So, I am not sure how meaningful that difference is anyway.\
+}
