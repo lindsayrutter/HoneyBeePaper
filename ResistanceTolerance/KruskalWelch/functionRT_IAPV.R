@@ -63,7 +63,7 @@ functionRT <- function(data, type, colNum, PVal){
       label3 = paste0(as.character(length(which(inputR2$Group=="Cluster3"))), "\n", as.character(signif(output[[3]][12],3)))
       label4 = paste0(as.character(length(which(inputR2$Group=="Cluster4"))), "\n", as.character(signif(output[[3]][16],3)))
       labelDF = data.frame(plot.labels=c("Cluster1","Cluster2","Cluster3","Cluster4","data"), labels = c(label1,label2,label3,label4,length(which(inputR2$Group=="data"))), V1 = rep(0.5,5))
-      ggplot(inputR2, aes(x=Group, y=R2)) + geom_boxplot(fill="palegreen2") + geom_text(data = labelDF, size=6, aes(x = plot.labels, y = V1, label = labels)) + ylab(paste0("R2 with", type)) + theme_gray() + theme(axis.text=element_text(size=20), axis.title=element_text(size=20))
+      ggplot(inputR2, aes(x=Group, y=R2)) + geom_boxplot(fill="palegreen2") + geom_text(data = labelDF, size=6, aes(x = plot.labels, y = V1, label = labels)) + ylab(paste0("R2 with", type)) + theme_gray() + theme(axis.text=element_text(size=16), axis.title=element_text(size=16), legend.position="none")
     })
     dev.off()
     PVal
