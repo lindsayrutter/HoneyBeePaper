@@ -5,7 +5,7 @@ library(dplyr)
 library(genefilter)
 library(nlme)
 library(onewaytests)
-source("functionRT_IAPV.R")
+source("functionRT.R")
 
 data <- as.data.frame(readRDS("../../NC_NR_VC_VR/data/data.Rds"))
 
