@@ -6,8 +6,8 @@ This repository consists of materials for an RNA-seq study that examined IAPV in
 
   * **C_R:** Analysis scripts for the diet effect in our study (Castanea versus Rockrose)
   * **Galbraith:** Analysis scripts for the virus effect in a prior study by [Galbraith et al.](https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1004713)
-  * **N_V:** Analysis scripts for the virus effect in our study (Non-infection versus infection)
   * **NC_NR_VC_VR:** Analysis scripts for pairwise comparisons for both diet ad virus factors in our study
+  * **N_V:** Analysis scripts for the virus effect in our study (Non-infection versus infection)
   * **Overlaps:** Analysis scripts for determining DEG overlaps between various pipelines (DESeq2, edgeR, limma) and our study versus the Galbraith study
   * **Physiology:** Data and analysis scripts for mortality rate and IAPV titer loads in a prior study by Dolezal et al.
   * **PostHocDEGPatterns:** Analysis scripts for post-hoc analysis of physiology correlations in DEG patterns
@@ -22,6 +22,6 @@ There is a folder called **Manuscript**, which contains materials related to a m
   * **AdditionalFiles:** The supplementary files in our manuscript (n=19)
   * **Figures:** The figures in our manuscript (n=6)
   * **MakeFiguresFiles:** Reproducible scripts for recreating the figures and supplementary (additional) files. We are still working on this directory
-  * **Text:** Files for creating our manuscript. Our latest manuscript text is located in the file called manuscript.tex
+  * **Text:** Files for creating our manuscript. Our latest manuscript text is located in the file called **manuscript.tex**
   
   
