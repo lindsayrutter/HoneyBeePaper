@@ -19,15 +19,15 @@ RD_VIRUS_TOTAL <- readRDS("../N_V/DESeq2/RD_VIRUS_TOTAL.Rds")
 REV <- readRDS("../N_V/EdgeR/edgeR/REV.Rds")
 REN <- readRDS("../N_V/EdgeR/edgeR/REN.Rds")
 RE_VIRUS_TOTAL <- readRDS("../N_V/EdgeR/edgeR/RE_VIRUS_TOTAL.Rds")
-GDV <- readRDS("../VirusHoneyBee/DESeq2/GDV.Rds")
-GDC <- readRDS("../VirusHoneyBee/DESeq2/GDC.Rds")
-GD_TOTAL <- readRDS("../VirusHoneyBee/DESeq2/GD_TOTAL.Rds")
-GEV <- readRDS("../VirusHoneyBee/EdgeR/edgeR/GEV.Rds")
-GEC <- readRDS("../VirusHoneyBee/EdgeR/edgeR/GEC.Rds")
-GE_TOTAL <- readRDS("../VirusHoneyBee/EdgeR/edgeR/GE_TOTAL.Rds")
-GLV <- readRDS("../VirusHoneyBee/LimmaVoom/GLV.Rds")
-GLC <- readRDS("../VirusHoneyBee/LimmaVoom/GLC.Rds")
-GL_TOTAL <- readRDS("../VirusHoneyBee/LimmaVoom/GL_TOTAL.Rds")
+GDV <- readRDS("../Galbraith/DESeq2/GDV.Rds")
+GDC <- readRDS("../Galbraith/DESeq2/GDC.Rds")
+GD_TOTAL <- readRDS("../Galbraith/DESeq2/GD_TOTAL.Rds")
+GEV <- readRDS("../Galbraith/EdgeR/edgeR/GEV.Rds")
+GEC <- readRDS("../Galbraith/EdgeR/edgeR/GEC.Rds")
+GE_TOTAL <- readRDS("../Galbraith/EdgeR/edgeR/GE_TOTAL.Rds")
+GLV <- readRDS("../Galbraith/LimmaVoom/GLV.Rds")
+GLC <- readRDS("../Galbraith/LimmaVoom/GLC.Rds")
+GL_TOTAL <- readRDS("../Galbraith/LimmaVoom/GL_TOTAL.Rds")
 
 #######################################################
 
@@ -78,7 +78,7 @@ saveRDS(VCVRminInt, file="VCVRminInt.Rds")
 # Overlap has 11825
 
 dataR = read.delim(file="../N_V/data/AllLaneCount.txt",row.names=1,stringsAsFactors = FALSE)
-dataG = read_delim("../VirusHoneyBee/data/GSE65659_AntiviralResponseReadCounts.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
+dataG = read_delim("../Galbraith/data/GSE65659_AntiviralResponseReadCounts.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
 dataG <- as.data.frame(dataG)
 
 namesR = rownames(dataR)
@@ -319,7 +319,7 @@ dev.off();
 ############### Venn diagrams for Supplemental Galbraith versus Toth per Method ############## 
 
 # Keep 753 DEGs from Galbraith paper
-gDSupp = read_excel("../VirusHoneyBee/GalbraithSuppFile.xlsx")
+gDSupp = read_excel("../Galbraith/GalbraithSuppFile.xlsx")
 gDSupp = as.data.frame(gDSupp)
 
 keepColNms <- gDSupp[3,]
