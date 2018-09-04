@@ -1,0 +1,2335 @@
+%% BioMed_Central_Bib_Style_v1.01
+
+\begin{thebibliography}{73}
+% BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
+\ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
+\ifx \binits  \undefined \def \binits#1{#1}\fi
+\ifx \bauthor  \undefined \def \bauthor#1{#1}\fi
+\ifx \batitle  \undefined \def \batitle#1{#1}\fi
+\ifx \bjtitle  \undefined \def \bjtitle#1{#1}\fi
+\ifx \bvolume  \undefined \def \bvolume#1{\textbf{#1}}\fi
+\ifx \byear  \undefined \def \byear#1{#1}\fi
+\ifx \bissue  \undefined \def \bissue#1{#1}\fi
+\ifx \bfpage  \undefined \def \bfpage#1{#1}\fi
+\ifx \blpage  \undefined \def \blpage #1{#1}\fi
+\ifx \burl  \undefined \def \burl#1{\textsf{#1}}\fi
+\ifx \doiurl  \undefined \def \doiurl#1{\textsf{#1}}\fi
+\ifx \betal  \undefined \def \betal{\textit{et al.}}\fi
+\ifx \binstitute  \undefined \def \binstitute#1{#1}\fi
+\ifx \binstitutionaled  \undefined \def \binstitutionaled#1{#1}\fi
+\ifx \bctitle  \undefined \def \bctitle#1{#1}\fi
+\ifx \beditor  \undefined \def \beditor#1{#1}\fi
+\ifx \bpublisher  \undefined \def \bpublisher#1{#1}\fi
+\ifx \bbtitle  \undefined \def \bbtitle#1{#1}\fi
+\ifx \bedition  \undefined \def \bedition#1{#1}\fi
+\ifx \bseriesno  \undefined \def \bseriesno#1{#1}\fi
+\ifx \blocation  \undefined \def \blocation#1{#1}\fi
+\ifx \bsertitle  \undefined \def \bsertitle#1{#1}\fi
+\ifx \bsnm \undefined \def \bsnm#1{#1}\fi
+\ifx \bsuffix \undefined \def \bsuffix#1{#1}\fi
+\ifx \bparticle \undefined \def \bparticle#1{#1}\fi
+\ifx \barticle \undefined \def \barticle#1{#1}\fi
+\ifx \bconfdate \undefined \def \bconfdate #1{#1}\fi
+\ifx \botherref \undefined \def \botherref #1{#1}\fi
+\ifx \url \undefined \def \url#1{\textsf{#1}}\fi
+\ifx \bchapter \undefined \def \bchapter#1{#1}\fi
+\ifx \bbook \undefined \def \bbook#1{#1}\fi
+\ifx \bcomment \undefined \def \bcomment#1{#1}\fi
+\ifx \oauthor \undefined \def \oauthor#1{#1}\fi
+\ifx \citeauthoryear \undefined \def \citeauthoryear#1{#1}\fi
+\ifx \endbibitem  \undefined \def \endbibitem {}\fi
+\ifx \bconflocation  \undefined \def \bconflocation#1{#1}\fi
+\ifx \arxivurl  \undefined \def \arxivurl#1{\textsf{#1}}\fi
+\csname PreBibitemsHook\endcsname
+
+%%% 1
+\bibitem{ccd1}
+\begin{barticle}
+\bauthor{\bparticle{van} \bsnm{Engelsdorp}, \binits{D.}},
+\bauthor{\bsnm{Evans}, \binits{J.D.}},
+\bauthor{\bsnm{Saegerman}, \binits{C.}},
+\bauthor{\bsnm{Mullin}, \binits{C.}},
+\bauthor{\bsnm{Haubruge}, \binits{E.}},
+\bauthor{\bsnm{Nguyen}, \binits{B.K.}},
+\bauthor{\bsnm{Frazier}, \binits{M.}},
+\bauthor{\bsnm{Frazier}, \binits{J.}},
+\bauthor{\bsnm{Cox-Foster}, \binits{D.}},
+\bauthor{\bsnm{Chen}, \binits{Y.}},
+\bauthor{\bsnm{Underwood}, \binits{R.}},
+\bauthor{\bsnm{Tarpy}, \binits{D.R.}},
+\bauthor{\bsnm{Pettis}, \binits{J.S.}}:
+\batitle{{Colony collapse disorder: A descriptive study}}.
+\bjtitle{PLoS ONE}
+\bvolume{4},
+\bfpage{6481}
+(\byear{2009})
+\end{barticle}
+\endbibitem
+
+%%% 2
+\bibitem{ccd2}
+\begin{barticle}
+\bauthor{\bsnm{Kulhanek}, \binits{K.}},
+\bauthor{\bsnm{Steinhauer}, \binits{N.}},
+\bauthor{\bsnm{Rennich}, \binits{K.}},
+\bauthor{\bsnm{Caron}, \binits{D.M.}},
+\bauthor{\bsnm{Sagili}, \binits{R.R.}},
+\bauthor{\bsnm{Pettis}, \binits{J.S.}},
+\bauthor{\bsnm{Ellis}, \binits{J.D.}},
+\bauthor{\bsnm{Wilson}, \binits{M.E.}},
+\bauthor{\bsnm{Wilkes}, \binits{J.T.}},
+\bauthor{\bsnm{Tarpy}, \binits{D.R.}},
+\bauthor{\bsnm{Rose}, \binits{R.}},
+\bauthor{\bsnm{Lee}, \binits{K.}},
+\bauthor{\bsnm{Rangel}, \binits{J.}},
+\bauthor{\bsnm{vanEngelsdorp}, \binits{D.}}:
+\batitle{{A national survey of managed honey bee 2014–2015 annual colony
+  losses in the USA}}.
+\bjtitle{Journal of Apicultural Research}
+\bvolume{56},
+\bfpage{328}--\blpage{340}
+(\byear{2017})
+\end{barticle}
+\endbibitem
+
+%%% 3
+\bibitem{ccd3}
+\begin{barticle}
+\bauthor{\bsnm{Laurent}, \binits{M.}},
+\bauthor{\bsnm{Hendrikx}, \binits{P.}},
+\bauthor{\bsnm{Ribiere-Chabert}, \binits{M.}},
+\bauthor{\bsnm{Chauzat}, \binits{M.-P.}}:
+\batitle{{A pan-European epidemiological study on honeybee colony losses
+  2012–2014}}.
+\bjtitle{Epilobee}
+\bvolume{2013},
+\bfpage{44}
+(\byear{2016})
+\end{barticle}
+\endbibitem
+
+%%% 4
+\bibitem{ccd5}
+\begin{barticle}
+\bauthor{\bsnm{Caron}, \binits{D.}},
+\bauthor{\bsnm{Sagili}, \binits{R.}}:
+\batitle{{Honey bee colony mortality in the Pacific Northwest: Winter
+  2009/2010}}.
+\bjtitle{Am Bee J}
+\bvolume{151},
+\bfpage{73}--\blpage{76}
+(\byear{2011})
+\end{barticle}
+\endbibitem
+
+%%% 5
+\bibitem{ccd6}
+\begin{bbook}
+\bauthor{\bsnm{Bond}, \binits{J.}},
+\bauthor{\bsnm{Plattner}, \binits{K.}},
+\bauthor{\bsnm{Hunt}, \binits{K.}}:
+\bbtitle{Fruit and Tree Nuts Outlook: Economic Insight U.S. Pollination-
+  Services Market}.
+\bpublisher{Economic Research Service Situation and Outlook FTS-357SA},
+\blocation{USDA}
+(\byear{2014})
+\end{bbook}
+\endbibitem
+
+%%% 6
+\bibitem{ccd7}
+\begin{barticle}
+\bauthor{\bsnm{Gallai}, \binits{N.}},
+\bauthor{\bsnm{Salles}, \binits{J.-M.}},
+\bauthor{\bsnm{Settele}, \binits{J.}},
+\bauthor{\bsnm{Vaissière}, \binits{B.B.}}:
+\batitle{{Economic valuation of the vulnerability of world agriculture
+  confronted with pollinator decline}}.
+\bjtitle{Ecol. Econ.}
+\bvolume{68},
+\bfpage{810}--\blpage{821}
+(\byear{2009})
+\end{barticle}
+\endbibitem
+
+%%% 7
+\bibitem{ccd4}
+\begin{barticle}
+\bauthor{\bsnm{Klein}, \binits{A.-M.}},
+\bauthor{\bsnm{Vaissière}, \binits{B.E.}},
+\bauthor{\bsnm{Cane}, \binits{J.H.}},
+\bauthor{\bsnm{Steffan-Dewenter}, \binits{I.}},
+\bauthor{\bsnm{Cunningham}, \binits{S.A.}},
+\bauthor{\bsnm{Kremen}, \binits{C.}},
+\bauthor{\bsnm{Tscharntke}, \binits{T.}}:
+\batitle{{Importance of pollinators in changing landscapes for world crops}}.
+\bjtitle{Proc Biol Sci}
+\bvolume{274},
+\bfpage{303}--\blpage{313}
+(\byear{2007})
+\end{barticle}
+\endbibitem
+
+%%% 8
+\bibitem{factors}
+\begin{barticle}
+\bauthor{\bsnm{Potts}, \binits{S.G.}},
+\bauthor{\bsnm{Biesmeijer}, \binits{J.C.}},
+\bauthor{\bsnm{Kremen}, \binits{C.}},
+\bauthor{\bsnm{Neumann}, \binits{P.}},
+\bauthor{\bsnm{Schweiger}, \binits{O.}},
+\bauthor{\bsnm{Kunin}, \binits{W.E.}}:
+\batitle{{}}.
+\bjtitle{Global pollinator declines: trends, impacts and drivers}
+\bvolume{25},
+\bfpage{345}--\blpage{353}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 9
+\bibitem{factors2}
+\begin{barticle}
+\bauthor{\bsnm{Spivak}, \binits{M.}},
+\bauthor{\bsnm{Mader}, \binits{E.}},
+\bauthor{\bsnm{Vaughan}, \binits{M.}},
+\bauthor{\bsnm{Euliss}, \binits{N.H.}}:
+\batitle{{The Plight of the Bees}}.
+\bjtitle{Environ Sci Technol}
+\bvolume{45},
+\bfpage{34}--\blpage{38}
+(\byear{2011})
+\end{barticle}
+\endbibitem
+
+%%% 10
+\bibitem{interacting}
+\begin{barticle}
+\bauthor{\bsnm{Goulson}, \binits{D.}},
+\bauthor{\bsnm{Nicholls}, \binits{E.}},
+\bauthor{\bsnm{Botías}, \binits{C.}},
+\bauthor{\bsnm{Rotheray}, \binits{E.L.}}:
+\batitle{{Bee declines driven by combined stress from parasites, pesticides,
+  and lack of flowers}}.
+\bjtitle{Science}
+\bvolume{347},
+\bfpage{1255957}
+(\byear{2015})
+\end{barticle}
+\endbibitem
+
+%%% 11
+\bibitem{source}
+\begin{barticle}
+\bauthor{\bsnm{Roulston}, \binits{T.H.}},
+\bauthor{\bsnm{Buchmann}, \binits{S.L.}}:
+\batitle{{A phylogenetic reconsideration of the pollen starch-pollination
+  correlation}}.
+\bjtitle{Evol Ecol Res}
+\bvolume{2},
+\bfpage{627}--\blpage{643}
+(\byear{2000})
+\end{barticle}
+\endbibitem
+
+%%% 12
+\bibitem{source2}
+\begin{botherref}
+\oauthor{\bsnm{Stanley}, \binits{R.G.}},
+\oauthor{\bsnm{Linskens}, \binits{H.F.}}:
+Pollen: Biology, Biochemistry, Management
+\end{botherref}
+\endbibitem
+
+%%% 13
+\bibitem{brodschneider}
+\begin{barticle}
+\bauthor{\bsnm{Brodschneider}, \binits{R.}},
+\bauthor{\bsnm{Crailsheim}, \binits{K.}}:
+\batitle{{Nutrition and health in honey bees}}.
+\bjtitle{Apidologie}
+\bvolume{41},
+\bfpage{278}--\blpage{294}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 14
+\bibitem{longevity}
+\begin{barticle}
+\bauthor{\bsnm{Haydak}, \binits{M.H.}}:
+\batitle{{Honey bee nutrition}}.
+\bjtitle{Annu Rev Entomol}
+\bvolume{15},
+\bfpage{143}--\blpage{156}
+(\byear{1970})
+\end{barticle}
+\endbibitem
+
+%%% 15
+\bibitem{jelly}
+\begin{barticle}
+\bauthor{\bsnm{Crailsheim}, \binits{K.}},
+\bauthor{\bsnm{Schneider}, \binits{L.H.W.}},
+\bauthor{\bsnm{Hrassnigg}, \binits{N.}},
+\bauthor{\bsnm{Bühlmann}, \binits{G.}},
+\bauthor{\bsnm{Brosch}, \binits{U.}},
+\bauthor{\bsnm{Gmeinbauer}, \binits{R.}},
+\bauthor{\bsnm{Schöffmann}, \binits{B.}}:
+\batitle{{Pollen consumption and utilization in worker honeybees (Apis
+  mellifera carnica): dependence on individual age and function}}.
+\bjtitle{J Insect Physiol}
+\bvolume{38},
+\bfpage{409}--\blpage{419}
+(\byear{1992})
+\end{barticle}
+\endbibitem
+
+%%% 16
+\bibitem{jelly2}
+\begin{barticle}
+\bauthor{\bsnm{Crailsheim}, \binits{K.}}:
+\batitle{{The flow of jelly within a honeybee colony}}.
+\bjtitle{J Comp Physiol B}
+\bvolume{162},
+\bfpage{681}--\blpage{689}
+(\byear{1992})
+\end{barticle}
+\endbibitem
+
+%%% 17
+\bibitem{diverse}
+\begin{barticle}
+\bauthor{\bsnm{Schmidt}, \binits{J.O.}}:
+\batitle{{Feeding preference of Apis mellifera L. (Hymenoptera: Apidae):
+  Individual versus mixed pollen species}}.
+\bjtitle{J. Kans. Entomol. Soc.}
+\bvolume{57},
+\bfpage{323}--\blpage{327}
+(\byear{1984})
+\end{barticle}
+\endbibitem
+
+%%% 18
+\bibitem{diverse2}
+\begin{barticle}
+\bauthor{\bsnm{Schmidt}, \binits{J.O.}},
+\bauthor{\bsnm{Thoenes}, \binits{S.C.}},
+\bauthor{\bsnm{Levin}, \binits{M.D.}}:
+\batitle{{Survival of honey bees, Apis mellifera (Hymenoptera: Apidae), fed
+  various pollen sources}}.
+\bjtitle{J. Econ. Entomol.}
+\bvolume{80},
+\bfpage{176}--\blpage{183}
+(\byear{1987})
+\end{barticle}
+\endbibitem
+
+%%% 19
+\bibitem{alaux}
+\begin{barticle}
+\bauthor{\bsnm{Alaux}, \binits{C.}},
+\bauthor{\bsnm{Ducloz}, \binits{F.}},
+\bauthor{\bsnm{Conte}, \binits{D.C.Y.L.}}:
+\batitle{{Diet effects on honeybee immunocompetence}}.
+\bjtitle{Biol. Lett.}
+\bvolume{6},
+\bfpage{562}--\blpage{565}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 20
+\bibitem{undeveloped}
+\begin{barticle}
+\bauthor{\bsnm{Naug}, \binits{D.}}:
+\batitle{{Nutritional stress due to habitat loss may explain recent honeybee
+  colony collapses}}.
+\bjtitle{Biol Conserv}
+\bvolume{142},
+\bfpage{2369}--\blpage{2372}
+(\byear{2009})
+\end{barticle}
+\endbibitem
+
+%%% 21
+\bibitem{bkLoss}
+\begin{barticle}
+\bauthor{\bsnm{Engelsdorp}, \binits{D.V.}},
+\bauthor{\bsnm{Hayes}, \binits{J.J.}},
+\bauthor{\bsnm{Underwood}, \binits{R.M.}},
+\bauthor{\bsnm{Pettis}, \binits{J.}}:
+\batitle{{A survey of honey bee colony losses in the U.S., fall 2007 to spring
+  2008}}.
+\bjtitle{PLoS ONE}
+\bvolume{3},
+\bfpage{4071}
+(\byear{2008})
+\end{barticle}
+\endbibitem
+
+%%% 22
+\bibitem{ag}
+\begin{barticle}
+\bauthor{\bsnm{Neumann}, \binits{P.}},
+\bauthor{\bsnm{Carreck}, \binits{N.L.}}:
+\batitle{{Honey bee colony losses}}.
+\bjtitle{J Apicult Res}
+\bvolume{49},
+\bfpage{1}--\blpage{6}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 23
+\bibitem{ag2}
+\begin{barticle}
+\bauthor{\bsnm{Engelsdorp}, \binits{D.V.}},
+\bauthor{\bsnm{Meixner}, \binits{M.D.}}:
+\batitle{{A historical review of managed honey bee populations in Europe and
+  the United States and the factors that may affect them}}.
+\bjtitle{J Invertebr Pathol}
+\bvolume{103},
+\bfpage{80}--\blpage{95}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 24
+\bibitem{miteSpread}
+\begin{barticle}
+\bauthor{\bsnm{Rosenkranz}, \binits{P.}},
+\bauthor{\bsnm{Aumeier}, \binits{P.}},
+\bauthor{\bsnm{Ziegelmann}, \binits{B.}}:
+\batitle{{Biology and control of Varroa destructor}}.
+\bjtitle{J Invertebr Pathol}
+\bvolume{103},
+\bfpage{96}--\blpage{119}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 25
+\bibitem{hemolymph}
+\begin{barticle}
+\bauthor{\bsnm{Weinberg}, \binits{K.P.}},
+\bauthor{\bsnm{Madel}, \binits{G.}}:
+\batitle{{The influence of the mite Varroa Jacobsoni Oud. on the protein
+  concentration and the haemolymph volume of the brood of worker bees and
+  drones of the honey bee Apis Mellifera L}}.
+\bjtitle{Apidologie}
+\bvolume{16},
+\bfpage{421}--\blpage{436}
+(\byear{1985})
+\end{barticle}
+\endbibitem
+
+%%% 26
+\bibitem{miteVirus}
+\begin{barticle}
+\bauthor{\bsnm{Shen}, \binits{M.Q.}},
+\bauthor{\bsnm{Cui}, \binits{L.W.}},
+\bauthor{\bsnm{Ostiguy}, \binits{N.}},
+\bauthor{\bsnm{Cox-Foster}, \binits{D.}}:
+\batitle{{Intricate transmission routes and interactions between picorna-like
+  viruses (Kashmir bee virus and sacbrood virus) with the honeybee host and the
+  parasitic varroa mite}}.
+\bjtitle{J Gen Virol}
+\bvolume{86},
+\bfpage{2281}--\blpage{2289}
+(\byear{2005})
+\end{barticle}
+\endbibitem
+
+%%% 27
+\bibitem{miteVirus2}
+\begin{barticle}
+\bauthor{\bsnm{Yang}, \binits{X.}},
+\bauthor{\bsnm{Cox-Foster}, \binits{D.}}:
+\batitle{{Effects of parasitization by Varroa destructor on survivorship and
+  physiological traits of Apis mellifera in correlation with viral incidence
+  and microbial challenge}}.
+\bjtitle{Parasitology}
+\bvolume{134},
+\bfpage{405}--\blpage{412}
+(\byear{2007})
+\end{barticle}
+\endbibitem
+
+%%% 28
+\bibitem{miteVirus3}
+\begin{barticle}
+\bauthor{\bsnm{Yang}, \binits{X.L.}},
+\bauthor{\bsnm{Cox-Foster}, \binits{D.L.}}:
+\batitle{{Impact of an ectoparasite on the immunity and pathology of an
+  invertebrate: Evidence for host immunosuppression and viral amplification}}.
+\bjtitle{P Natl Acad Sci USA}
+\bvolume{102},
+\bfpage{7470}--\blpage{7475}
+(\byear{2005})
+\end{barticle}
+\endbibitem
+
+%%% 29
+\bibitem{numVirus}
+\begin{barticle}
+\bauthor{\bsnm{Chen}, \binits{Y.P.}},
+\bauthor{\bsnm{Siede}, \binits{R.}}:
+\batitle{{Honey bee viruses}}.
+\bjtitle{Adv Virus Res}
+\bvolume{70},
+\bfpage{33}--\blpage{80}
+(\byear{2007})
+\end{barticle}
+\endbibitem
+
+%%% 30
+\bibitem{fam}
+\begin{barticle}
+\bauthor{\bsnm{Miranda}, \binits{J.R.D.}},
+\bauthor{\bsnm{Cordoni}, \binits{G.}},
+\bauthor{\bsnm{Budge}, \binits{G.}}:
+\batitle{{The acute bee paralysis virus-Kashmir bee virus-Israeli acute
+  paralysis virus complex}}.
+\bjtitle{J Invertebr Pathol}
+\bvolume{103},
+\bfpage{30}--\blpage{47}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 31
+\bibitem{symptoms}
+\begin{barticle}
+\bauthor{\bsnm{Maori}, \binits{E.}},
+\bauthor{\bsnm{Paldi}, \binits{N.}},
+\bauthor{\bsnm{Shafir}, \binits{S.}},
+\bauthor{\bsnm{Kalev}, \binits{H.}},
+\bauthor{\bsnm{Tsur}, \binits{E.}},
+\bauthor{\bsnm{Glick}, \binits{E.}},
+\bauthor{\bsnm{Sela}, \binits{I.}}:
+\batitle{{IAPV, a bee-affecting virus associated with Colony Collapse Disorder
+  can be silenced by dsRNA ingestion}}.
+\bjtitle{Insect Mol Biol}
+\bvolume{18},
+\bfpage{55}--\blpage{60}
+(\byear{2009})
+\end{barticle}
+\endbibitem
+
+%%% 32
+\bibitem{carrillo}
+\begin{barticle}
+\bauthor{\bsnm{Carrillo-Tripp}, \binits{J.}},
+\bauthor{\bsnm{Dolezal}, \binits{A.G.}},
+\bauthor{\bsnm{Goblirsch}, \binits{M.J.}},
+\bauthor{\bsnm{Miller}, \binits{W.A.}},
+\bauthor{\bsnm{Toth}, \binits{A.L.}},
+\bauthor{\bsnm{Bonning}, \binits{B.C.}}:
+\batitle{{In vivo and in vitro infection dynamics of honey bee viruses}}.
+\bjtitle{Sci Rep}
+\bvolume{6},
+\bfpage{22265}
+(\byear{2016})
+\end{barticle}
+\endbibitem
+
+%%% 33
+\bibitem{winter}
+\begin{barticle}
+\bauthor{\bsnm{Chen}, \binits{Y.P.}},
+\bauthor{\bsnm{Pettis}, \binits{J.S.}},
+\bauthor{\bsnm{Corona}, \binits{M.}},
+\bauthor{\bsnm{Chen}, \binits{W.P.}},
+\bauthor{\bsnm{Li}, \binits{C.J.}},
+\bauthor{\bsnm{Spivak}, \binits{M.}},
+\bauthor{\bsnm{Visscher}, \binits{P.K.}},
+\bauthor{\bsnm{DeGrandi-Hoffman}, \binits{G.}},
+\bauthor{\bsnm{Boncristiani}, \binits{H.}},
+\bauthor{\bsnm{Zhao}, \binits{Y.}},
+\bauthor{\bparticle{van} \bsnm{Engelsdorp}, \binits{D.}},
+\bauthor{\bsnm{Delaplane}, \binits{K.}},
+\bauthor{\bsnm{Solter}, \binits{L.}},
+\bauthor{\bsnm{Drummond}, \binits{F.}},
+\bauthor{\bsnm{Kramer}, \binits{M.}},
+\bauthor{\bsnm{Lipkin}, \binits{W.I.}},
+\bauthor{\bsnm{Palacios}, \binits{G.}},
+\bauthor{\bsnm{Hamilton}, \binits{M.C.}},
+\bauthor{\bsnm{Smith}, \binits{B.}},
+\bauthor{\bsnm{Huang}, \binits{S.K.}},
+\bauthor{\bsnm{Zheng}, \binits{H.Q.}},
+\bauthor{\bsnm{Li}, \binits{J.L.}},
+\bauthor{\bsnm{Zhang}, \binits{X.}},
+\bauthor{\bsnm{Zhou}, \binits{X.F.}},
+\bauthor{\bsnm{Wu}, \binits{L.Y.}},
+\bauthor{\bsnm{Zhou}, \binits{J.Z.}},
+\bauthor{\bsnm{Lee}, \binits{M.-L.}},
+\bauthor{\bsnm{Teixeira}, \binits{E.W.}},
+\bauthor{\bsnm{Li}, \binits{Z.G.}},
+\bauthor{\bsnm{Evans}, \binits{J.D.}}:
+\batitle{{Israeli acute paralysis virus: Epidemiology, pathogenesis and
+  implications for honey bee health}}.
+\bjtitle{PLoS Pathog}
+\bvolume{10},
+\bfpage{1004261}
+(\byear{2014})
+\end{barticle}
+\endbibitem
+
+%%% 34
+\bibitem{iapvCCD}
+\begin{barticle}
+\bauthor{\bsnm{Cox-Foster}, \binits{D.L.}},
+\bauthor{\bsnm{Conlan}, \binits{S.}},
+\bauthor{\bsnm{Holmes}, \binits{E.C.}},
+\bauthor{\bsnm{Palacios}, \binits{G.}},
+\bauthor{\bsnm{Evans}, \binits{J.D.}},
+\bauthor{\bsnm{Moran}, \binits{N.A.}},
+\bauthor{\bsnm{Quan}, \binits{P.-L.}},
+\bauthor{\bsnm{Briese}, \binits{T.}},
+\bauthor{\bsnm{Hornig}, \binits{M.}},
+\bauthor{\bsnm{Geiser}, \binits{D.M.}},
+\bauthor{\bsnm{Martinson}, \binits{V.}},
+\bauthor{\bsnm{vanEngelsdorp}, \binits{D.}},
+\bauthor{\bsnm{Kalkstein}, \binits{A.L.}},
+\bauthor{\bsnm{Drysdale}, \binits{A.}},
+\bauthor{\bsnm{Hui}, \binits{J.}},
+\bauthor{\bsnm{Zhai}, \binits{J.}},
+\bauthor{\bsnm{Cui}, \binits{L.}},
+\bauthor{\bsnm{Hutchison}, \binits{S.K.}},
+\bauthor{\bsnm{Simons}, \binits{J.F.}},
+\bauthor{\bsnm{Egholm}, \binits{M.}},
+\bauthor{\bsnm{Pettis}, \binits{J.S.}},
+\bauthor{\bsnm{Lipkin}, \binits{W.I.}}:
+\batitle{{A metagenomic survey of microbes in honey bee colony collapse
+  disorder}}.
+\bjtitle{Science}
+\bvolume{318},
+\bfpage{283}--\blpage{287}
+(\byear{2007})
+\end{barticle}
+\endbibitem
+
+%%% 35
+\bibitem{iapvCCD2}
+\begin{barticle}
+\bauthor{\bsnm{Hou}, \binits{C.}},
+\bauthor{\bsnm{Rivkin}, \binits{H.}},
+\bauthor{\bsnm{Slabezki}, \binits{Y.}},
+\bauthor{\bsnm{Chejanovsky}, \binits{N.}}:
+\batitle{{Dynamics of the presence of israeli acute paralysis virus in honey
+  bee colonies with colony collapse disorder}}.
+\bjtitle{Viruses}
+\bvolume{6},
+\bfpage{2012}--\blpage{2027}
+(\byear{2014})
+\end{barticle}
+\endbibitem
+
+%%% 36
+\bibitem{iapvCCD3}
+\begin{barticle}
+\bauthor{\bsnm{Cornman}, \binits{R.S.}},
+\bauthor{\bsnm{Tarpy}, \binits{D.R.}},
+\bauthor{\bsnm{Chen}, \binits{Y.}},
+\bauthor{\bsnm{Jeffreys}, \binits{L.}},
+\bauthor{\bsnm{Lopez}, \binits{D.}},
+\bauthor{\bsnm{Pettis}, \binits{J.S.}}:
+\batitle{{Pathogen webs in collapsing honey bee colonies}}.
+\bjtitle{PLoS ONE}
+\bvolume{7},
+\bfpage{43562}
+(\byear{2012})
+\end{barticle}
+\endbibitem
+
+%%% 37
+\bibitem{intNV}
+\begin{barticle}
+\bauthor{\bsnm{DeGrandi-Hoffman}, \binits{G.}},
+\bauthor{\bsnm{Chen}, \binits{Y.}}:
+\batitle{{Nutrition, immunity and viral infections in honey bees}}.
+\bjtitle{Current Opinion in Insect Science}
+\bvolume{10},
+\bfpage{170}--\blpage{176}
+(\byear{2015})
+\end{barticle}
+\endbibitem
+
+%%% 38
+\bibitem{intNV2}
+\begin{barticle}
+\bauthor{\bsnm{DeGrandi-Hoffman}, \binits{G.}},
+\bauthor{\bsnm{Chen}, \binits{Y.}},
+\bauthor{\bsnm{Huang}, \binits{E.}},
+\bauthor{\bsnm{Huang}, \binits{M.H.}}:
+\batitle{{The effect of diet on protein concentration, hypopharyngeal gland
+  development and virus load in worker honey bees (Apis mellifera L.)}}.
+\bjtitle{J Insect Physiol}
+\bvolume{56},
+\bfpage{1184}--\blpage{1191}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 39
+\bibitem{intNV3}
+\begin{botherref}
+\oauthor{\bsnm{Le~Conte}, \binits{Y.}},
+\oauthor{\bsnm{BRUNET}, \binits{J.-L.}},
+\oauthor{\bsnm{McDonnell}, \binits{C.}},
+\oauthor{\bsnm{Dussaubat}, \binits{C.}},
+\oauthor{\bsnm{Alaux}, \binits{C.}}:
+Interactions Between Risk Factors in Honey Bees
+\end{botherref}
+\endbibitem
+
+%%% 40
+\bibitem{adamInt}
+\begin{botherref}
+\oauthor{\bsnm{Dolezal}, \binits{A.G.}},
+\oauthor{\bsnm{Carrillo-Tripp}, \binits{J.}},
+\oauthor{\bsnm{Judd}, \binits{T.}},
+\oauthor{\bsnm{Miller}, \binits{A.}},
+\oauthor{\bsnm{Bonning}, \binits{B.}},
+\oauthor{\bsnm{Toth}, \binits{A.}}:
+{Interacting stressors matter: Diet quality and virus infection in honey bee
+  health}.
+In prep
+(2018)
+\end{botherref}
+\endbibitem
+
+%%% 41
+\bibitem{resTol1}
+\begin{barticle}
+\bauthor{\bsnm{Miller}, \binits{C.V.L.}},
+\bauthor{\bsnm{Cotter}, \binits{S.C.}}:
+\batitle{{Resistance and tolerance: The role of nutrients on pathogen dynamics
+  and infection outcomes in an insect host}}.
+\bjtitle{Journal of Animal Ecology}
+\bvolume{87},
+\bfpage{500}--\blpage{510}
+(\byear{2017})
+\end{barticle}
+\endbibitem
+
+%%% 42
+\bibitem{AdamTothReview}
+\begin{barticle}
+\bauthor{\bsnm{Dolezal}, \binits{A.G.}},
+\bauthor{\bsnm{Toth}, \binits{A.L.}}:
+\batitle{{Feedbacks between nutrition and disease in honey bee health}}.
+\bjtitle{Current Opinion in Insect Science}
+\bvolume{26},
+\bfpage{114}--\blpage{119}
+(\byear{2018})
+\end{barticle}
+\endbibitem
+
+%%% 43
+\bibitem{alaux2}
+\begin{barticle}
+\bauthor{\bsnm{Alaux}, \binits{C.}},
+\bauthor{\bsnm{Dantec}, \binits{C.}},
+\bauthor{\bsnm{Parrinello}, \binits{H.}},
+\bauthor{\bsnm{Conte}, \binits{Y.L.}}:
+\batitle{{Nutrigenomics in honey bees: digital gene expression analysis of
+  pollen's nutritive effects on healthy and varroa-parasitized bees}}.
+\bjtitle{BMC Genomics}
+\bvolume{12},
+\bfpage{496}
+(\byear{2011})
+\end{barticle}
+\endbibitem
+
+%%% 44
+\bibitem{galbraith}
+\begin{barticle}
+\bauthor{\bsnm{Galbraith}, \binits{D.A.}},
+\bauthor{\bsnm{Yang}, \binits{X.}},
+\bauthor{\bsnm{Niño}, \binits{E.L.}},
+\bauthor{\bsnm{Yi}, \binits{S.}},
+\bauthor{\bsnm{Grozinger}, \binits{C.}}:
+\batitle{{Parallel epigenomic and transcriptomic responses to viral infection
+  in honey bees (Apis mellifera)}}.
+\bjtitle{PLoS Pathogens}
+\bvolume{11},
+\bfpage{1004713}
+(\byear{2015})
+\end{barticle}
+\endbibitem
+
+%%% 45
+\bibitem{resTol2}
+\begin{barticle}
+\bauthor{\bsnm{Carval}, \binits{D.}},
+\bauthor{\bsnm{Ferriere}, \binits{R.}}:
+\batitle{{A unified model for the coevolution of resistance, tolerance, and
+  virulence}}.
+\bjtitle{Evolution}
+\bvolume{64},
+\bfpage{2988}--\blpage{3009}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 46
+\bibitem{resTol4}
+\begin{barticle}
+\bauthor{\bsnm{Moret}, \binits{Y.}}:
+\batitle{{Trans-generational immune priming: Specific enhancement of the
+  antimicrobial immune response in the mealworm beetle, Tenebrio molitor}}.
+\bjtitle{Proceedings of the Royal Society B: Biological Sciences}
+\bvolume{273},
+\bfpage{1399}--\blpage{1405}
+(\byear{2006})
+\end{barticle}
+\endbibitem
+
+%%% 47
+\bibitem{resTol5}
+\begin{barticle}
+\bauthor{\bsnm{Mauricio}, \binits{R.}},
+\bauthor{\bsnm{Rausher}, \binits{M.D.}},
+\bauthor{\bsnm{Burdick}, \binits{D.S.}}:
+\batitle{{Variation in the defense strategies of plants: are resistance and
+  tolerance mutually exclusive?}}
+\bjtitle{Ecology}
+\bvolume{78},
+\bfpage{1301}--\blpage{1310}
+(\byear{1997})
+\end{barticle}
+\endbibitem
+
+%%% 48
+\bibitem{resTol6}
+\begin{barticle}
+\bauthor{\bsnm{Fornoni}, \binits{J.}},
+\bauthor{\bsnm{Nunez-Farfan}, \binits{J.}},
+\bauthor{\bsnm{Valverde}, \binits{P.L.}},
+\bauthor{\bsnm{Rausher}, \binits{M.D.}}:
+\batitle{{Evolution of mixed plant defense allocation against natural
+  enemies}}.
+\bjtitle{Evolution}
+\bvolume{58},
+\bfpage{1685}--\blpage{1695}
+(\byear{2004})
+\end{barticle}
+\endbibitem
+
+%%% 49
+\bibitem{resTol7}
+\begin{barticle}
+\bauthor{\bsnm{Restif}, \binits{O.}},
+\bauthor{\bsnm{Koella}, \binits{J.C.}}:
+\batitle{{Shared control of epidemiological traits in a coevolutionary model of
+  host-parasite interactions}}.
+\bjtitle{The American Naturalist}
+\bvolume{161},
+\bfpage{827}--\blpage{836}
+(\byear{2003})
+\end{barticle}
+\endbibitem
+
+%%% 50
+\bibitem{resTol8}
+\begin{barticle}
+\bauthor{\bsnm{Chambers}, \binits{M.C.}},
+\bauthor{\bsnm{Schneider}, \binits{D.S.}}:
+\batitle{{Balancing resistance and infection tolerance through metabolic
+  means}}.
+\bjtitle{PNAS}
+\bvolume{109},
+\bfpage{13886}--\blpage{13887}
+(\byear{2012})
+\end{barticle}
+\endbibitem
+
+%%% 51
+\bibitem{resTol11}
+\begin{barticle}
+\bauthor{\bsnm{Xu}, \binits{J.}},
+\bauthor{\bsnm{Grant}, \binits{G.}},
+\bauthor{\bsnm{Sabin}, \binits{L.R.}},
+\bauthor{\bsnm{Gordesky-Gold}, \binits{B.}},
+\bauthor{\bsnm{Yasunaga}, \binits{A.}},
+\bauthor{\bsnm{Tudor}, \binits{M.}},
+\bauthor{\bsnm{Cherry}, \binits{S.}}:
+\batitle{{Transcriptional pausing controls a rapid antiviral innate immune
+  response in Drosophila}}.
+\bjtitle{Cell Host Microbe}
+\bvolume{12},
+\bfpage{531}--\blpage{543}
+(\byear{2012})
+\end{barticle}
+\endbibitem
+
+%%% 52
+\bibitem{resTol9}
+\begin{barticle}
+\bauthor{\bsnm{Cerenius}, \binits{L.}},
+\bauthor{\bsnm{Söderhäll}, \binits{K.}}:
+\batitle{{The prophenoloxidase-activating system in invertebrates}}.
+\bjtitle{Immunological Reviews}
+\bvolume{198},
+\bfpage{116}--\blpage{126}
+(\byear{2004})
+\end{barticle}
+\endbibitem
+
+%%% 53
+\bibitem{resTol10}
+\begin{barticle}
+\bauthor{\bsnm{Sadd}, \binits{B.M.}},
+\bauthor{\bsnm{Siva-Jothy}, \binits{M.R.}}:
+\batitle{{Self-harm caused by an insect's innate immunity}}.
+\bjtitle{Proceedings of the Royal Society B: Biological Sciences}
+\bvolume{273},
+\bfpage{2571}--\blpage{2574}
+(\byear{2006})
+\end{barticle}
+\endbibitem
+
+%%% 54
+\bibitem{tissueLevel}
+\begin{barticle}
+\bauthor{\bsnm{Johnson}, \binits{B.R.}},
+\bauthor{\bsnm{Atallah}, \binits{J.}},
+\bauthor{\bsnm{Plachetzki}, \binits{D.C.}}:
+\batitle{{The importance of tissue specificity for RNA-seq: highlighting the
+  errors of composite structure extractions}}.
+\bjtitle{BMC Genomics}
+\bvolume{14},
+\bfpage{586}
+(\byear{2013})
+\end{barticle}
+\endbibitem
+
+%%% 55
+\bibitem{DiPasquale}
+\begin{barticle}
+\bauthor{\bsnm{Pasquale}, \binits{G.D.}},
+\bauthor{\bsnm{Salignon}, \binits{M.}},
+\bauthor{\bsnm{Conte}, \binits{Y.L.}},
+\bauthor{\bsnm{Belzunces}, \binits{L.P.}},
+\bauthor{\bsnm{Decourtye}, \binits{A.}},
+\bauthor{\bsnm{Kretzschmar}, \binits{A.}},
+\bauthor{\bsnm{Suchail}, \binits{S.}},
+\bauthor{\bsnm{Brunet}, \binits{J.-L.}},
+\bauthor{\bsnm{Alaux}, \binits{C.}}:
+\batitle{{Influence of pollen nutrition on honey bee health: Do pollen quality
+  and diversity matter?}}
+\bjtitle{PLoS ONE}
+\bvolume{8},
+\bfpage{72016}
+(\byear{2013})
+\end{barticle}
+\endbibitem
+
+%%% 56
+\bibitem{landscape1}
+\begin{barticle}
+\bauthor{\bsnm{Decourtye}, \binits{A.}},
+\bauthor{\bsnm{Mader}, \binits{E.}},
+\bauthor{\bsnm{Desneux}, \binits{N.}}:
+\batitle{{Landscape enhancement of floral resources for honey bees in
+  agro-ecosystems}}.
+\bjtitle{Apidologie}
+\bvolume{41},
+\bfpage{264}--\blpage{277}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 57
+\bibitem{hbGenome}
+\begin{barticle}
+\bauthor{\bsnm{Consortium}, \binits{H.B.G.S.}}:
+\batitle{{Finding the missing honey bee genes: lessons learned from a genome
+  upgrade}}.
+\bjtitle{BMC Genomics}
+\bvolume{15},
+\bfpage{86}
+(\byear{2014})
+\end{barticle}
+\endbibitem
+
+%%% 58
+\bibitem{hymenopteraDB}
+\begin{barticle}
+\bauthor{\bsnm{Elsik}, \binits{C.G.}},
+\bauthor{\bsnm{Tayal}, \binits{A.}},
+\bauthor{\bsnm{Diesh}, \binits{C.M.}},
+\bauthor{\bsnm{Unni}, \binits{D.R.}},
+\bauthor{\bsnm{Emery}, \binits{M.L.}},
+\bauthor{\bsnm{Nguyen}, \binits{H.N.}},
+\bauthor{\bsnm{Hagen}, \binits{D.E.}}:
+\batitle{{Hymenoptera Genome Database: integrating genome annotations in
+  HymenopteraMine}}.
+\bjtitle{Nucleic Acids Research}
+\bvolume{4},
+\bfpage{793}--\blpage{800}
+(\byear{2016})
+\end{barticle}
+\endbibitem
+
+%%% 59
+\bibitem{gsnap}
+\begin{barticle}
+\bauthor{\bsnm{Wu}, \binits{T.D.}},
+\bauthor{\bsnm{Reeder}, \binits{J.}},
+\bauthor{\bsnm{Lawrence}, \binits{M.}},
+\bauthor{\bsnm{Becker}, \binits{G.}},
+\bauthor{\bsnm{Brauer}, \binits{M.J.}}:
+\batitle{{GMAP and GSNAP for genomic sequence alignment: Enhancements to speed,
+  accuracy, and functionality}}.
+\bjtitle{Methods Mol Biol}
+\bvolume{1418},
+\bfpage{283}--\blpage{334}
+(\byear{2016})
+\end{barticle}
+\endbibitem
+
+%%% 60
+\bibitem{deseq2}
+\begin{barticle}
+\bauthor{\bsnm{Love}, \binits{M.I.}},
+\bauthor{\bsnm{Huber}, \binits{W.}},
+\bauthor{\bsnm{Anders}, \binits{S.}}:
+\batitle{{Moderated estimation of fold change and dispersion for RNA-seq data
+  with DESeq2}}.
+\bjtitle{Genome Biology}
+\bvolume{15},
+\bfpage{550}
+(\byear{2014})
+\end{barticle}
+\endbibitem
+
+%%% 61
+\bibitem{edger}
+\begin{barticle}
+\bauthor{\bsnm{Robinson}, \binits{M.D.}},
+\bauthor{\bsnm{McCarthy}, \binits{D.J.}},
+\bauthor{\bsnm{Smyth}, \binits{G.K.}}:
+\batitle{edger: a bioconductor package for differential expression analysis of
+  digital gene expression data}.
+\bjtitle{Bioinformatics}
+\bvolume{26},
+\bfpage{139}--\blpage{140}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 62
+\bibitem{limma}
+\begin{barticle}
+\bauthor{\bsnm{Ritchie}, \binits{M.E.}},
+\bauthor{\bsnm{Phipson}, \binits{B.}},
+\bauthor{\bsnm{Wu}, \binits{D.}},
+\bauthor{\bsnm{Hu}, \binits{Y.}},
+\bauthor{\bsnm{Law}, \binits{C.W.}},
+\bauthor{\bsnm{Shi}, \binits{W.}},
+\bauthor{\bsnm{Smyth}, \binits{G.K.}}:
+\batitle{limma powers differential expression analyses for rna-sequencing and
+  microarray studies}.
+\bjtitle{Nucleic Acids Research}
+\bvolume{43}(\bissue{7}),
+\bfpage{47}
+(\byear{2015})
+\end{barticle}
+\endbibitem
+
+%%% 63
+\bibitem{benjamini}
+\begin{barticle}
+\bauthor{\bsnm{Benjamini}, \binits{Y.}},
+\bauthor{\bsnm{Hochberg}, \binits{Y.}}:
+\batitle{{Controlling the false discovery rate: A practical and powerful
+  approach to multiple testing}}.
+\bjtitle{Journal of the Royal Statistical Society. Series B (Methodological)}
+\bvolume{57},
+\bfpage{289}--\blpage{300}
+(\byear{1995})
+\end{barticle}
+\endbibitem
+
+%%% 64
+\bibitem{euler}
+\begin{botherref}
+\oauthor{\bsnm{Larsson}, \binits{J.}}:
+{eulerr}: Area-Proportional {Euler} and {Venn} Diagrams with Ellipses.
+(2018).
+R package version 4.0.0.
+\url{https://cran.r-project.org/package=eulerr}
+\end{botherref}
+\endbibitem
+
+%%% 65
+\bibitem{sisters}
+\begin{barticle}
+\bauthor{\bsnm{Page}, \binits{R.E.}},
+\bauthor{\bsnm{Laidlaw}, \binits{H.H.}}:
+\batitle{{Full sisters and supersisters: A terminological paradigm}}.
+\bjtitle{Anim. Behav.}
+\bvolume{36},
+\bfpage{944}--\blpage{945}
+(\byear{1988})
+\end{barticle}
+\endbibitem
+
+%%% 66
+\bibitem{multParasite}
+\begin{barticle}
+\bauthor{\bsnm{Sherman}, \binits{P.W.}},
+\bauthor{\bsnm{Seeley}, \binits{T.D.}},
+\bauthor{\bsnm{Reeve}, \binits{H.K.}}:
+\batitle{{Parasites, pathogens, and polyandry in social Hymenoptera}}.
+\bjtitle{Am. Nat}
+\bvolume{131},
+\bfpage{602}--\blpage{610}
+(\byear{1988})
+\end{barticle}
+\endbibitem
+
+%%% 67
+\bibitem{divHyp2}
+\begin{barticle}
+\bauthor{\bsnm{Crozier}, \binits{R.H.}},
+\bauthor{\bsnm{Page}, \binits{R.E.}}:
+\batitle{{On being the right size: Male contributions and multiple mating in
+  social Hymenoptera}}.
+\bjtitle{Behav. Ecol. Sociobiol.}
+\bvolume{18},
+\bfpage{105}--\blpage{115}
+(\byear{1985})
+\end{barticle}
+\endbibitem
+
+%%% 68
+\bibitem{geneticDiverse}
+\begin{barticle}
+\bauthor{\bsnm{Mattila}, \binits{H.R.}},
+\bauthor{\bsnm{Seeley}, \binits{T.D.}}:
+\batitle{{Genetic diversity in honey bee colonies enhances productivity and
+  fitness}}.
+\bjtitle{Science}
+\bvolume{317},
+\bfpage{362}--\blpage{364}
+(\byear{2007})
+\end{barticle}
+\endbibitem
+
+%%% 69
+\bibitem{geneticDiverse2}
+\begin{barticle}
+\bauthor{\bsnm{Tarpy}, \binits{D.R.}}:
+\batitle{{Genetic diversity within honeybee colonies prevents severe infections
+  and promotes colony growth}}.
+\bjtitle{Proc. R. Soc. Lond. B}
+\bvolume{270},
+\bfpage{99}--\blpage{103}
+(\byear{2003})
+\end{barticle}
+\endbibitem
+
+%%% 70
+\bibitem{patriline}
+\begin{barticle}
+\bauthor{\bsnm{Brodschneider}, \binits{R.}},
+\bauthor{\bsnm{Arnold}, \binits{G.}},
+\bauthor{\bsnm{Hrassnigg}, \binits{N.}},
+\bauthor{\bsnm{Crailsheim}, \binits{K.}}:
+\batitle{{Does patriline composition change over a honey bee queen’s
+  lifetime?}}
+\bjtitle{Insects}
+\bvolume{3},
+\bfpage{857}--\blpage{869}
+(\byear{2012})
+\end{barticle}
+\endbibitem
+
+%%% 71
+\bibitem{davidBio}
+\begin{barticle}
+\bauthor{\bsnm{Huang}, \binits{D.W.}},
+\bauthor{\bsnm{Sherman}, \binits{B.T.}},
+\bauthor{\bsnm{Lempicki}, \binits{R.}}:
+\batitle{{Systematic and integrative analysis of large gene lists using DAVID
+  bioinformatics resources}}.
+\bjtitle{Nat Protoc}
+\bvolume{4},
+\bfpage{44}--\blpage{57}
+(\byear{2009})
+\end{barticle}
+\endbibitem
+
+%%% 72
+\bibitem{davidBio2}
+\begin{barticle}
+\bauthor{\bsnm{Huang}, \binits{D.W.}},
+\bauthor{\bsnm{Sherman}, \binits{B.T.}},
+\bauthor{\bsnm{Lempicki}, \binits{R.A.}}:
+\batitle{{Bioinformatics enrichment tools: paths toward the comprehensive
+  functional analysis of large gene lists}}.
+\bjtitle{Nucleic Acids Res}
+\bvolume{37},
+\bfpage{1}--\blpage{13}
+(\byear{2009})
+\end{barticle}
+\endbibitem
+
+%%% 73
+\bibitem{revigo}
+\begin{barticle}
+\bauthor{\bsnm{Supek}, \binits{F.}},
+\bauthor{\bsnm{Bošnjak}, \binits{M.}},
+\bauthor{\bsnm{Škunca}, \binits{N.}},
+\bauthor{\bsnm{Šmuc}, \binits{T.}}:
+\batitle{{REVIGO summarizes and visualizes long lists of Gene Ontology terms}}.
+\bjtitle{PLoS ONE}
+\bvolume{6},
+\bfpage{21800}
+(\byear{2011})
+\end{barticle}
+\endbibitem
+
+\end{thebibliography}
+
+\newcommand{\BMCxmlcomment}[1]{}
+
+\BMCxmlcomment{
+
+<refgrp>
+
+<bibl id="B1">
+  <title><p>{Colony collapse disorder: A descriptive study}</p></title>
+  <aug>
+    <au><snm>Engelsdorp</snm><fnm>D.</fnm></au>
+    <au><snm>Evans</snm><fnm>J.D.</fnm></au>
+    <au><snm>Saegerman</snm><fnm>C.</fnm></au>
+    <au><snm>Mullin</snm><fnm>C.</fnm></au>
+    <au><snm>Haubruge</snm><fnm>E.</fnm></au>
+    <au><snm>Nguyen</snm><fnm>B.K.</fnm></au>
+    <au><snm>Frazier</snm><fnm>M.</fnm></au>
+    <au><snm>Frazier</snm><fnm>J.</fnm></au>
+    <au><snm>Cox Foster</snm><fnm>D.</fnm></au>
+    <au><snm>Chen</snm><fnm>Y.</fnm></au>
+    <au><snm>Underwood</snm><fnm>R.</fnm></au>
+    <au><snm>Tarpy</snm><fnm>D.R.</fnm></au>
+    <au><snm>Pettis</snm><fnm>J.S.</fnm></au>
+  </aug>
+  <source>PLoS ONE</source>
+  <pubdate>2009</pubdate>
+  <volume>4</volume>
+  <fpage>e6481</fpage>
+</bibl>
+
+<bibl id="B2">
+  <title><p>{A national survey of managed honey bee 2014–2015 annual colony
+  losses in the USA}</p></title>
+  <aug>
+    <au><snm>Kulhanek</snm><fnm>K.</fnm></au>
+    <au><snm>Steinhauer</snm><fnm>N.</fnm></au>
+    <au><snm>Rennich</snm><fnm>K.</fnm></au>
+    <au><snm>Caron</snm><fnm>D.M.</fnm></au>
+    <au><snm>Sagili</snm><fnm>R.R.</fnm></au>
+    <au><snm>Pettis</snm><fnm>J.S.</fnm></au>
+    <au><snm>Ellis</snm><fnm>J.D.</fnm></au>
+    <au><snm>Wilson</snm><fnm>M.E.</fnm></au>
+    <au><snm>Wilkes</snm><fnm>J.T.</fnm></au>
+    <au><snm>Tarpy</snm><fnm>D.R.</fnm></au>
+    <au><snm>Rose</snm><fnm>R.</fnm></au>
+    <au><snm>Lee</snm><fnm>K.</fnm></au>
+    <au><snm>Rangel</snm><fnm>J.</fnm></au>
+    <au><snm>vanEngelsdorp</snm><fnm>D.</fnm></au>
+  </aug>
+  <source>Journal of Apicultural Research</source>
+  <pubdate>2017</pubdate>
+  <volume>56</volume>
+  <fpage>328</fpage>
+  <lpage>340</lpage>
+</bibl>
+
+<bibl id="B3">
+  <title><p>{A pan-European epidemiological study on honeybee colony losses
+  2012–2014}</p></title>
+  <aug>
+    <au><snm>Laurent</snm><fnm>M.</fnm></au>
+    <au><snm>Hendrikx</snm><fnm>P.</fnm></au>
+    <au><snm>Ribiere Chabert</snm><fnm>M.</fnm></au>
+    <au><snm>Chauzat</snm><fnm>M P.</fnm></au>
+  </aug>
+  <source>Epilobee</source>
+  <pubdate>2016</pubdate>
+  <volume>2013</volume>
+  <fpage>44</fpage>
+</bibl>
+
+<bibl id="B4">
+  <title><p>{Honey bee colony mortality in the Pacific Northwest: Winter
+  2009/2010}</p></title>
+  <aug>
+    <au><snm>Caron</snm><fnm>D.</fnm></au>
+    <au><snm>Sagili</snm><fnm>R.</fnm></au>
+  </aug>
+  <source>Am Bee J</source>
+  <pubdate>2011</pubdate>
+  <volume>151</volume>
+  <fpage>73</fpage>
+  <lpage>76</lpage>
+</bibl>
+
+<bibl id="B5">
+  <title><p>Fruit and Tree Nuts Outlook: Economic Insight U.S. Pollination-
+  Services Market</p></title>
+  <aug>
+    <au><snm>Bond</snm><fnm>J.</fnm></au>
+    <au><snm>Plattner</snm><fnm>K.</fnm></au>
+    <au><snm>Hunt</snm><fnm>K.</fnm></au>
+  </aug>
+  <publisher>USDA: Economic Research Service Situation and Outlook
+  FTS-357SA</publisher>
+  <pubdate>2014</pubdate>
+</bibl>
+
+<bibl id="B6">
+  <title><p>{Economic valuation of the vulnerability of world agriculture
+  confronted with pollinator decline}</p></title>
+  <aug>
+    <au><snm>Gallai</snm><fnm>N.</fnm></au>
+    <au><snm>Salles</snm><fnm>J M.</fnm></au>
+    <au><snm>Settele</snm><fnm>J.</fnm></au>
+    <au><snm>Vaissière</snm><fnm>B.B.</fnm></au>
+  </aug>
+  <source>Ecol. Econ.</source>
+  <pubdate>2009</pubdate>
+  <volume>68</volume>
+  <fpage>810–821</fpage>
+</bibl>
+
+<bibl id="B7">
+  <title><p>{Importance of pollinators in changing landscapes for world
+  crops}</p></title>
+  <aug>
+    <au><snm>Klein</snm><fnm>A M.</fnm></au>
+    <au><snm>Vaissière</snm><fnm>B.E.</fnm></au>
+    <au><snm>Cane</snm><fnm>J.H.</fnm></au>
+    <au><snm>Steffan Dewenter</snm><fnm>I.</fnm></au>
+    <au><snm>Cunningham</snm><fnm>S.A.</fnm></au>
+    <au><snm>Kremen</snm><fnm>C.</fnm></au>
+    <au><snm>Tscharntke</snm><fnm>T.</fnm></au>
+  </aug>
+  <source>Proc Biol Sci</source>
+  <pubdate>2007</pubdate>
+  <volume>274</volume>
+  <fpage>303–313</fpage>
+</bibl>
+
+<bibl id="B8">
+  <title><p>{}</p></title>
+  <aug>
+    <au><snm>Potts</snm><fnm>S.G.</fnm></au>
+    <au><snm>Biesmeijer</snm><fnm>J.C.</fnm></au>
+    <au><snm>Kremen</snm><fnm>C.</fnm></au>
+    <au><snm>Neumann</snm><fnm>P.</fnm></au>
+    <au><snm>Schweiger</snm><fnm>O.</fnm></au>
+    <au><snm>Kunin</snm><fnm>W.E.</fnm></au>
+  </aug>
+  <source>Global pollinator declines: trends, impacts and drivers</source>
+  <pubdate>2010</pubdate>
+  <volume>25</volume>
+  <fpage>345</fpage>
+  <lpage>353</lpage>
+</bibl>
+
+<bibl id="B9">
+  <title><p>{The Plight of the Bees}</p></title>
+  <aug>
+    <au><snm>Spivak</snm><fnm>M.</fnm></au>
+    <au><snm>Mader</snm><fnm>E.</fnm></au>
+    <au><snm>Vaughan</snm><fnm>M.</fnm></au>
+    <au><snm>Euliss</snm><fnm>N.H.</fnm></au>
+  </aug>
+  <source>Environ Sci Technol</source>
+  <pubdate>2011</pubdate>
+  <volume>45</volume>
+  <fpage>34</fpage>
+  <lpage>38</lpage>
+</bibl>
+
+<bibl id="B10">
+  <title><p>{Bee declines driven by combined stress from parasites, pesticides,
+  and lack of flowers}</p></title>
+  <aug>
+    <au><snm>Goulson</snm><fnm>D.</fnm></au>
+    <au><snm>Nicholls</snm><fnm>E.</fnm></au>
+    <au><snm>Botías</snm><fnm>C.</fnm></au>
+    <au><snm>Rotheray</snm><fnm>E.L.</fnm></au>
+  </aug>
+  <source>Science</source>
+  <pubdate>2015</pubdate>
+  <volume>347</volume>
+  <fpage>1255957</fpage>
+</bibl>
+
+<bibl id="B11">
+  <title><p>{A phylogenetic reconsideration of the pollen starch-pollination
+  correlation}</p></title>
+  <aug>
+    <au><snm>Roulston</snm><fnm>T.H.</fnm></au>
+    <au><snm>Buchmann</snm><fnm>S.L.</fnm></au>
+  </aug>
+  <source>Evol Ecol Res</source>
+  <pubdate>2000</pubdate>
+  <volume>2</volume>
+  <fpage>627</fpage>
+  <lpage>643</lpage>
+</bibl>
+
+<bibl id="B12">
+  <title><p>Pollen: Biology, biochemistry, management</p></title>
+  <aug>
+    <au><snm>Stanley</snm><fnm>R.G.</fnm></au>
+    <au><snm>Linskens</snm><fnm>H.F.</fnm></au>
+  </aug>
+  <pubdate>1974</pubdate>
+</bibl>
+
+<bibl id="B13">
+  <title><p>{Nutrition and health in honey bees}</p></title>
+  <aug>
+    <au><snm>Brodschneider</snm><fnm>R.</fnm></au>
+    <au><snm>Crailsheim</snm><fnm>K.</fnm></au>
+  </aug>
+  <source>Apidologie</source>
+  <pubdate>2010</pubdate>
+  <volume>41</volume>
+  <fpage>278–294</fpage>
+</bibl>
+
+<bibl id="B14">
+  <title><p>{Honey bee nutrition}</p></title>
+  <aug>
+    <au><snm>Haydak</snm><fnm>M.H.</fnm></au>
+  </aug>
+  <source>Annu Rev Entomol</source>
+  <pubdate>1970</pubdate>
+  <volume>15</volume>
+  <fpage>143</fpage>
+  <lpage>156</lpage>
+</bibl>
+
+<bibl id="B15">
+  <title><p>{Pollen consumption and utilization in worker honeybees (Apis
+  mellifera carnica): dependence on individual age and function}</p></title>
+  <aug>
+    <au><snm>Crailsheim</snm><fnm>K.</fnm></au>
+    <au><snm>Schneider</snm><fnm>L.H.W</fnm></au>
+    <au><snm>Hrassnigg</snm><fnm>N.</fnm></au>
+    <au><snm>Bühlmann</snm><fnm>G.</fnm></au>
+    <au><snm>Brosch</snm><fnm>U.</fnm></au>
+    <au><snm>Gmeinbauer</snm><fnm>R.</fnm></au>
+    <au><snm>Schöffmann</snm><fnm>B.</fnm></au>
+  </aug>
+  <source>J Insect Physiol</source>
+  <pubdate>1992</pubdate>
+  <volume>38</volume>
+  <fpage>409</fpage>
+  <lpage>419</lpage>
+</bibl>
+
+<bibl id="B16">
+  <title><p>{The flow of jelly within a honeybee colony}</p></title>
+  <aug>
+    <au><snm>Crailsheim</snm><fnm>K.</fnm></au>
+  </aug>
+  <source>J Comp Physiol B</source>
+  <pubdate>1992</pubdate>
+  <volume>162</volume>
+  <fpage>681</fpage>
+  <lpage>689</lpage>
+</bibl>
+
+<bibl id="B17">
+  <title><p>{Feeding preference of Apis mellifera L. (Hymenoptera: Apidae):
+  Individual versus mixed pollen species}</p></title>
+  <aug>
+    <au><snm>Schmidt</snm><fnm>J.O.</fnm></au>
+  </aug>
+  <source>J. Kans. Entomol. Soc.</source>
+  <pubdate>1984</pubdate>
+  <volume>57</volume>
+  <fpage>323–327</fpage>
+</bibl>
+
+<bibl id="B18">
+  <title><p>{Survival of honey bees, Apis mellifera (Hymenoptera: Apidae), fed
+  various pollen sources}</p></title>
+  <aug>
+    <au><snm>Schmidt</snm><fnm>J.O.</fnm></au>
+    <au><snm>Thoenes</snm><fnm>S.C.</fnm></au>
+    <au><snm>Levin</snm><fnm>M.D.</fnm></au>
+  </aug>
+  <source>J. Econ. Entomol.</source>
+  <pubdate>1987</pubdate>
+  <volume>80</volume>
+  <fpage>176–183</fpage>
+</bibl>
+
+<bibl id="B19">
+  <title><p>{Diet effects on honeybee immunocompetence}</p></title>
+  <aug>
+    <au><snm>Alaux</snm><fnm>C.</fnm></au>
+    <au><snm>Ducloz</snm><fnm>F.</fnm></au>
+    <au><snm>Conte</snm><fnm>DCYL</fnm></au>
+  </aug>
+  <source>Biol. Lett.</source>
+  <pubdate>2010</pubdate>
+  <volume>6</volume>
+  <fpage>562</fpage>
+  <lpage>565</lpage>
+</bibl>
+
+<bibl id="B20">
+  <title><p>{Nutritional stress due to habitat loss may explain recent honeybee
+  colony collapses}</p></title>
+  <aug>
+    <au><snm>Naug</snm><fnm>D.</fnm></au>
+  </aug>
+  <source>Biol Conserv</source>
+  <pubdate>2009</pubdate>
+  <volume>142</volume>
+  <fpage>2369</fpage>
+  <lpage>2372</lpage>
+</bibl>
+
+<bibl id="B21">
+  <title><p>{A survey of honey bee colony losses in the U.S., fall 2007 to
+  spring 2008}</p></title>
+  <aug>
+    <au><snm>Engelsdorp</snm><fnm>DV</fnm></au>
+    <au><snm>Hayes</snm><fnm>JJ</fnm></au>
+    <au><snm>Underwood</snm><fnm>R.M</fnm></au>
+    <au><snm>Pettis</snm><fnm>J.</fnm></au>
+  </aug>
+  <source>PLoS ONE</source>
+  <pubdate>2008</pubdate>
+  <volume>3</volume>
+  <fpage>e4071</fpage>
+</bibl>
+
+<bibl id="B22">
+  <title><p>{Honey bee colony losses}</p></title>
+  <aug>
+    <au><snm>Neumann</snm><fnm>P.</fnm></au>
+    <au><snm>Carreck</snm><fnm>N.L.</fnm></au>
+  </aug>
+  <source>J Apicult Res</source>
+  <pubdate>2010</pubdate>
+  <volume>49</volume>
+  <fpage>1</fpage>
+  <lpage>6</lpage>
+</bibl>
+
+<bibl id="B23">
+  <title><p>{A historical review of managed honey bee populations in Europe and
+  the United States and the factors that may affect them}</p></title>
+  <aug>
+    <au><snm>Engelsdorp</snm><fnm>DV</fnm></au>
+    <au><snm>Meixner</snm><fnm>M.D.</fnm></au>
+  </aug>
+  <source>J Invertebr Pathol</source>
+  <pubdate>2010</pubdate>
+  <volume>103</volume>
+  <fpage>S80</fpage>
+  <lpage>S95</lpage>
+</bibl>
+
+<bibl id="B24">
+  <title><p>{Biology and control of Varroa destructor}</p></title>
+  <aug>
+    <au><snm>Rosenkranz</snm><fnm>P.</fnm></au>
+    <au><snm>Aumeier</snm><fnm>P.</fnm></au>
+    <au><snm>Ziegelmann</snm><fnm>B.</fnm></au>
+  </aug>
+  <source>J Invertebr Pathol</source>
+  <pubdate>2010</pubdate>
+  <volume>103</volume>
+  <fpage>S96</fpage>
+  <lpage>S119</lpage>
+</bibl>
+
+<bibl id="B25">
+  <title><p>{The influence of the mite Varroa Jacobsoni Oud. on the protein
+  concentration and the haemolymph volume of the brood of worker bees and
+  drones of the honey bee Apis Mellifera L}</p></title>
+  <aug>
+    <au><snm>Weinberg</snm><fnm>K.P.</fnm></au>
+    <au><snm>Madel</snm><fnm>G.</fnm></au>
+  </aug>
+  <source>Apidologie</source>
+  <pubdate>1985</pubdate>
+  <volume>16</volume>
+  <fpage>421</fpage>
+  <lpage>436</lpage>
+</bibl>
+
+<bibl id="B26">
+  <title><p>{Intricate transmission routes and interactions between
+  picorna-like viruses (Kashmir bee virus and sacbrood virus) with the honeybee
+  host and the parasitic varroa mite}</p></title>
+  <aug>
+    <au><snm>Shen</snm><fnm>M.Q.</fnm></au>
+    <au><snm>Cui</snm><fnm>L.W.</fnm></au>
+    <au><snm>Ostiguy</snm><fnm>N.</fnm></au>
+    <au><snm>Cox Foster</snm><fnm>D.</fnm></au>
+  </aug>
+  <source>J Gen Virol</source>
+  <pubdate>2005</pubdate>
+  <volume>86</volume>
+  <fpage>2281</fpage>
+  <lpage>2289</lpage>
+</bibl>
+
+<bibl id="B27">
+  <title><p>{Effects of parasitization by Varroa destructor on survivorship and
+  physiological traits of Apis mellifera in correlation with viral incidence
+  and microbial challenge}</p></title>
+  <aug>
+    <au><snm>Yang</snm><fnm>X.</fnm></au>
+    <au><snm>Cox Foster</snm><fnm>D.</fnm></au>
+  </aug>
+  <source>Parasitology</source>
+  <pubdate>2007</pubdate>
+  <volume>134</volume>
+  <fpage>405</fpage>
+  <lpage>412</lpage>
+</bibl>
+
+<bibl id="B28">
+  <title><p>{Impact of an ectoparasite on the immunity and pathology of an
+  invertebrate: Evidence for host immunosuppression and viral
+  amplification}</p></title>
+  <aug>
+    <au><snm>Yang</snm><fnm>X.L.</fnm></au>
+    <au><snm>Cox Foster</snm><fnm>D.L.</fnm></au>
+  </aug>
+  <source>P Natl Acad Sci USA</source>
+  <pubdate>2005</pubdate>
+  <volume>102</volume>
+  <fpage>7470</fpage>
+  <lpage>7475</lpage>
+</bibl>
+
+<bibl id="B29">
+  <title><p>{Honey bee viruses}</p></title>
+  <aug>
+    <au><snm>Chen</snm><fnm>Y.P.</fnm></au>
+    <au><snm>Siede</snm><fnm>R.</fnm></au>
+  </aug>
+  <source>Adv Virus Res</source>
+  <pubdate>2007</pubdate>
+  <volume>70</volume>
+  <fpage>33</fpage>
+  <lpage>80</lpage>
+</bibl>
+
+<bibl id="B30">
+  <title><p>{The acute bee paralysis virus-Kashmir bee virus-Israeli acute
+  paralysis virus complex}</p></title>
+  <aug>
+    <au><snm>Miranda</snm><fnm>JD</fnm></au>
+    <au><snm>Cordoni</snm><fnm>G.</fnm></au>
+    <au><snm>Budge</snm><fnm>G.</fnm></au>
+  </aug>
+  <source>J Invertebr Pathol</source>
+  <pubdate>2010</pubdate>
+  <volume>103</volume>
+  <fpage>S30–47</fpage>
+</bibl>
+
+<bibl id="B31">
+  <title><p>{IAPV, a bee-affecting virus associated with Colony Collapse
+  Disorder can be silenced by dsRNA ingestion}</p></title>
+  <aug>
+    <au><snm>Maori</snm><fnm>E.</fnm></au>
+    <au><snm>Paldi</snm><fnm>N.</fnm></au>
+    <au><snm>Shafir</snm><fnm>S.</fnm></au>
+    <au><snm>Kalev</snm><fnm>H.</fnm></au>
+    <au><snm>Tsur</snm><fnm>E.</fnm></au>
+    <au><snm>Glick</snm><fnm>E.</fnm></au>
+    <au><snm>Sela</snm><fnm>I.</fnm></au>
+  </aug>
+  <source>Insect Mol Biol</source>
+  <pubdate>2009</pubdate>
+  <volume>18</volume>
+  <fpage>55</fpage>
+  <lpage>60</lpage>
+</bibl>
+
+<bibl id="B32">
+  <title><p>{In vivo and in vitro infection dynamics of honey bee
+  viruses}</p></title>
+  <aug>
+    <au><snm>Carrillo Tripp</snm><fnm>J.</fnm></au>
+    <au><snm>Dolezal</snm><fnm>A.G.</fnm></au>
+    <au><snm>Goblirsch</snm><fnm>M.J.</fnm></au>
+    <au><snm>Miller</snm><fnm>W.A.</fnm></au>
+    <au><snm>Toth</snm><fnm>A.L.</fnm></au>
+    <au><snm>Bonning</snm><fnm>B.C.</fnm></au>
+  </aug>
+  <source>Sci Rep</source>
+  <pubdate>2016</pubdate>
+  <volume>6</volume>
+  <fpage>22265</fpage>
+</bibl>
+
+<bibl id="B33">
+  <title><p>{Israeli acute paralysis virus: Epidemiology, pathogenesis and
+  implications for honey bee health}</p></title>
+  <aug>
+    <au><snm>Chen</snm><fnm>Y.P.</fnm></au>
+    <au><snm>Pettis</snm><fnm>J.S.</fnm></au>
+    <au><snm>Corona</snm><fnm>M.</fnm></au>
+    <au><snm>Chen</snm><fnm>W.P.</fnm></au>
+    <au><snm>Li</snm><fnm>C.J.</fnm></au>
+    <au><snm>Spivak</snm><fnm>M.</fnm></au>
+    <au><snm>Visscher</snm><fnm>P.K.</fnm></au>
+    <au><snm>DeGrandi Hoffman</snm><fnm>G.</fnm></au>
+    <au><snm>Boncristiani</snm><fnm>H.</fnm></au>
+    <au><snm>Zhao</snm><fnm>Y.</fnm></au>
+    <au><snm>Engelsdorp</snm><fnm>D.</fnm></au>
+    <au><snm>Delaplane</snm><fnm>K.</fnm></au>
+    <au><snm>Solter</snm><fnm>L.</fnm></au>
+    <au><snm>Drummond</snm><fnm>F.</fnm></au>
+    <au><snm>Kramer</snm><fnm>M.</fnm></au>
+    <au><snm>Lipkin</snm><fnm>W.I.</fnm></au>
+    <au><snm>Palacios</snm><fnm>G.</fnm></au>
+    <au><snm>Hamilton</snm><fnm>M.C.</fnm></au>
+    <au><snm>Smith</snm><fnm>B.</fnm></au>
+    <au><snm>Huang</snm><fnm>S.K.</fnm></au>
+    <au><snm>Zheng</snm><fnm>H.Q.</fnm></au>
+    <au><snm>Li</snm><fnm>J.L.</fnm></au>
+    <au><snm>Zhang</snm><fnm>X.</fnm></au>
+    <au><snm>Zhou</snm><fnm>X.F.</fnm></au>
+    <au><snm>Wu</snm><fnm>L.Y.</fnm></au>
+    <au><snm>Zhou</snm><fnm>J.Z.</fnm></au>
+    <au><snm>Lee</snm><fnm>M L.</fnm></au>
+    <au><snm>Teixeira</snm><fnm>E.W.</fnm></au>
+    <au><snm>Li</snm><fnm>Z.G.</fnm></au>
+    <au><snm>Evans</snm><fnm>J.D.</fnm></au>
+  </aug>
+  <source>PLoS Pathog</source>
+  <pubdate>2014</pubdate>
+  <volume>10</volume>
+  <fpage>e1004261</fpage>
+</bibl>
+
+<bibl id="B34">
+  <title><p>{A metagenomic survey of microbes in honey bee colony collapse
+  disorder}</p></title>
+  <aug>
+    <au><snm>Cox Foster</snm><fnm>D.L.</fnm></au>
+    <au><snm>Conlan</snm><fnm>S.</fnm></au>
+    <au><snm>Holmes</snm><fnm>E.C.</fnm></au>
+    <au><snm>Palacios</snm><fnm>G.</fnm></au>
+    <au><snm>Evans</snm><fnm>J.D.</fnm></au>
+    <au><snm>Moran</snm><fnm>N.A.</fnm></au>
+    <au><snm>Quan</snm><fnm>P L.</fnm></au>
+    <au><snm>Briese</snm><fnm>T.</fnm></au>
+    <au><snm>Hornig</snm><fnm>M.</fnm></au>
+    <au><snm>Geiser</snm><fnm>D.M.</fnm></au>
+    <au><snm>Martinson</snm><fnm>V.</fnm></au>
+    <au><snm>vanEngelsdorp</snm><fnm>D.</fnm></au>
+    <au><snm>Kalkstein</snm><fnm>A.L.</fnm></au>
+    <au><snm>Drysdale</snm><fnm>A.</fnm></au>
+    <au><snm>Hui</snm><fnm>J.</fnm></au>
+    <au><snm>Zhai</snm><fnm>J.</fnm></au>
+    <au><snm>Cui</snm><fnm>L.</fnm></au>
+    <au><snm>Hutchison</snm><fnm>S.K.</fnm></au>
+    <au><snm>Simons</snm><fnm>J.F.</fnm></au>
+    <au><snm>Egholm</snm><fnm>M.</fnm></au>
+    <au><snm>Pettis</snm><fnm>J.S.</fnm></au>
+    <au><snm>Lipkin</snm><fnm>W.I.</fnm></au>
+  </aug>
+  <source>Science</source>
+  <pubdate>2007</pubdate>
+  <volume>318</volume>
+  <fpage>283–287</fpage>
+</bibl>
+
+<bibl id="B35">
+  <title><p>{Dynamics of the presence of israeli acute paralysis virus in honey
+  bee colonies with colony collapse disorder}</p></title>
+  <aug>
+    <au><snm>Hou</snm><fnm>C.</fnm></au>
+    <au><snm>Rivkin</snm><fnm>H.</fnm></au>
+    <au><snm>Slabezki</snm><fnm>Y.</fnm></au>
+    <au><snm>Chejanovsky</snm><fnm>N.</fnm></au>
+  </aug>
+  <source>Viruses</source>
+  <pubdate>2014</pubdate>
+  <volume>6</volume>
+  <fpage>2012–2027</fpage>
+</bibl>
+
+<bibl id="B36">
+  <title><p>{Pathogen webs in collapsing honey bee colonies}</p></title>
+  <aug>
+    <au><snm>Cornman</snm><fnm>R.S.</fnm></au>
+    <au><snm>Tarpy</snm><fnm>D.R.</fnm></au>
+    <au><snm>Chen</snm><fnm>Y.</fnm></au>
+    <au><snm>Jeffreys</snm><fnm>L.</fnm></au>
+    <au><snm>Lopez</snm><fnm>D.</fnm></au>
+    <au><snm>Pettis</snm><fnm>J.S.</fnm></au>
+  </aug>
+  <source>PLoS ONE</source>
+  <pubdate>2012</pubdate>
+  <volume>7</volume>
+  <fpage>e43562</fpage>
+</bibl>
+
+<bibl id="B37">
+  <title><p>{Nutrition, immunity and viral infections in honey
+  bees}</p></title>
+  <aug>
+    <au><snm>DeGrandi Hoffman</snm><fnm>G.</fnm></au>
+    <au><snm>Chen</snm><fnm>Y.</fnm></au>
+  </aug>
+  <source>Current Opinion in Insect Science</source>
+  <pubdate>2015</pubdate>
+  <volume>10</volume>
+  <fpage>170</fpage>
+  <lpage>176</lpage>
+</bibl>
+
+<bibl id="B38">
+  <title><p>{The effect of diet on protein concentration, hypopharyngeal gland
+  development and virus load in worker honey bees (Apis mellifera
+  L.)}</p></title>
+  <aug>
+    <au><snm>DeGrandi Hoffman</snm><fnm>G.</fnm></au>
+    <au><snm>Chen</snm><fnm>Y.</fnm></au>
+    <au><snm>Huang</snm><fnm>E.</fnm></au>
+    <au><snm>Huang</snm><fnm>M.H</fnm></au>
+  </aug>
+  <source>J Insect Physiol</source>
+  <pubdate>2010</pubdate>
+  <volume>56</volume>
+  <fpage>1184–1191</fpage>
+</bibl>
+
+<bibl id="B39">
+  <title><p>Interactions between Risk Factors in Honey Bees</p></title>
+  <aug>
+    <au><snm>Le Conte</snm><fnm>Y</fnm></au>
+    <au><snm>BRUNET</snm><fnm>JL</fnm></au>
+    <au><snm>McDonnell</snm><fnm>C</fnm></au>
+    <au><snm>Dussaubat</snm><fnm>C</fnm></au>
+    <au><snm>Alaux</snm><fnm>C</fnm></au>
+  </aug>
+  <pubdate>2011</pubdate>
+  <fpage>215</fpage>
+  <lpage>222</lpage>
+</bibl>
+
+<bibl id="B40">
+  <title><p>{Interacting stressors matter: Diet quality and virus infection in
+  honey bee health}</p></title>
+  <aug>
+    <au><snm>Dolezal</snm><fnm>A.G.</fnm></au>
+    <au><snm>Carrillo Tripp</snm><fnm>J.</fnm></au>
+    <au><snm>Judd</snm><fnm>T.</fnm></au>
+    <au><snm>Miller</snm><fnm>A.</fnm></au>
+    <au><snm>Bonning</snm><fnm>B.</fnm></au>
+    <au><snm>Toth</snm><fnm>A.</fnm></au>
+  </aug>
+  <source>In prep</source>
+  <pubdate>2018</pubdate>
+</bibl>
+
+<bibl id="B41">
+  <title><p>{Resistance and tolerance: The role of nutrients on pathogen
+  dynamics and infection outcomes in an insect host}</p></title>
+  <aug>
+    <au><snm>Miller</snm><fnm>C.V.L.</fnm></au>
+    <au><snm>Cotter</snm><fnm>S.C.</fnm></au>
+  </aug>
+  <source>Journal of Animal Ecology</source>
+  <pubdate>2017</pubdate>
+  <volume>87</volume>
+  <fpage>500</fpage>
+  <lpage>510</lpage>
+</bibl>
+
+<bibl id="B42">
+  <title><p>{Feedbacks between nutrition and disease in honey bee
+  health}</p></title>
+  <aug>
+    <au><snm>Dolezal</snm><fnm>A.G.</fnm></au>
+    <au><snm>Toth</snm><fnm>A.L.</fnm></au>
+  </aug>
+  <source>Current Opinion in Insect Science</source>
+  <pubdate>2018</pubdate>
+  <volume>26</volume>
+  <fpage>114</fpage>
+  <lpage>119</lpage>
+</bibl>
+
+<bibl id="B43">
+  <title><p>{Nutrigenomics in honey bees: digital gene expression analysis of
+  pollen's nutritive effects on healthy and varroa-parasitized
+  bees}</p></title>
+  <aug>
+    <au><snm>Alaux</snm><fnm>C.</fnm></au>
+    <au><snm>Dantec</snm><fnm>C.</fnm></au>
+    <au><snm>Parrinello</snm><fnm>H.</fnm></au>
+    <au><snm>Conte</snm><fnm>YL</fnm></au>
+  </aug>
+  <source>BMC Genomics</source>
+  <pubdate>2011</pubdate>
+  <volume>12</volume>
+  <fpage>496</fpage>
+</bibl>
+
+<bibl id="B44">
+  <title><p>{Parallel epigenomic and transcriptomic responses to viral
+  infection in honey bees (Apis mellifera)}</p></title>
+  <aug>
+    <au><snm>Galbraith</snm><fnm>D.A.</fnm></au>
+    <au><snm>Yang</snm><fnm>X.</fnm></au>
+    <au><snm>Niño</snm><fnm>E.L.</fnm></au>
+    <au><snm>Yi</snm><fnm>S.</fnm></au>
+    <au><snm>Grozinger</snm><fnm>C.</fnm></au>
+  </aug>
+  <source>PLoS Pathogens</source>
+  <pubdate>2015</pubdate>
+  <volume>11</volume>
+  <fpage>e1004713</fpage>
+</bibl>
+
+<bibl id="B45">
+  <title><p>{A unified model for the coevolution of resistance, tolerance, and
+  virulence}</p></title>
+  <aug>
+    <au><snm>Carval</snm><fnm>D.</fnm></au>
+    <au><snm>Ferriere</snm><fnm>R.</fnm></au>
+  </aug>
+  <source>Evolution</source>
+  <pubdate>2010</pubdate>
+  <volume>64</volume>
+  <fpage>2988–3009</fpage>
+</bibl>
+
+<bibl id="B46">
+  <title><p>{Trans-generational immune priming: Specific enhancement of the
+  antimicrobial immune response in the mealworm beetle, Tenebrio
+  molitor}</p></title>
+  <aug>
+    <au><snm>Moret</snm><fnm>Y.</fnm></au>
+  </aug>
+  <source>Proceedings of the Royal Society B: Biological Sciences</source>
+  <pubdate>2006</pubdate>
+  <volume>273</volume>
+  <fpage>1399–1405</fpage>
+</bibl>
+
+<bibl id="B47">
+  <title><p>{Variation in the defense strategies of plants: are resistance and
+  tolerance mutually exclusive?}</p></title>
+  <aug>
+    <au><snm>Mauricio</snm><fnm>R.</fnm></au>
+    <au><snm>Rausher</snm><fnm>M.D.</fnm></au>
+    <au><snm>Burdick</snm><fnm>D.S.</fnm></au>
+  </aug>
+  <source>Ecology</source>
+  <pubdate>1997</pubdate>
+  <volume>78</volume>
+  <fpage>1301–1310</fpage>
+</bibl>
+
+<bibl id="B48">
+  <title><p>{Evolution of mixed plant defense allocation against natural
+  enemies}</p></title>
+  <aug>
+    <au><snm>Fornoni</snm><fnm>J.</fnm></au>
+    <au><snm>Nunez Farfan</snm><fnm>J.</fnm></au>
+    <au><snm>Valverde</snm><fnm>P.L.</fnm></au>
+    <au><snm>Rausher</snm><fnm>M.D.</fnm></au>
+  </aug>
+  <source>Evolution</source>
+  <pubdate>2004</pubdate>
+  <volume>58</volume>
+  <fpage>1685–1695</fpage>
+</bibl>
+
+<bibl id="B49">
+  <title><p>{Shared control of epidemiological traits in a coevolutionary model
+  of host-parasite interactions}</p></title>
+  <aug>
+    <au><snm>Restif</snm><fnm>O.</fnm></au>
+    <au><snm>Koella</snm><fnm>J.C.</fnm></au>
+  </aug>
+  <source>The American Naturalist</source>
+  <pubdate>2003</pubdate>
+  <volume>161</volume>
+  <fpage>827–836</fpage>
+</bibl>
+
+<bibl id="B50">
+  <title><p>{Balancing resistance and infection tolerance through metabolic
+  means}</p></title>
+  <aug>
+    <au><snm>Chambers</snm><fnm>M.C.</fnm></au>
+    <au><snm>Schneider</snm><fnm>D.S.</fnm></au>
+  </aug>
+  <source>PNAS</source>
+  <pubdate>2012</pubdate>
+  <volume>109</volume>
+  <fpage>13886–13887</fpage>
+</bibl>
+
+<bibl id="B51">
+  <title><p>{Transcriptional pausing controls a rapid antiviral innate immune
+  response in Drosophila}</p></title>
+  <aug>
+    <au><snm>Xu</snm><fnm>J.</fnm></au>
+    <au><snm>Grant</snm><fnm>G.</fnm></au>
+    <au><snm>Sabin</snm><fnm>L.R.</fnm></au>
+    <au><snm>Gordesky Gold</snm><fnm>B.</fnm></au>
+    <au><snm>Yasunaga</snm><fnm>A.</fnm></au>
+    <au><snm>Tudor</snm><fnm>M.</fnm></au>
+    <au><snm>Cherry</snm><fnm>S.</fnm></au>
+  </aug>
+  <source>Cell Host Microbe</source>
+  <pubdate>2012</pubdate>
+  <volume>12</volume>
+  <fpage>531–543</fpage>
+</bibl>
+
+<bibl id="B52">
+  <title><p>{The prophenoloxidase-activating system in
+  invertebrates}</p></title>
+  <aug>
+    <au><snm>Cerenius</snm><fnm>L.</fnm></au>
+    <au><snm>Söderhäll</snm><fnm>K.</fnm></au>
+  </aug>
+  <source>Immunological Reviews</source>
+  <pubdate>2004</pubdate>
+  <volume>198</volume>
+  <fpage>116–126</fpage>
+</bibl>
+
+<bibl id="B53">
+  <title><p>{Self-harm caused by an insect's innate immunity}</p></title>
+  <aug>
+    <au><snm>Sadd</snm><fnm>B.M.</fnm></au>
+    <au><snm>Siva Jothy</snm><fnm>M.R.</fnm></au>
+  </aug>
+  <source>Proceedings of the Royal Society B: Biological Sciences</source>
+  <pubdate>2006</pubdate>
+  <volume>273</volume>
+  <fpage>2571–2574</fpage>
+</bibl>
+
+<bibl id="B54">
+  <title><p>{The importance of tissue specificity for RNA-seq: highlighting the
+  errors of composite structure extractions}</p></title>
+  <aug>
+    <au><snm>Johnson</snm><fnm>B.R.</fnm></au>
+    <au><snm>Atallah</snm><fnm>J.</fnm></au>
+    <au><snm>Plachetzki</snm><fnm>D.C</fnm></au>
+  </aug>
+  <source>BMC Genomics</source>
+  <pubdate>2013</pubdate>
+  <volume>14</volume>
+  <fpage>586</fpage>
+</bibl>
+
+<bibl id="B55">
+  <title><p>{Influence of pollen nutrition on honey bee health: Do pollen
+  quality and diversity matter?}</p></title>
+  <aug>
+    <au><snm>Pasquale</snm><fnm>G.D.</fnm></au>
+    <au><snm>Salignon</snm><fnm>M.</fnm></au>
+    <au><snm>Conte</snm><fnm>Y.L.</fnm></au>
+    <au><snm>Belzunces</snm><fnm>L.P.</fnm></au>
+    <au><snm>Decourtye</snm><fnm>A.</fnm></au>
+    <au><snm>Kretzschmar</snm><fnm>A.</fnm></au>
+    <au><snm>Suchail</snm><fnm>S.</fnm></au>
+    <au><snm>Brunet</snm><fnm>J L.</fnm></au>
+    <au><snm>Alaux</snm><fnm>C.</fnm></au>
+  </aug>
+  <source>PLoS ONE</source>
+  <pubdate>2013</pubdate>
+  <volume>8</volume>
+  <fpage>e72016</fpage>
+</bibl>
+
+<bibl id="B56">
+  <title><p>{Landscape enhancement of floral resources for honey bees in
+  agro-ecosystems}</p></title>
+  <aug>
+    <au><snm>Decourtye</snm><fnm>A.</fnm></au>
+    <au><snm>Mader</snm><fnm>E.</fnm></au>
+    <au><snm>Desneux</snm><fnm>N.</fnm></au>
+  </aug>
+  <source>Apidologie</source>
+  <pubdate>2010</pubdate>
+  <volume>41</volume>
+  <fpage>264</fpage>
+  <lpage>277</lpage>
+</bibl>
+
+<bibl id="B57">
+  <title><p>{Finding the missing honey bee genes: lessons learned from a genome
+  upgrade}</p></title>
+  <aug>
+    <au><snm>Consortium</snm><fnm>HBGS</fnm></au>
+  </aug>
+  <source>BMC Genomics</source>
+  <pubdate>2014</pubdate>
+  <volume>15</volume>
+  <fpage>86</fpage>
+</bibl>
+
+<bibl id="B58">
+  <title><p>{Hymenoptera Genome Database: integrating genome annotations in
+  HymenopteraMine}</p></title>
+  <aug>
+    <au><snm>Elsik</snm><fnm>C.G.</fnm></au>
+    <au><snm>Tayal</snm><fnm>A.</fnm></au>
+    <au><snm>Diesh</snm><fnm>C.M.</fnm></au>
+    <au><snm>Unni</snm><fnm>D.R.</fnm></au>
+    <au><snm>Emery</snm><fnm>M.L.</fnm></au>
+    <au><snm>Nguyen</snm><fnm>H.N.</fnm></au>
+    <au><snm>Hagen</snm><fnm>D.E.</fnm></au>
+  </aug>
+  <source>Nucleic Acids Research</source>
+  <pubdate>2016</pubdate>
+  <volume>4</volume>
+  <fpage>D793</fpage>
+  <lpage>800</lpage>
+</bibl>
+
+<bibl id="B59">
+  <title><p>{GMAP and GSNAP for genomic sequence alignment: Enhancements to
+  speed, accuracy, and functionality}</p></title>
+  <aug>
+    <au><snm>Wu</snm><fnm>T.D.</fnm></au>
+    <au><snm>Reeder</snm><fnm>J.</fnm></au>
+    <au><snm>Lawrence</snm><fnm>M.</fnm></au>
+    <au><snm>Becker</snm><fnm>G.</fnm></au>
+    <au><snm>Brauer</snm><fnm>M.J.</fnm></au>
+  </aug>
+  <source>Methods Mol Biol</source>
+  <pubdate>2016</pubdate>
+  <volume>1418</volume>
+  <fpage>283</fpage>
+  <lpage>334</lpage>
+</bibl>
+
+<bibl id="B60">
+  <title><p>{Moderated estimation of fold change and dispersion for RNA-seq
+  data with DESeq2}</p></title>
+  <aug>
+    <au><snm>Love</snm><fnm>M.I.</fnm></au>
+    <au><snm>Huber</snm><fnm>W.</fnm></au>
+    <au><snm>Anders</snm><fnm>S.</fnm></au>
+  </aug>
+  <source>Genome Biology</source>
+  <pubdate>2014</pubdate>
+  <volume>15</volume>
+  <fpage>550</fpage>
+</bibl>
+
+<bibl id="B61">
+  <title><p>edgeR: a Bioconductor package for differential expression analysis
+  of digital gene expression data</p></title>
+  <aug>
+    <au><snm>Robinson</snm><fnm>M.D.</fnm></au>
+    <au><snm>McCarthy</snm><fnm>D.J.</fnm></au>
+    <au><snm>Smyth</snm><fnm>G.K.</fnm></au>
+  </aug>
+  <source>Bioinformatics</source>
+  <pubdate>2010</pubdate>
+  <volume>26</volume>
+  <fpage>139</fpage>
+  <lpage>140</lpage>
+</bibl>
+
+<bibl id="B62">
+  <title><p>limma powers differential expression analyses for RNA-sequencing
+  and microarray studies</p></title>
+  <aug>
+    <au><snm>Ritchie</snm><fnm>M.E.</fnm></au>
+    <au><snm>Phipson</snm><fnm>B.</fnm></au>
+    <au><snm>Wu</snm><fnm>D.</fnm></au>
+    <au><snm>Hu</snm><fnm>Y.</fnm></au>
+    <au><snm>Law</snm><fnm>C.W.</fnm></au>
+    <au><snm>Shi</snm><fnm>W.</fnm></au>
+    <au><snm>Smyth</snm><fnm>G.K.</fnm></au>
+  </aug>
+  <source>Nucleic Acids Research</source>
+  <pubdate>2015</pubdate>
+  <volume>43</volume>
+  <issue>7</issue>
+  <fpage>e47</fpage>
+</bibl>
+
+<bibl id="B63">
+  <title><p>{Controlling the false discovery rate: A practical and powerful
+  approach to multiple testing}</p></title>
+  <aug>
+    <au><snm>Benjamini</snm><fnm>Y.</fnm></au>
+    <au><snm>Hochberg</snm><fnm>Y.</fnm></au>
+  </aug>
+  <source>Journal of the Royal Statistical Society. Series B
+  (Methodological)</source>
+  <pubdate>1995</pubdate>
+  <volume>57</volume>
+  <fpage>289</fpage>
+  <lpage>300</lpage>
+</bibl>
+
+<bibl id="B64">
+  <title><p>{eulerr}: Area-Proportional {Euler} and {Venn} Diagrams with
+  Ellipses</p></title>
+  <aug>
+    <au><snm>Larsson</snm><fnm>J</fnm></au>
+  </aug>
+  <pubdate>2018</pubdate>
+  <url>https://cran.r-project.org/package=eulerr</url>
+  <note>R package version 4.0.0</note>
+</bibl>
+
+<bibl id="B65">
+  <title><p>{Full sisters and supersisters: A terminological
+  paradigm}</p></title>
+  <aug>
+    <au><snm>Page</snm><fnm>R.E.</fnm></au>
+    <au><snm>Laidlaw</snm><fnm>H.H.</fnm></au>
+  </aug>
+  <source>Anim. Behav.</source>
+  <pubdate>1988</pubdate>
+  <volume>36</volume>
+  <fpage>944–945</fpage>
+</bibl>
+
+<bibl id="B66">
+  <title><p>{Parasites, pathogens, and polyandry in social
+  Hymenoptera}</p></title>
+  <aug>
+    <au><snm>Sherman</snm><fnm>P.W.</fnm></au>
+    <au><snm>Seeley</snm><fnm>T.D.</fnm></au>
+    <au><snm>Reeve</snm><fnm>H.K.</fnm></au>
+  </aug>
+  <source>Am. Nat</source>
+  <pubdate>1988</pubdate>
+  <volume>131</volume>
+  <fpage>602–610</fpage>
+</bibl>
+
+<bibl id="B67">
+  <title><p>{On being the right size: Male contributions and multiple mating in
+  social Hymenoptera}</p></title>
+  <aug>
+    <au><snm>Crozier</snm><fnm>R.H.</fnm></au>
+    <au><snm>Page</snm><fnm>R.E.</fnm></au>
+  </aug>
+  <source>Behav. Ecol. Sociobiol.</source>
+  <pubdate>1985</pubdate>
+  <volume>18</volume>
+  <fpage>105–115</fpage>
+</bibl>
+
+<bibl id="B68">
+  <title><p>{Genetic diversity in honey bee colonies enhances productivity and
+  fitness}</p></title>
+  <aug>
+    <au><snm>Mattila</snm><fnm>H.R.</fnm></au>
+    <au><snm>Seeley</snm><fnm>T.D.</fnm></au>
+  </aug>
+  <source>Science</source>
+  <pubdate>2007</pubdate>
+  <volume>317</volume>
+  <fpage>362</fpage>
+  <lpage>364</lpage>
+</bibl>
+
+<bibl id="B69">
+  <title><p>{Genetic diversity within honeybee colonies prevents severe
+  infections and promotes colony growth}</p></title>
+  <aug>
+    <au><snm>Tarpy</snm><fnm>D.R.</fnm></au>
+  </aug>
+  <source>Proc. R. Soc. Lond. B</source>
+  <pubdate>2003</pubdate>
+  <volume>270</volume>
+  <fpage>99</fpage>
+  <lpage>103</lpage>
+</bibl>
+
+<bibl id="B70">
+  <title><p>{Does patriline composition change over a honey bee queen’s
+  lifetime?}</p></title>
+  <aug>
+    <au><snm>Brodschneider</snm><fnm>R.</fnm></au>
+    <au><snm>Arnold</snm><fnm>G.</fnm></au>
+    <au><snm>Hrassnigg</snm><fnm>N.</fnm></au>
+    <au><snm>Crailsheim</snm><fnm>K.</fnm></au>
+  </aug>
+  <source>Insects</source>
+  <pubdate>2012</pubdate>
+  <volume>3</volume>
+  <fpage>857–869</fpage>
+</bibl>
+
+<bibl id="B71">
+  <title><p>{Systematic and integrative analysis of large gene lists using
+  DAVID bioinformatics resources}</p></title>
+  <aug>
+    <au><snm>Huang</snm><fnm>D.W.</fnm></au>
+    <au><snm>Sherman</snm><fnm>B.T.</fnm></au>
+    <au><snm>Lempicki</snm><fnm>R.</fnm></au>
+  </aug>
+  <source>Nat Protoc</source>
+  <pubdate>2009</pubdate>
+  <volume>4</volume>
+  <fpage>44</fpage>
+  <lpage>57</lpage>
+</bibl>
+
+<bibl id="B72">
+  <title><p>{Bioinformatics enrichment tools: paths toward the comprehensive
+  functional analysis of large gene lists}</p></title>
+  <aug>
+    <au><snm>Huang</snm><fnm>D.W.</fnm></au>
+    <au><snm>Sherman</snm><fnm>B.T.</fnm></au>
+    <au><snm>Lempicki</snm><fnm>R.A.</fnm></au>
+  </aug>
+  <source>Nucleic Acids Res</source>
+  <pubdate>2009</pubdate>
+  <volume>37</volume>
+  <fpage>1</fpage>
+  <lpage>13</lpage>
+</bibl>
+
+<bibl id="B73">
+  <title><p>{REVIGO summarizes and visualizes long lists of Gene Ontology
+  terms}</p></title>
+  <aug>
+    <au><snm>Supek</snm><fnm>F.</fnm></au>
+    <au><snm>Bošnjak</snm><fnm>M.</fnm></au>
+    <au><snm>Škunca</snm><fnm>N.</fnm></au>
+    <au><snm>Šmuc</snm><fnm>T.</fnm></au>
+  </aug>
+  <source>PLoS ONE</source>
+  <pubdate>2011</pubdate>
+  <volume>6</volume>
+  <fpage>e21800</fpage>
+</bibl>
+
+</refgrp>
+} % end of \BMCxmlcomment

@@ -1,21 +1,25 @@
-# RNA-seq of IAPV innolucation and monofloral diet in Apis Mellifera
-
-**Motivation:**
-
-Genealogists wish to study the parent-child relationship between groups of organisms. Visual representations of genealogical relationships allow scientists to more effectively understand the historical changes that caused novel and desirable traits to arise in lineages. For example, in crops, desirable modifications could include an increase in protein yield or an increase in disease resistance. However, there are also times when lineages of detrimental traits can be viewed, such as to determine the origin of hazardous traits in rapidly-evolving viruses.
-
-While there are visual methods available for genealogical data structures, there is a need for additional development of tools that are more customized to particular needs that arise when scientists want to make informed decisions while visualizing their data.
+# RNA-seq analysis of IAPV and diet in Apis Mellifera
 
 **Description:** 
 
-This package provides methods for searching through genealogical data and displaying the results. The available plotting algorithms can assist users in performing data exploration, as well as in generating publication-quality images. This package uses the Grammar of Graphics.
+This repository consists of materials for an RNA-seq study that examined IAPV inoculation and monofloral diet quality factors in honeybees. Below is an outline of the analysis scripts and data files that can found in this repository:
 
-Some of the currently-available methods include:
+  * C_R: Analysis scripts for the diet effect in our study (Castanea versus Rockrose)
+  * Galbraith: Analysis scripts for the virus effect in a prior study by [Galbraith et al.](https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1004713)
+  * N_V: Analysis scripts for the virus effect in our study (Non-infection versus infection)
+  * NC_NR_VC_VR: Analysis scripts for pairwise comparisons for both diet ad virus factors in our study
+  * Overlaps: Analysis scripts for determining DEG overlaps between various pipelines (DESeq2, edgeR, limma) and our study versus the Galbraith study
+  * Physiology: Data and analysis scripts for mortality rate and IAPV titer loads in a prior study by Dolezal et al.
+  * PostHocDEGPatterns: Analysis scripts for post-hoc analysis of physiology correlations in DEG patterns
+  * ResistanceTolerance: Analysis scripts for resistance and tolerance candidate Genes
+  * Tissues: Analysis scripts for estimating tissue expression in DEGs (not included in our manuscript)
+  * Variables.csv: Physiology metrics for the honeybees used in this RNA-seq study
+  
+There is also a folder called Manuscript, which contains materials related to a manuscript we are preparing for this work. This directory contains the following materials:
 
-  * Drawing genealogy trees from database of known lineage.
-  * Selecting generation number of ancestors and descendants to show around a given variety.
-  * Showing shortest path between two given varieties, and superimpose over full lineage structure.
-  * Obtaining graph theory measures of the full lineage structure.
-  * Producing color matrix plots of variables between a subset of varieties.
-  * Interactively visualizing genealogical structure
-  * Perform basic parsing and calculations on descendant branches of interest
+  * AdditionalFiles: The supplementary files in our manuscript (n=19)
+  * Figures: The figures in our manuscript (n=6)
+  * MakeFiguresFiles: Reproducible scripts for recreating the figures and supplementary (additional) files. We are still working on this directory
+  * Text: Files for creating our manuscript. Our latest manuscript text is located in the file called manuscript.tex
+  
+  
