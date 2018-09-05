@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{73}
+\begin{thebibliography}{78}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -928,21 +928,6 @@ In prep
 \endbibitem
 
 %%% 56
-\bibitem{landscape1}
-\begin{barticle}
-\bauthor{\bsnm{Decourtye}, \binits{A.}},
-\bauthor{\bsnm{Mader}, \binits{E.}},
-\bauthor{\bsnm{Desneux}, \binits{N.}}:
-\batitle{{Landscape enhancement of floral resources for honey bees in
-  agro-ecosystems}}.
-\bjtitle{Apidologie}
-\bvolume{41},
-\bfpage{264}--\blpage{277}
-(\byear{2010})
-\end{barticle}
-\endbibitem
-
-%%% 57
 \bibitem{hbGenome}
 \begin{barticle}
 \bauthor{\bsnm{Consortium}, \binits{H.B.G.S.}}:
@@ -955,7 +940,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 58
+%%% 57
 \bibitem{hymenopteraDB}
 \begin{barticle}
 \bauthor{\bsnm{Elsik}, \binits{C.G.}},
@@ -974,7 +959,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 59
+%%% 58
 \bibitem{gsnap}
 \begin{barticle}
 \bauthor{\bsnm{Wu}, \binits{T.D.}},
@@ -991,7 +976,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 60
+%%% 59
 \bibitem{deseq2}
 \begin{barticle}
 \bauthor{\bsnm{Love}, \binits{M.I.}},
@@ -1006,7 +991,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 61
+%%% 60
 \bibitem{edger}
 \begin{barticle}
 \bauthor{\bsnm{Robinson}, \binits{M.D.}},
@@ -1021,7 +1006,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 62
+%%% 61
 \bibitem{limma}
 \begin{barticle}
 \bauthor{\bsnm{Ritchie}, \binits{M.E.}},
@@ -1040,7 +1025,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 63
+%%% 62
 \bibitem{benjamini}
 \begin{barticle}
 \bauthor{\bsnm{Benjamini}, \binits{Y.}},
@@ -1054,7 +1039,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 64
+%%% 63
 \bibitem{euler}
 \begin{botherref}
 \oauthor{\bsnm{Larsson}, \binits{J.}}:
@@ -1065,7 +1050,7 @@ R package version 4.0.0.
 \end{botherref}
 \endbibitem
 
-%%% 65
+%%% 64
 \bibitem{sisters}
 \begin{barticle}
 \bauthor{\bsnm{Page}, \binits{R.E.}},
@@ -1078,7 +1063,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 66
+%%% 65
 \bibitem{multParasite}
 \begin{barticle}
 \bauthor{\bsnm{Sherman}, \binits{P.W.}},
@@ -1092,7 +1077,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 67
+%%% 66
 \bibitem{divHyp2}
 \begin{barticle}
 \bauthor{\bsnm{Crozier}, \binits{R.H.}},
@@ -1106,7 +1091,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 68
+%%% 67
 \bibitem{geneticDiverse}
 \begin{barticle}
 \bauthor{\bsnm{Mattila}, \binits{H.R.}},
@@ -1120,7 +1105,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 69
+%%% 68
 \bibitem{geneticDiverse2}
 \begin{barticle}
 \bauthor{\bsnm{Tarpy}, \binits{D.R.}}:
@@ -1133,7 +1118,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 70
+%%% 69
 \bibitem{patriline}
 \begin{barticle}
 \bauthor{\bsnm{Brodschneider}, \binits{R.}},
@@ -1149,7 +1134,86 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
+%%% 70
+\bibitem{pca}
+\begin{bbook}
+\bauthor{\bsnm{Jolliffe}, \binits{I.T.}}:
+\bbtitle{Principal Component Analysis}.
+\bpublisher{Springer}, \blocation{???}
+(\byear{2002})
+\end{bbook}
+\endbibitem
+
 %%% 71
+\bibitem{origPCP}
+\begin{barticle}
+\bauthor{\bsnm{Inselberg}, \binits{A.}}:
+\batitle{{The plane with parallel coordinates}}.
+\bjtitle{The Visual Computer}
+\bvolume{1},
+\bfpage{69}--\blpage{91}
+(\byear{1985})
+\end{barticle}
+\endbibitem
+
+%%% 72
+\bibitem{scatMat}
+\begin{bbook}
+\bauthor{\bsnm{Cleveland}, \binits{W.S.}}:
+\bbtitle{Visualizing Data}.
+\bpublisher{Summit, New Jersey: Hobart Press}, \blocation{???}
+(\byear{1993})
+\end{bbook}
+\endbibitem
+
+%%% 73
+\bibitem{jds}
+\begin{barticle}
+\bauthor{\bsnm{Cook}, \binits{D.}},
+\bauthor{\bsnm{Hofmann}, \binits{H.}},
+\bauthor{\bsnm{Lee}, \binits{E.}},
+\bauthor{\bsnm{Yang}, \binits{H.}},
+\bauthor{\bsnm{Nikolau}, \binits{B.}},
+\bauthor{\bsnm{Wurtele}, \binits{E.}}:
+\batitle{{Exploring gene expression data, using plots}}.
+\bjtitle{Journal of Data Science}
+\bvolume{5},
+\bfpage{151}--\blpage{182}
+(\byear{2007})
+\end{barticle}
+\endbibitem
+
+%%% 74
+\bibitem{Chandrasekhar}
+\begin{barticle}
+\bauthor{\bsnm{Chandrasekhar}, \binits{T.}},
+\bauthor{\bsnm{Thangavel}, \binits{K.}},
+\bauthor{\bsnm{Elayaraja}, \binits{E.}}:
+\batitle{{Effective Clustering Algorithms for Gene Expression Data}}.
+\bjtitle{International Journal of Computer Applications}
+\bvolume{32},
+\bfpage{4}
+(\byear{2011})
+\end{barticle}
+\endbibitem
+
+%%% 75
+\bibitem{deSouto}
+\begin{botherref}
+\oauthor{\bparticle{de~Souto D.~de} \bsnm{Araujo}, \binits{M.}},
+\oauthor{\bsnm{Costa}, \binits{I.}},
+\oauthor{\bsnm{Soares}, \binits{R.}},
+\oauthor{\bsnm{Ludermir}, \binits{T.}},
+\oauthor{\bsnm{Schliep}, \binits{A.}}:
+{Comparative Study on Normalization Procedures for Cluster Analysis of Gene
+  Expression Datasets}.
+International Joint Conference on Neural Networks,
+2793--2799
+(2008)
+\end{botherref}
+\endbibitem
+
+%%% 76
 \bibitem{davidBio}
 \begin{barticle}
 \bauthor{\bsnm{Huang}, \binits{D.W.}},
@@ -1164,7 +1228,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 72
+%%% 77
 \bibitem{davidBio2}
 \begin{barticle}
 \bauthor{\bsnm{Huang}, \binits{D.W.}},
@@ -1179,7 +1243,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 73
+%%% 78
 \bibitem{revigo}
 \begin{barticle}
 \bauthor{\bsnm{Supek}, \binits{F.}},
@@ -2068,21 +2132,6 @@ R package version 4.0.0.
 </bibl>
 
 <bibl id="B56">
-  <title><p>{Landscape enhancement of floral resources for honey bees in
-  agro-ecosystems}</p></title>
-  <aug>
-    <au><snm>Decourtye</snm><fnm>A.</fnm></au>
-    <au><snm>Mader</snm><fnm>E.</fnm></au>
-    <au><snm>Desneux</snm><fnm>N.</fnm></au>
-  </aug>
-  <source>Apidologie</source>
-  <pubdate>2010</pubdate>
-  <volume>41</volume>
-  <fpage>264</fpage>
-  <lpage>277</lpage>
-</bibl>
-
-<bibl id="B57">
   <title><p>{Finding the missing honey bee genes: lessons learned from a genome
   upgrade}</p></title>
   <aug>
@@ -2094,7 +2143,7 @@ R package version 4.0.0.
   <fpage>86</fpage>
 </bibl>
 
-<bibl id="B58">
+<bibl id="B57">
   <title><p>{Hymenoptera Genome Database: integrating genome annotations in
   HymenopteraMine}</p></title>
   <aug>
@@ -2113,7 +2162,7 @@ R package version 4.0.0.
   <lpage>800</lpage>
 </bibl>
 
-<bibl id="B59">
+<bibl id="B58">
   <title><p>{GMAP and GSNAP for genomic sequence alignment: Enhancements to
   speed, accuracy, and functionality}</p></title>
   <aug>
@@ -2130,7 +2179,7 @@ R package version 4.0.0.
   <lpage>334</lpage>
 </bibl>
 
-<bibl id="B60">
+<bibl id="B59">
   <title><p>{Moderated estimation of fold change and dispersion for RNA-seq
   data with DESeq2}</p></title>
   <aug>
@@ -2144,7 +2193,7 @@ R package version 4.0.0.
   <fpage>550</fpage>
 </bibl>
 
-<bibl id="B61">
+<bibl id="B60">
   <title><p>edgeR: a Bioconductor package for differential expression analysis
   of digital gene expression data</p></title>
   <aug>
@@ -2159,7 +2208,7 @@ R package version 4.0.0.
   <lpage>140</lpage>
 </bibl>
 
-<bibl id="B62">
+<bibl id="B61">
   <title><p>limma powers differential expression analyses for RNA-sequencing
   and microarray studies</p></title>
   <aug>
@@ -2178,7 +2227,7 @@ R package version 4.0.0.
   <fpage>e47</fpage>
 </bibl>
 
-<bibl id="B63">
+<bibl id="B62">
   <title><p>{Controlling the false discovery rate: A practical and powerful
   approach to multiple testing}</p></title>
   <aug>
@@ -2193,7 +2242,7 @@ R package version 4.0.0.
   <lpage>300</lpage>
 </bibl>
 
-<bibl id="B64">
+<bibl id="B63">
   <title><p>{eulerr}: Area-Proportional {Euler} and {Venn} Diagrams with
   Ellipses</p></title>
   <aug>
@@ -2204,7 +2253,7 @@ R package version 4.0.0.
   <note>R package version 4.0.0</note>
 </bibl>
 
-<bibl id="B65">
+<bibl id="B64">
   <title><p>{Full sisters and supersisters: A terminological
   paradigm}</p></title>
   <aug>
@@ -2217,7 +2266,7 @@ R package version 4.0.0.
   <fpage>944–945</fpage>
 </bibl>
 
-<bibl id="B66">
+<bibl id="B65">
   <title><p>{Parasites, pathogens, and polyandry in social
   Hymenoptera}</p></title>
   <aug>
@@ -2231,7 +2280,7 @@ R package version 4.0.0.
   <fpage>602–610</fpage>
 </bibl>
 
-<bibl id="B67">
+<bibl id="B66">
   <title><p>{On being the right size: Male contributions and multiple mating in
   social Hymenoptera}</p></title>
   <aug>
@@ -2244,7 +2293,7 @@ R package version 4.0.0.
   <fpage>105–115</fpage>
 </bibl>
 
-<bibl id="B68">
+<bibl id="B67">
   <title><p>{Genetic diversity in honey bee colonies enhances productivity and
   fitness}</p></title>
   <aug>
@@ -2258,7 +2307,7 @@ R package version 4.0.0.
   <lpage>364</lpage>
 </bibl>
 
-<bibl id="B69">
+<bibl id="B68">
   <title><p>{Genetic diversity within honeybee colonies prevents severe
   infections and promotes colony growth}</p></title>
   <aug>
@@ -2271,7 +2320,7 @@ R package version 4.0.0.
   <lpage>103</lpage>
 </bibl>
 
-<bibl id="B70">
+<bibl id="B69">
   <title><p>{Does patriline composition change over a honey bee queen’s
   lifetime?}</p></title>
   <aug>
@@ -2286,7 +2335,83 @@ R package version 4.0.0.
   <fpage>857–869</fpage>
 </bibl>
 
+<bibl id="B70">
+  <title><p>Principal Component Analysis</p></title>
+  <aug>
+    <au><snm>Jolliffe</snm><fnm>I.T.</fnm></au>
+  </aug>
+  <publisher>Springer-Verlag New York, Inc.</publisher>
+  <pubdate>2002</pubdate>
+</bibl>
+
 <bibl id="B71">
+  <title><p>{The plane with parallel coordinates}</p></title>
+  <aug>
+    <au><snm>Inselberg</snm><fnm>A.</fnm></au>
+  </aug>
+  <source>The Visual Computer</source>
+  <pubdate>1985</pubdate>
+  <volume>1</volume>
+  <fpage>69</fpage>
+  <lpage>91</lpage>
+</bibl>
+
+<bibl id="B72">
+  <title><p>Visualizing Data</p></title>
+  <aug>
+    <au><snm>Cleveland</snm><fnm>W.S.</fnm></au>
+  </aug>
+  <publisher>Summit, New Jersey: Hobart Press</publisher>
+  <pubdate>1993</pubdate>
+</bibl>
+
+<bibl id="B73">
+  <title><p>{Exploring gene expression data, using plots}</p></title>
+  <aug>
+    <au><snm>Cook</snm><fnm>D.</fnm></au>
+    <au><snm>Hofmann</snm><fnm>H.</fnm></au>
+    <au><snm>Lee</snm><fnm>E.</fnm></au>
+    <au><snm>Yang</snm><fnm>H.</fnm></au>
+    <au><snm>Nikolau</snm><fnm>B.</fnm></au>
+    <au><snm>Wurtele</snm><fnm>E.</fnm></au>
+  </aug>
+  <source>Journal of Data Science</source>
+  <pubdate>2007</pubdate>
+  <volume>5</volume>
+  <fpage>151–182</fpage>
+</bibl>
+
+<bibl id="B74">
+  <title><p>{Effective Clustering Algorithms for Gene Expression
+  Data}</p></title>
+  <aug>
+    <au><snm>Chandrasekhar</snm><fnm>T.</fnm></au>
+    <au><snm>Thangavel</snm><fnm>K.</fnm></au>
+    <au><snm>Elayaraja</snm><fnm>E.</fnm></au>
+  </aug>
+  <source>International Journal of Computer Applications</source>
+  <pubdate>2011</pubdate>
+  <volume>32</volume>
+  <fpage>4</fpage>
+</bibl>
+
+<bibl id="B75">
+  <title><p>{Comparative Study on Normalization Procedures for Cluster Analysis
+  of Gene Expression Datasets}</p></title>
+  <aug>
+    <au><snm>Araujo</snm><fnm>M.</fnm></au>
+    <au><snm>Costa</snm><fnm>I.</fnm></au>
+    <au><snm>Soares</snm><fnm>R.</fnm></au>
+    <au><snm>Ludermir</snm><fnm>T.</fnm></au>
+    <au><snm>Schliep</snm><fnm>A.</fnm></au>
+  </aug>
+  <source>International Joint Conference on Neural Networks</source>
+  <pubdate>2008</pubdate>
+  <fpage>2793</fpage>
+  <lpage>2799</lpage>
+</bibl>
+
+<bibl id="B76">
   <title><p>{Systematic and integrative analysis of large gene lists using
   DAVID bioinformatics resources}</p></title>
   <aug>
@@ -2301,7 +2426,7 @@ R package version 4.0.0.
   <lpage>57</lpage>
 </bibl>
 
-<bibl id="B72">
+<bibl id="B77">
   <title><p>{Bioinformatics enrichment tools: paths toward the comprehensive
   functional analysis of large gene lists}</p></title>
   <aug>
@@ -2316,7 +2441,7 @@ R package version 4.0.0.
   <lpage>13</lpage>
 </bibl>
 
-<bibl id="B73">
+<bibl id="B78">
   <title><p>{REVIGO summarizes and visualizes long lists of Gene Ontology
   terms}</p></title>
   <aug>
