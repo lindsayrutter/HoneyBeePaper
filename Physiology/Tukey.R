@@ -33,14 +33,16 @@ plotMortality = ggplot(d, aes(x=Treatment, y=Day3Mortality)) + geom_boxplot(fill
 # Mortality (N vs V)
 labelDF = data.frame(plot.labels=c("N","V"), labels = c("a","b"), V1 = c(0.22, 0.52))
 plotMortality2 = ggplot(d, aes(x=Virus, y=Day3Mortality)) + geom_boxplot(fill="palegreen2") + geom_text(data = labelDF, size = 8, aes(x = plot.labels, y = V1, label = labels)) + theme_gray() + ylim(0,0.8) +theme(axis.title.y=element_blank(), text=element_text(size=20))
+# summary(glht(mortcomp, linfct=mcp(Virus="Tukey")))
 
 # Mortality (R vs C)
 labelDF = data.frame(plot.labels=c("C","R"), labels = c("a","b"), V1 = c(0.48, 0.54))
 plotMortality3 = ggplot(d, aes(x=Diet, y=Day3Mortality)) + geom_boxplot(fill="palegreen2") + geom_text(data = labelDF, size = 8, aes(x = plot.labels, y = V1, label = labels)) + theme_gray() + ylim(0,0.8)+theme(axis.title.y=element_blank(), text=element_text(size=20))
+# summary(glht(mortcomp, linfct=mcp(Diet="Tukey")))
 
 ###### Plot IAPV Values ########
 
-d <- read_csv("logIAPV.csv")
+d <- read_delim("logIAPV.csv", "\t", escape_double = FALSE, trim_ws = TRUE)
 d = as.data.frame(d)
 attr(d, "spec") <- NULL
 # Note: There are 14 NC; 15 VR, VC, NR
