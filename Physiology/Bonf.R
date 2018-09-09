@@ -1,11 +1,4 @@
 library(agricolae)
-data(sweetpotato)
-model<-aov(yield~virus, data=sweetpotato)
-out <- LSD.test(model,"virus", p.adj="bonferroni")
-# Variation range: max and min
-plot(out)
-
-
 
 d <- read_csv("day3Mortality.csv")
 d = as.data.frame(d)
@@ -29,7 +22,7 @@ out <- LSD.test(model,"Treatment", p.adj="bonferroni")
 # Variation range: max and min
 plot(out, ylab="Mortality")
 # Used to print the actual p-values
-pvals <- LSD.test(model,"Treatment", p.adj="bonferroni", group=FALSE)
+anova(model)
 
 # Mortality (N vs V)
 model<-aov(Day3Mortality~Virus, data=d)
@@ -37,7 +30,7 @@ out <- LSD.test(model,"Virus", p.adj="bonferroni")
 # Variation range: max and min
 plot(out, ylab="Mortality")
 # Used to print the actual p-values
-pvals <- LSD.test(model,"Virus", p.adj="bonferroni", group=FALSE)
+anova(model)
 
 # Mortality (R vs C)
 model<-aov(Day3Mortality~Diet, data=d)
@@ -45,7 +38,7 @@ out <- LSD.test(model,"Diet", p.adj="bonferroni")
 # Variation range: max and min
 plot(out, ylab="Mortality")
 # Used to print the actual p-values
-pvals <- LSD.test(model,"Diet", p.adj="bonferroni", group=FALSE)
+anova(model)
 
 ###### Plot IAPV Values ########
 
@@ -72,7 +65,7 @@ out <- LSD.test(model,"Treatment", p.adj="bonferroni")
 # Variation range: max and min
 plot(out, ylab="Log IAPV")
 # Used to print the actual p-values
-pvals <- LSD.test(model,"Treatment", p.adj="bonferroni", group=FALSE)
+anova(model)
 
 # IAPV (N vs V)
 model<-aov(logIAPV~Virus, data=d)
@@ -80,7 +73,7 @@ out <- LSD.test(model,"Virus", p.adj="bonferroni")
 # Variation range: max and min
 plot(out, ylab="Log IAPV")
 # Used to print the actual p-values
-pvals <- LSD.test(model,"Virus", p.adj="bonferroni", group=FALSE)
+anova(model)
 
 # IAPV (R vs C)
 model<-aov(logIAPV~Diet, data=d)
@@ -88,5 +81,5 @@ out <- LSD.test(model,"Diet", p.adj="bonferroni")
 # Variation range: max and min
 plot(out, ylab="Log IAPV")
 # Used to print the actual p-values
-pvals <- LSD.test(model,"Diet", p.adj="bonferroni", group=FALSE)
+anova(model)
 
