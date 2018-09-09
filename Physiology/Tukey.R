@@ -71,9 +71,10 @@ plotIAPV = ggplot(d, aes(x=Treatment, y=logIAPV)) + geom_boxplot(fill="paleturqu
 # IAPV (N vs V)
 labelDF = data.frame(plot.labels=c("N","V"), labels = c("a","b"), V1 = c(4.3, 8.7))
 plotIAPV2 = ggplot(d, aes(x=Virus, y=logIAPV)) + geom_boxplot(fill="paleturquoise2") + geom_text(data = labelDF, size = 8, aes(x = plot.labels, y = V1, label = labels)) +theme_gray() + theme(axis.title.y=element_blank(), text=element_text(size=20)) +ylim(2,9)
+# summary(glht(mortcomp, linfct=mcp(Virus="Tukey")))
 
 # IAPV (R vs C)
 labelDF = data.frame(plot.labels=c("C","R"), labels = c("a","a"), V1 = c(4.3, 8.7))
 plotIAPV3 = ggplot(d, aes(x=Diet, y=logIAPV)) + geom_boxplot(fill="paleturquoise2") + geom_text(data = labelDF, size = 8, aes(x = plot.labels, y = V1, label = labels)) +theme_gray() + theme(axis.title.y=element_blank(), text=element_text(size=20)) +ylim(2,9)
-
+# summary(glht(mortcomp, linfct=mcp(Virus="Tukey")))
 
