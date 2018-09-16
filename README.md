@@ -9,11 +9,11 @@ This repository consists of materials for an RNA-seq study that examined IAPV in
   * **NC_NR_VC_VR:** Analysis scripts for pairwise comparisons for both diet ad virus factors in our study
   * **N_V:** Analysis scripts for the virus effect in our study (Non-infection versus infection)
   * **Overlaps:** Analysis scripts for determining DEG overlaps between various pipelines (DESeq2, edgeR, limma) and our study versus the Galbraith study
-  * **Physiology:** Data and analysis scripts for mortality rate and IAPV titer loads in a prior study by Dolezal et al.
-  * **PostHocDEGPatterns:** Analysis scripts for post-hoc analysis of physiology correlations in DEG patterns
+  * **PathogenResponse:** Data and analysis scripts for mortality rate and IAPV titer loads in a prior study by Dolezal et al.
+  * **PostHocDEGPatterns:** Analysis scripts for post-hoc analysis of pathogen response correlations in DEG patterns
   * **ResistanceTolerance:** Analysis scripts for resistance and tolerance candidate Genes
   * **Tissues:** Analysis scripts for estimating tissue expression in DEGs (not included in our manuscript)
-  * **Variables.csv:** Physiology metrics for the honeybees used in this RNA-seq study
+  * **Variables.csv:** Pathogen response metrics for the honeybees used in this RNA-seq study
   
 **Folder contaning reproducible scripts related to our manuscript:**
 
