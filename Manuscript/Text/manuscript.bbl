@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{83}
+\begin{thebibliography}{91}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -471,6 +471,23 @@ Pollen: Biology, Biochemistry, Management
 \endbibitem
 
 %%% 29
+\bibitem{newVR}
+\begin{barticle}
+\bauthor{\bsnm{Emsen}, \binits{B.}},
+\bauthor{\bsnm{Hamiduzzaman}, \binits{M.M.}},
+\bauthor{\bsnm{Goodwin}, \binits{P.H.}},
+\bauthor{\bsnm{Guzman-Novoa}, \binits{E.}}:
+\batitle{{Lower virus infections in Varroa destructor-infested and uninfested
+  brood and adult honey bees (Apis mellifera) of a low mite population growth
+  colony compared to a high mite population growth colony}}.
+\bjtitle{PLoS ONE}
+\bvolume{10},
+\bfpage{0118885}
+(\byear{2015})
+\end{barticle}
+\endbibitem
+
+%%% 30
 \bibitem{numVirus}
 \begin{barticle}
 \bauthor{\bsnm{Chen}, \binits{Y.P.}},
@@ -483,22 +500,20 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 30
+%%% 31
 \bibitem{fam}
 \begin{barticle}
-\bauthor{\bsnm{Miranda}, \binits{J.R.D.}},
-\bauthor{\bsnm{Cordoni}, \binits{G.}},
-\bauthor{\bsnm{Budge}, \binits{G.}}:
-\batitle{{The acute bee paralysis virus-Kashmir bee virus-Israeli acute
-  paralysis virus complex}}.
-\bjtitle{J Invertebr Pathol}
-\bvolume{103},
-\bfpage{30}--\blpage{47}
+\bauthor{\bsnm{Bonning}, \binits{B.C.}},
+\bauthor{\bsnm{Miller}, \binits{W.A.}}:
+\batitle{{Dicistroviruses}}.
+\bjtitle{Annu Rev Entomol}
+\bvolume{55},
+\bfpage{129}--\blpage{150}
 (\byear{2010})
 \end{barticle}
 \endbibitem
 
-%%% 31
+%%% 32
 \bibitem{symptoms}
 \begin{barticle}
 \bauthor{\bsnm{Maori}, \binits{E.}},
@@ -517,7 +532,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 32
+%%% 33
 \bibitem{carrillo}
 \begin{barticle}
 \bauthor{\bsnm{Carrillo-Tripp}, \binits{J.}},
@@ -534,7 +549,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 33
+%%% 34
 \bibitem{winter}
 \begin{barticle}
 \bauthor{\bsnm{Chen}, \binits{Y.P.}},
@@ -576,7 +591,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 34
+%%% 35
 \bibitem{iapvCCD}
 \begin{barticle}
 \bauthor{\bsnm{Cox-Foster}, \binits{D.L.}},
@@ -610,7 +625,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 35
+%%% 36
 \bibitem{iapvCCD2}
 \begin{barticle}
 \bauthor{\bsnm{Hou}, \binits{C.}},
@@ -626,7 +641,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 36
+%%% 37
 \bibitem{iapvCCD3}
 \begin{barticle}
 \bauthor{\bsnm{Cornman}, \binits{R.S.}},
@@ -643,7 +658,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 37
+%%% 38
 \bibitem{intNV}
 \begin{barticle}
 \bauthor{\bsnm{DeGrandi-Hoffman}, \binits{G.}},
@@ -656,7 +671,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 38
+%%% 39
 \bibitem{intNV2}
 \begin{barticle}
 \bauthor{\bsnm{DeGrandi-Hoffman}, \binits{G.}},
@@ -672,7 +687,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 39
+%%% 40
 \bibitem{intNV3}
 \begin{botherref}
 \oauthor{\bsnm{Le~Conte}, \binits{Y.}},
@@ -684,7 +699,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{botherref}
 \endbibitem
 
-%%% 40
+%%% 41
 \bibitem{adamInt}
 \begin{botherref}
 \oauthor{\bsnm{Dolezal}, \binits{A.G.}},
@@ -700,7 +715,7 @@ In prep
 \end{botherref}
 \endbibitem
 
-%%% 41
+%%% 42
 \bibitem{resTol1}
 \begin{barticle}
 \bauthor{\bsnm{Miller}, \binits{C.V.L.}},
@@ -714,7 +729,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 42
+%%% 43
 \bibitem{AdamTothReview}
 \begin{barticle}
 \bauthor{\bsnm{Dolezal}, \binits{A.G.}},
@@ -727,7 +742,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 43
+%%% 44
 \bibitem{alaux2}
 \begin{barticle}
 \bauthor{\bsnm{Alaux}, \binits{C.}},
@@ -743,7 +758,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 44
+%%% 45
 \bibitem{galbraith}
 \begin{barticle}
 \bauthor{\bsnm{Galbraith}, \binits{D.A.}},
@@ -760,155 +775,85 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 45
-\bibitem{biased1}
-\begin{barticle}
-\bauthor{\bsnm{Hansen}, \binits{K.D.}},
-\bauthor{\bsnm{Brenner}, \binits{S.E.}},
-\bauthor{\bsnm{Dudoit}, \binits{S.}}:
-\batitle{{Biases in Illumina transcriptome sequencing caused by random hexamer
-  priming}}.
-\bjtitle{Nucleic Acids Research}
-\bvolume{38},
-\bfpage{131}
-(\byear{2010})
-\end{barticle}
-\endbibitem
-
 %%% 46
-\bibitem{biased2}
+\bibitem{Avadhanula}
 \begin{barticle}
-\bauthor{\bsnm{Oshlack}, \binits{A.}},
-\bauthor{\bsnm{Robinson}, \binits{M.D.}},
-\bauthor{\bsnm{Young}, \binits{M.D.}}:
-\batitle{{From RNA-seq reads to differential expression results}}.
-\bjtitle{Genome Biology}
-\bvolume{11},
-\bfpage{220}
-(\byear{2010})
+\bauthor{\bsnm{Avadhanula}, \binits{V.}},
+\bauthor{\bsnm{Weasner}, \binits{B.P.}},
+\bauthor{\bsnm{Hardy}, \binits{G.G.}},
+\bauthor{\bsnm{Kumar}, \binits{J.P.}},
+\bauthor{\bsnm{Hardy}, \binits{R.W.}}:
+\batitle{{A novel system for the launch of alphavirus RNA synthesis reveals a
+  role for the Imd pathway in arthropod antiviral response}}.
+\bjtitle{PLoS Pathog}
+\bvolume{5},
+\bfpage{1000582}
+(\byear{2009})
 \end{barticle}
 \endbibitem
 
 %%% 47
-\bibitem{biased3}
+\bibitem{fewDEGs2}
 \begin{barticle}
-\bauthor{\bsnm{McIntyre}, \binits{L.M.}},
-\bauthor{\bsnm{Lopiano}, \binits{K.K.}},
-\bauthor{\bsnm{Morse}, \binits{A.M.}},
-\bauthor{\bsnm{Amin}, \binits{V.}},
-\bauthor{\bsnm{Oberg}, \binits{A.L.}},
-\bauthor{\bsnm{Young}, \binits{L.J.}},
-\bauthor{\bsnm{Nuzhdin}, \binits{S.V.}}:
-\batitle{{RNAseq: Technical variability and sampling}}.
-\bjtitle{BMC Genomics}
-\bvolume{12},
-\bfpage{293}
-(\byear{2011})
+\bauthor{\bsnm{Dostert}, \binits{C.}},
+\bauthor{\bsnm{Jouanguy}, \binits{E.}},
+\bauthor{\bsnm{Irving}, \binits{P.}},
+\bauthor{\bsnm{Troxler}, \binits{L.}},
+\bauthor{\bsnm{Galiana}, \binits{D.}},
+\bauthor{\bsnm{Hetru}, \binits{C.}},
+\bauthor{\bsnm{Hoffmann}, \binits{J.A.}},
+\bauthor{\bsnm{Imler}, \binits{J.-L.}}:
+\batitle{{The JAK-STAT signaling pathway is required but not sufficient for the
+  antiviral response of Drosophila}}.
+\bjtitle{Nature Immunology}
+\bvolume{6},
+\bfpage{946}--\blpage{953}
+(\byear{2005})
 \end{barticle}
 \endbibitem
 
 %%% 48
-\bibitem{edger}
+\bibitem{kemp}
 \begin{barticle}
-\bauthor{\bsnm{Robinson}, \binits{M.D.}},
-\bauthor{\bsnm{McCarthy}, \binits{D.J.}},
-\bauthor{\bsnm{Smyth}, \binits{G.K.}}:
-\batitle{edger: a bioconductor package for differential expression analysis of
-  digital gene expression data}.
-\bjtitle{Bioinformatics}
-\bvolume{26},
-\bfpage{139}--\blpage{140}
-(\byear{2010})
+\bauthor{\bsnm{Kemp}, \binits{C.}},
+\bauthor{\bsnm{Mueller}, \binits{S.}},
+\bauthor{\bsnm{Goto}, \binits{A.}},
+\bauthor{\bsnm{Barbier}, \binits{V.}},
+\bauthor{\bsnm{Paro}, \binits{S.}},
+\bauthor{\bsnm{Bonnay}, \binits{F.}},
+\bauthor{\bsnm{Dostert}, \binits{C.}},
+\bauthor{\bsnm{Troxler}, \binits{L.}},
+\bauthor{\bsnm{Hetru}, \binits{C.}},
+\bauthor{\bsnm{Meignin}, \binits{C.}},
+\bauthor{\bsnm{Pfeffer}, \binits{S.}},
+\bauthor{\bsnm{Hoffmann}, \binits{J.A.}},
+\bauthor{\bsnm{Imler}, \binits{J.L.}}:
+\batitle{{Broad RNA interference-mediated antiviral immunity and virus-specific
+  inducible responses in Drosophila}}.
+\bjtitle{J Immunol}
+\bvolume{190},
+\bfpage{650}--\blpage{658}
+(\byear{2013})
 \end{barticle}
 \endbibitem
 
 %%% 49
-\bibitem{resTol2}
+\bibitem{costa}
 \begin{barticle}
-\bauthor{\bsnm{Carval}, \binits{D.}},
-\bauthor{\bsnm{Ferriere}, \binits{R.}}:
-\batitle{{A unified model for the coevolution of resistance, tolerance, and
-  virulence}}.
-\bjtitle{Evolution}
-\bvolume{64},
-\bfpage{2988}--\blpage{3009}
-(\byear{2010})
+\bauthor{\bsnm{Costa}, \binits{A.}},
+\bauthor{\bsnm{Jan}, \binits{E.}},
+\bauthor{\bsnm{Sarnow}, \binits{P.}},
+\bauthor{\bsnm{Schneider}, \binits{D.}}:
+\batitle{{The Imd pathway is involved in antiviral immune responses in
+  Drosophila}}.
+\bjtitle{PLoS One}
+\bvolume{4},
+\bfpage{7436}
+(\byear{2009})
 \end{barticle}
 \endbibitem
 
 %%% 50
-\bibitem{resTol4}
-\begin{barticle}
-\bauthor{\bsnm{Moret}, \binits{Y.}}:
-\batitle{{Trans-generational immune priming: Specific enhancement of the
-  antimicrobial immune response in the mealworm beetle, Tenebrio molitor}}.
-\bjtitle{Proceedings of the Royal Society B: Biological Sciences}
-\bvolume{273},
-\bfpage{1399}--\blpage{1405}
-(\byear{2006})
-\end{barticle}
-\endbibitem
-
-%%% 51
-\bibitem{resTol5}
-\begin{barticle}
-\bauthor{\bsnm{Mauricio}, \binits{R.}},
-\bauthor{\bsnm{Rausher}, \binits{M.D.}},
-\bauthor{\bsnm{Burdick}, \binits{D.S.}}:
-\batitle{{Variation in the defense strategies of plants: are resistance and
-  tolerance mutually exclusive?}}
-\bjtitle{Ecology}
-\bvolume{78},
-\bfpage{1301}--\blpage{1310}
-(\byear{1997})
-\end{barticle}
-\endbibitem
-
-%%% 52
-\bibitem{resTol6}
-\begin{barticle}
-\bauthor{\bsnm{Fornoni}, \binits{J.}},
-\bauthor{\bsnm{Nunez-Farfan}, \binits{J.}},
-\bauthor{\bsnm{Valverde}, \binits{P.L.}},
-\bauthor{\bsnm{Rausher}, \binits{M.D.}}:
-\batitle{{Evolution of mixed plant defense allocation against natural
-  enemies}}.
-\bjtitle{Evolution}
-\bvolume{58},
-\bfpage{1685}--\blpage{1695}
-(\byear{2004})
-\end{barticle}
-\endbibitem
-
-%%% 53
-\bibitem{resTol7}
-\begin{barticle}
-\bauthor{\bsnm{Restif}, \binits{O.}},
-\bauthor{\bsnm{Koella}, \binits{J.C.}}:
-\batitle{{Shared control of epidemiological traits in a coevolutionary model of
-  host-parasite interactions}}.
-\bjtitle{The American Naturalist}
-\bvolume{161},
-\bfpage{827}--\blpage{836}
-(\byear{2003})
-\end{barticle}
-\endbibitem
-
-%%% 54
-\bibitem{resTol8}
-\begin{barticle}
-\bauthor{\bsnm{Chambers}, \binits{M.C.}},
-\bauthor{\bsnm{Schneider}, \binits{D.S.}}:
-\batitle{{Balancing resistance and infection tolerance through metabolic
-  means}}.
-\bjtitle{PNAS}
-\bvolume{109},
-\bfpage{13886}--\blpage{13887}
-(\byear{2012})
-\end{barticle}
-\endbibitem
-
-%%% 55
 \bibitem{resTol11}
 \begin{barticle}
 \bauthor{\bsnm{Xu}, \binits{J.}},
@@ -927,7 +872,185 @@ In prep
 \end{barticle}
 \endbibitem
 
+%%% 51
+\bibitem{cherryReview}
+\begin{barticle}
+\bauthor{\bsnm{Xu}, \binits{J.}},
+\bauthor{\bsnm{Cherry}, \binits{S.}}:
+\batitle{{Viruses and antiviral immunity in Drosophila}}.
+\bjtitle{Dev Comp Immunol}
+\bvolume{42},
+\bfpage{67}--\blpage{84}
+(\byear{2014})
+\end{barticle}
+\endbibitem
+
+%%% 52
+\bibitem{biased1}
+\begin{barticle}
+\bauthor{\bsnm{Hansen}, \binits{K.D.}},
+\bauthor{\bsnm{Brenner}, \binits{S.E.}},
+\bauthor{\bsnm{Dudoit}, \binits{S.}}:
+\batitle{{Biases in Illumina transcriptome sequencing caused by random hexamer
+  priming}}.
+\bjtitle{Nucleic Acids Research}
+\bvolume{38},
+\bfpage{131}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 53
+\bibitem{biased2}
+\begin{barticle}
+\bauthor{\bsnm{Oshlack}, \binits{A.}},
+\bauthor{\bsnm{Robinson}, \binits{M.D.}},
+\bauthor{\bsnm{Young}, \binits{M.D.}}:
+\batitle{{From RNA-seq reads to differential expression results}}.
+\bjtitle{Genome Biology}
+\bvolume{11},
+\bfpage{220}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 54
+\bibitem{biased3}
+\begin{barticle}
+\bauthor{\bsnm{McIntyre}, \binits{L.M.}},
+\bauthor{\bsnm{Lopiano}, \binits{K.K.}},
+\bauthor{\bsnm{Morse}, \binits{A.M.}},
+\bauthor{\bsnm{Amin}, \binits{V.}},
+\bauthor{\bsnm{Oberg}, \binits{A.L.}},
+\bauthor{\bsnm{Young}, \binits{L.J.}},
+\bauthor{\bsnm{Nuzhdin}, \binits{S.V.}}:
+\batitle{{RNAseq: Technical variability and sampling}}.
+\bjtitle{BMC Genomics}
+\bvolume{12},
+\bfpage{293}
+(\byear{2011})
+\end{barticle}
+\endbibitem
+
+%%% 55
+\bibitem{fewDEGs}
+\begin{barticle}
+\bauthor{\bsnm{Merkling}, \binits{S.H.}},
+\bauthor{\bsnm{Overheul}, \binits{G.J.}},
+\bauthor{\bparticle{van} \bsnm{Mierlo}, \binits{J.T.}},
+\bauthor{\bsnm{Arends}, \binits{D.}},
+\bauthor{\bsnm{Gilissen}, \binits{C.}},
+\bauthor{\bparticle{van} \bsnm{Rij}, \binits{R.P.}}:
+\batitle{{The heat shock response restricts virus infection in Drosophila}}.
+\bjtitle{Scientific Reports}
+\bvolume{5},
+\bfpage{12758}
+(\byear{2015})
+\end{barticle}
+\endbibitem
+
 %%% 56
+\bibitem{edger}
+\begin{barticle}
+\bauthor{\bsnm{Robinson}, \binits{M.D.}},
+\bauthor{\bsnm{McCarthy}, \binits{D.J.}},
+\bauthor{\bsnm{Smyth}, \binits{G.K.}}:
+\batitle{edger: a bioconductor package for differential expression analysis of
+  digital gene expression data}.
+\bjtitle{Bioinformatics}
+\bvolume{26},
+\bfpage{139}--\blpage{140}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 57
+\bibitem{resTol2}
+\begin{barticle}
+\bauthor{\bsnm{Carval}, \binits{D.}},
+\bauthor{\bsnm{Ferriere}, \binits{R.}}:
+\batitle{{A unified model for the coevolution of resistance, tolerance, and
+  virulence}}.
+\bjtitle{Evolution}
+\bvolume{64},
+\bfpage{2988}--\blpage{3009}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 58
+\bibitem{resTol4}
+\begin{barticle}
+\bauthor{\bsnm{Moret}, \binits{Y.}}:
+\batitle{{Trans-generational immune priming: Specific enhancement of the
+  antimicrobial immune response in the mealworm beetle, Tenebrio molitor}}.
+\bjtitle{Proceedings of the Royal Society B: Biological Sciences}
+\bvolume{273},
+\bfpage{1399}--\blpage{1405}
+(\byear{2006})
+\end{barticle}
+\endbibitem
+
+%%% 59
+\bibitem{resTol5}
+\begin{barticle}
+\bauthor{\bsnm{Mauricio}, \binits{R.}},
+\bauthor{\bsnm{Rausher}, \binits{M.D.}},
+\bauthor{\bsnm{Burdick}, \binits{D.S.}}:
+\batitle{{Variation in the defense strategies of plants: are resistance and
+  tolerance mutually exclusive?}}
+\bjtitle{Ecology}
+\bvolume{78},
+\bfpage{1301}--\blpage{1310}
+(\byear{1997})
+\end{barticle}
+\endbibitem
+
+%%% 60
+\bibitem{resTol6}
+\begin{barticle}
+\bauthor{\bsnm{Fornoni}, \binits{J.}},
+\bauthor{\bsnm{Nunez-Farfan}, \binits{J.}},
+\bauthor{\bsnm{Valverde}, \binits{P.L.}},
+\bauthor{\bsnm{Rausher}, \binits{M.D.}}:
+\batitle{{Evolution of mixed plant defense allocation against natural
+  enemies}}.
+\bjtitle{Evolution}
+\bvolume{58},
+\bfpage{1685}--\blpage{1695}
+(\byear{2004})
+\end{barticle}
+\endbibitem
+
+%%% 61
+\bibitem{resTol7}
+\begin{barticle}
+\bauthor{\bsnm{Restif}, \binits{O.}},
+\bauthor{\bsnm{Koella}, \binits{J.C.}}:
+\batitle{{Shared control of epidemiological traits in a coevolutionary model of
+  host-parasite interactions}}.
+\bjtitle{The American Naturalist}
+\bvolume{161},
+\bfpage{827}--\blpage{836}
+(\byear{2003})
+\end{barticle}
+\endbibitem
+
+%%% 62
+\bibitem{resTol8}
+\begin{barticle}
+\bauthor{\bsnm{Chambers}, \binits{M.C.}},
+\bauthor{\bsnm{Schneider}, \binits{D.S.}}:
+\batitle{{Balancing resistance and infection tolerance through metabolic
+  means}}.
+\bjtitle{PNAS}
+\bvolume{109},
+\bfpage{13886}--\blpage{13887}
+(\byear{2012})
+\end{barticle}
+\endbibitem
+
+%%% 63
 \bibitem{resTol9}
 \begin{barticle}
 \bauthor{\bsnm{Cerenius}, \binits{L.}},
@@ -940,7 +1063,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 57
+%%% 64
 \bibitem{resTol10}
 \begin{barticle}
 \bauthor{\bsnm{Sadd}, \binits{B.M.}},
@@ -953,7 +1076,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 58
+%%% 65
 \bibitem{melanization}
 \begin{barticle}
 \bauthor{\bsnm{Nakhleh}, \binits{J.}},
@@ -967,7 +1090,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 59
+%%% 66
 \bibitem{tissueLevel}
 \begin{barticle}
 \bauthor{\bsnm{Johnson}, \binits{B.R.}},
@@ -982,7 +1105,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 60
+%%% 67
 \bibitem{bh}
 \begin{barticle}
 \bauthor{\bsnm{Thissen}, \binits{D.}},
@@ -997,7 +1120,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 61
+%%% 68
 \bibitem{DiPasquale}
 \begin{barticle}
 \bauthor{\bsnm{Pasquale}, \binits{G.D.}},
@@ -1018,7 +1141,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 62
+%%% 69
 \bibitem{hbGenome}
 \begin{barticle}
 \bauthor{\bsnm{Consortium}, \binits{H.B.G.S.}}:
@@ -1031,7 +1154,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 63
+%%% 70
 \bibitem{hymenopteraDB}
 \begin{barticle}
 \bauthor{\bsnm{Elsik}, \binits{C.G.}},
@@ -1050,7 +1173,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 64
+%%% 71
 \bibitem{gsnap}
 \begin{barticle}
 \bauthor{\bsnm{Wu}, \binits{T.D.}},
@@ -1067,7 +1190,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 65
+%%% 72
 \bibitem{deseq2}
 \begin{barticle}
 \bauthor{\bsnm{Love}, \binits{M.I.}},
@@ -1082,7 +1205,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 66
+%%% 73
 \bibitem{limma}
 \begin{barticle}
 \bauthor{\bsnm{Ritchie}, \binits{M.E.}},
@@ -1101,7 +1224,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 67
+%%% 74
 \bibitem{benjamini}
 \begin{barticle}
 \bauthor{\bsnm{Benjamini}, \binits{Y.}},
@@ -1115,7 +1238,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 68
+%%% 75
 \bibitem{euler}
 \begin{botherref}
 \oauthor{\bsnm{Larsson}, \binits{J.}}:
@@ -1126,7 +1249,7 @@ R package version 4.0.0.
 \end{botherref}
 \endbibitem
 
-%%% 69
+%%% 76
 \bibitem{sisters}
 \begin{barticle}
 \bauthor{\bsnm{Page}, \binits{R.E.}},
@@ -1139,7 +1262,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 70
+%%% 77
 \bibitem{multParasite}
 \begin{barticle}
 \bauthor{\bsnm{Sherman}, \binits{P.W.}},
@@ -1153,7 +1276,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 71
+%%% 78
 \bibitem{divHyp2}
 \begin{barticle}
 \bauthor{\bsnm{Crozier}, \binits{R.H.}},
@@ -1167,7 +1290,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 72
+%%% 79
 \bibitem{geneticDiverse}
 \begin{barticle}
 \bauthor{\bsnm{Mattila}, \binits{H.R.}},
@@ -1181,7 +1304,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 73
+%%% 80
 \bibitem{geneticDiverse2}
 \begin{barticle}
 \bauthor{\bsnm{Tarpy}, \binits{D.R.}}:
@@ -1194,7 +1317,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 74
+%%% 81
 \bibitem{patriline}
 \begin{barticle}
 \bauthor{\bsnm{Brodschneider}, \binits{R.}},
@@ -1210,7 +1333,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 75
+%%% 82
 \bibitem{pca}
 \begin{bbook}
 \bauthor{\bsnm{Jolliffe}, \binits{I.T.}}:
@@ -1220,7 +1343,7 @@ R package version 4.0.0.
 \end{bbook}
 \endbibitem
 
-%%% 76
+%%% 83
 \bibitem{origPCP}
 \begin{barticle}
 \bauthor{\bsnm{Inselberg}, \binits{A.}}:
@@ -1232,7 +1355,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 77
+%%% 84
 \bibitem{scatMat}
 \begin{bbook}
 \bauthor{\bsnm{Cleveland}, \binits{W.S.}}:
@@ -1242,7 +1365,7 @@ R package version 4.0.0.
 \end{bbook}
 \endbibitem
 
-%%% 78
+%%% 85
 \bibitem{jds}
 \begin{barticle}
 \bauthor{\bsnm{Cook}, \binits{D.}},
@@ -1259,7 +1382,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 79
+%%% 86
 \bibitem{Chandrasekhar}
 \begin{barticle}
 \bauthor{\bsnm{Chandrasekhar}, \binits{T.}},
@@ -1273,7 +1396,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 80
+%%% 87
 \bibitem{deSouto}
 \begin{botherref}
 \oauthor{\bparticle{de~Souto D.~de} \bsnm{Araujo}, \binits{M.}},
@@ -1289,7 +1412,7 @@ International Joint Conference on Neural Networks,
 \end{botherref}
 \endbibitem
 
-%%% 81
+%%% 88
 \bibitem{davidBio}
 \begin{barticle}
 \bauthor{\bsnm{Huang}, \binits{D.W.}},
@@ -1304,7 +1427,7 @@ International Joint Conference on Neural Networks,
 \end{barticle}
 \endbibitem
 
-%%% 82
+%%% 89
 \bibitem{davidBio2}
 \begin{barticle}
 \bauthor{\bsnm{Huang}, \binits{D.W.}},
@@ -1319,7 +1442,7 @@ International Joint Conference on Neural Networks,
 \end{barticle}
 \endbibitem
 
-%%% 83
+%%% 90
 \bibitem{revigo}
 \begin{barticle}
 \bauthor{\bsnm{Supek}, \binits{F.}},
@@ -1331,6 +1454,22 @@ International Joint Conference on Neural Networks,
 \bvolume{6},
 \bfpage{21800}
 (\byear{2011})
+\end{barticle}
+\endbibitem
+
+%%% 91
+\bibitem{semantic}
+\begin{barticle}
+\bauthor{\bsnm{Schlicker}, \binits{A.}},
+\bauthor{\bsnm{Domingues}, \binits{F.S.}},
+\bauthor{\bsnm{Rahnenfuhrer}, \binits{J.}},
+\bauthor{\bsnm{Lengauer}, \binits{T.}}:
+\batitle{{A new measure for functional similarity of gene products based on
+  Gene Ontology}}.
+\bjtitle{BMC Bioinformatics}
+\bvolume{7},
+\bfpage{302}
+(\byear{2006})
 \end{barticle}
 \endbibitem
 
@@ -1763,6 +1902,23 @@ International Joint Conference on Neural Networks,
 </bibl>
 
 <bibl id="B29">
+  <title><p>{Lower virus infections in Varroa destructor-infested and
+  uninfested brood and adult honey bees (Apis mellifera) of a low mite
+  population growth colony compared to a high mite population growth
+  colony}</p></title>
+  <aug>
+    <au><snm>Emsen</snm><fnm>B.</fnm></au>
+    <au><snm>Hamiduzzaman</snm><fnm>M.M.</fnm></au>
+    <au><snm>Goodwin</snm><fnm>P.H.</fnm></au>
+    <au><snm>Guzman Novoa</snm><fnm>E.</fnm></au>
+  </aug>
+  <source>PLoS ONE</source>
+  <pubdate>2015</pubdate>
+  <volume>10</volume>
+  <fpage>e0118885</fpage>
+</bibl>
+
+<bibl id="B30">
   <title><p>{Honey bee viruses}</p></title>
   <aug>
     <au><snm>Chen</snm><fnm>Y.P.</fnm></au>
@@ -1775,21 +1931,20 @@ International Joint Conference on Neural Networks,
   <lpage>80</lpage>
 </bibl>
 
-<bibl id="B30">
-  <title><p>{The acute bee paralysis virus-Kashmir bee virus-Israeli acute
-  paralysis virus complex}</p></title>
+<bibl id="B31">
+  <title><p>{Dicistroviruses}</p></title>
   <aug>
-    <au><snm>Miranda</snm><fnm>JD</fnm></au>
-    <au><snm>Cordoni</snm><fnm>G.</fnm></au>
-    <au><snm>Budge</snm><fnm>G.</fnm></au>
+    <au><snm>Bonning</snm><fnm>B.C.</fnm></au>
+    <au><snm>Miller</snm><fnm>W.A.</fnm></au>
   </aug>
-  <source>J Invertebr Pathol</source>
+  <source>Annu Rev Entomol</source>
   <pubdate>2010</pubdate>
-  <volume>103</volume>
-  <fpage>S30–47</fpage>
+  <volume>55</volume>
+  <fpage>129</fpage>
+  <lpage>150</lpage>
 </bibl>
 
-<bibl id="B31">
+<bibl id="B32">
   <title><p>{IAPV, a bee-affecting virus associated with Colony Collapse
   Disorder can be silenced by dsRNA ingestion}</p></title>
   <aug>
@@ -1808,7 +1963,7 @@ International Joint Conference on Neural Networks,
   <lpage>60</lpage>
 </bibl>
 
-<bibl id="B32">
+<bibl id="B33">
   <title><p>{In vivo and in vitro infection dynamics of honey bee
   viruses}</p></title>
   <aug>
@@ -1825,7 +1980,7 @@ International Joint Conference on Neural Networks,
   <fpage>22265</fpage>
 </bibl>
 
-<bibl id="B33">
+<bibl id="B34">
   <title><p>{Israeli acute paralysis virus: Epidemiology, pathogenesis and
   implications for honey bee health}</p></title>
   <aug>
@@ -1866,7 +2021,7 @@ International Joint Conference on Neural Networks,
   <fpage>e1004261</fpage>
 </bibl>
 
-<bibl id="B34">
+<bibl id="B35">
   <title><p>{A metagenomic survey of microbes in honey bee colony collapse
   disorder}</p></title>
   <aug>
@@ -1899,7 +2054,7 @@ International Joint Conference on Neural Networks,
   <fpage>283–287</fpage>
 </bibl>
 
-<bibl id="B35">
+<bibl id="B36">
   <title><p>{Dynamics of the presence of israeli acute paralysis virus in honey
   bee colonies with colony collapse disorder}</p></title>
   <aug>
@@ -1914,7 +2069,7 @@ International Joint Conference on Neural Networks,
   <fpage>2012–2027</fpage>
 </bibl>
 
-<bibl id="B36">
+<bibl id="B37">
   <title><p>{Pathogen webs in collapsing honey bee colonies}</p></title>
   <aug>
     <au><snm>Cornman</snm><fnm>R.S.</fnm></au>
@@ -1930,7 +2085,7 @@ International Joint Conference on Neural Networks,
   <fpage>e43562</fpage>
 </bibl>
 
-<bibl id="B37">
+<bibl id="B38">
   <title><p>{Nutrition, immunity and viral infections in honey
   bees}</p></title>
   <aug>
@@ -1944,7 +2099,7 @@ International Joint Conference on Neural Networks,
   <lpage>176</lpage>
 </bibl>
 
-<bibl id="B38">
+<bibl id="B39">
   <title><p>{The effect of diet on protein concentration, hypopharyngeal gland
   development and virus load in worker honey bees (Apis mellifera
   L.)}</p></title>
@@ -1960,7 +2115,7 @@ International Joint Conference on Neural Networks,
   <fpage>1184–1191</fpage>
 </bibl>
 
-<bibl id="B39">
+<bibl id="B40">
   <title><p>Interactions between Risk Factors in Honey Bees</p></title>
   <aug>
     <au><snm>Le Conte</snm><fnm>Y</fnm></au>
@@ -1974,7 +2129,7 @@ International Joint Conference on Neural Networks,
   <lpage>222</lpage>
 </bibl>
 
-<bibl id="B40">
+<bibl id="B41">
   <title><p>{Interacting stressors matter: Diet quality and virus infection in
   honey bee health}</p></title>
   <aug>
@@ -1989,7 +2144,7 @@ International Joint Conference on Neural Networks,
   <pubdate>2018</pubdate>
 </bibl>
 
-<bibl id="B41">
+<bibl id="B42">
   <title><p>{Resistance and tolerance: The role of nutrients on pathogen
   dynamics and infection outcomes in an insect host}</p></title>
   <aug>
@@ -2003,7 +2158,7 @@ International Joint Conference on Neural Networks,
   <lpage>510</lpage>
 </bibl>
 
-<bibl id="B42">
+<bibl id="B43">
   <title><p>{Feedbacks between nutrition and disease in honey bee
   health}</p></title>
   <aug>
@@ -2017,7 +2172,7 @@ International Joint Conference on Neural Networks,
   <lpage>119</lpage>
 </bibl>
 
-<bibl id="B43">
+<bibl id="B44">
   <title><p>{Nutrigenomics in honey bees: digital gene expression analysis of
   pollen's nutritive effects on healthy and varroa-parasitized
   bees}</p></title>
@@ -2033,7 +2188,7 @@ International Joint Conference on Neural Networks,
   <fpage>496</fpage>
 </bibl>
 
-<bibl id="B44">
+<bibl id="B45">
   <title><p>{Parallel epigenomic and transcriptomic responses to viral
   infection in honey bees (Apis mellifera)}</p></title>
   <aug>
@@ -2049,147 +2204,83 @@ International Joint Conference on Neural Networks,
   <fpage>e1004713</fpage>
 </bibl>
 
-<bibl id="B45">
-  <title><p>{Biases in Illumina transcriptome sequencing caused by random
-  hexamer priming}</p></title>
-  <aug>
-    <au><snm>Hansen</snm><fnm>K.D.</fnm></au>
-    <au><snm>Brenner</snm><fnm>S.E.</fnm></au>
-    <au><snm>Dudoit</snm><fnm>S.</fnm></au>
-  </aug>
-  <source>Nucleic Acids Research</source>
-  <pubdate>2010</pubdate>
-  <volume>38</volume>
-  <fpage>e131</fpage>
-</bibl>
-
 <bibl id="B46">
-  <title><p>{From RNA-seq reads to differential expression results}</p></title>
+  <title><p>{A novel system for the launch of alphavirus RNA synthesis reveals
+  a role for the Imd pathway in arthropod antiviral response}</p></title>
   <aug>
-    <au><snm>Oshlack</snm><fnm>A.</fnm></au>
-    <au><snm>Robinson</snm><fnm>M.D.</fnm></au>
-    <au><snm>Young</snm><fnm>M.D.</fnm></au>
+    <au><snm>Avadhanula</snm><fnm>V.</fnm></au>
+    <au><snm>Weasner</snm><fnm>B.P.</fnm></au>
+    <au><snm>Hardy</snm><fnm>G.G.</fnm></au>
+    <au><snm>Kumar</snm><fnm>J.P.</fnm></au>
+    <au><snm>Hardy</snm><fnm>R.W.</fnm></au>
   </aug>
-  <source>Genome Biology</source>
-  <pubdate>2010</pubdate>
-  <volume>11</volume>
-  <fpage>220</fpage>
+  <source>PLoS Pathog</source>
+  <pubdate>2009</pubdate>
+  <volume>5</volume>
+  <fpage>e1000582</fpage>
 </bibl>
 
 <bibl id="B47">
-  <title><p>{RNAseq: Technical variability and sampling}</p></title>
+  <title><p>{The JAK-STAT signaling pathway is required but not sufficient for
+  the antiviral response of Drosophila}</p></title>
   <aug>
-    <au><snm>McIntyre</snm><fnm>L.M.</fnm></au>
-    <au><snm>Lopiano</snm><fnm>K.K.</fnm></au>
-    <au><snm>Morse</snm><fnm>A.M.</fnm></au>
-    <au><snm>Amin</snm><fnm>V.</fnm></au>
-    <au><snm>Oberg</snm><fnm>A.L.</fnm></au>
-    <au><snm>Young</snm><fnm>L.J.</fnm></au>
-    <au><snm>Nuzhdin</snm><fnm>S.V.</fnm></au>
+    <au><snm>Dostert</snm><fnm>C.</fnm></au>
+    <au><snm>Jouanguy</snm><fnm>E.</fnm></au>
+    <au><snm>Irving</snm><fnm>P.</fnm></au>
+    <au><snm>Troxler</snm><fnm>L.</fnm></au>
+    <au><snm>Galiana</snm><fnm>D.</fnm></au>
+    <au><snm>Hetru</snm><fnm>C.</fnm></au>
+    <au><snm>Hoffmann</snm><fnm>J.A.</fnm></au>
+    <au><snm>Imler</snm><fnm>J. L.</fnm></au>
   </aug>
-  <source>BMC Genomics</source>
-  <pubdate>2011</pubdate>
-  <volume>12</volume>
-  <fpage>293</fpage>
+  <source>Nature Immunology</source>
+  <pubdate>2005</pubdate>
+  <volume>6</volume>
+  <fpage>946</fpage>
+  <lpage>953</lpage>
 </bibl>
 
 <bibl id="B48">
-  <title><p>edgeR: a Bioconductor package for differential expression analysis
-  of digital gene expression data</p></title>
+  <title><p>{Broad RNA interference-mediated antiviral immunity and
+  virus-specific inducible responses in Drosophila}</p></title>
   <aug>
-    <au><snm>Robinson</snm><fnm>M.D.</fnm></au>
-    <au><snm>McCarthy</snm><fnm>D.J.</fnm></au>
-    <au><snm>Smyth</snm><fnm>G.K.</fnm></au>
+    <au><snm>Kemp</snm><fnm>C.</fnm></au>
+    <au><snm>Mueller</snm><fnm>S.</fnm></au>
+    <au><snm>Goto</snm><fnm>A.</fnm></au>
+    <au><snm>Barbier</snm><fnm>V.</fnm></au>
+    <au><snm>Paro</snm><fnm>S.</fnm></au>
+    <au><snm>Bonnay</snm><fnm>F.</fnm></au>
+    <au><snm>Dostert</snm><fnm>C.</fnm></au>
+    <au><snm>Troxler</snm><fnm>L.</fnm></au>
+    <au><snm>Hetru</snm><fnm>C.</fnm></au>
+    <au><snm>Meignin</snm><fnm>C.</fnm></au>
+    <au><snm>Pfeffer</snm><fnm>S.</fnm></au>
+    <au><snm>Hoffmann</snm><fnm>J.A.</fnm></au>
+    <au><snm>Imler</snm><fnm>J.L.</fnm></au>
   </aug>
-  <source>Bioinformatics</source>
-  <pubdate>2010</pubdate>
-  <volume>26</volume>
-  <fpage>139</fpage>
-  <lpage>140</lpage>
+  <source>J Immunol</source>
+  <pubdate>2013</pubdate>
+  <volume>190</volume>
+  <fpage>650</fpage>
+  <lpage>658</lpage>
 </bibl>
 
 <bibl id="B49">
-  <title><p>{A unified model for the coevolution of resistance, tolerance, and
-  virulence}</p></title>
+  <title><p>{The Imd pathway is involved in antiviral immune responses in
+  Drosophila}</p></title>
   <aug>
-    <au><snm>Carval</snm><fnm>D.</fnm></au>
-    <au><snm>Ferriere</snm><fnm>R.</fnm></au>
+    <au><snm>Costa</snm><fnm>A.</fnm></au>
+    <au><snm>Jan</snm><fnm>E.</fnm></au>
+    <au><snm>Sarnow</snm><fnm>P.</fnm></au>
+    <au><snm>Schneider</snm><fnm>D.</fnm></au>
   </aug>
-  <source>Evolution</source>
-  <pubdate>2010</pubdate>
-  <volume>64</volume>
-  <fpage>2988–3009</fpage>
+  <source>PLoS One</source>
+  <pubdate>2009</pubdate>
+  <volume>4</volume>
+  <fpage>e7436</fpage>
 </bibl>
 
 <bibl id="B50">
-  <title><p>{Trans-generational immune priming: Specific enhancement of the
-  antimicrobial immune response in the mealworm beetle, Tenebrio
-  molitor}</p></title>
-  <aug>
-    <au><snm>Moret</snm><fnm>Y.</fnm></au>
-  </aug>
-  <source>Proceedings of the Royal Society B: Biological Sciences</source>
-  <pubdate>2006</pubdate>
-  <volume>273</volume>
-  <fpage>1399–1405</fpage>
-</bibl>
-
-<bibl id="B51">
-  <title><p>{Variation in the defense strategies of plants: are resistance and
-  tolerance mutually exclusive?}</p></title>
-  <aug>
-    <au><snm>Mauricio</snm><fnm>R.</fnm></au>
-    <au><snm>Rausher</snm><fnm>M.D.</fnm></au>
-    <au><snm>Burdick</snm><fnm>D.S.</fnm></au>
-  </aug>
-  <source>Ecology</source>
-  <pubdate>1997</pubdate>
-  <volume>78</volume>
-  <fpage>1301–1310</fpage>
-</bibl>
-
-<bibl id="B52">
-  <title><p>{Evolution of mixed plant defense allocation against natural
-  enemies}</p></title>
-  <aug>
-    <au><snm>Fornoni</snm><fnm>J.</fnm></au>
-    <au><snm>Nunez Farfan</snm><fnm>J.</fnm></au>
-    <au><snm>Valverde</snm><fnm>P.L.</fnm></au>
-    <au><snm>Rausher</snm><fnm>M.D.</fnm></au>
-  </aug>
-  <source>Evolution</source>
-  <pubdate>2004</pubdate>
-  <volume>58</volume>
-  <fpage>1685–1695</fpage>
-</bibl>
-
-<bibl id="B53">
-  <title><p>{Shared control of epidemiological traits in a coevolutionary model
-  of host-parasite interactions}</p></title>
-  <aug>
-    <au><snm>Restif</snm><fnm>O.</fnm></au>
-    <au><snm>Koella</snm><fnm>J.C.</fnm></au>
-  </aug>
-  <source>The American Naturalist</source>
-  <pubdate>2003</pubdate>
-  <volume>161</volume>
-  <fpage>827–836</fpage>
-</bibl>
-
-<bibl id="B54">
-  <title><p>{Balancing resistance and infection tolerance through metabolic
-  means}</p></title>
-  <aug>
-    <au><snm>Chambers</snm><fnm>M.C.</fnm></au>
-    <au><snm>Schneider</snm><fnm>D.S.</fnm></au>
-  </aug>
-  <source>PNAS</source>
-  <pubdate>2012</pubdate>
-  <volume>109</volume>
-  <fpage>13886–13887</fpage>
-</bibl>
-
-<bibl id="B55">
   <title><p>{Transcriptional pausing controls a rapid antiviral innate immune
   response in Drosophila}</p></title>
   <aug>
@@ -2207,7 +2298,176 @@ International Joint Conference on Neural Networks,
   <fpage>531–543</fpage>
 </bibl>
 
+<bibl id="B51">
+  <title><p>{Viruses and antiviral immunity in Drosophila}</p></title>
+  <aug>
+    <au><snm>Xu</snm><fnm>J.</fnm></au>
+    <au><snm>Cherry</snm><fnm>S.</fnm></au>
+  </aug>
+  <source>Dev Comp Immunol</source>
+  <pubdate>2014</pubdate>
+  <volume>42</volume>
+  <fpage>67–84</fpage>
+</bibl>
+
+<bibl id="B52">
+  <title><p>{Biases in Illumina transcriptome sequencing caused by random
+  hexamer priming}</p></title>
+  <aug>
+    <au><snm>Hansen</snm><fnm>K.D.</fnm></au>
+    <au><snm>Brenner</snm><fnm>S.E.</fnm></au>
+    <au><snm>Dudoit</snm><fnm>S.</fnm></au>
+  </aug>
+  <source>Nucleic Acids Research</source>
+  <pubdate>2010</pubdate>
+  <volume>38</volume>
+  <fpage>e131</fpage>
+</bibl>
+
+<bibl id="B53">
+  <title><p>{From RNA-seq reads to differential expression results}</p></title>
+  <aug>
+    <au><snm>Oshlack</snm><fnm>A.</fnm></au>
+    <au><snm>Robinson</snm><fnm>M.D.</fnm></au>
+    <au><snm>Young</snm><fnm>M.D.</fnm></au>
+  </aug>
+  <source>Genome Biology</source>
+  <pubdate>2010</pubdate>
+  <volume>11</volume>
+  <fpage>220</fpage>
+</bibl>
+
+<bibl id="B54">
+  <title><p>{RNAseq: Technical variability and sampling}</p></title>
+  <aug>
+    <au><snm>McIntyre</snm><fnm>L.M.</fnm></au>
+    <au><snm>Lopiano</snm><fnm>K.K.</fnm></au>
+    <au><snm>Morse</snm><fnm>A.M.</fnm></au>
+    <au><snm>Amin</snm><fnm>V.</fnm></au>
+    <au><snm>Oberg</snm><fnm>A.L.</fnm></au>
+    <au><snm>Young</snm><fnm>L.J.</fnm></au>
+    <au><snm>Nuzhdin</snm><fnm>S.V.</fnm></au>
+  </aug>
+  <source>BMC Genomics</source>
+  <pubdate>2011</pubdate>
+  <volume>12</volume>
+  <fpage>293</fpage>
+</bibl>
+
+<bibl id="B55">
+  <title><p>{The heat shock response restricts virus infection in
+  Drosophila}</p></title>
+  <aug>
+    <au><snm>Merkling</snm><fnm>S.H.</fnm></au>
+    <au><snm>Overheul</snm><fnm>G.J.</fnm></au>
+    <au><snm>Mierlo</snm><fnm>J.T.</fnm></au>
+    <au><snm>Arends</snm><fnm>D.</fnm></au>
+    <au><snm>Gilissen</snm><fnm>C.</fnm></au>
+    <au><snm>Rij</snm><fnm>R.P.</fnm></au>
+  </aug>
+  <source>Scientific Reports</source>
+  <pubdate>2015</pubdate>
+  <volume>5</volume>
+  <fpage>12758</fpage>
+</bibl>
+
 <bibl id="B56">
+  <title><p>edgeR: a Bioconductor package for differential expression analysis
+  of digital gene expression data</p></title>
+  <aug>
+    <au><snm>Robinson</snm><fnm>M.D.</fnm></au>
+    <au><snm>McCarthy</snm><fnm>D.J.</fnm></au>
+    <au><snm>Smyth</snm><fnm>G.K.</fnm></au>
+  </aug>
+  <source>Bioinformatics</source>
+  <pubdate>2010</pubdate>
+  <volume>26</volume>
+  <fpage>139</fpage>
+  <lpage>140</lpage>
+</bibl>
+
+<bibl id="B57">
+  <title><p>{A unified model for the coevolution of resistance, tolerance, and
+  virulence}</p></title>
+  <aug>
+    <au><snm>Carval</snm><fnm>D.</fnm></au>
+    <au><snm>Ferriere</snm><fnm>R.</fnm></au>
+  </aug>
+  <source>Evolution</source>
+  <pubdate>2010</pubdate>
+  <volume>64</volume>
+  <fpage>2988–3009</fpage>
+</bibl>
+
+<bibl id="B58">
+  <title><p>{Trans-generational immune priming: Specific enhancement of the
+  antimicrobial immune response in the mealworm beetle, Tenebrio
+  molitor}</p></title>
+  <aug>
+    <au><snm>Moret</snm><fnm>Y.</fnm></au>
+  </aug>
+  <source>Proceedings of the Royal Society B: Biological Sciences</source>
+  <pubdate>2006</pubdate>
+  <volume>273</volume>
+  <fpage>1399–1405</fpage>
+</bibl>
+
+<bibl id="B59">
+  <title><p>{Variation in the defense strategies of plants: are resistance and
+  tolerance mutually exclusive?}</p></title>
+  <aug>
+    <au><snm>Mauricio</snm><fnm>R.</fnm></au>
+    <au><snm>Rausher</snm><fnm>M.D.</fnm></au>
+    <au><snm>Burdick</snm><fnm>D.S.</fnm></au>
+  </aug>
+  <source>Ecology</source>
+  <pubdate>1997</pubdate>
+  <volume>78</volume>
+  <fpage>1301–1310</fpage>
+</bibl>
+
+<bibl id="B60">
+  <title><p>{Evolution of mixed plant defense allocation against natural
+  enemies}</p></title>
+  <aug>
+    <au><snm>Fornoni</snm><fnm>J.</fnm></au>
+    <au><snm>Nunez Farfan</snm><fnm>J.</fnm></au>
+    <au><snm>Valverde</snm><fnm>P.L.</fnm></au>
+    <au><snm>Rausher</snm><fnm>M.D.</fnm></au>
+  </aug>
+  <source>Evolution</source>
+  <pubdate>2004</pubdate>
+  <volume>58</volume>
+  <fpage>1685–1695</fpage>
+</bibl>
+
+<bibl id="B61">
+  <title><p>{Shared control of epidemiological traits in a coevolutionary model
+  of host-parasite interactions}</p></title>
+  <aug>
+    <au><snm>Restif</snm><fnm>O.</fnm></au>
+    <au><snm>Koella</snm><fnm>J.C.</fnm></au>
+  </aug>
+  <source>The American Naturalist</source>
+  <pubdate>2003</pubdate>
+  <volume>161</volume>
+  <fpage>827–836</fpage>
+</bibl>
+
+<bibl id="B62">
+  <title><p>{Balancing resistance and infection tolerance through metabolic
+  means}</p></title>
+  <aug>
+    <au><snm>Chambers</snm><fnm>M.C.</fnm></au>
+    <au><snm>Schneider</snm><fnm>D.S.</fnm></au>
+  </aug>
+  <source>PNAS</source>
+  <pubdate>2012</pubdate>
+  <volume>109</volume>
+  <fpage>13886–13887</fpage>
+</bibl>
+
+<bibl id="B63">
   <title><p>{The prophenoloxidase-activating system in
   invertebrates}</p></title>
   <aug>
@@ -2220,7 +2480,7 @@ International Joint Conference on Neural Networks,
   <fpage>116–126</fpage>
 </bibl>
 
-<bibl id="B57">
+<bibl id="B64">
   <title><p>{Self-harm caused by an insect's innate immunity}</p></title>
   <aug>
     <au><snm>Sadd</snm><fnm>B.M.</fnm></au>
@@ -2232,7 +2492,7 @@ International Joint Conference on Neural Networks,
   <fpage>2571–2574</fpage>
 </bibl>
 
-<bibl id="B58">
+<bibl id="B65">
   <title><p>{Chapter three: The melanization response in insect
   immunity}</p></title>
   <aug>
@@ -2247,7 +2507,7 @@ International Joint Conference on Neural Networks,
   <lpage>109</lpage>
 </bibl>
 
-<bibl id="B59">
+<bibl id="B66">
   <title><p>{The importance of tissue specificity for RNA-seq: highlighting the
   errors of composite structure extractions}</p></title>
   <aug>
@@ -2261,7 +2521,7 @@ International Joint Conference on Neural Networks,
   <fpage>586</fpage>
 </bibl>
 
-<bibl id="B60">
+<bibl id="B67">
   <title><p>{Quick and easy implementation of the Benjamini-Hochberg procedure
   for controlling the false positive rate in multiple comparisons}</p></title>
   <aug>
@@ -2276,7 +2536,7 @@ International Joint Conference on Neural Networks,
   <lpage>83</lpage>
 </bibl>
 
-<bibl id="B61">
+<bibl id="B68">
   <title><p>{Influence of pollen nutrition on honey bee health: Do pollen
   quality and diversity matter?}</p></title>
   <aug>
@@ -2296,7 +2556,7 @@ International Joint Conference on Neural Networks,
   <fpage>e72016</fpage>
 </bibl>
 
-<bibl id="B62">
+<bibl id="B69">
   <title><p>{Finding the missing honey bee genes: lessons learned from a genome
   upgrade}</p></title>
   <aug>
@@ -2308,7 +2568,7 @@ International Joint Conference on Neural Networks,
   <fpage>86</fpage>
 </bibl>
 
-<bibl id="B63">
+<bibl id="B70">
   <title><p>{Hymenoptera Genome Database: integrating genome annotations in
   HymenopteraMine}</p></title>
   <aug>
@@ -2327,7 +2587,7 @@ International Joint Conference on Neural Networks,
   <lpage>800</lpage>
 </bibl>
 
-<bibl id="B64">
+<bibl id="B71">
   <title><p>{GMAP and GSNAP for genomic sequence alignment: Enhancements to
   speed, accuracy, and functionality}</p></title>
   <aug>
@@ -2344,7 +2604,7 @@ International Joint Conference on Neural Networks,
   <lpage>334</lpage>
 </bibl>
 
-<bibl id="B65">
+<bibl id="B72">
   <title><p>{Moderated estimation of fold change and dispersion for RNA-seq
   data with DESeq2}</p></title>
   <aug>
@@ -2358,7 +2618,7 @@ International Joint Conference on Neural Networks,
   <fpage>550</fpage>
 </bibl>
 
-<bibl id="B66">
+<bibl id="B73">
   <title><p>limma powers differential expression analyses for RNA-sequencing
   and microarray studies</p></title>
   <aug>
@@ -2377,7 +2637,7 @@ International Joint Conference on Neural Networks,
   <fpage>e47</fpage>
 </bibl>
 
-<bibl id="B67">
+<bibl id="B74">
   <title><p>{Controlling the false discovery rate: A practical and powerful
   approach to multiple testing}</p></title>
   <aug>
@@ -2392,7 +2652,7 @@ International Joint Conference on Neural Networks,
   <lpage>300</lpage>
 </bibl>
 
-<bibl id="B68">
+<bibl id="B75">
   <title><p>{eulerr}: Area-Proportional {Euler} and {Venn} Diagrams with
   Ellipses</p></title>
   <aug>
@@ -2403,7 +2663,7 @@ International Joint Conference on Neural Networks,
   <note>R package version 4.0.0</note>
 </bibl>
 
-<bibl id="B69">
+<bibl id="B76">
   <title><p>{Full sisters and supersisters: A terminological
   paradigm}</p></title>
   <aug>
@@ -2416,7 +2676,7 @@ International Joint Conference on Neural Networks,
   <fpage>944–945</fpage>
 </bibl>
 
-<bibl id="B70">
+<bibl id="B77">
   <title><p>{Parasites, pathogens, and polyandry in social
   Hymenoptera}</p></title>
   <aug>
@@ -2430,7 +2690,7 @@ International Joint Conference on Neural Networks,
   <fpage>602–610</fpage>
 </bibl>
 
-<bibl id="B71">
+<bibl id="B78">
   <title><p>{On being the right size: Male contributions and multiple mating in
   social Hymenoptera}</p></title>
   <aug>
@@ -2443,7 +2703,7 @@ International Joint Conference on Neural Networks,
   <fpage>105–115</fpage>
 </bibl>
 
-<bibl id="B72">
+<bibl id="B79">
   <title><p>{Genetic diversity in honey bee colonies enhances productivity and
   fitness}</p></title>
   <aug>
@@ -2457,7 +2717,7 @@ International Joint Conference on Neural Networks,
   <lpage>364</lpage>
 </bibl>
 
-<bibl id="B73">
+<bibl id="B80">
   <title><p>{Genetic diversity within honeybee colonies prevents severe
   infections and promotes colony growth}</p></title>
   <aug>
@@ -2470,7 +2730,7 @@ International Joint Conference on Neural Networks,
   <lpage>103</lpage>
 </bibl>
 
-<bibl id="B74">
+<bibl id="B81">
   <title><p>{Does patriline composition change over a honey bee queen’s
   lifetime?}</p></title>
   <aug>
@@ -2485,7 +2745,7 @@ International Joint Conference on Neural Networks,
   <fpage>857–869</fpage>
 </bibl>
 
-<bibl id="B75">
+<bibl id="B82">
   <title><p>Principal Component Analysis</p></title>
   <aug>
     <au><snm>Jolliffe</snm><fnm>I.T.</fnm></au>
@@ -2494,7 +2754,7 @@ International Joint Conference on Neural Networks,
   <pubdate>2002</pubdate>
 </bibl>
 
-<bibl id="B76">
+<bibl id="B83">
   <title><p>{The plane with parallel coordinates}</p></title>
   <aug>
     <au><snm>Inselberg</snm><fnm>A.</fnm></au>
@@ -2506,7 +2766,7 @@ International Joint Conference on Neural Networks,
   <lpage>91</lpage>
 </bibl>
 
-<bibl id="B77">
+<bibl id="B84">
   <title><p>Visualizing Data</p></title>
   <aug>
     <au><snm>Cleveland</snm><fnm>W.S.</fnm></au>
@@ -2515,7 +2775,7 @@ International Joint Conference on Neural Networks,
   <pubdate>1993</pubdate>
 </bibl>
 
-<bibl id="B78">
+<bibl id="B85">
   <title><p>{Exploring gene expression data, using plots}</p></title>
   <aug>
     <au><snm>Cook</snm><fnm>D.</fnm></au>
@@ -2531,7 +2791,7 @@ International Joint Conference on Neural Networks,
   <fpage>151–182</fpage>
 </bibl>
 
-<bibl id="B79">
+<bibl id="B86">
   <title><p>{Effective Clustering Algorithms for Gene Expression
   Data}</p></title>
   <aug>
@@ -2545,7 +2805,7 @@ International Joint Conference on Neural Networks,
   <fpage>4</fpage>
 </bibl>
 
-<bibl id="B80">
+<bibl id="B87">
   <title><p>{Comparative Study on Normalization Procedures for Cluster Analysis
   of Gene Expression Datasets}</p></title>
   <aug>
@@ -2561,7 +2821,7 @@ International Joint Conference on Neural Networks,
   <lpage>2799</lpage>
 </bibl>
 
-<bibl id="B81">
+<bibl id="B88">
   <title><p>{Systematic and integrative analysis of large gene lists using
   DAVID bioinformatics resources}</p></title>
   <aug>
@@ -2576,7 +2836,7 @@ International Joint Conference on Neural Networks,
   <lpage>57</lpage>
 </bibl>
 
-<bibl id="B82">
+<bibl id="B89">
   <title><p>{Bioinformatics enrichment tools: paths toward the comprehensive
   functional analysis of large gene lists}</p></title>
   <aug>
@@ -2591,7 +2851,7 @@ International Joint Conference on Neural Networks,
   <lpage>13</lpage>
 </bibl>
 
-<bibl id="B83">
+<bibl id="B90">
   <title><p>{REVIGO summarizes and visualizes long lists of Gene Ontology
   terms}</p></title>
   <aug>
@@ -2604,6 +2864,21 @@ International Joint Conference on Neural Networks,
   <pubdate>2011</pubdate>
   <volume>6</volume>
   <fpage>e21800</fpage>
+</bibl>
+
+<bibl id="B91">
+  <title><p>{A new measure for functional similarity of gene products based on
+  Gene Ontology}</p></title>
+  <aug>
+    <au><snm>Schlicker</snm><fnm>A.</fnm></au>
+    <au><snm>Domingues</snm><fnm>F.S.</fnm></au>
+    <au><snm>Rahnenfuhrer</snm><fnm>J.</fnm></au>
+    <au><snm>Lengauer</snm><fnm>T.</fnm></au>
+  </aug>
+  <source>BMC Bioinformatics</source>
+  <pubdate>2006</pubdate>
+  <volume>7</volume>
+  <fpage>302</fpage>
 </bibl>
 
 </refgrp>

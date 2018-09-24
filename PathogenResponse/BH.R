@@ -25,11 +25,13 @@ d$Diet = as.factor(d$Diet)
 
 # Main effects and interactive terms
 lmeMortMain <- lme(Day3Mortality ~ Diet*Virus, data = d, random = ~1|Experiment)
-anova(lmeMortMain)[["p-value"]]
+anova(lmeMortMain)
+anova(lmeMortMain)[["p-value"]] # Obtain more precise p-values
 
 # Treatment
 lmeMortTreatment <- lme(Day3Mortality ~ Treatment, data = d, random = ~1|Experiment)
-anova(lmeMortTreatment)[["p-value"]]
+anova(lmeMortTreatment)
+anova(lmeMortTreatment)[["p-value"]] # Obtain more precise p-values
 
 # Pairwise (with BH correction)
 d$Treatment <- relevel(d$Treatment, ref = "NC")
@@ -42,7 +44,7 @@ d$Treatment <- relevel(d$Treatment, ref = "VC")
 lmemort3 = lme(Day3Mortality ~ Treatment, data=d, random = ~1|Experiment) 
 pval3 = summary(lmemort3)$tTable[,5][4]
 mortpval = c(pval1, pval2, pval3)
-p.adjust(mortpval, "BH")
+p.adjust(mortpval, "BH") # Obtain p-values for NC_NR, NC_VC, NC_VR, NR_VC, NR_VR, VC_VR
 
 # Plot Mortality (All)
 labelDF = data.frame(plot.labels=c("NR","VC","VR","NC"), labels = c("ab","bc","c","a"), V1 = c(0.22, 0.479, 0.793, 0.164))
@@ -75,11 +77,13 @@ d$Diet = as.factor(d$Diet)
 
 # Main effects and interactive terms
 lmeMortMain <- lme(logIAPV ~ Diet*Virus, data = d, random = ~1|Experiment)
-anova(lmeMortMain)[["p-value"]]
+anova(lmeMortMain)
+anova(lmeMortMain)[["p-value"]] # Obtain more precise p-values
 
 # Treatment
 lmeMortTreatment <- lme(logIAPV ~ Treatment, data = d, random = ~1|Experiment)
-anova(lmeMortTreatment)[["p-value"]]
+anova(lmeMortTreatment)
+anova(lmeMortTreatment)[["p-value"]] # Obtain more precise p-values
 
 # Pairwise (with BH correction)
 d$Treatment <- relevel(d$Treatment, ref = "NC")
@@ -92,7 +96,7 @@ d$Treatment <- relevel(d$Treatment, ref = "VC")
 lmemort3 = lme(logIAPV ~ Treatment, data=d, random = ~1|Experiment) 
 pval3 = summary(lmemort3)$tTable[,5][4]
 mortpval = c(pval1, pval2, pval3)
-p.adjust(mortpval, "BH")
+p.adjust(mortpval, "BH") # Obtain p-values for NC_NR, NC_VC, NC_VR, NR_VC, NR_VR, VC_VR
 
 # Plot IAPV (All)
 labelDF = data.frame(plot.labels=c("NR","VC","VR","NC"), labels = c("ab","bc","c","a"), V1 = c(4.25, 5.35, 8.57, 3.85))
