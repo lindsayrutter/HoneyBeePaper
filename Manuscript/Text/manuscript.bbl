@@ -884,201 +884,6 @@ In prep
 \endbibitem
 
 %%% 52
-\bibitem{biased1}
-\begin{barticle}
-\bauthor{\bsnm{Hansen}, \binits{K.D.}},
-\bauthor{\bsnm{Brenner}, \binits{S.E.}},
-\bauthor{\bsnm{Dudoit}, \binits{S.}}:
-\batitle{{Biases in Illumina transcriptome sequencing caused by random hexamer
-  priming}}.
-\bjtitle{Nucleic Acids Research}
-\bvolume{38},
-\bfpage{131}
-(\byear{2010})
-\end{barticle}
-\endbibitem
-
-%%% 53
-\bibitem{biased2}
-\begin{barticle}
-\bauthor{\bsnm{Oshlack}, \binits{A.}},
-\bauthor{\bsnm{Robinson}, \binits{M.D.}},
-\bauthor{\bsnm{Young}, \binits{M.D.}}:
-\batitle{{From RNA-seq reads to differential expression results}}.
-\bjtitle{Genome Biology}
-\bvolume{11},
-\bfpage{220}
-(\byear{2010})
-\end{barticle}
-\endbibitem
-
-%%% 54
-\bibitem{biased3}
-\begin{barticle}
-\bauthor{\bsnm{McIntyre}, \binits{L.M.}},
-\bauthor{\bsnm{Lopiano}, \binits{K.K.}},
-\bauthor{\bsnm{Morse}, \binits{A.M.}},
-\bauthor{\bsnm{Amin}, \binits{V.}},
-\bauthor{\bsnm{Oberg}, \binits{A.L.}},
-\bauthor{\bsnm{Young}, \binits{L.J.}},
-\bauthor{\bsnm{Nuzhdin}, \binits{S.V.}}:
-\batitle{{RNAseq: Technical variability and sampling}}.
-\bjtitle{BMC Genomics}
-\bvolume{12},
-\bfpage{293}
-(\byear{2011})
-\end{barticle}
-\endbibitem
-
-%%% 55
-\bibitem{fewDEGs}
-\begin{barticle}
-\bauthor{\bsnm{Merkling}, \binits{S.H.}},
-\bauthor{\bsnm{Overheul}, \binits{G.J.}},
-\bauthor{\bparticle{van} \bsnm{Mierlo}, \binits{J.T.}},
-\bauthor{\bsnm{Arends}, \binits{D.}},
-\bauthor{\bsnm{Gilissen}, \binits{C.}},
-\bauthor{\bparticle{van} \bsnm{Rij}, \binits{R.P.}}:
-\batitle{{The heat shock response restricts virus infection in Drosophila}}.
-\bjtitle{Scientific Reports}
-\bvolume{5},
-\bfpage{12758}
-(\byear{2015})
-\end{barticle}
-\endbibitem
-
-%%% 56
-\bibitem{edger}
-\begin{barticle}
-\bauthor{\bsnm{Robinson}, \binits{M.D.}},
-\bauthor{\bsnm{McCarthy}, \binits{D.J.}},
-\bauthor{\bsnm{Smyth}, \binits{G.K.}}:
-\batitle{edger: a bioconductor package for differential expression analysis of
-  digital gene expression data}.
-\bjtitle{Bioinformatics}
-\bvolume{26},
-\bfpage{139}--\blpage{140}
-(\byear{2010})
-\end{barticle}
-\endbibitem
-
-%%% 57
-\bibitem{resTol2}
-\begin{barticle}
-\bauthor{\bsnm{Carval}, \binits{D.}},
-\bauthor{\bsnm{Ferriere}, \binits{R.}}:
-\batitle{{A unified model for the coevolution of resistance, tolerance, and
-  virulence}}.
-\bjtitle{Evolution}
-\bvolume{64},
-\bfpage{2988}--\blpage{3009}
-(\byear{2010})
-\end{barticle}
-\endbibitem
-
-%%% 58
-\bibitem{resTol4}
-\begin{barticle}
-\bauthor{\bsnm{Moret}, \binits{Y.}}:
-\batitle{{Trans-generational immune priming: Specific enhancement of the
-  antimicrobial immune response in the mealworm beetle, Tenebrio molitor}}.
-\bjtitle{Proceedings of the Royal Society B: Biological Sciences}
-\bvolume{273},
-\bfpage{1399}--\blpage{1405}
-(\byear{2006})
-\end{barticle}
-\endbibitem
-
-%%% 59
-\bibitem{resTol5}
-\begin{barticle}
-\bauthor{\bsnm{Mauricio}, \binits{R.}},
-\bauthor{\bsnm{Rausher}, \binits{M.D.}},
-\bauthor{\bsnm{Burdick}, \binits{D.S.}}:
-\batitle{{Variation in the defense strategies of plants: are resistance and
-  tolerance mutually exclusive?}}
-\bjtitle{Ecology}
-\bvolume{78},
-\bfpage{1301}--\blpage{1310}
-(\byear{1997})
-\end{barticle}
-\endbibitem
-
-%%% 60
-\bibitem{resTol6}
-\begin{barticle}
-\bauthor{\bsnm{Fornoni}, \binits{J.}},
-\bauthor{\bsnm{Nunez-Farfan}, \binits{J.}},
-\bauthor{\bsnm{Valverde}, \binits{P.L.}},
-\bauthor{\bsnm{Rausher}, \binits{M.D.}}:
-\batitle{{Evolution of mixed plant defense allocation against natural
-  enemies}}.
-\bjtitle{Evolution}
-\bvolume{58},
-\bfpage{1685}--\blpage{1695}
-(\byear{2004})
-\end{barticle}
-\endbibitem
-
-%%% 61
-\bibitem{resTol7}
-\begin{barticle}
-\bauthor{\bsnm{Restif}, \binits{O.}},
-\bauthor{\bsnm{Koella}, \binits{J.C.}}:
-\batitle{{Shared control of epidemiological traits in a coevolutionary model of
-  host-parasite interactions}}.
-\bjtitle{The American Naturalist}
-\bvolume{161},
-\bfpage{827}--\blpage{836}
-(\byear{2003})
-\end{barticle}
-\endbibitem
-
-%%% 62
-\bibitem{resTol8}
-\begin{barticle}
-\bauthor{\bsnm{Chambers}, \binits{M.C.}},
-\bauthor{\bsnm{Schneider}, \binits{D.S.}}:
-\batitle{{Balancing resistance and infection tolerance through metabolic
-  means}}.
-\bjtitle{PNAS}
-\bvolume{109},
-\bfpage{13886}--\blpage{13887}
-(\byear{2012})
-\end{barticle}
-\endbibitem
-
-%%% 63
-\bibitem{tissueLevel}
-\begin{barticle}
-\bauthor{\bsnm{Johnson}, \binits{B.R.}},
-\bauthor{\bsnm{Atallah}, \binits{J.}},
-\bauthor{\bsnm{Plachetzki}, \binits{D.C.}}:
-\batitle{{The importance of tissue specificity for RNA-seq: highlighting the
-  errors of composite structure extractions}}.
-\bjtitle{BMC Genomics}
-\bvolume{14},
-\bfpage{586}
-(\byear{2013})
-\end{barticle}
-\endbibitem
-
-%%% 64
-\bibitem{bh}
-\begin{barticle}
-\bauthor{\bsnm{Thissen}, \binits{D.}},
-\bauthor{\bsnm{Steinberg}, \binits{L.}},
-\bauthor{\bsnm{Kuang}, \binits{D.}}:
-\batitle{{Quick and easy implementation of the Benjamini-Hochberg procedure for
-  controlling the false positive rate in multiple comparisons}}.
-\bjtitle{J Educ Behav Stat}
-\bvolume{27},
-\bfpage{77}--\blpage{83}
-(\byear{2002})
-\end{barticle}
-\endbibitem
-
-%%% 65
 \bibitem{DiPasquale}
 \begin{barticle}
 \bauthor{\bsnm{Pasquale}, \binits{G.D.}},
@@ -1099,7 +904,286 @@ In prep
 \end{barticle}
 \endbibitem
 
+%%% 53
+\bibitem{sisters}
+\begin{barticle}
+\bauthor{\bsnm{Page}, \binits{R.E.}},
+\bauthor{\bsnm{Laidlaw}, \binits{H.H.}}:
+\batitle{{Full sisters and supersisters: A terminological paradigm}}.
+\bjtitle{Anim. Behav.}
+\bvolume{36},
+\bfpage{944}--\blpage{945}
+(\byear{1988})
+\end{barticle}
+\endbibitem
+
+%%% 54
+\bibitem{multParasite}
+\begin{barticle}
+\bauthor{\bsnm{Sherman}, \binits{P.W.}},
+\bauthor{\bsnm{Seeley}, \binits{T.D.}},
+\bauthor{\bsnm{Reeve}, \binits{H.K.}}:
+\batitle{{Parasites, pathogens, and polyandry in social Hymenoptera}}.
+\bjtitle{Am. Nat}
+\bvolume{131},
+\bfpage{602}--\blpage{610}
+(\byear{1988})
+\end{barticle}
+\endbibitem
+
+%%% 55
+\bibitem{divHyp2}
+\begin{barticle}
+\bauthor{\bsnm{Crozier}, \binits{R.H.}},
+\bauthor{\bsnm{Page}, \binits{R.E.}}:
+\batitle{{On being the right size: Male contributions and multiple mating in
+  social Hymenoptera}}.
+\bjtitle{Behav. Ecol. Sociobiol.}
+\bvolume{18},
+\bfpage{105}--\blpage{115}
+(\byear{1985})
+\end{barticle}
+\endbibitem
+
+%%% 56
+\bibitem{geneticDiverse}
+\begin{barticle}
+\bauthor{\bsnm{Mattila}, \binits{H.R.}},
+\bauthor{\bsnm{Seeley}, \binits{T.D.}}:
+\batitle{{Genetic diversity in honey bee colonies enhances productivity and
+  fitness}}.
+\bjtitle{Science}
+\bvolume{317},
+\bfpage{362}--\blpage{364}
+(\byear{2007})
+\end{barticle}
+\endbibitem
+
+%%% 57
+\bibitem{geneticDiverse2}
+\begin{barticle}
+\bauthor{\bsnm{Tarpy}, \binits{D.R.}}:
+\batitle{{Genetic diversity within honeybee colonies prevents severe infections
+  and promotes colony growth}}.
+\bjtitle{Proc. R. Soc. Lond. B}
+\bvolume{270},
+\bfpage{99}--\blpage{103}
+(\byear{2003})
+\end{barticle}
+\endbibitem
+
+%%% 58
+\bibitem{patriline}
+\begin{barticle}
+\bauthor{\bsnm{Brodschneider}, \binits{R.}},
+\bauthor{\bsnm{Arnold}, \binits{G.}},
+\bauthor{\bsnm{Hrassnigg}, \binits{N.}},
+\bauthor{\bsnm{Crailsheim}, \binits{K.}}:
+\batitle{{Does patriline composition change over a honey bee queen’s
+  lifetime?}}
+\bjtitle{Insects}
+\bvolume{3},
+\bfpage{857}--\blpage{869}
+(\byear{2012})
+\end{barticle}
+\endbibitem
+
+%%% 59
+\bibitem{biased1}
+\begin{barticle}
+\bauthor{\bsnm{Hansen}, \binits{K.D.}},
+\bauthor{\bsnm{Brenner}, \binits{S.E.}},
+\bauthor{\bsnm{Dudoit}, \binits{S.}}:
+\batitle{{Biases in Illumina transcriptome sequencing caused by random hexamer
+  priming}}.
+\bjtitle{Nucleic Acids Research}
+\bvolume{38},
+\bfpage{131}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 60
+\bibitem{biased2}
+\begin{barticle}
+\bauthor{\bsnm{Oshlack}, \binits{A.}},
+\bauthor{\bsnm{Robinson}, \binits{M.D.}},
+\bauthor{\bsnm{Young}, \binits{M.D.}}:
+\batitle{{From RNA-seq reads to differential expression results}}.
+\bjtitle{Genome Biology}
+\bvolume{11},
+\bfpage{220}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 61
+\bibitem{biased3}
+\begin{barticle}
+\bauthor{\bsnm{McIntyre}, \binits{L.M.}},
+\bauthor{\bsnm{Lopiano}, \binits{K.K.}},
+\bauthor{\bsnm{Morse}, \binits{A.M.}},
+\bauthor{\bsnm{Amin}, \binits{V.}},
+\bauthor{\bsnm{Oberg}, \binits{A.L.}},
+\bauthor{\bsnm{Young}, \binits{L.J.}},
+\bauthor{\bsnm{Nuzhdin}, \binits{S.V.}}:
+\batitle{{RNAseq: Technical variability and sampling}}.
+\bjtitle{BMC Genomics}
+\bvolume{12},
+\bfpage{293}
+(\byear{2011})
+\end{barticle}
+\endbibitem
+
+%%% 62
+\bibitem{fewDEGs}
+\begin{barticle}
+\bauthor{\bsnm{Merkling}, \binits{S.H.}},
+\bauthor{\bsnm{Overheul}, \binits{G.J.}},
+\bauthor{\bparticle{van} \bsnm{Mierlo}, \binits{J.T.}},
+\bauthor{\bsnm{Arends}, \binits{D.}},
+\bauthor{\bsnm{Gilissen}, \binits{C.}},
+\bauthor{\bparticle{van} \bsnm{Rij}, \binits{R.P.}}:
+\batitle{{The heat shock response restricts virus infection in Drosophila}}.
+\bjtitle{Scientific Reports}
+\bvolume{5},
+\bfpage{12758}
+(\byear{2015})
+\end{barticle}
+\endbibitem
+
+%%% 63
+\bibitem{edger}
+\begin{barticle}
+\bauthor{\bsnm{Robinson}, \binits{M.D.}},
+\bauthor{\bsnm{McCarthy}, \binits{D.J.}},
+\bauthor{\bsnm{Smyth}, \binits{G.K.}}:
+\batitle{edger: a bioconductor package for differential expression analysis of
+  digital gene expression data}.
+\bjtitle{Bioinformatics}
+\bvolume{26},
+\bfpage{139}--\blpage{140}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 64
+\bibitem{resTol2}
+\begin{barticle}
+\bauthor{\bsnm{Carval}, \binits{D.}},
+\bauthor{\bsnm{Ferriere}, \binits{R.}}:
+\batitle{{A unified model for the coevolution of resistance, tolerance, and
+  virulence}}.
+\bjtitle{Evolution}
+\bvolume{64},
+\bfpage{2988}--\blpage{3009}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 65
+\bibitem{resTol4}
+\begin{barticle}
+\bauthor{\bsnm{Moret}, \binits{Y.}}:
+\batitle{{Trans-generational immune priming: Specific enhancement of the
+  antimicrobial immune response in the mealworm beetle, Tenebrio molitor}}.
+\bjtitle{Proceedings of the Royal Society B: Biological Sciences}
+\bvolume{273},
+\bfpage{1399}--\blpage{1405}
+(\byear{2006})
+\end{barticle}
+\endbibitem
+
 %%% 66
+\bibitem{resTol5}
+\begin{barticle}
+\bauthor{\bsnm{Mauricio}, \binits{R.}},
+\bauthor{\bsnm{Rausher}, \binits{M.D.}},
+\bauthor{\bsnm{Burdick}, \binits{D.S.}}:
+\batitle{{Variation in the defense strategies of plants: are resistance and
+  tolerance mutually exclusive?}}
+\bjtitle{Ecology}
+\bvolume{78},
+\bfpage{1301}--\blpage{1310}
+(\byear{1997})
+\end{barticle}
+\endbibitem
+
+%%% 67
+\bibitem{resTol6}
+\begin{barticle}
+\bauthor{\bsnm{Fornoni}, \binits{J.}},
+\bauthor{\bsnm{Nunez-Farfan}, \binits{J.}},
+\bauthor{\bsnm{Valverde}, \binits{P.L.}},
+\bauthor{\bsnm{Rausher}, \binits{M.D.}}:
+\batitle{{Evolution of mixed plant defense allocation against natural
+  enemies}}.
+\bjtitle{Evolution}
+\bvolume{58},
+\bfpage{1685}--\blpage{1695}
+(\byear{2004})
+\end{barticle}
+\endbibitem
+
+%%% 68
+\bibitem{resTol7}
+\begin{barticle}
+\bauthor{\bsnm{Restif}, \binits{O.}},
+\bauthor{\bsnm{Koella}, \binits{J.C.}}:
+\batitle{{Shared control of epidemiological traits in a coevolutionary model of
+  host-parasite interactions}}.
+\bjtitle{The American Naturalist}
+\bvolume{161},
+\bfpage{827}--\blpage{836}
+(\byear{2003})
+\end{barticle}
+\endbibitem
+
+%%% 69
+\bibitem{resTol8}
+\begin{barticle}
+\bauthor{\bsnm{Chambers}, \binits{M.C.}},
+\bauthor{\bsnm{Schneider}, \binits{D.S.}}:
+\batitle{{Balancing resistance and infection tolerance through metabolic
+  means}}.
+\bjtitle{PNAS}
+\bvolume{109},
+\bfpage{13886}--\blpage{13887}
+(\byear{2012})
+\end{barticle}
+\endbibitem
+
+%%% 70
+\bibitem{tissueLevel}
+\begin{barticle}
+\bauthor{\bsnm{Johnson}, \binits{B.R.}},
+\bauthor{\bsnm{Atallah}, \binits{J.}},
+\bauthor{\bsnm{Plachetzki}, \binits{D.C.}}:
+\batitle{{The importance of tissue specificity for RNA-seq: highlighting the
+  errors of composite structure extractions}}.
+\bjtitle{BMC Genomics}
+\bvolume{14},
+\bfpage{586}
+(\byear{2013})
+\end{barticle}
+\endbibitem
+
+%%% 71
+\bibitem{bh}
+\begin{barticle}
+\bauthor{\bsnm{Thissen}, \binits{D.}},
+\bauthor{\bsnm{Steinberg}, \binits{L.}},
+\bauthor{\bsnm{Kuang}, \binits{D.}}:
+\batitle{{Quick and easy implementation of the Benjamini-Hochberg procedure for
+  controlling the false positive rate in multiple comparisons}}.
+\bjtitle{J Educ Behav Stat}
+\bvolume{27},
+\bfpage{77}--\blpage{83}
+(\byear{2002})
+\end{barticle}
+\endbibitem
+
+%%% 72
 \bibitem{hbGenome}
 \begin{barticle}
 \bauthor{\bsnm{Consortium}, \binits{H.B.G.S.}}:
@@ -1112,7 +1196,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 67
+%%% 73
 \bibitem{hymenopteraDB}
 \begin{barticle}
 \bauthor{\bsnm{Elsik}, \binits{C.G.}},
@@ -1131,7 +1215,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 68
+%%% 74
 \bibitem{gsnap}
 \begin{barticle}
 \bauthor{\bsnm{Wu}, \binits{T.D.}},
@@ -1148,7 +1232,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 69
+%%% 75
 \bibitem{deseq2}
 \begin{barticle}
 \bauthor{\bsnm{Love}, \binits{M.I.}},
@@ -1163,7 +1247,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 70
+%%% 76
 \bibitem{limma}
 \begin{barticle}
 \bauthor{\bsnm{Ritchie}, \binits{M.E.}},
@@ -1182,7 +1266,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 71
+%%% 77
 \bibitem{benjamini}
 \begin{barticle}
 \bauthor{\bsnm{Benjamini}, \binits{Y.}},
@@ -1196,7 +1280,7 @@ In prep
 \end{barticle}
 \endbibitem
 
-%%% 72
+%%% 78
 \bibitem{euler}
 \begin{botherref}
 \oauthor{\bsnm{Larsson}, \binits{J.}}:
@@ -1205,90 +1289,6 @@ In prep
 R package version 4.0.0.
 \url{https://cran.r-project.org/package=eulerr}
 \end{botherref}
-\endbibitem
-
-%%% 73
-\bibitem{sisters}
-\begin{barticle}
-\bauthor{\bsnm{Page}, \binits{R.E.}},
-\bauthor{\bsnm{Laidlaw}, \binits{H.H.}}:
-\batitle{{Full sisters and supersisters: A terminological paradigm}}.
-\bjtitle{Anim. Behav.}
-\bvolume{36},
-\bfpage{944}--\blpage{945}
-(\byear{1988})
-\end{barticle}
-\endbibitem
-
-%%% 74
-\bibitem{multParasite}
-\begin{barticle}
-\bauthor{\bsnm{Sherman}, \binits{P.W.}},
-\bauthor{\bsnm{Seeley}, \binits{T.D.}},
-\bauthor{\bsnm{Reeve}, \binits{H.K.}}:
-\batitle{{Parasites, pathogens, and polyandry in social Hymenoptera}}.
-\bjtitle{Am. Nat}
-\bvolume{131},
-\bfpage{602}--\blpage{610}
-(\byear{1988})
-\end{barticle}
-\endbibitem
-
-%%% 75
-\bibitem{divHyp2}
-\begin{barticle}
-\bauthor{\bsnm{Crozier}, \binits{R.H.}},
-\bauthor{\bsnm{Page}, \binits{R.E.}}:
-\batitle{{On being the right size: Male contributions and multiple mating in
-  social Hymenoptera}}.
-\bjtitle{Behav. Ecol. Sociobiol.}
-\bvolume{18},
-\bfpage{105}--\blpage{115}
-(\byear{1985})
-\end{barticle}
-\endbibitem
-
-%%% 76
-\bibitem{geneticDiverse}
-\begin{barticle}
-\bauthor{\bsnm{Mattila}, \binits{H.R.}},
-\bauthor{\bsnm{Seeley}, \binits{T.D.}}:
-\batitle{{Genetic diversity in honey bee colonies enhances productivity and
-  fitness}}.
-\bjtitle{Science}
-\bvolume{317},
-\bfpage{362}--\blpage{364}
-(\byear{2007})
-\end{barticle}
-\endbibitem
-
-%%% 77
-\bibitem{geneticDiverse2}
-\begin{barticle}
-\bauthor{\bsnm{Tarpy}, \binits{D.R.}}:
-\batitle{{Genetic diversity within honeybee colonies prevents severe infections
-  and promotes colony growth}}.
-\bjtitle{Proc. R. Soc. Lond. B}
-\bvolume{270},
-\bfpage{99}--\blpage{103}
-(\byear{2003})
-\end{barticle}
-\endbibitem
-
-%%% 78
-\bibitem{patriline}
-\begin{barticle}
-\bauthor{\bsnm{Brodschneider}, \binits{R.}},
-\bauthor{\bsnm{Arnold}, \binits{G.}},
-\bauthor{\bsnm{Hrassnigg}, \binits{N.}},
-\bauthor{\bsnm{Crailsheim}, \binits{K.}}:
-\batitle{{Does patriline composition change over a honey bee queen’s
-  lifetime?}}
-\bjtitle{Insects}
-\bvolume{3},
-\bfpage{857}--\blpage{869}
-(\byear{2012})
-\end{barticle}
 \endbibitem
 
 %%% 79
@@ -2268,192 +2268,6 @@ International Joint Conference on Neural Networks,
 </bibl>
 
 <bibl id="B52">
-  <title><p>{Biases in Illumina transcriptome sequencing caused by random
-  hexamer priming}</p></title>
-  <aug>
-    <au><snm>Hansen</snm><fnm>K.D.</fnm></au>
-    <au><snm>Brenner</snm><fnm>S.E.</fnm></au>
-    <au><snm>Dudoit</snm><fnm>S.</fnm></au>
-  </aug>
-  <source>Nucleic Acids Research</source>
-  <pubdate>2010</pubdate>
-  <volume>38</volume>
-  <fpage>e131</fpage>
-</bibl>
-
-<bibl id="B53">
-  <title><p>{From RNA-seq reads to differential expression results}</p></title>
-  <aug>
-    <au><snm>Oshlack</snm><fnm>A.</fnm></au>
-    <au><snm>Robinson</snm><fnm>M.D.</fnm></au>
-    <au><snm>Young</snm><fnm>M.D.</fnm></au>
-  </aug>
-  <source>Genome Biology</source>
-  <pubdate>2010</pubdate>
-  <volume>11</volume>
-  <fpage>220</fpage>
-</bibl>
-
-<bibl id="B54">
-  <title><p>{RNAseq: Technical variability and sampling}</p></title>
-  <aug>
-    <au><snm>McIntyre</snm><fnm>L.M.</fnm></au>
-    <au><snm>Lopiano</snm><fnm>K.K.</fnm></au>
-    <au><snm>Morse</snm><fnm>A.M.</fnm></au>
-    <au><snm>Amin</snm><fnm>V.</fnm></au>
-    <au><snm>Oberg</snm><fnm>A.L.</fnm></au>
-    <au><snm>Young</snm><fnm>L.J.</fnm></au>
-    <au><snm>Nuzhdin</snm><fnm>S.V.</fnm></au>
-  </aug>
-  <source>BMC Genomics</source>
-  <pubdate>2011</pubdate>
-  <volume>12</volume>
-  <fpage>293</fpage>
-</bibl>
-
-<bibl id="B55">
-  <title><p>{The heat shock response restricts virus infection in
-  Drosophila}</p></title>
-  <aug>
-    <au><snm>Merkling</snm><fnm>S.H.</fnm></au>
-    <au><snm>Overheul</snm><fnm>G.J.</fnm></au>
-    <au><snm>Mierlo</snm><fnm>J.T.</fnm></au>
-    <au><snm>Arends</snm><fnm>D.</fnm></au>
-    <au><snm>Gilissen</snm><fnm>C.</fnm></au>
-    <au><snm>Rij</snm><fnm>R.P.</fnm></au>
-  </aug>
-  <source>Scientific Reports</source>
-  <pubdate>2015</pubdate>
-  <volume>5</volume>
-  <fpage>12758</fpage>
-</bibl>
-
-<bibl id="B56">
-  <title><p>edgeR: a Bioconductor package for differential expression analysis
-  of digital gene expression data</p></title>
-  <aug>
-    <au><snm>Robinson</snm><fnm>M.D.</fnm></au>
-    <au><snm>McCarthy</snm><fnm>D.J.</fnm></au>
-    <au><snm>Smyth</snm><fnm>G.K.</fnm></au>
-  </aug>
-  <source>Bioinformatics</source>
-  <pubdate>2010</pubdate>
-  <volume>26</volume>
-  <fpage>139</fpage>
-  <lpage>140</lpage>
-</bibl>
-
-<bibl id="B57">
-  <title><p>{A unified model for the coevolution of resistance, tolerance, and
-  virulence}</p></title>
-  <aug>
-    <au><snm>Carval</snm><fnm>D.</fnm></au>
-    <au><snm>Ferriere</snm><fnm>R.</fnm></au>
-  </aug>
-  <source>Evolution</source>
-  <pubdate>2010</pubdate>
-  <volume>64</volume>
-  <fpage>2988–3009</fpage>
-</bibl>
-
-<bibl id="B58">
-  <title><p>{Trans-generational immune priming: Specific enhancement of the
-  antimicrobial immune response in the mealworm beetle, Tenebrio
-  molitor}</p></title>
-  <aug>
-    <au><snm>Moret</snm><fnm>Y.</fnm></au>
-  </aug>
-  <source>Proceedings of the Royal Society B: Biological Sciences</source>
-  <pubdate>2006</pubdate>
-  <volume>273</volume>
-  <fpage>1399–1405</fpage>
-</bibl>
-
-<bibl id="B59">
-  <title><p>{Variation in the defense strategies of plants: are resistance and
-  tolerance mutually exclusive?}</p></title>
-  <aug>
-    <au><snm>Mauricio</snm><fnm>R.</fnm></au>
-    <au><snm>Rausher</snm><fnm>M.D.</fnm></au>
-    <au><snm>Burdick</snm><fnm>D.S.</fnm></au>
-  </aug>
-  <source>Ecology</source>
-  <pubdate>1997</pubdate>
-  <volume>78</volume>
-  <fpage>1301–1310</fpage>
-</bibl>
-
-<bibl id="B60">
-  <title><p>{Evolution of mixed plant defense allocation against natural
-  enemies}</p></title>
-  <aug>
-    <au><snm>Fornoni</snm><fnm>J.</fnm></au>
-    <au><snm>Nunez Farfan</snm><fnm>J.</fnm></au>
-    <au><snm>Valverde</snm><fnm>P.L.</fnm></au>
-    <au><snm>Rausher</snm><fnm>M.D.</fnm></au>
-  </aug>
-  <source>Evolution</source>
-  <pubdate>2004</pubdate>
-  <volume>58</volume>
-  <fpage>1685–1695</fpage>
-</bibl>
-
-<bibl id="B61">
-  <title><p>{Shared control of epidemiological traits in a coevolutionary model
-  of host-parasite interactions}</p></title>
-  <aug>
-    <au><snm>Restif</snm><fnm>O.</fnm></au>
-    <au><snm>Koella</snm><fnm>J.C.</fnm></au>
-  </aug>
-  <source>The American Naturalist</source>
-  <pubdate>2003</pubdate>
-  <volume>161</volume>
-  <fpage>827–836</fpage>
-</bibl>
-
-<bibl id="B62">
-  <title><p>{Balancing resistance and infection tolerance through metabolic
-  means}</p></title>
-  <aug>
-    <au><snm>Chambers</snm><fnm>M.C.</fnm></au>
-    <au><snm>Schneider</snm><fnm>D.S.</fnm></au>
-  </aug>
-  <source>PNAS</source>
-  <pubdate>2012</pubdate>
-  <volume>109</volume>
-  <fpage>13886–13887</fpage>
-</bibl>
-
-<bibl id="B63">
-  <title><p>{The importance of tissue specificity for RNA-seq: highlighting the
-  errors of composite structure extractions}</p></title>
-  <aug>
-    <au><snm>Johnson</snm><fnm>B.R.</fnm></au>
-    <au><snm>Atallah</snm><fnm>J.</fnm></au>
-    <au><snm>Plachetzki</snm><fnm>D.C</fnm></au>
-  </aug>
-  <source>BMC Genomics</source>
-  <pubdate>2013</pubdate>
-  <volume>14</volume>
-  <fpage>586</fpage>
-</bibl>
-
-<bibl id="B64">
-  <title><p>{Quick and easy implementation of the Benjamini-Hochberg procedure
-  for controlling the false positive rate in multiple comparisons}</p></title>
-  <aug>
-    <au><snm>Thissen</snm><fnm>D.</fnm></au>
-    <au><snm>Steinberg</snm><fnm>L.</fnm></au>
-    <au><snm>Kuang</snm><fnm>D.</fnm></au>
-  </aug>
-  <source>J Educ Behav Stat</source>
-  <pubdate>2002</pubdate>
-  <volume>27</volume>
-  <fpage>77</fpage>
-  <lpage>83</lpage>
-</bibl>
-
-<bibl id="B65">
   <title><p>{Influence of pollen nutrition on honey bee health: Do pollen
   quality and diversity matter?}</p></title>
   <aug>
@@ -2473,7 +2287,275 @@ International Joint Conference on Neural Networks,
   <fpage>e72016</fpage>
 </bibl>
 
+<bibl id="B53">
+  <title><p>{Full sisters and supersisters: A terminological
+  paradigm}</p></title>
+  <aug>
+    <au><snm>Page</snm><fnm>R.E.</fnm></au>
+    <au><snm>Laidlaw</snm><fnm>H.H.</fnm></au>
+  </aug>
+  <source>Anim. Behav.</source>
+  <pubdate>1988</pubdate>
+  <volume>36</volume>
+  <fpage>944–945</fpage>
+</bibl>
+
+<bibl id="B54">
+  <title><p>{Parasites, pathogens, and polyandry in social
+  Hymenoptera}</p></title>
+  <aug>
+    <au><snm>Sherman</snm><fnm>P.W.</fnm></au>
+    <au><snm>Seeley</snm><fnm>T.D.</fnm></au>
+    <au><snm>Reeve</snm><fnm>H.K.</fnm></au>
+  </aug>
+  <source>Am. Nat</source>
+  <pubdate>1988</pubdate>
+  <volume>131</volume>
+  <fpage>602–610</fpage>
+</bibl>
+
+<bibl id="B55">
+  <title><p>{On being the right size: Male contributions and multiple mating in
+  social Hymenoptera}</p></title>
+  <aug>
+    <au><snm>Crozier</snm><fnm>R.H.</fnm></au>
+    <au><snm>Page</snm><fnm>R.E.</fnm></au>
+  </aug>
+  <source>Behav. Ecol. Sociobiol.</source>
+  <pubdate>1985</pubdate>
+  <volume>18</volume>
+  <fpage>105–115</fpage>
+</bibl>
+
+<bibl id="B56">
+  <title><p>{Genetic diversity in honey bee colonies enhances productivity and
+  fitness}</p></title>
+  <aug>
+    <au><snm>Mattila</snm><fnm>H.R.</fnm></au>
+    <au><snm>Seeley</snm><fnm>T.D.</fnm></au>
+  </aug>
+  <source>Science</source>
+  <pubdate>2007</pubdate>
+  <volume>317</volume>
+  <fpage>362</fpage>
+  <lpage>364</lpage>
+</bibl>
+
+<bibl id="B57">
+  <title><p>{Genetic diversity within honeybee colonies prevents severe
+  infections and promotes colony growth}</p></title>
+  <aug>
+    <au><snm>Tarpy</snm><fnm>D.R.</fnm></au>
+  </aug>
+  <source>Proc. R. Soc. Lond. B</source>
+  <pubdate>2003</pubdate>
+  <volume>270</volume>
+  <fpage>99</fpage>
+  <lpage>103</lpage>
+</bibl>
+
+<bibl id="B58">
+  <title><p>{Does patriline composition change over a honey bee queen’s
+  lifetime?}</p></title>
+  <aug>
+    <au><snm>Brodschneider</snm><fnm>R.</fnm></au>
+    <au><snm>Arnold</snm><fnm>G.</fnm></au>
+    <au><snm>Hrassnigg</snm><fnm>N.</fnm></au>
+    <au><snm>Crailsheim</snm><fnm>K.</fnm></au>
+  </aug>
+  <source>Insects</source>
+  <pubdate>2012</pubdate>
+  <volume>3</volume>
+  <fpage>857–869</fpage>
+</bibl>
+
+<bibl id="B59">
+  <title><p>{Biases in Illumina transcriptome sequencing caused by random
+  hexamer priming}</p></title>
+  <aug>
+    <au><snm>Hansen</snm><fnm>K.D.</fnm></au>
+    <au><snm>Brenner</snm><fnm>S.E.</fnm></au>
+    <au><snm>Dudoit</snm><fnm>S.</fnm></au>
+  </aug>
+  <source>Nucleic Acids Research</source>
+  <pubdate>2010</pubdate>
+  <volume>38</volume>
+  <fpage>e131</fpage>
+</bibl>
+
+<bibl id="B60">
+  <title><p>{From RNA-seq reads to differential expression results}</p></title>
+  <aug>
+    <au><snm>Oshlack</snm><fnm>A.</fnm></au>
+    <au><snm>Robinson</snm><fnm>M.D.</fnm></au>
+    <au><snm>Young</snm><fnm>M.D.</fnm></au>
+  </aug>
+  <source>Genome Biology</source>
+  <pubdate>2010</pubdate>
+  <volume>11</volume>
+  <fpage>220</fpage>
+</bibl>
+
+<bibl id="B61">
+  <title><p>{RNAseq: Technical variability and sampling}</p></title>
+  <aug>
+    <au><snm>McIntyre</snm><fnm>L.M.</fnm></au>
+    <au><snm>Lopiano</snm><fnm>K.K.</fnm></au>
+    <au><snm>Morse</snm><fnm>A.M.</fnm></au>
+    <au><snm>Amin</snm><fnm>V.</fnm></au>
+    <au><snm>Oberg</snm><fnm>A.L.</fnm></au>
+    <au><snm>Young</snm><fnm>L.J.</fnm></au>
+    <au><snm>Nuzhdin</snm><fnm>S.V.</fnm></au>
+  </aug>
+  <source>BMC Genomics</source>
+  <pubdate>2011</pubdate>
+  <volume>12</volume>
+  <fpage>293</fpage>
+</bibl>
+
+<bibl id="B62">
+  <title><p>{The heat shock response restricts virus infection in
+  Drosophila}</p></title>
+  <aug>
+    <au><snm>Merkling</snm><fnm>S.H.</fnm></au>
+    <au><snm>Overheul</snm><fnm>G.J.</fnm></au>
+    <au><snm>Mierlo</snm><fnm>J.T.</fnm></au>
+    <au><snm>Arends</snm><fnm>D.</fnm></au>
+    <au><snm>Gilissen</snm><fnm>C.</fnm></au>
+    <au><snm>Rij</snm><fnm>R.P.</fnm></au>
+  </aug>
+  <source>Scientific Reports</source>
+  <pubdate>2015</pubdate>
+  <volume>5</volume>
+  <fpage>12758</fpage>
+</bibl>
+
+<bibl id="B63">
+  <title><p>edgeR: a Bioconductor package for differential expression analysis
+  of digital gene expression data</p></title>
+  <aug>
+    <au><snm>Robinson</snm><fnm>M.D.</fnm></au>
+    <au><snm>McCarthy</snm><fnm>D.J.</fnm></au>
+    <au><snm>Smyth</snm><fnm>G.K.</fnm></au>
+  </aug>
+  <source>Bioinformatics</source>
+  <pubdate>2010</pubdate>
+  <volume>26</volume>
+  <fpage>139</fpage>
+  <lpage>140</lpage>
+</bibl>
+
+<bibl id="B64">
+  <title><p>{A unified model for the coevolution of resistance, tolerance, and
+  virulence}</p></title>
+  <aug>
+    <au><snm>Carval</snm><fnm>D.</fnm></au>
+    <au><snm>Ferriere</snm><fnm>R.</fnm></au>
+  </aug>
+  <source>Evolution</source>
+  <pubdate>2010</pubdate>
+  <volume>64</volume>
+  <fpage>2988–3009</fpage>
+</bibl>
+
+<bibl id="B65">
+  <title><p>{Trans-generational immune priming: Specific enhancement of the
+  antimicrobial immune response in the mealworm beetle, Tenebrio
+  molitor}</p></title>
+  <aug>
+    <au><snm>Moret</snm><fnm>Y.</fnm></au>
+  </aug>
+  <source>Proceedings of the Royal Society B: Biological Sciences</source>
+  <pubdate>2006</pubdate>
+  <volume>273</volume>
+  <fpage>1399–1405</fpage>
+</bibl>
+
 <bibl id="B66">
+  <title><p>{Variation in the defense strategies of plants: are resistance and
+  tolerance mutually exclusive?}</p></title>
+  <aug>
+    <au><snm>Mauricio</snm><fnm>R.</fnm></au>
+    <au><snm>Rausher</snm><fnm>M.D.</fnm></au>
+    <au><snm>Burdick</snm><fnm>D.S.</fnm></au>
+  </aug>
+  <source>Ecology</source>
+  <pubdate>1997</pubdate>
+  <volume>78</volume>
+  <fpage>1301–1310</fpage>
+</bibl>
+
+<bibl id="B67">
+  <title><p>{Evolution of mixed plant defense allocation against natural
+  enemies}</p></title>
+  <aug>
+    <au><snm>Fornoni</snm><fnm>J.</fnm></au>
+    <au><snm>Nunez Farfan</snm><fnm>J.</fnm></au>
+    <au><snm>Valverde</snm><fnm>P.L.</fnm></au>
+    <au><snm>Rausher</snm><fnm>M.D.</fnm></au>
+  </aug>
+  <source>Evolution</source>
+  <pubdate>2004</pubdate>
+  <volume>58</volume>
+  <fpage>1685–1695</fpage>
+</bibl>
+
+<bibl id="B68">
+  <title><p>{Shared control of epidemiological traits in a coevolutionary model
+  of host-parasite interactions}</p></title>
+  <aug>
+    <au><snm>Restif</snm><fnm>O.</fnm></au>
+    <au><snm>Koella</snm><fnm>J.C.</fnm></au>
+  </aug>
+  <source>The American Naturalist</source>
+  <pubdate>2003</pubdate>
+  <volume>161</volume>
+  <fpage>827–836</fpage>
+</bibl>
+
+<bibl id="B69">
+  <title><p>{Balancing resistance and infection tolerance through metabolic
+  means}</p></title>
+  <aug>
+    <au><snm>Chambers</snm><fnm>M.C.</fnm></au>
+    <au><snm>Schneider</snm><fnm>D.S.</fnm></au>
+  </aug>
+  <source>PNAS</source>
+  <pubdate>2012</pubdate>
+  <volume>109</volume>
+  <fpage>13886–13887</fpage>
+</bibl>
+
+<bibl id="B70">
+  <title><p>{The importance of tissue specificity for RNA-seq: highlighting the
+  errors of composite structure extractions}</p></title>
+  <aug>
+    <au><snm>Johnson</snm><fnm>B.R.</fnm></au>
+    <au><snm>Atallah</snm><fnm>J.</fnm></au>
+    <au><snm>Plachetzki</snm><fnm>D.C</fnm></au>
+  </aug>
+  <source>BMC Genomics</source>
+  <pubdate>2013</pubdate>
+  <volume>14</volume>
+  <fpage>586</fpage>
+</bibl>
+
+<bibl id="B71">
+  <title><p>{Quick and easy implementation of the Benjamini-Hochberg procedure
+  for controlling the false positive rate in multiple comparisons}</p></title>
+  <aug>
+    <au><snm>Thissen</snm><fnm>D.</fnm></au>
+    <au><snm>Steinberg</snm><fnm>L.</fnm></au>
+    <au><snm>Kuang</snm><fnm>D.</fnm></au>
+  </aug>
+  <source>J Educ Behav Stat</source>
+  <pubdate>2002</pubdate>
+  <volume>27</volume>
+  <fpage>77</fpage>
+  <lpage>83</lpage>
+</bibl>
+
+<bibl id="B72">
   <title><p>{Finding the missing honey bee genes: lessons learned from a genome
   upgrade}</p></title>
   <aug>
@@ -2485,7 +2567,7 @@ International Joint Conference on Neural Networks,
   <fpage>86</fpage>
 </bibl>
 
-<bibl id="B67">
+<bibl id="B73">
   <title><p>{Hymenoptera Genome Database: integrating genome annotations in
   HymenopteraMine}</p></title>
   <aug>
@@ -2504,7 +2586,7 @@ International Joint Conference on Neural Networks,
   <lpage>800</lpage>
 </bibl>
 
-<bibl id="B68">
+<bibl id="B74">
   <title><p>{GMAP and GSNAP for genomic sequence alignment: Enhancements to
   speed, accuracy, and functionality}</p></title>
   <aug>
@@ -2521,7 +2603,7 @@ International Joint Conference on Neural Networks,
   <lpage>334</lpage>
 </bibl>
 
-<bibl id="B69">
+<bibl id="B75">
   <title><p>{Moderated estimation of fold change and dispersion for RNA-seq
   data with DESeq2}</p></title>
   <aug>
@@ -2535,7 +2617,7 @@ International Joint Conference on Neural Networks,
   <fpage>550</fpage>
 </bibl>
 
-<bibl id="B70">
+<bibl id="B76">
   <title><p>limma powers differential expression analyses for RNA-sequencing
   and microarray studies</p></title>
   <aug>
@@ -2554,7 +2636,7 @@ International Joint Conference on Neural Networks,
   <fpage>e47</fpage>
 </bibl>
 
-<bibl id="B71">
+<bibl id="B77">
   <title><p>{Controlling the false discovery rate: A practical and powerful
   approach to multiple testing}</p></title>
   <aug>
@@ -2569,7 +2651,7 @@ International Joint Conference on Neural Networks,
   <lpage>300</lpage>
 </bibl>
 
-<bibl id="B72">
+<bibl id="B78">
   <title><p>{eulerr}: Area-Proportional {Euler} and {Venn} Diagrams with
   Ellipses</p></title>
   <aug>
@@ -2578,88 +2660,6 @@ International Joint Conference on Neural Networks,
   <pubdate>2018</pubdate>
   <url>https://cran.r-project.org/package=eulerr</url>
   <note>R package version 4.0.0</note>
-</bibl>
-
-<bibl id="B73">
-  <title><p>{Full sisters and supersisters: A terminological
-  paradigm}</p></title>
-  <aug>
-    <au><snm>Page</snm><fnm>R.E.</fnm></au>
-    <au><snm>Laidlaw</snm><fnm>H.H.</fnm></au>
-  </aug>
-  <source>Anim. Behav.</source>
-  <pubdate>1988</pubdate>
-  <volume>36</volume>
-  <fpage>944–945</fpage>
-</bibl>
-
-<bibl id="B74">
-  <title><p>{Parasites, pathogens, and polyandry in social
-  Hymenoptera}</p></title>
-  <aug>
-    <au><snm>Sherman</snm><fnm>P.W.</fnm></au>
-    <au><snm>Seeley</snm><fnm>T.D.</fnm></au>
-    <au><snm>Reeve</snm><fnm>H.K.</fnm></au>
-  </aug>
-  <source>Am. Nat</source>
-  <pubdate>1988</pubdate>
-  <volume>131</volume>
-  <fpage>602–610</fpage>
-</bibl>
-
-<bibl id="B75">
-  <title><p>{On being the right size: Male contributions and multiple mating in
-  social Hymenoptera}</p></title>
-  <aug>
-    <au><snm>Crozier</snm><fnm>R.H.</fnm></au>
-    <au><snm>Page</snm><fnm>R.E.</fnm></au>
-  </aug>
-  <source>Behav. Ecol. Sociobiol.</source>
-  <pubdate>1985</pubdate>
-  <volume>18</volume>
-  <fpage>105–115</fpage>
-</bibl>
-
-<bibl id="B76">
-  <title><p>{Genetic diversity in honey bee colonies enhances productivity and
-  fitness}</p></title>
-  <aug>
-    <au><snm>Mattila</snm><fnm>H.R.</fnm></au>
-    <au><snm>Seeley</snm><fnm>T.D.</fnm></au>
-  </aug>
-  <source>Science</source>
-  <pubdate>2007</pubdate>
-  <volume>317</volume>
-  <fpage>362</fpage>
-  <lpage>364</lpage>
-</bibl>
-
-<bibl id="B77">
-  <title><p>{Genetic diversity within honeybee colonies prevents severe
-  infections and promotes colony growth}</p></title>
-  <aug>
-    <au><snm>Tarpy</snm><fnm>D.R.</fnm></au>
-  </aug>
-  <source>Proc. R. Soc. Lond. B</source>
-  <pubdate>2003</pubdate>
-  <volume>270</volume>
-  <fpage>99</fpage>
-  <lpage>103</lpage>
-</bibl>
-
-<bibl id="B78">
-  <title><p>{Does patriline composition change over a honey bee queen’s
-  lifetime?}</p></title>
-  <aug>
-    <au><snm>Brodschneider</snm><fnm>R.</fnm></au>
-    <au><snm>Arnold</snm><fnm>G.</fnm></au>
-    <au><snm>Hrassnigg</snm><fnm>N.</fnm></au>
-    <au><snm>Crailsheim</snm><fnm>K.</fnm></au>
-  </aug>
-  <source>Insects</source>
-  <pubdate>2012</pubdate>
-  <volume>3</volume>
-  <fpage>857–869</fpage>
 </bibl>
 
 <bibl id="B79">
