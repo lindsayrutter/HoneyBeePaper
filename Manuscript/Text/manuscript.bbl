@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{93}
+\begin{thebibliography}{94}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -1377,9 +1377,10 @@ R package version 4.0.0.
 %%% 84
 \bibitem{pca}
 \begin{bbook}
-\bauthor{\bsnm{Jolliffe}, \binits{I.T.}}:
+\bauthor{\bsnm{{I.T. Jolliffe}}}:
 \bbtitle{Principal Component Analysis}.
-\bpublisher{Springer}, \blocation{???}
+\bpublisher{Springer},
+\blocation{Berlin, Heidelberg}
 (\byear{2002})
 \end{bbook}
 \endbibitem
@@ -1399,9 +1400,10 @@ R package version 4.0.0.
 %%% 86
 \bibitem{scatMat}
 \begin{bbook}
-\bauthor{\bsnm{Cleveland}, \binits{W.S.}}:
+\bauthor{\bsnm{{W.S. Cleveland}}}:
 \bbtitle{Visualizing Data}.
-\bpublisher{Summit, New Jersey: Hobart Press}, \blocation{???}
+\bpublisher{Hobart Press},
+\blocation{Summit, New Jersey}
 (\byear{1993})
 \end{bbook}
 \endbibitem
@@ -1499,6 +1501,21 @@ International Joint Conference on Neural Networks,
 \endbibitem
 
 %%% 93
+\bibitem{geo}
+\begin{barticle}
+\bauthor{\bsnm{Edgar}, \binits{R.}},
+\bauthor{\bsnm{Domrachev}, \binits{M.}},
+\bauthor{\bsnm{Lash}, \binits{A.E.}}:
+\batitle{{Gene Expression Omnibus: NCBI gene expression and hybridization array
+  data repository}}.
+\bjtitle{Nucleic Acids Res}
+\bvolume{30},
+\bfpage{207}--\blpage{210}
+(\byear{2002})
+\end{barticle}
+\endbibitem
+
+%%% 94
 \bibitem{semantic}
 \begin{barticle}
 \bauthor{\bsnm{Schlicker}, \binits{A.}},
@@ -2828,9 +2845,9 @@ International Joint Conference on Neural Networks,
 <bibl id="B84">
   <title><p>Principal Component Analysis</p></title>
   <aug>
-    <au><snm>Jolliffe</snm><fnm>I.T.</fnm></au>
+    <au><cnm>{I.T. Jolliffe}</cnm></au>
   </aug>
-  <publisher>Springer-Verlag New York, Inc.</publisher>
+  <publisher>Berlin, Heidelberg: Springer-Verlag New York, Inc.</publisher>
   <pubdate>2002</pubdate>
 </bibl>
 
@@ -2849,7 +2866,7 @@ International Joint Conference on Neural Networks,
 <bibl id="B86">
   <title><p>Visualizing Data</p></title>
   <aug>
-    <au><snm>Cleveland</snm><fnm>W.S.</fnm></au>
+    <au><cnm>{W.S. Cleveland}</cnm></au>
   </aug>
   <publisher>Summit, New Jersey: Hobart Press</publisher>
   <pubdate>1993</pubdate>
@@ -2947,6 +2964,21 @@ International Joint Conference on Neural Networks,
 </bibl>
 
 <bibl id="B93">
+  <title><p>{Gene Expression Omnibus: NCBI gene expression and hybridization
+  array data repository}</p></title>
+  <aug>
+    <au><snm>Edgar</snm><fnm>R.</fnm></au>
+    <au><snm>Domrachev</snm><fnm>M.</fnm></au>
+    <au><snm>Lash</snm><fnm>A.E.</fnm></au>
+  </aug>
+  <source>Nucleic Acids Res</source>
+  <pubdate>2002</pubdate>
+  <volume>30</volume>
+  <fpage>207</fpage>
+  <lpage>210</lpage>
+</bibl>
+
+<bibl id="B94">
   <title><p>{A new measure for functional similarity of gene products based on
   Gene Ontology}</p></title>
   <aug>
