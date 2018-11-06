@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  5 NOV 2018 02:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  5 NOV 2018 16:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -177,13 +177,18 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \address@aff4=\toks27
 \address@aff5=\toks28
 \address@aff6=\toks29
+\address@aff7=\toks30
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 203.
+(Font)              <7> on input line 220.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 203.
+(Font)              <5> on input line 220.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 292.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 309.
 
 
 
@@ -221,7 +226,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
-[14]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15]
@@ -240,22 +247,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20]
-[21] [22] [23] [24] [25]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26]
-[27] (./manuscript.bbl [28] [29] [30]) [31]
+ [21]
+[22] [23] [24]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25]
+[26] [27] (./manuscript.bbl [28] [29] [30]) [31]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 515.
+(Font)              <8> on input line 531.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 515.
+(Font)              <6> on input line 531.
  [32]
-Overfull \hbox (37.73663pt too wide) in paragraph at lines 547--572
+Overfull \hbox (37.73663pt too wide) in paragraph at lines 563--588
  [][] 
  []
 
 
-Overfull \hbox (41.20874pt too wide) in paragraph at lines 577--592
+Overfull \hbox (41.20874pt too wide) in paragraph at lines 593--608
  [][] 
  []
 
@@ -265,7 +275,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [33]
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <7> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 617.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 633.
 
 
 [34] [35] 
@@ -277,10 +287,10 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 2401 strings out of 492649
- 30177 string characters out of 6129622
- 138129 words of memory out of 5000000
- 6306 multiletter control sequences out of 15000+600000
+ 2410 strings out of 492649
+ 30312 string characters out of 6129622
+ 141177 words of memory out of 5000000
+ 6315 multiletter control sequences out of 15000+600000
  11024 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,15n,37p,2728b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -293,7 +303,7 @@ r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr
 ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/
 local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/l
 ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on manuscript.pdf (36 pages, 211677 bytes).
+Output written on manuscript.pdf (36 pages, 211957 bytes).
 PDF statistics:
  156 PDF objects out of 1000 (max. 8388607)
  107 compressed objects within 2 object streams
