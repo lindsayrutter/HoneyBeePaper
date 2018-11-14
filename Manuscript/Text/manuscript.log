@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  5 NOV 2018 16:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  5 NOV 2018 21:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -211,7 +211,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5]
-[6] [7]
+[6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8]
@@ -222,13 +225,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11]
-[12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14]
+[14]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15]
@@ -289,7 +292,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  2410 strings out of 492649
  30312 string characters out of 6129622
- 141177 words of memory out of 5000000
+ 140177 words of memory out of 5000000
  6315 multiletter control sequences out of 15000+600000
  11024 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -303,7 +306,7 @@ r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr
 ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/
 local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/l
 ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on manuscript.pdf (36 pages, 211957 bytes).
+Output written on manuscript.pdf (36 pages, 211901 bytes).
 PDF statistics:
  156 PDF objects out of 1000 (max. 8388607)
  107 compressed objects within 2 object streams

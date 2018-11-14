@@ -219,6 +219,35 @@
 \endbibitem
 
 %%% 11
+\bibitem{adamInt}
+\begin{botherref}
+\oauthor{\bsnm{Dolezal}, \binits{A.G.}},
+\oauthor{\bsnm{Carrillo-Tripp}, \binits{J.}},
+\oauthor{\bsnm{Judd}, \binits{T.}},
+\oauthor{\bsnm{Miller}, \binits{A.}},
+\oauthor{\bsnm{Bonning}, \binits{B.}},
+\oauthor{\bsnm{Toth}, \binits{A.}}:
+{Interacting stressors matter: Diet quality and virus infection in honey bee
+  health}.
+In prep
+(2018)
+\end{botherref}
+\endbibitem
+
+%%% 12
+\bibitem{AdamTothReview}
+\begin{barticle}
+\bauthor{\bsnm{Dolezal}, \binits{A.G.}},
+\bauthor{\bsnm{Toth}, \binits{A.L.}}:
+\batitle{{Feedbacks between nutrition and disease in honey bee health}}.
+\bjtitle{Current Opinion in Insect Science}
+\bvolume{26},
+\bfpage{114}--\blpage{119}
+(\byear{2018})
+\end{barticle}
+\endbibitem
+
+%%% 13
 \bibitem{source}
 \begin{barticle}
 \bauthor{\bsnm{Roulston}, \binits{T.H.}},
@@ -232,7 +261,7 @@
 \end{barticle}
 \endbibitem
 
-%%% 12
+%%% 14
 \bibitem{source2}
 \begin{botherref}
 \oauthor{\bsnm{Stanley}, \binits{R.G.}},
@@ -241,7 +270,7 @@ Pollen: Biology, Biochemistry, Management
 \end{botherref}
 \endbibitem
 
-%%% 13
+%%% 15
 \bibitem{brodschneider}
 \begin{barticle}
 \bauthor{\bsnm{Brodschneider}, \binits{R.}},
@@ -254,7 +283,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 14
+%%% 16
 \bibitem{longevity}
 \begin{barticle}
 \bauthor{\bsnm{Haydak}, \binits{M.H.}}:
@@ -266,7 +295,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 15
+%%% 17
 \bibitem{jelly}
 \begin{barticle}
 \bauthor{\bsnm{Crailsheim}, \binits{K.}},
@@ -285,7 +314,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 16
+%%% 18
 \bibitem{jelly2}
 \begin{barticle}
 \bauthor{\bsnm{Crailsheim}, \binits{K.}}:
@@ -297,7 +326,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 17
+%%% 19
 \bibitem{diverse}
 \begin{barticle}
 \bauthor{\bsnm{Schmidt}, \binits{J.O.}}:
@@ -310,7 +339,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 18
+%%% 20
 \bibitem{diverse2}
 \begin{barticle}
 \bauthor{\bsnm{Schmidt}, \binits{J.O.}},
@@ -325,7 +354,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 19
+%%% 21
 \bibitem{alaux}
 \begin{barticle}
 \bauthor{\bsnm{Alaux}, \binits{C.}},
@@ -339,7 +368,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 20
+%%% 22
 \bibitem{undeveloped}
 \begin{barticle}
 \bauthor{\bsnm{Naug}, \binits{D.}}:
@@ -352,7 +381,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 21
+%%% 23
 \bibitem{bkLoss}
 \begin{barticle}
 \bauthor{\bsnm{Engelsdorp}, \binits{D.V.}},
@@ -368,7 +397,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 22
+%%% 24
 \bibitem{ag}
 \begin{barticle}
 \bauthor{\bsnm{Neumann}, \binits{P.}},
@@ -381,7 +410,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 23
+%%% 25
 \bibitem{ag2}
 \begin{barticle}
 \bauthor{\bsnm{Engelsdorp}, \binits{D.V.}},
@@ -395,7 +424,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 24
+%%% 26
 \bibitem{miteSpread}
 \begin{barticle}
 \bauthor{\bsnm{Rosenkranz}, \binits{P.}},
@@ -409,7 +438,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 25
+%%% 27
 \bibitem{hemolymph}
 \begin{barticle}
 \bauthor{\bsnm{Weinberg}, \binits{K.P.}},
@@ -424,7 +453,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 26
+%%% 28
 \bibitem{miteVirus}
 \begin{barticle}
 \bauthor{\bsnm{Shen}, \binits{M.Q.}},
@@ -441,7 +470,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 27
+%%% 29
 \bibitem{miteVirus2}
 \begin{barticle}
 \bauthor{\bsnm{Yang}, \binits{X.}},
@@ -456,7 +485,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 28
+%%% 30
 \bibitem{miteVirus3}
 \begin{barticle}
 \bauthor{\bsnm{Yang}, \binits{X.L.}},
@@ -470,7 +499,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 29
+%%% 31
 \bibitem{newVR}
 \begin{barticle}
 \bauthor{\bsnm{Emsen}, \binits{B.}},
@@ -487,7 +516,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 30
+%%% 32
 \bibitem{numVirus}
 \begin{barticle}
 \bauthor{\bsnm{Chen}, \binits{Y.P.}},
@@ -500,7 +529,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 31
+%%% 33
 \bibitem{fam}
 \begin{barticle}
 \bauthor{\bsnm{Bonning}, \binits{B.C.}},
@@ -513,7 +542,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 32
+%%% 34
 \bibitem{symptoms}
 \begin{barticle}
 \bauthor{\bsnm{Maori}, \binits{E.}},
@@ -532,7 +561,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 33
+%%% 35
 \bibitem{carrillo}
 \begin{barticle}
 \bauthor{\bsnm{Carrillo-Tripp}, \binits{J.}},
@@ -549,7 +578,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 34
+%%% 36
 \bibitem{winter}
 \begin{barticle}
 \bauthor{\bsnm{Chen}, \binits{Y.P.}},
@@ -591,7 +620,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 35
+%%% 37
 \bibitem{intNV}
 \begin{barticle}
 \bauthor{\bsnm{DeGrandi-Hoffman}, \binits{G.}},
@@ -604,7 +633,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 36
+%%% 38
 \bibitem{intNV2}
 \begin{barticle}
 \bauthor{\bsnm{DeGrandi-Hoffman}, \binits{G.}},
@@ -620,7 +649,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 37
+%%% 39
 \bibitem{intNV3}
 \begin{botherref}
 \oauthor{\bsnm{Le~Conte}, \binits{Y.}},
@@ -632,7 +661,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{botherref}
 \endbibitem
 
-%%% 38
+%%% 40
 \bibitem{interactingDV}
 \begin{barticle}
 \bauthor{\bsnm{Annoscia}, \binits{D.}},
@@ -652,7 +681,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 39
+%%% 41
 \bibitem{interactingDV2}
 \begin{barticle}
 \bauthor{\bsnm{Nazzi}, \binits{F.}},
@@ -666,23 +695,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 40
-\bibitem{adamInt}
-\begin{botherref}
-\oauthor{\bsnm{Dolezal}, \binits{A.G.}},
-\oauthor{\bsnm{Carrillo-Tripp}, \binits{J.}},
-\oauthor{\bsnm{Judd}, \binits{T.}},
-\oauthor{\bsnm{Miller}, \binits{A.}},
-\oauthor{\bsnm{Bonning}, \binits{B.}},
-\oauthor{\bsnm{Toth}, \binits{A.}}:
-{Interacting stressors matter: Diet quality and virus infection in honey bee
-  health}.
-In prep
-(2018)
-\end{botherref}
-\endbibitem
-
-%%% 41
+%%% 42
 \bibitem{resTol1}
 \begin{barticle}
 \bauthor{\bsnm{Miller}, \binits{C.V.L.}},
@@ -693,19 +706,6 @@ In prep
 \bvolume{87},
 \bfpage{500}--\blpage{510}
 (\byear{2017})
-\end{barticle}
-\endbibitem
-
-%%% 42
-\bibitem{AdamTothReview}
-\begin{barticle}
-\bauthor{\bsnm{Dolezal}, \binits{A.G.}},
-\bauthor{\bsnm{Toth}, \binits{A.L.}}:
-\batitle{{Feedbacks between nutrition and disease in honey bee health}}.
-\bjtitle{Current Opinion in Insect Science}
-\bvolume{26},
-\bfpage{114}--\blpage{119}
-(\byear{2018})
 \end{barticle}
 \endbibitem
 
@@ -1711,6 +1711,35 @@ International Joint Conference on Neural Networks,
 </bibl>
 
 <bibl id="B11">
+  <title><p>{Interacting stressors matter: Diet quality and virus infection in
+  honey bee health}</p></title>
+  <aug>
+    <au><snm>Dolezal</snm><fnm>A.G.</fnm></au>
+    <au><snm>Carrillo Tripp</snm><fnm>J.</fnm></au>
+    <au><snm>Judd</snm><fnm>T.</fnm></au>
+    <au><snm>Miller</snm><fnm>A.</fnm></au>
+    <au><snm>Bonning</snm><fnm>B.</fnm></au>
+    <au><snm>Toth</snm><fnm>A.</fnm></au>
+  </aug>
+  <source>In prep</source>
+  <pubdate>2018</pubdate>
+</bibl>
+
+<bibl id="B12">
+  <title><p>{Feedbacks between nutrition and disease in honey bee
+  health}</p></title>
+  <aug>
+    <au><snm>Dolezal</snm><fnm>A.G.</fnm></au>
+    <au><snm>Toth</snm><fnm>A.L.</fnm></au>
+  </aug>
+  <source>Current Opinion in Insect Science</source>
+  <pubdate>2018</pubdate>
+  <volume>26</volume>
+  <fpage>114</fpage>
+  <lpage>119</lpage>
+</bibl>
+
+<bibl id="B13">
   <title><p>{A phylogenetic reconsideration of the pollen starch-pollination
   correlation}</p></title>
   <aug>
@@ -1724,7 +1753,7 @@ International Joint Conference on Neural Networks,
   <lpage>643</lpage>
 </bibl>
 
-<bibl id="B12">
+<bibl id="B14">
   <title><p>Pollen: Biology, biochemistry, management</p></title>
   <aug>
     <au><snm>Stanley</snm><fnm>R.G.</fnm></au>
@@ -1733,7 +1762,7 @@ International Joint Conference on Neural Networks,
   <pubdate>1974</pubdate>
 </bibl>
 
-<bibl id="B13">
+<bibl id="B15">
   <title><p>{Nutrition and health in honey bees}</p></title>
   <aug>
     <au><snm>Brodschneider</snm><fnm>R.</fnm></au>
@@ -1745,7 +1774,7 @@ International Joint Conference on Neural Networks,
   <fpage>278–294</fpage>
 </bibl>
 
-<bibl id="B14">
+<bibl id="B16">
   <title><p>{Honey bee nutrition}</p></title>
   <aug>
     <au><snm>Haydak</snm><fnm>M.H.</fnm></au>
@@ -1757,7 +1786,7 @@ International Joint Conference on Neural Networks,
   <lpage>156</lpage>
 </bibl>
 
-<bibl id="B15">
+<bibl id="B17">
   <title><p>{Pollen consumption and utilization in worker honeybees (Apis
   mellifera carnica): dependence on individual age and function}</p></title>
   <aug>
@@ -1776,7 +1805,7 @@ International Joint Conference on Neural Networks,
   <lpage>419</lpage>
 </bibl>
 
-<bibl id="B16">
+<bibl id="B18">
   <title><p>{The flow of jelly within a honeybee colony}</p></title>
   <aug>
     <au><snm>Crailsheim</snm><fnm>K.</fnm></au>
@@ -1788,7 +1817,7 @@ International Joint Conference on Neural Networks,
   <lpage>689</lpage>
 </bibl>
 
-<bibl id="B17">
+<bibl id="B19">
   <title><p>{Feeding preference of Apis mellifera L. (Hymenoptera: Apidae):
   Individual versus mixed pollen species}</p></title>
   <aug>
@@ -1800,7 +1829,7 @@ International Joint Conference on Neural Networks,
   <fpage>323–327</fpage>
 </bibl>
 
-<bibl id="B18">
+<bibl id="B20">
   <title><p>{Survival of honey bees, Apis mellifera (Hymenoptera: Apidae), fed
   various pollen sources}</p></title>
   <aug>
@@ -1814,7 +1843,7 @@ International Joint Conference on Neural Networks,
   <fpage>176–183</fpage>
 </bibl>
 
-<bibl id="B19">
+<bibl id="B21">
   <title><p>{Diet effects on honeybee immunocompetence}</p></title>
   <aug>
     <au><snm>Alaux</snm><fnm>C.</fnm></au>
@@ -1828,7 +1857,7 @@ International Joint Conference on Neural Networks,
   <lpage>565</lpage>
 </bibl>
 
-<bibl id="B20">
+<bibl id="B22">
   <title><p>{Nutritional stress due to habitat loss may explain recent honeybee
   colony collapses}</p></title>
   <aug>
@@ -1841,7 +1870,7 @@ International Joint Conference on Neural Networks,
   <lpage>2372</lpage>
 </bibl>
 
-<bibl id="B21">
+<bibl id="B23">
   <title><p>{A survey of honey bee colony losses in the U.S., fall 2007 to
   spring 2008}</p></title>
   <aug>
@@ -1856,7 +1885,7 @@ International Joint Conference on Neural Networks,
   <fpage>e4071</fpage>
 </bibl>
 
-<bibl id="B22">
+<bibl id="B24">
   <title><p>{Honey bee colony losses}</p></title>
   <aug>
     <au><snm>Neumann</snm><fnm>P.</fnm></au>
@@ -1869,7 +1898,7 @@ International Joint Conference on Neural Networks,
   <lpage>6</lpage>
 </bibl>
 
-<bibl id="B23">
+<bibl id="B25">
   <title><p>{A historical review of managed honey bee populations in Europe and
   the United States and the factors that may affect them}</p></title>
   <aug>
@@ -1883,7 +1912,7 @@ International Joint Conference on Neural Networks,
   <lpage>S95</lpage>
 </bibl>
 
-<bibl id="B24">
+<bibl id="B26">
   <title><p>{Biology and control of Varroa destructor}</p></title>
   <aug>
     <au><snm>Rosenkranz</snm><fnm>P.</fnm></au>
@@ -1897,7 +1926,7 @@ International Joint Conference on Neural Networks,
   <lpage>S119</lpage>
 </bibl>
 
-<bibl id="B25">
+<bibl id="B27">
   <title><p>{The influence of the mite Varroa Jacobsoni Oud. on the protein
   concentration and the haemolymph volume of the brood of worker bees and
   drones of the honey bee Apis Mellifera L}</p></title>
@@ -1912,7 +1941,7 @@ International Joint Conference on Neural Networks,
   <lpage>436</lpage>
 </bibl>
 
-<bibl id="B26">
+<bibl id="B28">
   <title><p>{Intricate transmission routes and interactions between
   picorna-like viruses (Kashmir bee virus and sacbrood virus) with the honeybee
   host and the parasitic varroa mite}</p></title>
@@ -1929,7 +1958,7 @@ International Joint Conference on Neural Networks,
   <lpage>2289</lpage>
 </bibl>
 
-<bibl id="B27">
+<bibl id="B29">
   <title><p>{Effects of parasitization by Varroa destructor on survivorship and
   physiological traits of Apis mellifera in correlation with viral incidence
   and microbial challenge}</p></title>
@@ -1944,7 +1973,7 @@ International Joint Conference on Neural Networks,
   <lpage>412</lpage>
 </bibl>
 
-<bibl id="B28">
+<bibl id="B30">
   <title><p>{Impact of an ectoparasite on the immunity and pathology of an
   invertebrate: Evidence for host immunosuppression and viral
   amplification}</p></title>
@@ -1959,7 +1988,7 @@ International Joint Conference on Neural Networks,
   <lpage>7475</lpage>
 </bibl>
 
-<bibl id="B29">
+<bibl id="B31">
   <title><p>{Lower virus infections in Varroa destructor-infested and
   uninfested brood and adult honey bees (Apis mellifera) of a low mite
   population growth colony compared to a high mite population growth
@@ -1976,7 +2005,7 @@ International Joint Conference on Neural Networks,
   <fpage>e0118885</fpage>
 </bibl>
 
-<bibl id="B30">
+<bibl id="B32">
   <title><p>{Honey bee viruses}</p></title>
   <aug>
     <au><snm>Chen</snm><fnm>Y.P.</fnm></au>
@@ -1989,7 +2018,7 @@ International Joint Conference on Neural Networks,
   <lpage>80</lpage>
 </bibl>
 
-<bibl id="B31">
+<bibl id="B33">
   <title><p>{Dicistroviruses}</p></title>
   <aug>
     <au><snm>Bonning</snm><fnm>B.C.</fnm></au>
@@ -2002,7 +2031,7 @@ International Joint Conference on Neural Networks,
   <lpage>150</lpage>
 </bibl>
 
-<bibl id="B32">
+<bibl id="B34">
   <title><p>{IAPV, a bee-affecting virus associated with Colony Collapse
   Disorder can be silenced by dsRNA ingestion}</p></title>
   <aug>
@@ -2021,7 +2050,7 @@ International Joint Conference on Neural Networks,
   <lpage>60</lpage>
 </bibl>
 
-<bibl id="B33">
+<bibl id="B35">
   <title><p>{In vivo and in vitro infection dynamics of honey bee
   viruses}</p></title>
   <aug>
@@ -2038,7 +2067,7 @@ International Joint Conference on Neural Networks,
   <fpage>22265</fpage>
 </bibl>
 
-<bibl id="B34">
+<bibl id="B36">
   <title><p>{Israeli acute paralysis virus: Epidemiology, pathogenesis and
   implications for honey bee health}</p></title>
   <aug>
@@ -2079,7 +2108,7 @@ International Joint Conference on Neural Networks,
   <fpage>e1004261</fpage>
 </bibl>
 
-<bibl id="B35">
+<bibl id="B37">
   <title><p>{Nutrition, immunity and viral infections in honey
   bees}</p></title>
   <aug>
@@ -2093,7 +2122,7 @@ International Joint Conference on Neural Networks,
   <lpage>176</lpage>
 </bibl>
 
-<bibl id="B36">
+<bibl id="B38">
   <title><p>{The effect of diet on protein concentration, hypopharyngeal gland
   development and virus load in worker honey bees (Apis mellifera
   L.)}</p></title>
@@ -2109,7 +2138,7 @@ International Joint Conference on Neural Networks,
   <fpage>1184–1191</fpage>
 </bibl>
 
-<bibl id="B37">
+<bibl id="B39">
   <title><p>Interactions between Risk Factors in Honey Bees</p></title>
   <aug>
     <au><snm>Le Conte</snm><fnm>Y</fnm></au>
@@ -2123,7 +2152,7 @@ International Joint Conference on Neural Networks,
   <lpage>222</lpage>
 </bibl>
 
-<bibl id="B38">
+<bibl id="B40">
   <title><p>{Elucidating the mechanisms underlying the beneficial health
   effects of dietary pollen on honey bees (Apis mellifera) infested by Varroa
   mite ectoparasites}</p></title>
@@ -2142,7 +2171,7 @@ International Joint Conference on Neural Networks,
   <fpage>6258</fpage>
 </bibl>
 
-<bibl id="B39">
+<bibl id="B41">
   <title><p>{Honey bee antiviral immune barriers as affected by multiple stress
   factors: A novel paradigm to interpret colony health decline and
   collapse}</p></title>
@@ -2156,22 +2185,7 @@ International Joint Conference on Neural Networks,
   <fpage>159</fpage>
 </bibl>
 
-<bibl id="B40">
-  <title><p>{Interacting stressors matter: Diet quality and virus infection in
-  honey bee health}</p></title>
-  <aug>
-    <au><snm>Dolezal</snm><fnm>A.G.</fnm></au>
-    <au><snm>Carrillo Tripp</snm><fnm>J.</fnm></au>
-    <au><snm>Judd</snm><fnm>T.</fnm></au>
-    <au><snm>Miller</snm><fnm>A.</fnm></au>
-    <au><snm>Bonning</snm><fnm>B.</fnm></au>
-    <au><snm>Toth</snm><fnm>A.</fnm></au>
-  </aug>
-  <source>In prep</source>
-  <pubdate>2018</pubdate>
-</bibl>
-
-<bibl id="B41">
+<bibl id="B42">
   <title><p>{Resistance and tolerance: The role of nutrients on pathogen
   dynamics and infection outcomes in an insect host}</p></title>
   <aug>
@@ -2183,20 +2197,6 @@ International Joint Conference on Neural Networks,
   <volume>87</volume>
   <fpage>500</fpage>
   <lpage>510</lpage>
-</bibl>
-
-<bibl id="B42">
-  <title><p>{Feedbacks between nutrition and disease in honey bee
-  health}</p></title>
-  <aug>
-    <au><snm>Dolezal</snm><fnm>A.G.</fnm></au>
-    <au><snm>Toth</snm><fnm>A.L.</fnm></au>
-  </aug>
-  <source>Current Opinion in Insect Science</source>
-  <pubdate>2018</pubdate>
-  <volume>26</volume>
-  <fpage>114</fpage>
-  <lpage>119</lpage>
 </bibl>
 
 <bibl id="B43">
