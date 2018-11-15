@@ -12,8 +12,6 @@ This repository consists of materials for an RNA-seq study that examined IAPV in
   * **PathogenResponse:** Data and analysis scripts for mortality rate and IAPV titer loads in a prior study by Dolezal et al.
   * **PostHocDEGPatterns:** Analysis scripts for post-hoc analysis of pathogen response correlations in DEG patterns
   * **ResistanceTolerance:** Analysis scripts for resistance and tolerance candidate Genes
-  * **Tissues:** Analysis scripts for estimating tissue expression in DEGs (not included in our manuscript)
-  * **Variables.csv:** Pathogen response metrics for the honeybees used in this RNA-seq study
   
 **Folder contaning reproducible scripts related to our manuscript:**
 
