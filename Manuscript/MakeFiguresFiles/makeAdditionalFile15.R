@@ -3,6 +3,7 @@ library(EDASeq)
 
 # Read in data and dataMetrics
 data <- as.data.frame(readRDS("../../Galbraith/DESeq2/data.Rds"))
+dataMetrics <- readRDS("../../Galbraith/DESeq2/dataMetrics.Rds")
 
 # Normalize for sequencing depth and other distributional differences between lanes
 data <- betweenLaneNormalization(as.matrix(data), which="full", round=FALSE)
@@ -15,10 +16,13 @@ colnames(datas) = c("ID", colnames(data))
 nID = which(is.nan(datas[,2]))
 datas[nID,2:length(datas)] = 0
 
-# Read in geneList for Cluster 1 created in makeFigure3.R
-geneList <- readRDS("ClusterFiles/Galbraith/N_V_4_1.rds")
+# Define color vector
+colList = scales::hue_pal()(5)
+colList[2] = "#E9AA0D"
+colList[3] = "#EA502F"
+colList = colList[2:5]
 
-# Plot cluster as scatterplot matrix
-ret <- plotSM(data=datas, geneList = geneList, saveFile = FALSE, pointColor = "#E9AA0D")
-ret[["N_V"]] + labs(x = "Standardized count", y = "Standardized count", title = paste0("Cluster 1 (n = ", length(geneList), ")")) + theme_gray() + theme(plot.title = element_text(hjust = 0.5, size = 13), axis.title = element_text(size = 13)) 
-
+# Plot clusters as parallel coordinate lines
+# Set verbose=TRUE to save images and .rds files of gene IDs to directory "ClusterFiles"
+ret <- plotClusters(data=datas, dataMetrics = dataMetrics, threshVar = "padj", clusterAllData = FALSE, colList = colList, yAxisLabel = "Standardized count", outDir = "ClusterFiles/Galbraith", saveFile = FALSE, verbose = TRUE)
+plot(ret[["N_V_4"]])

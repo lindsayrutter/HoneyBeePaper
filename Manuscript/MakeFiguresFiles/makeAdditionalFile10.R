@@ -15,10 +15,9 @@ colnames(datas) = c("ID", colnames(data))
 nID = which(is.nan(datas[,2]))
 datas[nID,2:length(datas)] = 0
 
-# Read in geneList for Cluster 1 created in makeFigure3.R
-geneList <- readRDS("ClusterFiles/Galbraith/N_V_4_1.rds")
+# Read in geneList for Cluster 3 created in makeFigure3.R
+geneList <- readRDS("ClusterFiles/Galbraith/N_V_4_4.rds")
 
 # Plot cluster as scatterplot matrix
-ret <- plotSM(data=datas, geneList = geneList, saveFile = FALSE, pointColor = "#E9AA0D")
-ret[["N_V"]] + labs(x = "Standardized count", y = "Standardized count", title = paste0("Cluster 1 (n = ", length(geneList), ")")) + theme_gray() + theme(plot.title = element_text(hjust = 0.5, size = 13), axis.title = element_text(size = 13)) 
-
+ret <- plotSM(data=datas, geneList = geneList, saveFile = FALSE, pointColor = "#E76BF3")
+ret[["N_V"]] + labs(x = "Standardized count", y = "Standardized count", title = paste0("Cluster 4 (n = ", length(geneList), ")")) + theme_gray() + theme(plot.title = element_text(hjust = 0.5, size = 13), axis.title = element_text(size = 13)) 
