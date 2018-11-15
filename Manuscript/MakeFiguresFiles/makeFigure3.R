@@ -1,27 +1,9 @@
-# Run in /Users/suzu/HoneyBeePaper/VirusHoneyBee/DESeq2
-
-library(rtracklayer)
-library(Rsamtools)
-library(grid)
-library(GenomicAlignments)
-library(ggplot2)
-library(GGally)
-library(edgeR)
-library(stringr)
-library(EDASeq)
-library(dplyr)
-library(matrixStats)
-library(gridExtra)
-library(reshape2)
-library(scales)
 library(bigPint)
-library(matrixStats)
+library(EDASeq)
 
+# Read in data and dataMetrics
 data <- as.data.frame(readRDS("../../Galbraith/DESeq2/data.Rds"))
 dataMetrics <- readRDS("../../Galbraith/DESeq2/dataMetrics.Rds")
-
-logData = data
-logData[,-1] <- log(data[,-1]+1)
 
 # Normalize for sequencing depth and other distributional differences between lanes
 data <- betweenLaneNormalization(as.matrix(data), which="full", round=FALSE)
@@ -34,8 +16,13 @@ colnames(datas) = c("ID", colnames(data))
 nID = which(is.nan(datas[,2]))
 datas[nID,2:length(datas)] = 0
 
-plotClusters(data=datas, dataMetrics = dataMetrics, threshVar = "padj")
+# Define color vector
+colList = scales::hue_pal()(5)
+colList[2] = "#E9AA0D"
+colList[3] = "#EA502F"
+colList = colList[2:5]
 
-saveRDS(sigDatas$ID, file="Sig.Rds")
-
-
+# Plot clusters as parallel coordinate lines
+# Set verbose=TRUE to save images and .rds files of gene IDs to directory "ClusterFiles"
+ret <- plotClusters(data=datas, dataMetrics = dataMetrics, threshVar = "padj", clusterAllData = FALSE, colList = colList, yAxisLabel = "Standardized count", outDir = "ClusterFiles/Galbraith", saveFile = FALSE, verbose = TRUE)
+plot(ret[["N_V_4"]])

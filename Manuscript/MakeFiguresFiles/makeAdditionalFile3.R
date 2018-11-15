@@ -2,8 +2,8 @@ library(EDASeq)
 library(bigPint)
 
 # Read in data and dataMetrics
-data <- readRDS("../../N_V/DESeq2/data.Rds")
-dataMetrics <- readRDS("../../N_V/DESeq2/dataMetrics.Rds")
+data <- readRDS("../../C_R/DESeq2/data.Rds")
+dataMetrics <- readRDS("../../C_R/DESeq2/dataMetrics.Rds")
 
 # Normalize for sequencing depth and other distributional differences between lanes
 data <- betweenLaneNormalization(as.matrix(data), which="full", round=FALSE)
@@ -17,11 +17,8 @@ nID = which(is.nan(datas[,2]))
 datas[nID,2:length(datas)] = 0
 
 # Define color vector
-myCols = scales::hue_pal()(5)
-colList = c(myCols[1], "#C11B8D", myCols[2:4])
-colList = colList[2:5]
+myCols = scales::hue_pal()(6)
 
 # Plot clusters as parallel coordinate lines
-# Set verbose=TRUE to save images and .rds files of gene IDs to directory "ClusterFiles"
-ret <- plotClusters(data=datas, dataMetrics = dataMetrics, threshVar = "padj", clusterAllData = FALSE, colList = colList, lineAlpha = 1, lineSize = 0.4, yAxisLabel = "Standardized count", vxAxis = TRUE, outDir = "ClusterFiles/N_V", saveFile = FALSE, verbose = TRUE)
-plot(ret[["N_V_4"]])
+ret <- plotClusters(data=datas, dataMetrics = dataMetrics, nC=6, threshVar = "padj", clusterAllData = FALSE, colList = colList, lineSize = 0.1, yAxisLabel = "Standardized count", vxAxis = TRUE, saveFile = FALSE)
+plot(ret[["C_R_6"]])
