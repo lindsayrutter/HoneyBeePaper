@@ -12,8 +12,6 @@ This repository consists of materials for an RNA-seq study that examined IAPV in
   * **PathogenResponse:** Data and analysis scripts for mortality rate and IAPV titer loads in a prior study by Dolezal et al.
   * **PostHocDEGPatterns:** Analysis scripts for post-hoc analysis of pathogen response correlations in DEG patterns
   * **ResistanceTolerance:** Analysis scripts for resistance and tolerance candidate Genes
-  * **Tissues:** Analysis scripts for estimating tissue expression in DEGs (not included in our manuscript)
-  * **Variables.csv:** Pathogen response metrics for the honeybees used in this RNA-seq study
   
 **Folder contaning reproducible scripts related to our manuscript:**
 
@@ -21,7 +19,7 @@ There is a folder called **Manuscript**, which contains materials related to a m
 
   * **AdditionalFiles:** The supplementary files in our manuscript (n=19)
   * **Figures:** The figures in our manuscript (n=6)
-  * **MakeFiguresFiles:** Reproducible scripts for recreating the figures and supplementary (additional) files. We are still working on this directory
+  * **MakeFiguresFiles:** Reproducible scripts for recreating figures and additional files that used the [bigPint package](https://lrutter.github.io/bigPint/).
   * **Text:** Files for creating our manuscript. Our latest manuscript text is located in the file called **manuscript.tex**
   
   
