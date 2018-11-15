@@ -22,7 +22,7 @@ colnames(datas) <- c("ID", "N.C.1", "N.C.2", "N.C.3", "N.C.4", "N.C.5", "N.C.6",
 colList = c("#00A600FF", "#7570B3", "#f97976", "#0066FFFF")
 
 # Read in geneList for tolerance genes
-geneList <- readRDS("../../ResistanceTolerance/tolerance.rds")
+geneList <- readRDS("../../ResistanceTolerance/resistance.rds")
 
 # Plot clusters as parallel coordinate lines
 # Set verbose=TRUE to save images and .rds files of gene IDs to directory "ClusterFiles"
