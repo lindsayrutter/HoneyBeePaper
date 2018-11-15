@@ -19,7 +19,7 @@ There is a folder called **Manuscript**, which contains materials related to a m
 
   * **AdditionalFiles:** The supplementary files in our manuscript (n=19)
   * **Figures:** The figures in our manuscript (n=6)
-  * **MakeFiguresFiles:** Reproducible scripts for recreating the figures and supplementary (additional) files. We are still working on this directory
+  * **MakeFiguresFiles:** Reproducible scripts for recreating figures and additional files that used the [bigPint package](https://lrutter.github.io/bigPint/).
   * **Text:** Files for creating our manuscript. Our latest manuscript text is located in the file called **manuscript.tex**
   
   
