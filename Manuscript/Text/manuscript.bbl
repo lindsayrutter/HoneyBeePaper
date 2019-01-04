@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{94}
+\begin{thebibliography}{95}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -992,6 +992,18 @@ Interactions Between Risk Factors in Honey Bees
 \endbibitem
 
 %%% 61
+\bibitem{bigpint}
+\begin{botherref}
+\oauthor{\bsnm{Rutter}, \binits{L.}},
+\oauthor{\bsnm{Cook}, \binits{D.}}:
+{bigPint: Make big data pint-sized}.
+\url{https://lrutter.github.io/bigPint}.
+Accessed 22 November 2018
+(2018)
+\end{botherref}
+\endbibitem
+
+%%% 62
 \bibitem{fewDEGs}
 \begin{barticle}
 \bauthor{\bsnm{Merkling}, \binits{S.H.}},
@@ -1008,7 +1020,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 62
+%%% 63
 \bibitem{fewDEGs2}
 \begin{barticle}
 \bauthor{\bsnm{Dostert}, \binits{C.}},
@@ -1028,7 +1040,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 63
+%%% 64
 \bibitem{Flenniken}
 \begin{barticle}
 \bauthor{\bsnm{Flenniken}, \binits{M.L.}},
@@ -1041,7 +1053,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 64
+%%% 65
 \bibitem{Brutscher}
 \begin{barticle}
 \bauthor{\bsnm{Brutscher}, \binits{L.M.}},
@@ -1056,7 +1068,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 65
+%%% 66
 \bibitem{Chen}
 \begin{barticle}
 \bauthor{\bsnm{Chen}, \binits{Y.P.}},
@@ -1098,7 +1110,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 66
+%%% 67
 \bibitem{edger}
 \begin{barticle}
 \bauthor{\bsnm{Robinson}, \binits{M.D.}},
@@ -1113,7 +1125,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 67
+%%% 68
 \bibitem{resTol2}
 \begin{barticle}
 \bauthor{\bsnm{Carval}, \binits{D.}},
@@ -1127,7 +1139,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 68
+%%% 69
 \bibitem{resTol4}
 \begin{barticle}
 \bauthor{\bsnm{Moret}, \binits{Y.}}:
@@ -1140,7 +1152,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 69
+%%% 70
 \bibitem{resTol5}
 \begin{barticle}
 \bauthor{\bsnm{Mauricio}, \binits{R.}},
@@ -1155,7 +1167,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 70
+%%% 71
 \bibitem{resTol6}
 \begin{barticle}
 \bauthor{\bsnm{Fornoni}, \binits{J.}},
@@ -1171,7 +1183,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 71
+%%% 72
 \bibitem{resTol7}
 \begin{barticle}
 \bauthor{\bsnm{Restif}, \binits{O.}},
@@ -1185,7 +1197,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 72
+%%% 73
 \bibitem{resTol8}
 \begin{barticle}
 \bauthor{\bsnm{Chambers}, \binits{M.C.}},
@@ -1199,7 +1211,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 73
+%%% 74
 \bibitem{resTol11}
 \begin{barticle}
 \bauthor{\bsnm{Xu}, \binits{J.}},
@@ -1218,7 +1230,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 74
+%%% 75
 \bibitem{Ryabov}
 \begin{barticle}
 \bauthor{\bsnm{Ryabov}, \binits{E.V.}},
@@ -1236,7 +1248,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 75
+%%% 76
 \bibitem{tissueLevel}
 \begin{barticle}
 \bauthor{\bsnm{Johnson}, \binits{B.R.}},
@@ -1251,7 +1263,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 76
+%%% 77
 \bibitem{bh}
 \begin{barticle}
 \bauthor{\bsnm{Thissen}, \binits{D.}},
@@ -1266,7 +1278,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 77
+%%% 78
 \bibitem{hbGenome}
 \begin{barticle}
 \bauthor{\bsnm{Consortium}, \binits{H.B.G.S.}}:
@@ -1279,7 +1291,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 78
+%%% 79
 \bibitem{hymenopteraDB}
 \begin{barticle}
 \bauthor{\bsnm{Elsik}, \binits{C.G.}},
@@ -1298,7 +1310,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 79
+%%% 80
 \bibitem{gsnap}
 \begin{barticle}
 \bauthor{\bsnm{Wu}, \binits{T.D.}},
@@ -1315,7 +1327,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 80
+%%% 81
 \bibitem{deseq2}
 \begin{barticle}
 \bauthor{\bsnm{Love}, \binits{M.I.}},
@@ -1330,7 +1342,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 81
+%%% 82
 \bibitem{limma}
 \begin{barticle}
 \bauthor{\bsnm{Ritchie}, \binits{M.E.}},
@@ -1349,7 +1361,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 82
+%%% 83
 \bibitem{benjamini}
 \begin{barticle}
 \bauthor{\bsnm{Benjamini}, \binits{Y.}},
@@ -1363,7 +1375,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 83
+%%% 84
 \bibitem{euler}
 \begin{botherref}
 \oauthor{\bsnm{Larsson}, \binits{J.}}:
@@ -1374,7 +1386,7 @@ R package version 4.0.0.
 \end{botherref}
 \endbibitem
 
-%%% 84
+%%% 85
 \bibitem{pca}
 \begin{bbook}
 \bauthor{\bsnm{{I.T. Jolliffe}}}:
@@ -1385,7 +1397,7 @@ R package version 4.0.0.
 \end{bbook}
 \endbibitem
 
-%%% 85
+%%% 86
 \bibitem{origPCP}
 \begin{barticle}
 \bauthor{\bsnm{Inselberg}, \binits{A.}}:
@@ -1397,7 +1409,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 86
+%%% 87
 \bibitem{scatMat}
 \begin{bbook}
 \bauthor{\bsnm{{W.S. Cleveland}}}:
@@ -1408,7 +1420,7 @@ R package version 4.0.0.
 \end{bbook}
 \endbibitem
 
-%%% 87
+%%% 88
 \bibitem{jds}
 \begin{barticle}
 \bauthor{\bsnm{Cook}, \binits{D.}},
@@ -1425,7 +1437,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 88
+%%% 89
 \bibitem{Chandrasekhar}
 \begin{barticle}
 \bauthor{\bsnm{Chandrasekhar}, \binits{T.}},
@@ -1439,7 +1451,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 89
+%%% 90
 \bibitem{deSouto}
 \begin{botherref}
 \oauthor{\bparticle{de~Souto D.~de} \bsnm{Araujo}, \binits{M.}},
@@ -1455,7 +1467,7 @@ International Joint Conference on Neural Networks,
 \end{botherref}
 \endbibitem
 
-%%% 90
+%%% 91
 \bibitem{davidBio}
 \begin{barticle}
 \bauthor{\bsnm{Huang}, \binits{D.W.}},
@@ -1470,7 +1482,7 @@ International Joint Conference on Neural Networks,
 \end{barticle}
 \endbibitem
 
-%%% 91
+%%% 92
 \bibitem{davidBio2}
 \begin{barticle}
 \bauthor{\bsnm{Huang}, \binits{D.W.}},
@@ -1485,7 +1497,7 @@ International Joint Conference on Neural Networks,
 \end{barticle}
 \endbibitem
 
-%%% 92
+%%% 93
 \bibitem{revigo}
 \begin{barticle}
 \bauthor{\bsnm{Supek}, \binits{F.}},
@@ -1500,7 +1512,7 @@ International Joint Conference on Neural Networks,
 \end{barticle}
 \endbibitem
 
-%%% 93
+%%% 94
 \bibitem{geo}
 \begin{barticle}
 \bauthor{\bsnm{Edgar}, \binits{R.}},
@@ -1515,7 +1527,7 @@ International Joint Conference on Neural Networks,
 \end{barticle}
 \endbibitem
 
-%%% 94
+%%% 95
 \bibitem{semantic}
 \begin{barticle}
 \bauthor{\bsnm{Schlicker}, \binits{A.}},
@@ -2471,6 +2483,17 @@ International Joint Conference on Neural Networks,
 </bibl>
 
 <bibl id="B61">
+  <title><p>{bigPint: Make big data pint-sized}</p></title>
+  <aug>
+    <au><snm>Rutter</snm><fnm>L.</fnm></au>
+    <au><snm>Cook</snm><fnm>D.</fnm></au>
+  </aug>
+  <source>\url{https://lrutter.github.io/bigPint}</source>
+  <pubdate>2018</pubdate>
+  <note>Accessed 22 November 2018</note>
+</bibl>
+
+<bibl id="B62">
   <title><p>{The heat shock response restricts virus infection in
   Drosophila}</p></title>
   <aug>
@@ -2487,7 +2510,7 @@ International Joint Conference on Neural Networks,
   <fpage>12758</fpage>
 </bibl>
 
-<bibl id="B62">
+<bibl id="B63">
   <title><p>{The JAK-STAT signaling pathway is required but not sufficient for
   the antiviral response of Drosophila}</p></title>
   <aug>
@@ -2507,7 +2530,7 @@ International Joint Conference on Neural Networks,
   <lpage>953</lpage>
 </bibl>
 
-<bibl id="B63">
+<bibl id="B64">
   <title><p>{Non-specific dsRNA-mediated antiviral response in the honey
   bee}</p></title>
   <aug>
@@ -2520,7 +2543,7 @@ International Joint Conference on Neural Networks,
   <fpage>e77263</fpage>
 </bibl>
 
-<bibl id="B64">
+<bibl id="B65">
   <title><p>{Virus and dsRNA-triggered transcriptional responses reveal key
   components of honey bee antiviral defense}</p></title>
   <aug>
@@ -2534,7 +2557,7 @@ International Joint Conference on Neural Networks,
   <fpage>6448</fpage>
 </bibl>
 
-<bibl id="B65">
+<bibl id="B66">
   <title><p>{Israeli Acute Paralysis Virus: Epidemiology, pathogenesis and
   implications for honey bee health}</p></title>
   <aug>
@@ -2575,7 +2598,7 @@ International Joint Conference on Neural Networks,
   <fpage>e1004261</fpage>
 </bibl>
 
-<bibl id="B66">
+<bibl id="B67">
   <title><p>edgeR: a Bioconductor package for differential expression analysis
   of digital gene expression data</p></title>
   <aug>
@@ -2590,7 +2613,7 @@ International Joint Conference on Neural Networks,
   <lpage>140</lpage>
 </bibl>
 
-<bibl id="B67">
+<bibl id="B68">
   <title><p>{A unified model for the coevolution of resistance, tolerance, and
   virulence}</p></title>
   <aug>
@@ -2603,7 +2626,7 @@ International Joint Conference on Neural Networks,
   <fpage>2988–3009</fpage>
 </bibl>
 
-<bibl id="B68">
+<bibl id="B69">
   <title><p>{Trans-generational immune priming: Specific enhancement of the
   antimicrobial immune response in the mealworm beetle, Tenebrio
   molitor}</p></title>
@@ -2616,7 +2639,7 @@ International Joint Conference on Neural Networks,
   <fpage>1399–1405</fpage>
 </bibl>
 
-<bibl id="B69">
+<bibl id="B70">
   <title><p>{Variation in the defense strategies of plants: are resistance and
   tolerance mutually exclusive?}</p></title>
   <aug>
@@ -2630,7 +2653,7 @@ International Joint Conference on Neural Networks,
   <fpage>1301–1310</fpage>
 </bibl>
 
-<bibl id="B70">
+<bibl id="B71">
   <title><p>{Evolution of mixed plant defense allocation against natural
   enemies}</p></title>
   <aug>
@@ -2645,7 +2668,7 @@ International Joint Conference on Neural Networks,
   <fpage>1685–1695</fpage>
 </bibl>
 
-<bibl id="B71">
+<bibl id="B72">
   <title><p>{Shared control of epidemiological traits in a coevolutionary model
   of host-parasite interactions}</p></title>
   <aug>
@@ -2658,7 +2681,7 @@ International Joint Conference on Neural Networks,
   <fpage>827–836</fpage>
 </bibl>
 
-<bibl id="B72">
+<bibl id="B73">
   <title><p>{Balancing resistance and infection tolerance through metabolic
   means}</p></title>
   <aug>
@@ -2671,7 +2694,7 @@ International Joint Conference on Neural Networks,
   <fpage>13886–13887</fpage>
 </bibl>
 
-<bibl id="B73">
+<bibl id="B74">
   <title><p>{Transcriptional pausing controls a rapid antiviral innate immune
   response in Drosophila}</p></title>
   <aug>
@@ -2689,7 +2712,7 @@ International Joint Conference on Neural Networks,
   <fpage>531–543</fpage>
 </bibl>
 
-<bibl id="B74">
+<bibl id="B75">
   <title><p>{The Iflaviruses Sacbrood virus and Deformed wing virus evoke
   different transcriptional responses in the honeybee which may facilitate
   their horizontal or vertical transmission}</p></title>
@@ -2706,7 +2729,7 @@ International Joint Conference on Neural Networks,
   <fpage>e1591</fpage>
 </bibl>
 
-<bibl id="B75">
+<bibl id="B76">
   <title><p>{The importance of tissue specificity for RNA-seq: highlighting the
   errors of composite structure extractions}</p></title>
   <aug>
@@ -2720,7 +2743,7 @@ International Joint Conference on Neural Networks,
   <fpage>586</fpage>
 </bibl>
 
-<bibl id="B76">
+<bibl id="B77">
   <title><p>{Quick and easy implementation of the Benjamini-Hochberg procedure
   for controlling the false positive rate in multiple comparisons}</p></title>
   <aug>
@@ -2735,7 +2758,7 @@ International Joint Conference on Neural Networks,
   <lpage>83</lpage>
 </bibl>
 
-<bibl id="B77">
+<bibl id="B78">
   <title><p>{Finding the missing honey bee genes: lessons learned from a genome
   upgrade}</p></title>
   <aug>
@@ -2747,7 +2770,7 @@ International Joint Conference on Neural Networks,
   <fpage>86</fpage>
 </bibl>
 
-<bibl id="B78">
+<bibl id="B79">
   <title><p>{Hymenoptera Genome Database: integrating genome annotations in
   HymenopteraMine}</p></title>
   <aug>
@@ -2766,7 +2789,7 @@ International Joint Conference on Neural Networks,
   <lpage>800</lpage>
 </bibl>
 
-<bibl id="B79">
+<bibl id="B80">
   <title><p>{GMAP and GSNAP for genomic sequence alignment: Enhancements to
   speed, accuracy, and functionality}</p></title>
   <aug>
@@ -2783,7 +2806,7 @@ International Joint Conference on Neural Networks,
   <lpage>334</lpage>
 </bibl>
 
-<bibl id="B80">
+<bibl id="B81">
   <title><p>{Moderated estimation of fold change and dispersion for RNA-seq
   data with DESeq2}</p></title>
   <aug>
@@ -2797,7 +2820,7 @@ International Joint Conference on Neural Networks,
   <fpage>550</fpage>
 </bibl>
 
-<bibl id="B81">
+<bibl id="B82">
   <title><p>limma powers differential expression analyses for RNA-sequencing
   and microarray studies</p></title>
   <aug>
@@ -2816,7 +2839,7 @@ International Joint Conference on Neural Networks,
   <fpage>e47</fpage>
 </bibl>
 
-<bibl id="B82">
+<bibl id="B83">
   <title><p>{Controlling the false discovery rate: A practical and powerful
   approach to multiple testing}</p></title>
   <aug>
@@ -2831,7 +2854,7 @@ International Joint Conference on Neural Networks,
   <lpage>300</lpage>
 </bibl>
 
-<bibl id="B83">
+<bibl id="B84">
   <title><p>{eulerr}: Area-Proportional {Euler} and {Venn} Diagrams with
   Ellipses</p></title>
   <aug>
@@ -2842,7 +2865,7 @@ International Joint Conference on Neural Networks,
   <note>R package version 4.0.0</note>
 </bibl>
 
-<bibl id="B84">
+<bibl id="B85">
   <title><p>Principal Component Analysis</p></title>
   <aug>
     <au><cnm>{I.T. Jolliffe}</cnm></au>
@@ -2851,7 +2874,7 @@ International Joint Conference on Neural Networks,
   <pubdate>2002</pubdate>
 </bibl>
 
-<bibl id="B85">
+<bibl id="B86">
   <title><p>{The plane with parallel coordinates}</p></title>
   <aug>
     <au><snm>Inselberg</snm><fnm>A.</fnm></au>
@@ -2863,7 +2886,7 @@ International Joint Conference on Neural Networks,
   <lpage>91</lpage>
 </bibl>
 
-<bibl id="B86">
+<bibl id="B87">
   <title><p>Visualizing Data</p></title>
   <aug>
     <au><cnm>{W.S. Cleveland}</cnm></au>
@@ -2872,7 +2895,7 @@ International Joint Conference on Neural Networks,
   <pubdate>1993</pubdate>
 </bibl>
 
-<bibl id="B87">
+<bibl id="B88">
   <title><p>{Exploring gene expression data, using plots}</p></title>
   <aug>
     <au><snm>Cook</snm><fnm>D.</fnm></au>
@@ -2888,7 +2911,7 @@ International Joint Conference on Neural Networks,
   <fpage>151–182</fpage>
 </bibl>
 
-<bibl id="B88">
+<bibl id="B89">
   <title><p>{Effective Clustering Algorithms for Gene Expression
   Data}</p></title>
   <aug>
@@ -2902,7 +2925,7 @@ International Joint Conference on Neural Networks,
   <fpage>4</fpage>
 </bibl>
 
-<bibl id="B89">
+<bibl id="B90">
   <title><p>{Comparative Study on Normalization Procedures for Cluster Analysis
   of Gene Expression Datasets}</p></title>
   <aug>
@@ -2918,7 +2941,7 @@ International Joint Conference on Neural Networks,
   <lpage>2799</lpage>
 </bibl>
 
-<bibl id="B90">
+<bibl id="B91">
   <title><p>{Systematic and integrative analysis of large gene lists using
   DAVID bioinformatics resources}</p></title>
   <aug>
@@ -2933,7 +2956,7 @@ International Joint Conference on Neural Networks,
   <lpage>57</lpage>
 </bibl>
 
-<bibl id="B91">
+<bibl id="B92">
   <title><p>{Bioinformatics enrichment tools: paths toward the comprehensive
   functional analysis of large gene lists}</p></title>
   <aug>
@@ -2948,7 +2971,7 @@ International Joint Conference on Neural Networks,
   <lpage>13</lpage>
 </bibl>
 
-<bibl id="B92">
+<bibl id="B93">
   <title><p>{REVIGO summarizes and visualizes long lists of Gene Ontology
   terms}</p></title>
   <aug>
@@ -2963,7 +2986,7 @@ International Joint Conference on Neural Networks,
   <fpage>e21800</fpage>
 </bibl>
 
-<bibl id="B93">
+<bibl id="B94">
   <title><p>{Gene Expression Omnibus: NCBI gene expression and hybridization
   array data repository}</p></title>
   <aug>
@@ -2978,7 +3001,7 @@ International Joint Conference on Neural Networks,
   <lpage>210</lpage>
 </bibl>
 
-<bibl id="B94">
+<bibl id="B95">
   <title><p>{A new measure for functional similarity of gene products based on
   Gene Ontology}</p></title>
   <aug>

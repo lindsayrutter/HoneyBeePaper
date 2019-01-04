@@ -347,7 +347,7 @@ The number of DEGs across the six treatment pairings between the diet and virus 
 
 \subsection*{Transcriptomic data visualization and comparison to a previous study}
 
-We wished to explore the signal:to:noise ratio between the Galbraith dataset and our dataset. Note that the Galbraith dataset contained three samples for each virus level, while our dataset contained twelve samples for each virus level. Basic PCA plots were constructed with the DESeq2 analysis pipeline and showed that the Galbraith dataset may separate the infected and uninfected honey bees better than our dataset (Additional file 2). Wanting to learn more about the data at the gene level, we continued with new visualization techniques that are available online (https://lrutter.github.io/bigPint). To understand how to interpret the visualizations used in this section, please read (https://lrutter.github.io/bigPint/articles/plotIntro.html).
+We wished to explore the signal:to:noise ratio between the Galbraith dataset and our dataset. Note that the Galbraith dataset contained three samples for each virus level, while our dataset contained twelve samples for each virus level. Basic PCA plots were constructed with the DESeq2 analysis pipeline and showed that the Galbraith dataset may separate the infected and uninfected honey bees better than our dataset (Additional file 2). Wanting to learn more about the data at the gene level, we continued with new visualization techniques that are available online \cite{bigpint}. To understand how to interpret the visualizations used in this section, please read (https://lrutter.github.io/bigPint/articles/plotIntro.html).
 
 We used parallel coordinate lines superimposed onto side-by-side boxplots to visualize the DEGs associated with virus infection in the two studies. The background side-by-side boxplot represents the distribution of \textit{all} genes in the data, and each parallel coordinate line represents one DEG. In a parallel coordinate line, connections between samples with positive correlations should be flat, while connections between samples with negative correlations should be crossed. We expect DEGs to show more variability between treatments than between replicates. This means the parallel coordinate lines should be flat between replicates but crossed between treatments. However, overplotting problems would obscure our visualization if we were to plot all DEGs onto the same side-by-side boxplot. Therefore, we graphed clustered subsets of the DEGs (based on hierarchical clustering).
 
@@ -457,6 +457,8 @@ We found considerable noisiness in our data and saw, through gene-level visualiz
 %%                                          %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\section*{Declarations}
+
 \begin{backmatter}
 
 \section*{Ethics approval and consent to participate}
@@ -466,7 +468,7 @@ We found considerable noisiness in our data and saw, through gene-level visualiz
   Not applicable.
 
 \section*{Availability of data and materials}
-  The data discussed in this publication have been deposited in NCBI's Gene Expression Omnibus \cite{geo} and are accessible through GEO Series accession number GSE121885 (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE121885). The scripts to reproduce analyses and figures in this publication are available online (https://github.com/lrutter/HoneyBeePaper).
+  The data discussed in this publication have been deposited in NCBI's Gene Expression Omnibus \cite{geo} and are accessible through GEO Series accession number GSE121885 (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE121885). Scripts to reproduce visualizations in this paper are available online (https://github.com/lrutter/HoneyBeePaper). Information about bigPint visualizations, including how to intrepret them are available online (https://lrutter.github.io/bigPint). Lists of BeeBase IDs for contrast DEGs from this study are found in Additional File 20. 
 
 \section*{Competing interests}
   The authors declare that they have no competing interests.
@@ -475,8 +477,7 @@ We found considerable noisiness in our data and saw, through gene-level visualiz
   This work was supported by the United States Department of Agriculture, Agriculture and Food Research Initiative (USDA-AFRI) 2011-04894.
 
 \section*{Author's contributions}
-  LR performed the bioinformatic and statistical analyses, produced the figures and tables, and drafted the manuscript. BB conceptualized the study and critically revised the manuscript. AD contributed to experimental design, carried out the laboratory experiments, and processed samples for virus titers and RNA-seq. JCT contributed to experimental design and laboratory experiments. DC advised on statistical analyses and visualization.
-    %All authors read and approved the final manuscript.
+  LR performed the bioinformatic and statistical analyses and produced the figures and tables. LR and ALT drafted the manuscript. ALT, AGD, JCT, BCB contributed to experimental design. AGD and JCT carried out laboratory experiments. AGD processed samples for virus and RNA-seq. DC advised on statistical analyses and visualization. All authors revised and approved the manuscript.
     
 \section*{Acknowledgements}
   We would like to thank Giselle Narvaez for assisting with cage experiments.
@@ -537,17 +538,17 @@ Left to right: IAPV titers for the four treatment groups, two virus groups, and 
 \end{figure}
 
 \begin{figure}[h!]
-\caption{\csentence{Parallel coordinate plots of the 1,019 DEGs after hierarchical clustering of size four between the virus-infected and control groups of the Galbraith data \cite{galbraith}.}
+\caption{\csentence{Parallel coordinate plots of the 1,019 virus-related DEGs of the Galbraith data \cite{galbraith}.}
 Parallel coordinate plots of the 1,019 DEGs after hierarchical clustering of size four between the virus-infected and control groups of the Galbraith study. ``N'' represents non-inoculation, ``V'' represents viral inoculation. Clusters 1, 2, and 4 seem to represent DEGs that were overexpressed in the virus inoculated group, and Cluster 3 seems to represent DEGs that were overexpressed in the non-inoculated control group. In general, the DEGs appeared as expected, but there is rather noticeable deviation of the first replicate from the virus-treated sample (``V.1'') from the other virus-treated replicates in Cluster 1.}
 \end{figure}
 
 \begin{figure}[h!]
-\caption{\csentence{Parallel coordinate plots of the 43 DEGs after hierarchical clustering of size four between the virus-infected and control groups of our study.}
+\caption{\csentence{Parallel coordinate plots of the 43 virus-related DEGs of our data.}
 Parallel coordinate plots of the 43 DEGs after hierarchical clustering of size four between the virus-infected and control groups of our study. ``N'' represents non-infected control group, and ``V'' represents treatment of virus. The vertical red line indicates the distinction between treatment groups. We see from this plot that the DEG designations for this dataset do not appear as clean compared to what we saw in the Galbraith dataset in Figure 3.}
 \end{figure}
 
 \begin{figure}[h!]
-\caption{\csentence{Gene ontology analysis results for the 122 DEGs related to our ``tolerance'' hypothesis and for the 125 DEGs related to our ``resistance'' hypothesis.}
+\caption{\csentence{Gene ontology results for the 122 ``tolerance'' and 125 ``resistance'' DEG candidates in our data.}
 GO analysis results for the 122 DEGs related to our ``tolerance'' hypothesis (A) and for the 125 DEGs related to our ``resistance'' hypothesis (B). The color and size of the circles both represent the number of genes in that ontology. The x-axis and y-axis are organized by SimRel, a semantic similarity metric \cite{semantic}.}
 \end{figure}
 
