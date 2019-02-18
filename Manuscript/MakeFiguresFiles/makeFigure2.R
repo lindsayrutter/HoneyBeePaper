@@ -29,7 +29,7 @@ summary(glht(mortcomp2, linfct=mcp(Treatment="Tukey")))
 
 # IAPV (All)
 labelDF = data.frame(plot.labels=c("NR","VC","VR","NC"), labels = c("a","ab","b","a"), V1 = c(4.25, 5.35, 8.57, 3.85))
-plotIAPV = ggplot(d, aes(x=Treatment, y=logIAPV)) + geom_boxplot(fill="paleturquoise2") + geom_text(data = labelDF, size = 8, aes(x = plot.labels, y = V1, label = labels)) + ylab("Log IAPV Titer") +theme_gray() + theme(text=element_text(size=20)) + ylim(2,9)
+plotIAPV = ggplot(d, aes(x=Treatment, y=logIAPV)) + geom_boxplot(fill="paleturquoise2") + geom_text(data = labelDF, size = 8, aes(x = plot.labels, y = V1, label = labels)) + ylab("Log viral ge/100 ng RNA") +theme_gray() + theme(text=element_text(size=20)) + ylim(2,9)
 
 # IAPV (N vs V)
 labelDF = data.frame(plot.labels=c("N","V"), labels = c("a","b"), V1 = c(4.3, 8.7))

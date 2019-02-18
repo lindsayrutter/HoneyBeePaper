@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{95}
+\begin{thebibliography}{106}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -220,18 +220,20 @@
 
 %%% 11
 \bibitem{adamInt}
-\begin{botherref}
-\oauthor{\bsnm{Dolezal}, \binits{A.G.}},
-\oauthor{\bsnm{Carrillo-Tripp}, \binits{J.}},
-\oauthor{\bsnm{Judd}, \binits{T.}},
-\oauthor{\bsnm{Miller}, \binits{A.}},
-\oauthor{\bsnm{Bonning}, \binits{B.}},
-\oauthor{\bsnm{Toth}, \binits{A.}}:
-{Interacting stressors matter: Diet quality and virus infection in honey bee
-  health}.
-In prep
-(2018)
-\end{botherref}
+\begin{barticle}
+\bauthor{\bsnm{Dolezal}, \binits{A.G.}},
+\bauthor{\bsnm{Carrillo-Tripp}, \binits{J.}},
+\bauthor{\bsnm{Judd}, \binits{T.M.}},
+\bauthor{\bsnm{Miller}, \binits{W.A.}},
+\bauthor{\bsnm{Bonning}, \binits{B.C.}},
+\bauthor{\bsnm{Toth}, \binits{A.L.}}:
+\batitle{{Interacting stressors matter: diet quality and virus infection in
+  honeybee health}}.
+\bjtitle{Royal society open science}
+\bvolume{6},
+\bfpage{181803}
+(\byear{2019})
+\end{barticle}
 \endbibitem
 
 %%% 12
@@ -425,20 +427,72 @@ Pollen: Biology, Biochemistry, Management
 \endbibitem
 
 %%% 26
-\bibitem{miteSpread}
+\bibitem{DiPasquale}
+\begin{barticle}
+\bauthor{\bsnm{Pasquale}, \binits{G.D.}},
+\bauthor{\bsnm{Salignon}, \binits{M.}},
+\bauthor{\bsnm{Conte}, \binits{Y.L.}},
+\bauthor{\bsnm{Belzunces}, \binits{L.P.}},
+\bauthor{\bsnm{Decourtye}, \binits{A.}},
+\bauthor{\bsnm{Kretzschmar}, \binits{A.}},
+\bauthor{\bsnm{Suchail}, \binits{S.}},
+\bauthor{\bsnm{Brunet}, \binits{J.-L.}},
+\bauthor{\bsnm{Alaux}, \binits{C.}}:
+\batitle{{Influence of pollen nutrition on honey bee health: Do pollen quality
+  and diversity matter?}}
+\bjtitle{PLoS ONE}
+\bvolume{8},
+\bfpage{72016}
+(\byear{2013})
+\end{barticle}
+\endbibitem
+
+%%% 27
+\bibitem{miteProblem}
 \begin{barticle}
 \bauthor{\bsnm{Rosenkranz}, \binits{P.}},
 \bauthor{\bsnm{Aumeier}, \binits{P.}},
 \bauthor{\bsnm{Ziegelmann}, \binits{B.}}:
-\batitle{{Biology and control of Varroa destructor}}.
-\bjtitle{J Invertebr Pathol}
+\batitle{{Biology and control of Varroa destructor. Journal of invertebrate
+  pathology}}.
+\bjtitle{Journal of invertebrate pathology}
 \bvolume{103},
 \bfpage{96}--\blpage{119}
 (\byear{2010})
 \end{barticle}
 \endbibitem
 
-%%% 27
+%%% 28
+\bibitem{miteProblem2}
+\begin{barticle}
+\bauthor{\bsnm{Allen}, \binits{M.F.}},
+\bauthor{\bsnm{Ball}, \binits{B.V.}},
+\bauthor{\bsnm{White}, \binits{R.F.}},
+\bauthor{\bsnm{Antoniw}, \binits{J.F.}}:
+\batitle{{The detection of acute paralysis virus in Varroa jacobsoni by the use
+  of a simple indirect ELISA}}.
+\bjtitle{Apicult. Res.}
+\bvolume{25},
+\bfpage{100}--\blpage{105}
+(\byear{1986})
+\end{barticle}
+\endbibitem
+
+%%% 29
+\bibitem{miteProblem3}
+\begin{barticle}
+\bauthor{\bsnm{Yue}, \binits{C.}},
+\bauthor{\bsnm{Genersch}, \binits{E.}}:
+\batitle{{RT-PCR analysis of deformed wing virus in honeybees (Apis mellifera)
+  and mites (Varroa destructor)}}.
+\bjtitle{J. Gen. Virol.}
+\bvolume{86},
+\bfpage{3419}--\blpage{3424}
+(\byear{2005})
+\end{barticle}
+\endbibitem
+
+%%% 30
 \bibitem{hemolymph}
 \begin{barticle}
 \bauthor{\bsnm{Weinberg}, \binits{K.P.}},
@@ -453,7 +507,46 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 28
+%%% 31
+\bibitem{fatbody}
+\begin{botherref}
+\oauthor{\bsnm{Ramsey}, \binits{S.D.}},
+\oauthor{\bsnm{Ochoa}, \binits{R.}},
+\oauthor{\bsnm{Bauchan}, \binits{G.}},
+\oauthor{\bsnm{Gulbronson}, \binits{C.}},
+\oauthor{\bsnm{Mowery}, \binits{J.D.}},
+\oauthor{\bsnm{Cohen}, \binits{A.}},
+\oauthor{\bsnm{Lim}, \binits{D.}},
+\oauthor{\bsnm{Joklik}, \binits{J.}},
+\oauthor{\bsnm{Cicero}, \binits{J.M.}},
+\oauthor{\bsnm{Ellis}, \binits{J.D.}},
+\oauthor{\bsnm{Hawthorne}, \binits{D.}},
+\oauthor{\bsnm{vanEngelsdorp}, \binits{D.}}:
+{Varroa destructor feeds primarily on honey bee fat body tissue and not
+  hemolymph}.
+PNAS
+(2019)
+\end{botherref}
+\endbibitem
+
+%%% 32
+\bibitem{miteNutrition}
+\begin{barticle}
+\bauthor{\bsnm{Aronstein}, \binits{K.A.}},
+\bauthor{\bsnm{Saldivar}, \binits{E.}},
+\bauthor{\bsnm{Vega}, \binits{R.}},
+\bauthor{\bsnm{Westmiller}, \binits{S.}},
+\bauthor{\bsnm{Douglas}, \binits{A.E.}}:
+\batitle{{How Varroa Parasitism Affects the Immunological and Nutritional
+  Status of the Honey Bee, Apis mellifera}}.
+\bjtitle{Insects}
+\bvolume{3},
+\bfpage{601}--\blpage{615}
+(\byear{2012})
+\end{barticle}
+\endbibitem
+
+%%% 33
 \bibitem{miteVirus}
 \begin{barticle}
 \bauthor{\bsnm{Shen}, \binits{M.Q.}},
@@ -470,7 +563,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 29
+%%% 34
 \bibitem{miteVirus2}
 \begin{barticle}
 \bauthor{\bsnm{Yang}, \binits{X.}},
@@ -485,7 +578,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 30
+%%% 35
 \bibitem{miteVirus3}
 \begin{barticle}
 \bauthor{\bsnm{Yang}, \binits{X.L.}},
@@ -499,7 +592,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 31
+%%% 36
 \bibitem{newVR}
 \begin{barticle}
 \bauthor{\bsnm{Emsen}, \binits{B.}},
@@ -516,7 +609,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 32
+%%% 37
 \bibitem{numVirus}
 \begin{barticle}
 \bauthor{\bsnm{Chen}, \binits{Y.P.}},
@@ -529,7 +622,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 33
+%%% 38
 \bibitem{fam}
 \begin{barticle}
 \bauthor{\bsnm{Bonning}, \binits{B.C.}},
@@ -542,7 +635,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 34
+%%% 39
 \bibitem{symptoms}
 \begin{barticle}
 \bauthor{\bsnm{Maori}, \binits{E.}},
@@ -561,7 +654,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 35
+%%% 40
 \bibitem{carrillo}
 \begin{barticle}
 \bauthor{\bsnm{Carrillo-Tripp}, \binits{J.}},
@@ -578,7 +671,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 36
+%%% 41
 \bibitem{winter}
 \begin{barticle}
 \bauthor{\bsnm{Chen}, \binits{Y.P.}},
@@ -620,7 +713,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 37
+%%% 42
 \bibitem{intNV}
 \begin{barticle}
 \bauthor{\bsnm{DeGrandi-Hoffman}, \binits{G.}},
@@ -633,7 +726,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 38
+%%% 43
 \bibitem{intNV2}
 \begin{barticle}
 \bauthor{\bsnm{DeGrandi-Hoffman}, \binits{G.}},
@@ -649,7 +742,7 @@ Pollen: Biology, Biochemistry, Management
 \end{barticle}
 \endbibitem
 
-%%% 39
+%%% 44
 \bibitem{intNV3}
 \begin{botherref}
 \oauthor{\bsnm{Le~Conte}, \binits{Y.}},
@@ -661,7 +754,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{botherref}
 \endbibitem
 
-%%% 40
+%%% 45
 \bibitem{interactingDV}
 \begin{barticle}
 \bauthor{\bsnm{Annoscia}, \binits{D.}},
@@ -681,7 +774,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 41
+%%% 46
 \bibitem{interactingDV2}
 \begin{barticle}
 \bauthor{\bsnm{Nazzi}, \binits{F.}},
@@ -695,7 +788,21 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 42
+%%% 47
+\bibitem{Medzhitov}
+\begin{barticle}
+\bauthor{\bsnm{Medzhitov}, \binits{R.}},
+\bauthor{\bsnm{Schneider}, \binits{D.S.}},
+\bauthor{\bsnm{Soares}, \binits{M.P.}}:
+\batitle{{Disease tolerance as a defense strategy}}.
+\bjtitle{Science}
+\bvolume{335},
+\bfpage{936}--\blpage{941}
+(\byear{2012})
+\end{barticle}
+\endbibitem
+
+%%% 48
 \bibitem{resTol1}
 \begin{barticle}
 \bauthor{\bsnm{Miller}, \binits{C.V.L.}},
@@ -709,7 +816,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 43
+%%% 49
 \bibitem{alaux2}
 \begin{barticle}
 \bauthor{\bsnm{Alaux}, \binits{C.}},
@@ -725,7 +832,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 44
+%%% 50
 \bibitem{galbraith}
 \begin{barticle}
 \bauthor{\bsnm{Galbraith}, \binits{D.A.}},
@@ -742,318 +849,7 @@ Interactions Between Risk Factors in Honey Bees
 \end{barticle}
 \endbibitem
 
-%%% 45
-\bibitem{sugarFat}
-\begin{barticle}
-\bauthor{\bsnm{Hemphill}, \binits{W.}},
-\bauthor{\bsnm{Rivera}, \binits{O.}},
-\bauthor{\bsnm{Talbert}, \binits{M.}}:
-\batitle{{RNA-Sequencing of Drosophila melanogaster head tissue on high-sugar
-  and high-fat diets}}.
-\bjtitle{G3: Genes, Genomes, Genetics}
-\bvolume{8},
-\bfpage{279}--\blpage{290}
-(\byear{2018})
-\end{barticle}
-\endbibitem
-
-%%% 46
-\bibitem{sugarProtein}
-\begin{barticle}
-\bauthor{\bsnm{Nazario-Yepiz}, \binits{N.O.}},
-\bauthor{\bsnm{Loustalot-Laclette}, \binits{M.R.}},
-\bauthor{\bsnm{Carpinteyro-Ponce}, \binits{J.}},
-\bauthor{\bsnm{Abreu-Goodger}, \binits{C.}},
-\bauthor{\bsnm{Markow}, \binits{T.A.}}:
-\batitle{{Transcriptional responses of ecologically diverse Drosophila species
-  to larval diets differing in relative sugar and protein ratios}}.
-\bjtitle{PLoS ONE}
-\bvolume{12},
-\bfpage{0183007}
-(\byear{2017})
-\end{barticle}
-\endbibitem
-
-%%% 47
-\bibitem{jHormone}
-\begin{barticle}
-\bauthor{\bsnm{Mirth}, \binits{C.K.}},
-\bauthor{\bsnm{Tang}, \binits{H.Y.}},
-\bauthor{\bsnm{Makohon-Moore}, \binits{S.C.}},
-\bauthor{\bsnm{Salhadar}, \binits{S.}},
-\bauthor{\bsnm{Gokhale}, \binits{R.H.}},
-\bauthor{\bsnm{Warner}, \binits{R.D.}},
-\bauthor{\bsnm{Koyama}, \binits{T.}},
-\bauthor{\bsnm{Riddiford}, \binits{L.M.}},
-\bauthor{\bsnm{Shingleton}, \binits{A.W.}}:
-\batitle{{Juvenile hormone regulates body size and perturbs insulin signaling
-  in Drosophila}}.
-\bjtitle{Proceedings of the National Academy of Sciences}
-\bvolume{25},
-\bfpage{201313058}
-(\byear{2014})
-\end{barticle}
-\endbibitem
-
-%%% 48
-\bibitem{cherryReview}
-\begin{barticle}
-\bauthor{\bsnm{Xu}, \binits{J.}},
-\bauthor{\bsnm{Cherry}, \binits{S.}}:
-\batitle{{Viruses and antiviral immunity in Drosophila}}.
-\bjtitle{Dev Comp Immunol}
-\bvolume{42},
-\bfpage{67}--\blpage{84}
-(\byear{2014})
-\end{barticle}
-\endbibitem
-
-%%% 49
-\bibitem{swevers}
-\begin{barticle}
-\bauthor{\bsnm{Swevers}, \binits{L.}},
-\bauthor{\bsnm{Liu}, \binits{J.}},
-\bauthor{\bsnm{Smagghe}, \binits{G.}}:
-\batitle{{Defense Mechanisms against Viral Infection in Drosophila: RNAi and
-  Non-RNAi}}.
-\bjtitle{Viruses}
-\bvolume{10},
-\bfpage{230}
-(\byear{2018})
-\end{barticle}
-\endbibitem
-
-%%% 50
-\bibitem{McMenamin}
-\begin{barticle}
-\bauthor{\bsnm{McMenamin}, \binits{A.J.}},
-\bauthor{\bsnm{Daughenbaugh}, \binits{K.F.}},
-\bauthor{\bsnm{Parekh}, \binits{F.}},
-\bauthor{\bsnm{Pizzorno}, \binits{M.C.}},
-\bauthor{\bsnm{Flenniken}, \binits{M.L.}}:
-\batitle{{Honey Bee and Bumble Bee Antiviral Defense}}.
-\bjtitle{Viruses}
-\bvolume{10},
-\bfpage{395}
-(\byear{2018})
-\end{barticle}
-\endbibitem
-
 %%% 51
-\bibitem{DiPasquale}
-\begin{barticle}
-\bauthor{\bsnm{Pasquale}, \binits{G.D.}},
-\bauthor{\bsnm{Salignon}, \binits{M.}},
-\bauthor{\bsnm{Conte}, \binits{Y.L.}},
-\bauthor{\bsnm{Belzunces}, \binits{L.P.}},
-\bauthor{\bsnm{Decourtye}, \binits{A.}},
-\bauthor{\bsnm{Kretzschmar}, \binits{A.}},
-\bauthor{\bsnm{Suchail}, \binits{S.}},
-\bauthor{\bsnm{Brunet}, \binits{J.-L.}},
-\bauthor{\bsnm{Alaux}, \binits{C.}}:
-\batitle{{Influence of pollen nutrition on honey bee health: Do pollen quality
-  and diversity matter?}}
-\bjtitle{PLoS ONE}
-\bvolume{8},
-\bfpage{72016}
-(\byear{2013})
-\end{barticle}
-\endbibitem
-
-%%% 52
-\bibitem{sisters}
-\begin{barticle}
-\bauthor{\bsnm{Page}, \binits{R.E.}},
-\bauthor{\bsnm{Laidlaw}, \binits{H.H.}}:
-\batitle{{Full sisters and supersisters: A terminological paradigm}}.
-\bjtitle{Anim. Behav.}
-\bvolume{36},
-\bfpage{944}--\blpage{945}
-(\byear{1988})
-\end{barticle}
-\endbibitem
-
-%%% 53
-\bibitem{multParasite}
-\begin{barticle}
-\bauthor{\bsnm{Sherman}, \binits{P.W.}},
-\bauthor{\bsnm{Seeley}, \binits{T.D.}},
-\bauthor{\bsnm{Reeve}, \binits{H.K.}}:
-\batitle{{Parasites, pathogens, and polyandry in social Hymenoptera}}.
-\bjtitle{Am. Nat}
-\bvolume{131},
-\bfpage{602}--\blpage{610}
-(\byear{1988})
-\end{barticle}
-\endbibitem
-
-%%% 54
-\bibitem{divHyp2}
-\begin{barticle}
-\bauthor{\bsnm{Crozier}, \binits{R.H.}},
-\bauthor{\bsnm{Page}, \binits{R.E.}}:
-\batitle{{On being the right size: Male contributions and multiple mating in
-  social Hymenoptera}}.
-\bjtitle{Behav. Ecol. Sociobiol.}
-\bvolume{18},
-\bfpage{105}--\blpage{115}
-(\byear{1985})
-\end{barticle}
-\endbibitem
-
-%%% 55
-\bibitem{geneticDiverse}
-\begin{barticle}
-\bauthor{\bsnm{Mattila}, \binits{H.R.}},
-\bauthor{\bsnm{Seeley}, \binits{T.D.}}:
-\batitle{{Genetic diversity in honey bee colonies enhances productivity and
-  fitness}}.
-\bjtitle{Science}
-\bvolume{317},
-\bfpage{362}--\blpage{364}
-(\byear{2007})
-\end{barticle}
-\endbibitem
-
-%%% 56
-\bibitem{geneticDiverse2}
-\begin{barticle}
-\bauthor{\bsnm{Tarpy}, \binits{D.R.}}:
-\batitle{{Genetic diversity within honeybee colonies prevents severe infections
-  and promotes colony growth}}.
-\bjtitle{Proc. R. Soc. Lond. B}
-\bvolume{270},
-\bfpage{99}--\blpage{103}
-(\byear{2003})
-\end{barticle}
-\endbibitem
-
-%%% 57
-\bibitem{patriline}
-\begin{barticle}
-\bauthor{\bsnm{Brodschneider}, \binits{R.}},
-\bauthor{\bsnm{Arnold}, \binits{G.}},
-\bauthor{\bsnm{Hrassnigg}, \binits{N.}},
-\bauthor{\bsnm{Crailsheim}, \binits{K.}}:
-\batitle{{Does patriline composition change over a honey bee queen’s
-  lifetime?}}
-\bjtitle{Insects}
-\bvolume{3},
-\bfpage{857}--\blpage{869}
-(\byear{2012})
-\end{barticle}
-\endbibitem
-
-%%% 58
-\bibitem{biased1}
-\begin{barticle}
-\bauthor{\bsnm{Hansen}, \binits{K.D.}},
-\bauthor{\bsnm{Brenner}, \binits{S.E.}},
-\bauthor{\bsnm{Dudoit}, \binits{S.}}:
-\batitle{{Biases in Illumina transcriptome sequencing caused by random hexamer
-  priming}}.
-\bjtitle{Nucleic Acids Research}
-\bvolume{38},
-\bfpage{131}
-(\byear{2010})
-\end{barticle}
-\endbibitem
-
-%%% 59
-\bibitem{biased2}
-\begin{barticle}
-\bauthor{\bsnm{Oshlack}, \binits{A.}},
-\bauthor{\bsnm{Robinson}, \binits{M.D.}},
-\bauthor{\bsnm{Young}, \binits{M.D.}}:
-\batitle{{From RNA-seq reads to differential expression results}}.
-\bjtitle{Genome Biology}
-\bvolume{11},
-\bfpage{220}
-(\byear{2010})
-\end{barticle}
-\endbibitem
-
-%%% 60
-\bibitem{biased3}
-\begin{barticle}
-\bauthor{\bsnm{McIntyre}, \binits{L.M.}},
-\bauthor{\bsnm{Lopiano}, \binits{K.K.}},
-\bauthor{\bsnm{Morse}, \binits{A.M.}},
-\bauthor{\bsnm{Amin}, \binits{V.}},
-\bauthor{\bsnm{Oberg}, \binits{A.L.}},
-\bauthor{\bsnm{Young}, \binits{L.J.}},
-\bauthor{\bsnm{Nuzhdin}, \binits{S.V.}}:
-\batitle{{RNAseq: Technical variability and sampling}}.
-\bjtitle{BMC Genomics}
-\bvolume{12},
-\bfpage{293}
-(\byear{2011})
-\end{barticle}
-\endbibitem
-
-%%% 61
-\bibitem{bigpint}
-\begin{botherref}
-\oauthor{\bsnm{Rutter}, \binits{L.}},
-\oauthor{\bsnm{Cook}, \binits{D.}}:
-{bigPint: Make big data pint-sized}.
-\url{https://lrutter.github.io/bigPint}.
-Accessed 22 November 2018
-(2018)
-\end{botherref}
-\endbibitem
-
-%%% 62
-\bibitem{fewDEGs}
-\begin{barticle}
-\bauthor{\bsnm{Merkling}, \binits{S.H.}},
-\bauthor{\bsnm{Overheul}, \binits{G.J.}},
-\bauthor{\bparticle{van} \bsnm{Mierlo}, \binits{J.T.}},
-\bauthor{\bsnm{Arends}, \binits{D.}},
-\bauthor{\bsnm{Gilissen}, \binits{C.}},
-\bauthor{\bparticle{van} \bsnm{Rij}, \binits{R.P.}}:
-\batitle{{The heat shock response restricts virus infection in Drosophila}}.
-\bjtitle{Scientific Reports}
-\bvolume{5},
-\bfpage{12758}
-(\byear{2015})
-\end{barticle}
-\endbibitem
-
-%%% 63
-\bibitem{fewDEGs2}
-\begin{barticle}
-\bauthor{\bsnm{Dostert}, \binits{C.}},
-\bauthor{\bsnm{Jouanguy}, \binits{E.}},
-\bauthor{\bsnm{Irving}, \binits{P.}},
-\bauthor{\bsnm{Troxler}, \binits{L.}},
-\bauthor{\bsnm{Galiana}, \binits{D.}},
-\bauthor{\bsnm{Hetru}, \binits{C.}},
-\bauthor{\bsnm{Hoffmann}, \binits{J.A.}},
-\bauthor{\bsnm{Imler}, \binits{J.-L.}}:
-\batitle{{The JAK-STAT signaling pathway is required but not sufficient for the
-  antiviral response of Drosophila}}.
-\bjtitle{Nature Immunology}
-\bvolume{6},
-\bfpage{946}--\blpage{953}
-(\byear{2005})
-\end{barticle}
-\endbibitem
-
-%%% 64
-\bibitem{Flenniken}
-\begin{barticle}
-\bauthor{\bsnm{Flenniken}, \binits{M.L.}},
-\bauthor{\bsnm{Andino}, \binits{R.}}:
-\batitle{{Non-specific dsRNA-mediated antiviral response in the honey bee}}.
-\bjtitle{PLoS ONE}
-\bvolume{8},
-\bfpage{77263}
-(\byear{2013})
-\end{barticle}
-\endbibitem
-
-%%% 65
 \bibitem{Brutscher}
 \begin{barticle}
 \bauthor{\bsnm{Brutscher}, \binits{L.M.}},
@@ -1068,7 +864,7 @@ Accessed 22 November 2018
 \end{barticle}
 \endbibitem
 
-%%% 66
+%%% 52
 \bibitem{Chen}
 \begin{barticle}
 \bauthor{\bsnm{Chen}, \binits{Y.P.}},
@@ -1110,7 +906,391 @@ Accessed 22 November 2018
 \end{barticle}
 \endbibitem
 
+%%% 53
+\bibitem{Ryabov}
+\begin{barticle}
+\bauthor{\bsnm{Ryabov}, \binits{E.V.}},
+\bauthor{\bsnm{Fannon}, \binits{J.M.}},
+\bauthor{\bsnm{Moore}, \binits{J.D.}},
+\bauthor{\bsnm{Wood}, \binits{G.R.}},
+\bauthor{\bsnm{Evans}, \binits{D.J.}}:
+\batitle{{The Iflaviruses Sacbrood virus and Deformed wing virus evoke
+  different transcriptional responses in the honeybee which may facilitate
+  their horizontal or vertical transmission}}.
+\bjtitle{PeerJ}
+\bvolume{4},
+\bfpage{1591}
+(\byear{2016})
+\end{barticle}
+\endbibitem
+
+%%% 54
+\bibitem{Doublet}
+\begin{barticle}
+\bauthor{\bsnm{Vincent}, \binits{D.}},
+\bauthor{\bsnm{Poeschl}, \binits{Y.}},
+\bauthor{\bsnm{Gogol-Döring}, \binits{A.}},
+\bauthor{\bsnm{Alaux}, \binits{C.}},
+\bauthor{\bsnm{Annoscia}, \binits{D.}},
+\bauthor{\bsnm{Aurori}, \binits{C.}},
+\bauthor{\bsnm{Barribeau}, \binits{S.M.}}, \betal:
+\batitle{{Unity in defence: honeybee workers exhibit conserved molecular
+  responses to diverse pathogens}}.
+\bjtitle{BMC Genomics}
+\bvolume{18},
+\bfpage{207}
+(\byear{2017})
+\end{barticle}
+\endbibitem
+
+%%% 55
+\bibitem{sugarFat}
+\begin{barticle}
+\bauthor{\bsnm{Hemphill}, \binits{W.}},
+\bauthor{\bsnm{Rivera}, \binits{O.}},
+\bauthor{\bsnm{Talbert}, \binits{M.}}:
+\batitle{{RNA-Sequencing of Drosophila melanogaster head tissue on high-sugar
+  and high-fat diets}}.
+\bjtitle{G3: Genes, Genomes, Genetics}
+\bvolume{8},
+\bfpage{279}--\blpage{290}
+(\byear{2018})
+\end{barticle}
+\endbibitem
+
+%%% 56
+\bibitem{sugarProtein}
+\begin{barticle}
+\bauthor{\bsnm{Nazario-Yepiz}, \binits{N.O.}},
+\bauthor{\bsnm{Loustalot-Laclette}, \binits{M.R.}},
+\bauthor{\bsnm{Carpinteyro-Ponce}, \binits{J.}},
+\bauthor{\bsnm{Abreu-Goodger}, \binits{C.}},
+\bauthor{\bsnm{Markow}, \binits{T.A.}}:
+\batitle{{Transcriptional responses of ecologically diverse Drosophila species
+  to larval diets differing in relative sugar and protein ratios}}.
+\bjtitle{PLoS ONE}
+\bvolume{12},
+\bfpage{0183007}
+(\byear{2017})
+\end{barticle}
+\endbibitem
+
+%%% 57
+\bibitem{jHormone}
+\begin{barticle}
+\bauthor{\bsnm{Mirth}, \binits{C.K.}},
+\bauthor{\bsnm{Tang}, \binits{H.Y.}},
+\bauthor{\bsnm{Makohon-Moore}, \binits{S.C.}},
+\bauthor{\bsnm{Salhadar}, \binits{S.}},
+\bauthor{\bsnm{Gokhale}, \binits{R.H.}},
+\bauthor{\bsnm{Warner}, \binits{R.D.}},
+\bauthor{\bsnm{Koyama}, \binits{T.}},
+\bauthor{\bsnm{Riddiford}, \binits{L.M.}},
+\bauthor{\bsnm{Shingleton}, \binits{A.W.}}:
+\batitle{{Juvenile hormone regulates body size and perturbs insulin signaling
+  in Drosophila}}.
+\bjtitle{Proceedings of the National Academy of Sciences}
+\bvolume{25},
+\bfpage{201313058}
+(\byear{2014})
+\end{barticle}
+\endbibitem
+
+%%% 58
+\bibitem{metabolismVirus}
+\begin{barticle}
+\bauthor{\bsnm{O'Neal}, \binits{S.T.}},
+\bauthor{\bsnm{Swale}, \binits{D.R.}},
+\bauthor{\bsnm{Anderson}, \binits{T.D.}}:
+\batitle{{ATP-sensitive inwardly rectifying potassium channel regulation of
+  viral infections in honey bees}}.
+\bjtitle{Sci. Rep.}
+\bvolume{7},
+\bfpage{8668}
+(\byear{2017})
+\end{barticle}
+\endbibitem
+
+%%% 59
+\bibitem{metabolismVirus1}
+\begin{barticle}
+\bauthor{\bsnm{O'Neal}, \binits{S.T.}},
+\bauthor{\bsnm{Brewster}, \binits{C.C.}},
+\bauthor{\bsnm{Bloomquist}, \binits{J.R.}},
+\bauthor{\bsnm{Anderson}, \binits{T.D.}}:
+\batitle{{Amitraz and its metabolite modulate honey bee cardiac function and
+  tolerance to viral infection}}.
+\bjtitle{J. Invertebr. Pathol.}
+\bvolume{149},
+\bfpage{119}--\blpage{126}
+(\byear{2017})
+\end{barticle}
+\endbibitem
+
+%%% 60
+\bibitem{metabolismVirusReview}
+\begin{barticle}
+\bauthor{\bsnm{Grozinger}, \binits{C.M.}},
+\bauthor{\bsnm{Flenniken}, \binits{M.L.}}:
+\batitle{{Bee viruses: Ecology, pathogenicity, and impacts}}.
+\bjtitle{Annual review of entomology}
+\bvolume{64},
+\bfpage{205}--\blpage{226}
+(\byear{2019})
+\end{barticle}
+\endbibitem
+
+%%% 61
+\bibitem{cherryReview}
+\begin{barticle}
+\bauthor{\bsnm{Xu}, \binits{J.}},
+\bauthor{\bsnm{Cherry}, \binits{S.}}:
+\batitle{{Viruses and antiviral immunity in Drosophila}}.
+\bjtitle{Dev Comp Immunol}
+\bvolume{42},
+\bfpage{67}--\blpage{84}
+(\byear{2014})
+\end{barticle}
+\endbibitem
+
+%%% 62
+\bibitem{swevers}
+\begin{barticle}
+\bauthor{\bsnm{Swevers}, \binits{L.}},
+\bauthor{\bsnm{Liu}, \binits{J.}},
+\bauthor{\bsnm{Smagghe}, \binits{G.}}:
+\batitle{{Defense Mechanisms against Viral Infection in Drosophila: RNAi and
+  Non-RNAi}}.
+\bjtitle{Viruses}
+\bvolume{10},
+\bfpage{230}
+(\byear{2018})
+\end{barticle}
+\endbibitem
+
+%%% 63
+\bibitem{McMenamin}
+\begin{barticle}
+\bauthor{\bsnm{McMenamin}, \binits{A.J.}},
+\bauthor{\bsnm{Daughenbaugh}, \binits{K.F.}},
+\bauthor{\bsnm{Parekh}, \binits{F.}},
+\bauthor{\bsnm{Pizzorno}, \binits{M.C.}},
+\bauthor{\bsnm{Flenniken}, \binits{M.L.}}:
+\batitle{{Honey Bee and Bumble Bee Antiviral Defense}}.
+\bjtitle{Viruses}
+\bvolume{10},
+\bfpage{395}
+(\byear{2018})
+\end{barticle}
+\endbibitem
+
+%%% 64
+\bibitem{sisters}
+\begin{barticle}
+\bauthor{\bsnm{Page}, \binits{R.E.}},
+\bauthor{\bsnm{Laidlaw}, \binits{H.H.}}:
+\batitle{{Full sisters and supersisters: A terminological paradigm}}.
+\bjtitle{Anim. Behav.}
+\bvolume{36},
+\bfpage{944}--\blpage{945}
+(\byear{1988})
+\end{barticle}
+\endbibitem
+
+%%% 65
+\bibitem{multParasite}
+\begin{barticle}
+\bauthor{\bsnm{Sherman}, \binits{P.W.}},
+\bauthor{\bsnm{Seeley}, \binits{T.D.}},
+\bauthor{\bsnm{Reeve}, \binits{H.K.}}:
+\batitle{{Parasites, pathogens, and polyandry in social Hymenoptera}}.
+\bjtitle{Am. Nat}
+\bvolume{131},
+\bfpage{602}--\blpage{610}
+(\byear{1988})
+\end{barticle}
+\endbibitem
+
+%%% 66
+\bibitem{divHyp2}
+\begin{barticle}
+\bauthor{\bsnm{Crozier}, \binits{R.H.}},
+\bauthor{\bsnm{Page}, \binits{R.E.}}:
+\batitle{{On being the right size: Male contributions and multiple mating in
+  social Hymenoptera}}.
+\bjtitle{Behav. Ecol. Sociobiol.}
+\bvolume{18},
+\bfpage{105}--\blpage{115}
+(\byear{1985})
+\end{barticle}
+\endbibitem
+
 %%% 67
+\bibitem{geneticDiverse}
+\begin{barticle}
+\bauthor{\bsnm{Mattila}, \binits{H.R.}},
+\bauthor{\bsnm{Seeley}, \binits{T.D.}}:
+\batitle{{Genetic diversity in honey bee colonies enhances productivity and
+  fitness}}.
+\bjtitle{Science}
+\bvolume{317},
+\bfpage{362}--\blpage{364}
+(\byear{2007})
+\end{barticle}
+\endbibitem
+
+%%% 68
+\bibitem{geneticDiverse2}
+\begin{barticle}
+\bauthor{\bsnm{Tarpy}, \binits{D.R.}}:
+\batitle{{Genetic diversity within honeybee colonies prevents severe infections
+  and promotes colony growth}}.
+\bjtitle{Proc. R. Soc. Lond. B}
+\bvolume{270},
+\bfpage{99}--\blpage{103}
+(\byear{2003})
+\end{barticle}
+\endbibitem
+
+%%% 69
+\bibitem{patriline}
+\begin{barticle}
+\bauthor{\bsnm{Brodschneider}, \binits{R.}},
+\bauthor{\bsnm{Arnold}, \binits{G.}},
+\bauthor{\bsnm{Hrassnigg}, \binits{N.}},
+\bauthor{\bsnm{Crailsheim}, \binits{K.}}:
+\batitle{{Does patriline composition change over a honey bee queen’s
+  lifetime?}}
+\bjtitle{Insects}
+\bvolume{3},
+\bfpage{857}--\blpage{869}
+(\byear{2012})
+\end{barticle}
+\endbibitem
+
+%%% 70
+\bibitem{biased1}
+\begin{barticle}
+\bauthor{\bsnm{Hansen}, \binits{K.D.}},
+\bauthor{\bsnm{Brenner}, \binits{S.E.}},
+\bauthor{\bsnm{Dudoit}, \binits{S.}}:
+\batitle{{Biases in Illumina transcriptome sequencing caused by random hexamer
+  priming}}.
+\bjtitle{Nucleic Acids Research}
+\bvolume{38},
+\bfpage{131}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 71
+\bibitem{biased2}
+\begin{barticle}
+\bauthor{\bsnm{Oshlack}, \binits{A.}},
+\bauthor{\bsnm{Robinson}, \binits{M.D.}},
+\bauthor{\bsnm{Young}, \binits{M.D.}}:
+\batitle{{From RNA-seq reads to differential expression results}}.
+\bjtitle{Genome Biology}
+\bvolume{11},
+\bfpage{220}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 72
+\bibitem{biased3}
+\begin{barticle}
+\bauthor{\bsnm{McIntyre}, \binits{L.M.}},
+\bauthor{\bsnm{Lopiano}, \binits{K.K.}},
+\bauthor{\bsnm{Morse}, \binits{A.M.}},
+\bauthor{\bsnm{Amin}, \binits{V.}},
+\bauthor{\bsnm{Oberg}, \binits{A.L.}},
+\bauthor{\bsnm{Young}, \binits{L.J.}},
+\bauthor{\bsnm{Nuzhdin}, \binits{S.V.}}:
+\batitle{{RNAseq: Technical variability and sampling}}.
+\bjtitle{BMC Genomics}
+\bvolume{12},
+\bfpage{293}
+(\byear{2011})
+\end{barticle}
+\endbibitem
+
+%%% 73
+\bibitem{R}
+\begin{bbook}
+\bauthor{\bsnm{{R Development Core Team}}}:
+\bbtitle{R: A Language and Environment for Statistical Computing}.
+\bpublisher{R Foundation for Statistical Computing},
+\blocation{Vienna, Austria}
+(\byear{2008}).
+\bcomment{R Foundation for Statistical Computing. {ISBN} 3-900051-07-0}.
+\burl{http://www.R-project.org}
+\end{bbook}
+\endbibitem
+
+%%% 74
+\bibitem{bigpint}
+\begin{botherref}
+\oauthor{\bsnm{Rutter}, \binits{L.}},
+\oauthor{\bsnm{Cook}, \binits{D.}}:
+{bigPint: Make big data pint-sized}.
+\url{https://lrutter.github.io/bigPint}.
+Accessed 22 November 2018
+(2018)
+\end{botherref}
+\endbibitem
+
+%%% 75
+\bibitem{fewDEGs}
+\begin{barticle}
+\bauthor{\bsnm{Merkling}, \binits{S.H.}},
+\bauthor{\bsnm{Overheul}, \binits{G.J.}},
+\bauthor{\bparticle{van} \bsnm{Mierlo}, \binits{J.T.}},
+\bauthor{\bsnm{Arends}, \binits{D.}},
+\bauthor{\bsnm{Gilissen}, \binits{C.}},
+\bauthor{\bparticle{van} \bsnm{Rij}, \binits{R.P.}}:
+\batitle{{The heat shock response restricts virus infection in Drosophila}}.
+\bjtitle{Scientific Reports}
+\bvolume{5},
+\bfpage{12758}
+(\byear{2015})
+\end{barticle}
+\endbibitem
+
+%%% 76
+\bibitem{fewDEGs2}
+\begin{barticle}
+\bauthor{\bsnm{Dostert}, \binits{C.}},
+\bauthor{\bsnm{Jouanguy}, \binits{E.}},
+\bauthor{\bsnm{Irving}, \binits{P.}},
+\bauthor{\bsnm{Troxler}, \binits{L.}},
+\bauthor{\bsnm{Galiana}, \binits{D.}},
+\bauthor{\bsnm{Hetru}, \binits{C.}},
+\bauthor{\bsnm{Hoffmann}, \binits{J.A.}},
+\bauthor{\bsnm{Imler}, \binits{J.-L.}}:
+\batitle{{The JAK-STAT signaling pathway is required but not sufficient for the
+  antiviral response of Drosophila}}.
+\bjtitle{Nature Immunology}
+\bvolume{6},
+\bfpage{946}--\blpage{953}
+(\byear{2005})
+\end{barticle}
+\endbibitem
+
+%%% 77
+\bibitem{Flenniken}
+\begin{barticle}
+\bauthor{\bsnm{Flenniken}, \binits{M.L.}},
+\bauthor{\bsnm{Andino}, \binits{R.}}:
+\batitle{{Non-specific dsRNA-mediated antiviral response in the honey bee}}.
+\bjtitle{PLoS ONE}
+\bvolume{8},
+\bfpage{77263}
+(\byear{2013})
+\end{barticle}
+\endbibitem
+
+%%% 78
 \bibitem{edger}
 \begin{barticle}
 \bauthor{\bsnm{Robinson}, \binits{M.D.}},
@@ -1125,7 +1305,7 @@ Accessed 22 November 2018
 \end{barticle}
 \endbibitem
 
-%%% 68
+%%% 79
 \bibitem{resTol2}
 \begin{barticle}
 \bauthor{\bsnm{Carval}, \binits{D.}},
@@ -1139,7 +1319,7 @@ Accessed 22 November 2018
 \end{barticle}
 \endbibitem
 
-%%% 69
+%%% 80
 \bibitem{resTol4}
 \begin{barticle}
 \bauthor{\bsnm{Moret}, \binits{Y.}}:
@@ -1152,7 +1332,7 @@ Accessed 22 November 2018
 \end{barticle}
 \endbibitem
 
-%%% 70
+%%% 81
 \bibitem{resTol5}
 \begin{barticle}
 \bauthor{\bsnm{Mauricio}, \binits{R.}},
@@ -1167,7 +1347,7 @@ Accessed 22 November 2018
 \end{barticle}
 \endbibitem
 
-%%% 71
+%%% 82
 \bibitem{resTol6}
 \begin{barticle}
 \bauthor{\bsnm{Fornoni}, \binits{J.}},
@@ -1183,7 +1363,7 @@ Accessed 22 November 2018
 \end{barticle}
 \endbibitem
 
-%%% 72
+%%% 83
 \bibitem{resTol7}
 \begin{barticle}
 \bauthor{\bsnm{Restif}, \binits{O.}},
@@ -1197,7 +1377,7 @@ Accessed 22 November 2018
 \end{barticle}
 \endbibitem
 
-%%% 73
+%%% 84
 \bibitem{resTol8}
 \begin{barticle}
 \bauthor{\bsnm{Chambers}, \binits{M.C.}},
@@ -1211,7 +1391,7 @@ Accessed 22 November 2018
 \end{barticle}
 \endbibitem
 
-%%% 74
+%%% 85
 \bibitem{resTol11}
 \begin{barticle}
 \bauthor{\bsnm{Xu}, \binits{J.}},
@@ -1230,25 +1410,7 @@ Accessed 22 November 2018
 \end{barticle}
 \endbibitem
 
-%%% 75
-\bibitem{Ryabov}
-\begin{barticle}
-\bauthor{\bsnm{Ryabov}, \binits{E.V.}},
-\bauthor{\bsnm{Fannon}, \binits{J.M.}},
-\bauthor{\bsnm{Moore}, \binits{J.D.}},
-\bauthor{\bsnm{Wood}, \binits{G.R.}},
-\bauthor{\bsnm{Evans}, \binits{D.J.}}:
-\batitle{{The Iflaviruses Sacbrood virus and Deformed wing virus evoke
-  different transcriptional responses in the honeybee which may facilitate
-  their horizontal or vertical transmission}}.
-\bjtitle{PeerJ}
-\bvolume{4},
-\bfpage{1591}
-(\byear{2016})
-\end{barticle}
-\endbibitem
-
-%%% 76
+%%% 86
 \bibitem{tissueLevel}
 \begin{barticle}
 \bauthor{\bsnm{Johnson}, \binits{B.R.}},
@@ -1263,7 +1425,7 @@ Accessed 22 November 2018
 \end{barticle}
 \endbibitem
 
-%%% 77
+%%% 87
 \bibitem{bh}
 \begin{barticle}
 \bauthor{\bsnm{Thissen}, \binits{D.}},
@@ -1278,7 +1440,22 @@ Accessed 22 November 2018
 \end{barticle}
 \endbibitem
 
-%%% 78
+%%% 88
+\bibitem{ageMatters}
+\begin{barticle}
+\bauthor{\bsnm{Traynor}, \binits{K.S.}},
+\bauthor{\bsnm{Conte}, \binits{Y.L.}},
+\bauthor{\bsnm{Page}, \binits{R.E.}}:
+\batitle{{Age matters: pheromone profiles of larvae differentially influence
+  foraging behaviour in the honeybee, Apis mellifera}}.
+\bjtitle{Animal behaviour}
+\bvolume{99},
+\bfpage{1}--\blpage{8}
+(\byear{2015})
+\end{barticle}
+\endbibitem
+
+%%% 89
 \bibitem{hbGenome}
 \begin{barticle}
 \bauthor{\bsnm{Consortium}, \binits{H.B.G.S.}}:
@@ -1291,7 +1468,7 @@ Accessed 22 November 2018
 \end{barticle}
 \endbibitem
 
-%%% 79
+%%% 90
 \bibitem{hymenopteraDB}
 \begin{barticle}
 \bauthor{\bsnm{Elsik}, \binits{C.G.}},
@@ -1310,7 +1487,7 @@ Accessed 22 November 2018
 \end{barticle}
 \endbibitem
 
-%%% 80
+%%% 91
 \bibitem{gsnap}
 \begin{barticle}
 \bauthor{\bsnm{Wu}, \binits{T.D.}},
@@ -1327,7 +1504,7 @@ Accessed 22 November 2018
 \end{barticle}
 \endbibitem
 
-%%% 81
+%%% 92
 \bibitem{deseq2}
 \begin{barticle}
 \bauthor{\bsnm{Love}, \binits{M.I.}},
@@ -1342,7 +1519,7 @@ Accessed 22 November 2018
 \end{barticle}
 \endbibitem
 
-%%% 82
+%%% 93
 \bibitem{limma}
 \begin{barticle}
 \bauthor{\bsnm{Ritchie}, \binits{M.E.}},
@@ -1361,7 +1538,7 @@ Accessed 22 November 2018
 \end{barticle}
 \endbibitem
 
-%%% 83
+%%% 94
 \bibitem{benjamini}
 \begin{barticle}
 \bauthor{\bsnm{Benjamini}, \binits{Y.}},
@@ -1375,7 +1552,7 @@ Accessed 22 November 2018
 \end{barticle}
 \endbibitem
 
-%%% 84
+%%% 95
 \bibitem{euler}
 \begin{botherref}
 \oauthor{\bsnm{Larsson}, \binits{J.}}:
@@ -1386,7 +1563,7 @@ R package version 4.0.0.
 \end{botherref}
 \endbibitem
 
-%%% 85
+%%% 96
 \bibitem{pca}
 \begin{bbook}
 \bauthor{\bsnm{{I.T. Jolliffe}}}:
@@ -1397,7 +1574,7 @@ R package version 4.0.0.
 \end{bbook}
 \endbibitem
 
-%%% 86
+%%% 97
 \bibitem{origPCP}
 \begin{barticle}
 \bauthor{\bsnm{Inselberg}, \binits{A.}}:
@@ -1409,7 +1586,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 87
+%%% 98
 \bibitem{scatMat}
 \begin{bbook}
 \bauthor{\bsnm{{W.S. Cleveland}}}:
@@ -1420,7 +1597,7 @@ R package version 4.0.0.
 \end{bbook}
 \endbibitem
 
-%%% 88
+%%% 99
 \bibitem{jds}
 \begin{barticle}
 \bauthor{\bsnm{Cook}, \binits{D.}},
@@ -1437,7 +1614,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 89
+%%% 100
 \bibitem{Chandrasekhar}
 \begin{barticle}
 \bauthor{\bsnm{Chandrasekhar}, \binits{T.}},
@@ -1451,7 +1628,7 @@ R package version 4.0.0.
 \end{barticle}
 \endbibitem
 
-%%% 90
+%%% 101
 \bibitem{deSouto}
 \begin{botherref}
 \oauthor{\bparticle{de~Souto D.~de} \bsnm{Araujo}, \binits{M.}},
@@ -1467,7 +1644,7 @@ International Joint Conference on Neural Networks,
 \end{botherref}
 \endbibitem
 
-%%% 91
+%%% 102
 \bibitem{davidBio}
 \begin{barticle}
 \bauthor{\bsnm{Huang}, \binits{D.W.}},
@@ -1482,7 +1659,7 @@ International Joint Conference on Neural Networks,
 \end{barticle}
 \endbibitem
 
-%%% 92
+%%% 103
 \bibitem{davidBio2}
 \begin{barticle}
 \bauthor{\bsnm{Huang}, \binits{D.W.}},
@@ -1497,7 +1674,7 @@ International Joint Conference on Neural Networks,
 \end{barticle}
 \endbibitem
 
-%%% 93
+%%% 104
 \bibitem{revigo}
 \begin{barticle}
 \bauthor{\bsnm{Supek}, \binits{F.}},
@@ -1512,7 +1689,7 @@ International Joint Conference on Neural Networks,
 \end{barticle}
 \endbibitem
 
-%%% 94
+%%% 105
 \bibitem{geo}
 \begin{barticle}
 \bauthor{\bsnm{Edgar}, \binits{R.}},
@@ -1527,7 +1704,7 @@ International Joint Conference on Neural Networks,
 \end{barticle}
 \endbibitem
 
-%%% 95
+%%% 106
 \bibitem{semantic}
 \begin{barticle}
 \bauthor{\bsnm{Schlicker}, \binits{A.}},
@@ -1723,18 +1900,20 @@ International Joint Conference on Neural Networks,
 </bibl>
 
 <bibl id="B11">
-  <title><p>{Interacting stressors matter: Diet quality and virus infection in
-  honey bee health}</p></title>
+  <title><p>{Interacting stressors matter: diet quality and virus infection in
+  honeybee health}</p></title>
   <aug>
     <au><snm>Dolezal</snm><fnm>A.G.</fnm></au>
     <au><snm>Carrillo Tripp</snm><fnm>J.</fnm></au>
-    <au><snm>Judd</snm><fnm>T.</fnm></au>
-    <au><snm>Miller</snm><fnm>A.</fnm></au>
-    <au><snm>Bonning</snm><fnm>B.</fnm></au>
-    <au><snm>Toth</snm><fnm>A.</fnm></au>
+    <au><snm>Judd</snm><fnm>T.M.</fnm></au>
+    <au><snm>Miller</snm><fnm>WA</fnm></au>
+    <au><snm>Bonning</snm><fnm>B.C.</fnm></au>
+    <au><snm>Toth</snm><fnm>A.L.</fnm></au>
   </aug>
-  <source>In prep</source>
-  <pubdate>2018</pubdate>
+  <source>Royal society open science</source>
+  <pubdate>2019</pubdate>
+  <volume>6</volume>
+  <fpage>181803</fpage>
 </bibl>
 
 <bibl id="B12">
@@ -1925,20 +2104,69 @@ International Joint Conference on Neural Networks,
 </bibl>
 
 <bibl id="B26">
-  <title><p>{Biology and control of Varroa destructor}</p></title>
+  <title><p>{Influence of pollen nutrition on honey bee health: Do pollen
+  quality and diversity matter?}</p></title>
+  <aug>
+    <au><snm>Pasquale</snm><fnm>G.D.</fnm></au>
+    <au><snm>Salignon</snm><fnm>M.</fnm></au>
+    <au><snm>Conte</snm><fnm>Y.L.</fnm></au>
+    <au><snm>Belzunces</snm><fnm>L.P.</fnm></au>
+    <au><snm>Decourtye</snm><fnm>A.</fnm></au>
+    <au><snm>Kretzschmar</snm><fnm>A.</fnm></au>
+    <au><snm>Suchail</snm><fnm>S.</fnm></au>
+    <au><snm>Brunet</snm><fnm>J L.</fnm></au>
+    <au><snm>Alaux</snm><fnm>C.</fnm></au>
+  </aug>
+  <source>PLoS ONE</source>
+  <pubdate>2013</pubdate>
+  <volume>8</volume>
+  <fpage>e72016</fpage>
+</bibl>
+
+<bibl id="B27">
+  <title><p>{Biology and control of Varroa destructor. Journal of invertebrate
+  pathology}</p></title>
   <aug>
     <au><snm>Rosenkranz</snm><fnm>P.</fnm></au>
     <au><snm>Aumeier</snm><fnm>P.</fnm></au>
     <au><snm>Ziegelmann</snm><fnm>B.</fnm></au>
   </aug>
-  <source>J Invertebr Pathol</source>
+  <source>Journal of invertebrate pathology</source>
   <pubdate>2010</pubdate>
   <volume>103</volume>
   <fpage>S96</fpage>
   <lpage>S119</lpage>
 </bibl>
 
-<bibl id="B27">
+<bibl id="B28">
+  <title><p>{The detection of acute paralysis virus in Varroa jacobsoni by the
+  use of a simple indirect ELISA}</p></title>
+  <aug>
+    <au><snm>Allen</snm><fnm>M.F.</fnm></au>
+    <au><snm>Ball</snm><fnm>B.V.</fnm></au>
+    <au><snm>White</snm><fnm>R.F.</fnm></au>
+    <au><snm>Antoniw</snm><fnm>J.F.</fnm></au>
+  </aug>
+  <source>Apicult. Res.</source>
+  <pubdate>1986</pubdate>
+  <volume>25</volume>
+  <fpage>100–105</fpage>
+</bibl>
+
+<bibl id="B29">
+  <title><p>{RT-PCR analysis of deformed wing virus in honeybees (Apis
+  mellifera) and mites (Varroa destructor)}</p></title>
+  <aug>
+    <au><snm>Yue</snm><fnm>C.</fnm></au>
+    <au><snm>Genersch</snm><fnm>E.</fnm></au>
+  </aug>
+  <source>J. Gen. Virol.</source>
+  <pubdate>2005</pubdate>
+  <volume>86</volume>
+  <fpage>3419–3424</fpage>
+</bibl>
+
+<bibl id="B30">
   <title><p>{The influence of the mite Varroa Jacobsoni Oud. on the protein
   concentration and the haemolymph volume of the brood of worker bees and
   drones of the honey bee Apis Mellifera L}</p></title>
@@ -1953,7 +2181,45 @@ International Joint Conference on Neural Networks,
   <lpage>436</lpage>
 </bibl>
 
-<bibl id="B28">
+<bibl id="B31">
+  <title><p>{Varroa destructor feeds primarily on honey bee fat body tissue and
+  not hemolymph}</p></title>
+  <aug>
+    <au><snm>Ramsey</snm><fnm>S.D.</fnm></au>
+    <au><snm>Ochoa</snm><fnm>R.</fnm></au>
+    <au><snm>Bauchan</snm><fnm>G.</fnm></au>
+    <au><snm>Gulbronson</snm><fnm>C.</fnm></au>
+    <au><snm>Mowery</snm><fnm>J.D.</fnm></au>
+    <au><snm>Cohen</snm><fnm>A.</fnm></au>
+    <au><snm>Lim</snm><fnm>D.</fnm></au>
+    <au><snm>Joklik</snm><fnm>J.</fnm></au>
+    <au><snm>Cicero</snm><fnm>J.M.</fnm></au>
+    <au><snm>Ellis</snm><fnm>J.D.</fnm></au>
+    <au><snm>Hawthorne</snm><fnm>D.</fnm></au>
+    <au><snm>vanEngelsdorp</snm><fnm>D.</fnm></au>
+  </aug>
+  <source>PNAS</source>
+  <pubdate>2019</pubdate>
+</bibl>
+
+<bibl id="B32">
+  <title><p>{How Varroa Parasitism Affects the Immunological and Nutritional
+  Status of the Honey Bee, Apis mellifera}</p></title>
+  <aug>
+    <au><snm>Aronstein</snm><fnm>K.A.</fnm></au>
+    <au><snm>Saldivar</snm><fnm>E.</fnm></au>
+    <au><snm>Vega</snm><fnm>R.</fnm></au>
+    <au><snm>Westmiller</snm><fnm>S.</fnm></au>
+    <au><snm>Douglas</snm><fnm>A.E.</fnm></au>
+  </aug>
+  <source>Insects</source>
+  <pubdate>2012</pubdate>
+  <volume>3</volume>
+  <fpage>601</fpage>
+  <lpage>-615</lpage>
+</bibl>
+
+<bibl id="B33">
   <title><p>{Intricate transmission routes and interactions between
   picorna-like viruses (Kashmir bee virus and sacbrood virus) with the honeybee
   host and the parasitic varroa mite}</p></title>
@@ -1970,7 +2236,7 @@ International Joint Conference on Neural Networks,
   <lpage>2289</lpage>
 </bibl>
 
-<bibl id="B29">
+<bibl id="B34">
   <title><p>{Effects of parasitization by Varroa destructor on survivorship and
   physiological traits of Apis mellifera in correlation with viral incidence
   and microbial challenge}</p></title>
@@ -1985,7 +2251,7 @@ International Joint Conference on Neural Networks,
   <lpage>412</lpage>
 </bibl>
 
-<bibl id="B30">
+<bibl id="B35">
   <title><p>{Impact of an ectoparasite on the immunity and pathology of an
   invertebrate: Evidence for host immunosuppression and viral
   amplification}</p></title>
@@ -2000,7 +2266,7 @@ International Joint Conference on Neural Networks,
   <lpage>7475</lpage>
 </bibl>
 
-<bibl id="B31">
+<bibl id="B36">
   <title><p>{Lower virus infections in Varroa destructor-infested and
   uninfested brood and adult honey bees (Apis mellifera) of a low mite
   population growth colony compared to a high mite population growth
@@ -2017,7 +2283,7 @@ International Joint Conference on Neural Networks,
   <fpage>e0118885</fpage>
 </bibl>
 
-<bibl id="B32">
+<bibl id="B37">
   <title><p>{Honey bee viruses}</p></title>
   <aug>
     <au><snm>Chen</snm><fnm>Y.P.</fnm></au>
@@ -2030,7 +2296,7 @@ International Joint Conference on Neural Networks,
   <lpage>80</lpage>
 </bibl>
 
-<bibl id="B33">
+<bibl id="B38">
   <title><p>{Dicistroviruses}</p></title>
   <aug>
     <au><snm>Bonning</snm><fnm>B.C.</fnm></au>
@@ -2043,7 +2309,7 @@ International Joint Conference on Neural Networks,
   <lpage>150</lpage>
 </bibl>
 
-<bibl id="B34">
+<bibl id="B39">
   <title><p>{IAPV, a bee-affecting virus associated with Colony Collapse
   Disorder can be silenced by dsRNA ingestion}</p></title>
   <aug>
@@ -2062,7 +2328,7 @@ International Joint Conference on Neural Networks,
   <lpage>60</lpage>
 </bibl>
 
-<bibl id="B35">
+<bibl id="B40">
   <title><p>{In vivo and in vitro infection dynamics of honey bee
   viruses}</p></title>
   <aug>
@@ -2079,7 +2345,7 @@ International Joint Conference on Neural Networks,
   <fpage>22265</fpage>
 </bibl>
 
-<bibl id="B36">
+<bibl id="B41">
   <title><p>{Israeli acute paralysis virus: Epidemiology, pathogenesis and
   implications for honey bee health}</p></title>
   <aug>
@@ -2120,7 +2386,7 @@ International Joint Conference on Neural Networks,
   <fpage>e1004261</fpage>
 </bibl>
 
-<bibl id="B37">
+<bibl id="B42">
   <title><p>{Nutrition, immunity and viral infections in honey
   bees}</p></title>
   <aug>
@@ -2134,7 +2400,7 @@ International Joint Conference on Neural Networks,
   <lpage>176</lpage>
 </bibl>
 
-<bibl id="B38">
+<bibl id="B43">
   <title><p>{The effect of diet on protein concentration, hypopharyngeal gland
   development and virus load in worker honey bees (Apis mellifera
   L.)}</p></title>
@@ -2150,7 +2416,7 @@ International Joint Conference on Neural Networks,
   <fpage>1184–1191</fpage>
 </bibl>
 
-<bibl id="B39">
+<bibl id="B44">
   <title><p>Interactions between Risk Factors in Honey Bees</p></title>
   <aug>
     <au><snm>Le Conte</snm><fnm>Y</fnm></au>
@@ -2164,7 +2430,7 @@ International Joint Conference on Neural Networks,
   <lpage>222</lpage>
 </bibl>
 
-<bibl id="B40">
+<bibl id="B45">
   <title><p>{Elucidating the mechanisms underlying the beneficial health
   effects of dietary pollen on honey bees (Apis mellifera) infested by Varroa
   mite ectoparasites}</p></title>
@@ -2183,7 +2449,7 @@ International Joint Conference on Neural Networks,
   <fpage>6258</fpage>
 </bibl>
 
-<bibl id="B41">
+<bibl id="B46">
   <title><p>{Honey bee antiviral immune barriers as affected by multiple stress
   factors: A novel paradigm to interpret colony health decline and
   collapse}</p></title>
@@ -2197,7 +2463,21 @@ International Joint Conference on Neural Networks,
   <fpage>159</fpage>
 </bibl>
 
-<bibl id="B42">
+<bibl id="B47">
+  <title><p>{Disease tolerance as a defense strategy}</p></title>
+  <aug>
+    <au><snm>Medzhitov</snm><fnm>R.</fnm></au>
+    <au><snm>Schneider</snm><fnm>D.S.</fnm></au>
+    <au><snm>Soares</snm><fnm>M.P.</fnm></au>
+  </aug>
+  <source>Science</source>
+  <pubdate>2012</pubdate>
+  <volume>335</volume>
+  <fpage>936</fpage>
+  <lpage>-941</lpage>
+</bibl>
+
+<bibl id="B48">
   <title><p>{Resistance and tolerance: The role of nutrients on pathogen
   dynamics and infection outcomes in an insect host}</p></title>
   <aug>
@@ -2211,7 +2491,7 @@ International Joint Conference on Neural Networks,
   <lpage>510</lpage>
 </bibl>
 
-<bibl id="B43">
+<bibl id="B49">
   <title><p>{Nutrigenomics in honey bees: digital gene expression analysis of
   pollen's nutritive effects on healthy and varroa-parasitized
   bees}</p></title>
@@ -2227,7 +2507,7 @@ International Joint Conference on Neural Networks,
   <fpage>496</fpage>
 </bibl>
 
-<bibl id="B44">
+<bibl id="B50">
   <title><p>{Parallel epigenomic and transcriptomic responses to viral
   infection in honey bees (Apis mellifera)}</p></title>
   <aug>
@@ -2243,307 +2523,7 @@ International Joint Conference on Neural Networks,
   <fpage>e1004713</fpage>
 </bibl>
 
-<bibl id="B45">
-  <title><p>{RNA-Sequencing of Drosophila melanogaster head tissue on
-  high-sugar and high-fat diets}</p></title>
-  <aug>
-    <au><snm>Hemphill</snm><fnm>W.</fnm></au>
-    <au><snm>Rivera</snm><fnm>O.</fnm></au>
-    <au><snm>Talbert</snm><fnm>M.</fnm></au>
-  </aug>
-  <source>G3: Genes, Genomes, Genetics</source>
-  <pubdate>2018</pubdate>
-  <volume>8</volume>
-  <fpage>279</fpage>
-  <lpage>290</lpage>
-</bibl>
-
-<bibl id="B46">
-  <title><p>{Transcriptional responses of ecologically diverse Drosophila
-  species to larval diets differing in relative sugar and protein
-  ratios}</p></title>
-  <aug>
-    <au><snm>Nazario Yepiz</snm><fnm>N.O.</fnm></au>
-    <au><snm>Loustalot Laclette</snm><fnm>M.R.</fnm></au>
-    <au><snm>Carpinteyro Ponce</snm><fnm>J.</fnm></au>
-    <au><snm>Abreu Goodger</snm><fnm>C.</fnm></au>
-    <au><snm>Markow</snm><fnm>T.A.</fnm></au>
-  </aug>
-  <source>PLoS ONE</source>
-  <pubdate>2017</pubdate>
-  <volume>12</volume>
-  <fpage>e0183007</fpage>
-</bibl>
-
-<bibl id="B47">
-  <title><p>{Juvenile hormone regulates body size and perturbs insulin
-  signaling in Drosophila}</p></title>
-  <aug>
-    <au><snm>Mirth</snm><fnm>C.K.</fnm></au>
-    <au><snm>Tang</snm><fnm>H.Y.</fnm></au>
-    <au><snm>Makohon Moore</snm><fnm>S.C.</fnm></au>
-    <au><snm>Salhadar</snm><fnm>S.</fnm></au>
-    <au><snm>Gokhale</snm><fnm>R.H.</fnm></au>
-    <au><snm>Warner</snm><fnm>R.D.</fnm></au>
-    <au><snm>Koyama</snm><fnm>T.</fnm></au>
-    <au><snm>Riddiford</snm><fnm>L.M.</fnm></au>
-    <au><snm>Shingleton</snm><fnm>A.W.</fnm></au>
-  </aug>
-  <source>Proceedings of the National Academy of Sciences</source>
-  <pubdate>2014</pubdate>
-  <volume>25</volume>
-  <fpage>201313058</fpage>
-</bibl>
-
-<bibl id="B48">
-  <title><p>{Viruses and antiviral immunity in Drosophila}</p></title>
-  <aug>
-    <au><snm>Xu</snm><fnm>J.</fnm></au>
-    <au><snm>Cherry</snm><fnm>S.</fnm></au>
-  </aug>
-  <source>Dev Comp Immunol</source>
-  <pubdate>2014</pubdate>
-  <volume>42</volume>
-  <fpage>67–84</fpage>
-</bibl>
-
-<bibl id="B49">
-  <title><p>{Defense Mechanisms against Viral Infection in Drosophila: RNAi and
-  Non-RNAi}</p></title>
-  <aug>
-    <au><snm>Swevers</snm><fnm>L.</fnm></au>
-    <au><snm>Liu</snm><fnm>J.</fnm></au>
-    <au><snm>Smagghe</snm><fnm>G.</fnm></au>
-  </aug>
-  <source>Viruses</source>
-  <pubdate>2018</pubdate>
-  <volume>10</volume>
-  <fpage>230</fpage>
-</bibl>
-
-<bibl id="B50">
-  <title><p>{Honey Bee and Bumble Bee Antiviral Defense}</p></title>
-  <aug>
-    <au><snm>McMenamin</snm><fnm>A.J.</fnm></au>
-    <au><snm>Daughenbaugh</snm><fnm>K.F.</fnm></au>
-    <au><snm>Parekh</snm><fnm>F.</fnm></au>
-    <au><snm>Pizzorno</snm><fnm>M.C.</fnm></au>
-    <au><snm>Flenniken</snm><fnm>M.L.</fnm></au>
-  </aug>
-  <source>Viruses</source>
-  <pubdate>2018</pubdate>
-  <volume>10</volume>
-  <fpage>395</fpage>
-</bibl>
-
 <bibl id="B51">
-  <title><p>{Influence of pollen nutrition on honey bee health: Do pollen
-  quality and diversity matter?}</p></title>
-  <aug>
-    <au><snm>Pasquale</snm><fnm>G.D.</fnm></au>
-    <au><snm>Salignon</snm><fnm>M.</fnm></au>
-    <au><snm>Conte</snm><fnm>Y.L.</fnm></au>
-    <au><snm>Belzunces</snm><fnm>L.P.</fnm></au>
-    <au><snm>Decourtye</snm><fnm>A.</fnm></au>
-    <au><snm>Kretzschmar</snm><fnm>A.</fnm></au>
-    <au><snm>Suchail</snm><fnm>S.</fnm></au>
-    <au><snm>Brunet</snm><fnm>J L.</fnm></au>
-    <au><snm>Alaux</snm><fnm>C.</fnm></au>
-  </aug>
-  <source>PLoS ONE</source>
-  <pubdate>2013</pubdate>
-  <volume>8</volume>
-  <fpage>e72016</fpage>
-</bibl>
-
-<bibl id="B52">
-  <title><p>{Full sisters and supersisters: A terminological
-  paradigm}</p></title>
-  <aug>
-    <au><snm>Page</snm><fnm>R.E.</fnm></au>
-    <au><snm>Laidlaw</snm><fnm>H.H.</fnm></au>
-  </aug>
-  <source>Anim. Behav.</source>
-  <pubdate>1988</pubdate>
-  <volume>36</volume>
-  <fpage>944–945</fpage>
-</bibl>
-
-<bibl id="B53">
-  <title><p>{Parasites, pathogens, and polyandry in social
-  Hymenoptera}</p></title>
-  <aug>
-    <au><snm>Sherman</snm><fnm>P.W.</fnm></au>
-    <au><snm>Seeley</snm><fnm>T.D.</fnm></au>
-    <au><snm>Reeve</snm><fnm>H.K.</fnm></au>
-  </aug>
-  <source>Am. Nat</source>
-  <pubdate>1988</pubdate>
-  <volume>131</volume>
-  <fpage>602–610</fpage>
-</bibl>
-
-<bibl id="B54">
-  <title><p>{On being the right size: Male contributions and multiple mating in
-  social Hymenoptera}</p></title>
-  <aug>
-    <au><snm>Crozier</snm><fnm>R.H.</fnm></au>
-    <au><snm>Page</snm><fnm>R.E.</fnm></au>
-  </aug>
-  <source>Behav. Ecol. Sociobiol.</source>
-  <pubdate>1985</pubdate>
-  <volume>18</volume>
-  <fpage>105–115</fpage>
-</bibl>
-
-<bibl id="B55">
-  <title><p>{Genetic diversity in honey bee colonies enhances productivity and
-  fitness}</p></title>
-  <aug>
-    <au><snm>Mattila</snm><fnm>H.R.</fnm></au>
-    <au><snm>Seeley</snm><fnm>T.D.</fnm></au>
-  </aug>
-  <source>Science</source>
-  <pubdate>2007</pubdate>
-  <volume>317</volume>
-  <fpage>362</fpage>
-  <lpage>364</lpage>
-</bibl>
-
-<bibl id="B56">
-  <title><p>{Genetic diversity within honeybee colonies prevents severe
-  infections and promotes colony growth}</p></title>
-  <aug>
-    <au><snm>Tarpy</snm><fnm>D.R.</fnm></au>
-  </aug>
-  <source>Proc. R. Soc. Lond. B</source>
-  <pubdate>2003</pubdate>
-  <volume>270</volume>
-  <fpage>99</fpage>
-  <lpage>103</lpage>
-</bibl>
-
-<bibl id="B57">
-  <title><p>{Does patriline composition change over a honey bee queen’s
-  lifetime?}</p></title>
-  <aug>
-    <au><snm>Brodschneider</snm><fnm>R.</fnm></au>
-    <au><snm>Arnold</snm><fnm>G.</fnm></au>
-    <au><snm>Hrassnigg</snm><fnm>N.</fnm></au>
-    <au><snm>Crailsheim</snm><fnm>K.</fnm></au>
-  </aug>
-  <source>Insects</source>
-  <pubdate>2012</pubdate>
-  <volume>3</volume>
-  <fpage>857–869</fpage>
-</bibl>
-
-<bibl id="B58">
-  <title><p>{Biases in Illumina transcriptome sequencing caused by random
-  hexamer priming}</p></title>
-  <aug>
-    <au><snm>Hansen</snm><fnm>K.D.</fnm></au>
-    <au><snm>Brenner</snm><fnm>S.E.</fnm></au>
-    <au><snm>Dudoit</snm><fnm>S.</fnm></au>
-  </aug>
-  <source>Nucleic Acids Research</source>
-  <pubdate>2010</pubdate>
-  <volume>38</volume>
-  <fpage>e131</fpage>
-</bibl>
-
-<bibl id="B59">
-  <title><p>{From RNA-seq reads to differential expression results}</p></title>
-  <aug>
-    <au><snm>Oshlack</snm><fnm>A.</fnm></au>
-    <au><snm>Robinson</snm><fnm>M.D.</fnm></au>
-    <au><snm>Young</snm><fnm>M.D.</fnm></au>
-  </aug>
-  <source>Genome Biology</source>
-  <pubdate>2010</pubdate>
-  <volume>11</volume>
-  <fpage>220</fpage>
-</bibl>
-
-<bibl id="B60">
-  <title><p>{RNAseq: Technical variability and sampling}</p></title>
-  <aug>
-    <au><snm>McIntyre</snm><fnm>L.M.</fnm></au>
-    <au><snm>Lopiano</snm><fnm>K.K.</fnm></au>
-    <au><snm>Morse</snm><fnm>A.M.</fnm></au>
-    <au><snm>Amin</snm><fnm>V.</fnm></au>
-    <au><snm>Oberg</snm><fnm>A.L.</fnm></au>
-    <au><snm>Young</snm><fnm>L.J.</fnm></au>
-    <au><snm>Nuzhdin</snm><fnm>S.V.</fnm></au>
-  </aug>
-  <source>BMC Genomics</source>
-  <pubdate>2011</pubdate>
-  <volume>12</volume>
-  <fpage>293</fpage>
-</bibl>
-
-<bibl id="B61">
-  <title><p>{bigPint: Make big data pint-sized}</p></title>
-  <aug>
-    <au><snm>Rutter</snm><fnm>L.</fnm></au>
-    <au><snm>Cook</snm><fnm>D.</fnm></au>
-  </aug>
-  <source>\url{https://lrutter.github.io/bigPint}</source>
-  <pubdate>2018</pubdate>
-  <note>Accessed 22 November 2018</note>
-</bibl>
-
-<bibl id="B62">
-  <title><p>{The heat shock response restricts virus infection in
-  Drosophila}</p></title>
-  <aug>
-    <au><snm>Merkling</snm><fnm>S.H.</fnm></au>
-    <au><snm>Overheul</snm><fnm>G.J.</fnm></au>
-    <au><snm>Mierlo</snm><fnm>J.T.</fnm></au>
-    <au><snm>Arends</snm><fnm>D.</fnm></au>
-    <au><snm>Gilissen</snm><fnm>C.</fnm></au>
-    <au><snm>Rij</snm><fnm>R.P.</fnm></au>
-  </aug>
-  <source>Scientific Reports</source>
-  <pubdate>2015</pubdate>
-  <volume>5</volume>
-  <fpage>12758</fpage>
-</bibl>
-
-<bibl id="B63">
-  <title><p>{The JAK-STAT signaling pathway is required but not sufficient for
-  the antiviral response of Drosophila}</p></title>
-  <aug>
-    <au><snm>Dostert</snm><fnm>C.</fnm></au>
-    <au><snm>Jouanguy</snm><fnm>E.</fnm></au>
-    <au><snm>Irving</snm><fnm>P.</fnm></au>
-    <au><snm>Troxler</snm><fnm>L.</fnm></au>
-    <au><snm>Galiana</snm><fnm>D.</fnm></au>
-    <au><snm>Hetru</snm><fnm>C.</fnm></au>
-    <au><snm>Hoffmann</snm><fnm>J.A.</fnm></au>
-    <au><snm>Imler</snm><fnm>J. L.</fnm></au>
-  </aug>
-  <source>Nature Immunology</source>
-  <pubdate>2005</pubdate>
-  <volume>6</volume>
-  <fpage>946</fpage>
-  <lpage>953</lpage>
-</bibl>
-
-<bibl id="B64">
-  <title><p>{Non-specific dsRNA-mediated antiviral response in the honey
-  bee}</p></title>
-  <aug>
-    <au><snm>Flenniken</snm><fnm>M.L.</fnm></au>
-    <au><snm>Andino</snm><fnm>R.</fnm></au>
-  </aug>
-  <source>PLoS ONE</source>
-  <pubdate>2013</pubdate>
-  <volume>8</volume>
-  <fpage>e77263</fpage>
-</bibl>
-
-<bibl id="B65">
   <title><p>{Virus and dsRNA-triggered transcriptional responses reveal key
   components of honey bee antiviral defense}</p></title>
   <aug>
@@ -2557,7 +2537,7 @@ International Joint Conference on Neural Networks,
   <fpage>6448</fpage>
 </bibl>
 
-<bibl id="B66">
+<bibl id="B52">
   <title><p>{Israeli Acute Paralysis Virus: Epidemiology, pathogenesis and
   implications for honey bee health}</p></title>
   <aug>
@@ -2598,7 +2578,377 @@ International Joint Conference on Neural Networks,
   <fpage>e1004261</fpage>
 </bibl>
 
+<bibl id="B53">
+  <title><p>{The Iflaviruses Sacbrood virus and Deformed wing virus evoke
+  different transcriptional responses in the honeybee which may facilitate
+  their horizontal or vertical transmission}</p></title>
+  <aug>
+    <au><snm>Ryabov</snm><fnm>E.V.</fnm></au>
+    <au><snm>Fannon</snm><fnm>J.M.</fnm></au>
+    <au><snm>Moore</snm><fnm>J.D.</fnm></au>
+    <au><snm>Wood</snm><fnm>G.R.</fnm></au>
+    <au><snm>Evans</snm><fnm>D.J.</fnm></au>
+  </aug>
+  <source>PeerJ</source>
+  <pubdate>2016</pubdate>
+  <volume>4</volume>
+  <fpage>e1591</fpage>
+</bibl>
+
+<bibl id="B54">
+  <title><p>{Unity in defence: honeybee workers exhibit conserved molecular
+  responses to diverse pathogens}</p></title>
+  <aug>
+    <au><snm>Vincent</snm><fnm>D.</fnm></au>
+    <au><snm>Poeschl</snm><fnm>Y.</fnm></au>
+    <au><snm>Gogol Döring</snm><fnm>A.</fnm></au>
+    <au><snm>Alaux</snm><fnm>C.</fnm></au>
+    <au><snm>Annoscia</snm><fnm>D.</fnm></au>
+    <au><snm>Aurori</snm><fnm>C.</fnm></au>
+    <au><snm>Barribeau</snm><fnm>S.M.</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <source>BMC Genomics</source>
+  <pubdate>2017</pubdate>
+  <volume>18</volume>
+  <fpage>207</fpage>
+</bibl>
+
+<bibl id="B55">
+  <title><p>{RNA-Sequencing of Drosophila melanogaster head tissue on
+  high-sugar and high-fat diets}</p></title>
+  <aug>
+    <au><snm>Hemphill</snm><fnm>W.</fnm></au>
+    <au><snm>Rivera</snm><fnm>O.</fnm></au>
+    <au><snm>Talbert</snm><fnm>M.</fnm></au>
+  </aug>
+  <source>G3: Genes, Genomes, Genetics</source>
+  <pubdate>2018</pubdate>
+  <volume>8</volume>
+  <fpage>279</fpage>
+  <lpage>290</lpage>
+</bibl>
+
+<bibl id="B56">
+  <title><p>{Transcriptional responses of ecologically diverse Drosophila
+  species to larval diets differing in relative sugar and protein
+  ratios}</p></title>
+  <aug>
+    <au><snm>Nazario Yepiz</snm><fnm>N.O.</fnm></au>
+    <au><snm>Loustalot Laclette</snm><fnm>M.R.</fnm></au>
+    <au><snm>Carpinteyro Ponce</snm><fnm>J.</fnm></au>
+    <au><snm>Abreu Goodger</snm><fnm>C.</fnm></au>
+    <au><snm>Markow</snm><fnm>T.A.</fnm></au>
+  </aug>
+  <source>PLoS ONE</source>
+  <pubdate>2017</pubdate>
+  <volume>12</volume>
+  <fpage>e0183007</fpage>
+</bibl>
+
+<bibl id="B57">
+  <title><p>{Juvenile hormone regulates body size and perturbs insulin
+  signaling in Drosophila}</p></title>
+  <aug>
+    <au><snm>Mirth</snm><fnm>C.K.</fnm></au>
+    <au><snm>Tang</snm><fnm>H.Y.</fnm></au>
+    <au><snm>Makohon Moore</snm><fnm>S.C.</fnm></au>
+    <au><snm>Salhadar</snm><fnm>S.</fnm></au>
+    <au><snm>Gokhale</snm><fnm>R.H.</fnm></au>
+    <au><snm>Warner</snm><fnm>R.D.</fnm></au>
+    <au><snm>Koyama</snm><fnm>T.</fnm></au>
+    <au><snm>Riddiford</snm><fnm>L.M.</fnm></au>
+    <au><snm>Shingleton</snm><fnm>A.W.</fnm></au>
+  </aug>
+  <source>Proceedings of the National Academy of Sciences</source>
+  <pubdate>2014</pubdate>
+  <volume>25</volume>
+  <fpage>201313058</fpage>
+</bibl>
+
+<bibl id="B58">
+  <title><p>{ATP-sensitive inwardly rectifying potassium channel regulation of
+  viral infections in honey bees}</p></title>
+  <aug>
+    <au><snm>O'Neal</snm><fnm>S.T.</fnm></au>
+    <au><snm>Swale</snm><fnm>D.R.</fnm></au>
+    <au><snm>Anderson</snm><fnm>T.D.</fnm></au>
+  </aug>
+  <source>Sci. Rep.</source>
+  <pubdate>2017</pubdate>
+  <volume>7</volume>
+  <fpage>8668</fpage>
+</bibl>
+
+<bibl id="B59">
+  <title><p>{Amitraz and its metabolite modulate honey bee cardiac function and
+  tolerance to viral infection}</p></title>
+  <aug>
+    <au><snm>O'Neal</snm><fnm>S.T.</fnm></au>
+    <au><snm>Brewster</snm><fnm>C.C.</fnm></au>
+    <au><snm>Bloomquist</snm><fnm>J.R.</fnm></au>
+    <au><snm>Anderson</snm><fnm>T.D.</fnm></au>
+  </aug>
+  <source>J. Invertebr. Pathol.</source>
+  <pubdate>2017</pubdate>
+  <volume>149</volume>
+  <fpage>119</fpage>
+  <lpage>-126</lpage>
+</bibl>
+
+<bibl id="B60">
+  <title><p>{Bee viruses: Ecology, pathogenicity, and impacts}</p></title>
+  <aug>
+    <au><snm>Grozinger</snm><fnm>C.M.</fnm></au>
+    <au><snm>Flenniken</snm><fnm>M.L.</fnm></au>
+  </aug>
+  <source>Annual review of entomology</source>
+  <pubdate>2019</pubdate>
+  <volume>64</volume>
+  <fpage>205</fpage>
+  <lpage>-226</lpage>
+</bibl>
+
+<bibl id="B61">
+  <title><p>{Viruses and antiviral immunity in Drosophila}</p></title>
+  <aug>
+    <au><snm>Xu</snm><fnm>J.</fnm></au>
+    <au><snm>Cherry</snm><fnm>S.</fnm></au>
+  </aug>
+  <source>Dev Comp Immunol</source>
+  <pubdate>2014</pubdate>
+  <volume>42</volume>
+  <fpage>67–84</fpage>
+</bibl>
+
+<bibl id="B62">
+  <title><p>{Defense Mechanisms against Viral Infection in Drosophila: RNAi and
+  Non-RNAi}</p></title>
+  <aug>
+    <au><snm>Swevers</snm><fnm>L.</fnm></au>
+    <au><snm>Liu</snm><fnm>J.</fnm></au>
+    <au><snm>Smagghe</snm><fnm>G.</fnm></au>
+  </aug>
+  <source>Viruses</source>
+  <pubdate>2018</pubdate>
+  <volume>10</volume>
+  <fpage>230</fpage>
+</bibl>
+
+<bibl id="B63">
+  <title><p>{Honey Bee and Bumble Bee Antiviral Defense}</p></title>
+  <aug>
+    <au><snm>McMenamin</snm><fnm>A.J.</fnm></au>
+    <au><snm>Daughenbaugh</snm><fnm>K.F.</fnm></au>
+    <au><snm>Parekh</snm><fnm>F.</fnm></au>
+    <au><snm>Pizzorno</snm><fnm>M.C.</fnm></au>
+    <au><snm>Flenniken</snm><fnm>M.L.</fnm></au>
+  </aug>
+  <source>Viruses</source>
+  <pubdate>2018</pubdate>
+  <volume>10</volume>
+  <fpage>395</fpage>
+</bibl>
+
+<bibl id="B64">
+  <title><p>{Full sisters and supersisters: A terminological
+  paradigm}</p></title>
+  <aug>
+    <au><snm>Page</snm><fnm>R.E.</fnm></au>
+    <au><snm>Laidlaw</snm><fnm>H.H.</fnm></au>
+  </aug>
+  <source>Anim. Behav.</source>
+  <pubdate>1988</pubdate>
+  <volume>36</volume>
+  <fpage>944–945</fpage>
+</bibl>
+
+<bibl id="B65">
+  <title><p>{Parasites, pathogens, and polyandry in social
+  Hymenoptera}</p></title>
+  <aug>
+    <au><snm>Sherman</snm><fnm>P.W.</fnm></au>
+    <au><snm>Seeley</snm><fnm>T.D.</fnm></au>
+    <au><snm>Reeve</snm><fnm>H.K.</fnm></au>
+  </aug>
+  <source>Am. Nat</source>
+  <pubdate>1988</pubdate>
+  <volume>131</volume>
+  <fpage>602–610</fpage>
+</bibl>
+
+<bibl id="B66">
+  <title><p>{On being the right size: Male contributions and multiple mating in
+  social Hymenoptera}</p></title>
+  <aug>
+    <au><snm>Crozier</snm><fnm>R.H.</fnm></au>
+    <au><snm>Page</snm><fnm>R.E.</fnm></au>
+  </aug>
+  <source>Behav. Ecol. Sociobiol.</source>
+  <pubdate>1985</pubdate>
+  <volume>18</volume>
+  <fpage>105–115</fpage>
+</bibl>
+
 <bibl id="B67">
+  <title><p>{Genetic diversity in honey bee colonies enhances productivity and
+  fitness}</p></title>
+  <aug>
+    <au><snm>Mattila</snm><fnm>H.R.</fnm></au>
+    <au><snm>Seeley</snm><fnm>T.D.</fnm></au>
+  </aug>
+  <source>Science</source>
+  <pubdate>2007</pubdate>
+  <volume>317</volume>
+  <fpage>362</fpage>
+  <lpage>364</lpage>
+</bibl>
+
+<bibl id="B68">
+  <title><p>{Genetic diversity within honeybee colonies prevents severe
+  infections and promotes colony growth}</p></title>
+  <aug>
+    <au><snm>Tarpy</snm><fnm>D.R.</fnm></au>
+  </aug>
+  <source>Proc. R. Soc. Lond. B</source>
+  <pubdate>2003</pubdate>
+  <volume>270</volume>
+  <fpage>99</fpage>
+  <lpage>103</lpage>
+</bibl>
+
+<bibl id="B69">
+  <title><p>{Does patriline composition change over a honey bee queen’s
+  lifetime?}</p></title>
+  <aug>
+    <au><snm>Brodschneider</snm><fnm>R.</fnm></au>
+    <au><snm>Arnold</snm><fnm>G.</fnm></au>
+    <au><snm>Hrassnigg</snm><fnm>N.</fnm></au>
+    <au><snm>Crailsheim</snm><fnm>K.</fnm></au>
+  </aug>
+  <source>Insects</source>
+  <pubdate>2012</pubdate>
+  <volume>3</volume>
+  <fpage>857–869</fpage>
+</bibl>
+
+<bibl id="B70">
+  <title><p>{Biases in Illumina transcriptome sequencing caused by random
+  hexamer priming}</p></title>
+  <aug>
+    <au><snm>Hansen</snm><fnm>K.D.</fnm></au>
+    <au><snm>Brenner</snm><fnm>S.E.</fnm></au>
+    <au><snm>Dudoit</snm><fnm>S.</fnm></au>
+  </aug>
+  <source>Nucleic Acids Research</source>
+  <pubdate>2010</pubdate>
+  <volume>38</volume>
+  <fpage>e131</fpage>
+</bibl>
+
+<bibl id="B71">
+  <title><p>{From RNA-seq reads to differential expression results}</p></title>
+  <aug>
+    <au><snm>Oshlack</snm><fnm>A.</fnm></au>
+    <au><snm>Robinson</snm><fnm>M.D.</fnm></au>
+    <au><snm>Young</snm><fnm>M.D.</fnm></au>
+  </aug>
+  <source>Genome Biology</source>
+  <pubdate>2010</pubdate>
+  <volume>11</volume>
+  <fpage>220</fpage>
+</bibl>
+
+<bibl id="B72">
+  <title><p>{RNAseq: Technical variability and sampling}</p></title>
+  <aug>
+    <au><snm>McIntyre</snm><fnm>L.M.</fnm></au>
+    <au><snm>Lopiano</snm><fnm>K.K.</fnm></au>
+    <au><snm>Morse</snm><fnm>A.M.</fnm></au>
+    <au><snm>Amin</snm><fnm>V.</fnm></au>
+    <au><snm>Oberg</snm><fnm>A.L.</fnm></au>
+    <au><snm>Young</snm><fnm>L.J.</fnm></au>
+    <au><snm>Nuzhdin</snm><fnm>S.V.</fnm></au>
+  </aug>
+  <source>BMC Genomics</source>
+  <pubdate>2011</pubdate>
+  <volume>12</volume>
+  <fpage>293</fpage>
+</bibl>
+
+<bibl id="B73">
+  <title><p>R: A Language and Environment for Statistical Computing</p></title>
+  <aug>
+    <au><cnm>{R Development Core Team}</cnm></au>
+  </aug>
+  <publisher>Vienna, Austria</publisher>
+  <pubdate>2008</pubdate>
+  <url>http://www.R-project.org</url>
+  <note>{ISBN} 3-900051-07-0</note>
+</bibl>
+
+<bibl id="B74">
+  <title><p>{bigPint: Make big data pint-sized}</p></title>
+  <aug>
+    <au><snm>Rutter</snm><fnm>L.</fnm></au>
+    <au><snm>Cook</snm><fnm>D.</fnm></au>
+  </aug>
+  <source>\url{https://lrutter.github.io/bigPint}</source>
+  <pubdate>2018</pubdate>
+  <note>Accessed 22 November 2018</note>
+</bibl>
+
+<bibl id="B75">
+  <title><p>{The heat shock response restricts virus infection in
+  Drosophila}</p></title>
+  <aug>
+    <au><snm>Merkling</snm><fnm>S.H.</fnm></au>
+    <au><snm>Overheul</snm><fnm>G.J.</fnm></au>
+    <au><snm>Mierlo</snm><fnm>J.T.</fnm></au>
+    <au><snm>Arends</snm><fnm>D.</fnm></au>
+    <au><snm>Gilissen</snm><fnm>C.</fnm></au>
+    <au><snm>Rij</snm><fnm>R.P.</fnm></au>
+  </aug>
+  <source>Scientific Reports</source>
+  <pubdate>2015</pubdate>
+  <volume>5</volume>
+  <fpage>12758</fpage>
+</bibl>
+
+<bibl id="B76">
+  <title><p>{The JAK-STAT signaling pathway is required but not sufficient for
+  the antiviral response of Drosophila}</p></title>
+  <aug>
+    <au><snm>Dostert</snm><fnm>C.</fnm></au>
+    <au><snm>Jouanguy</snm><fnm>E.</fnm></au>
+    <au><snm>Irving</snm><fnm>P.</fnm></au>
+    <au><snm>Troxler</snm><fnm>L.</fnm></au>
+    <au><snm>Galiana</snm><fnm>D.</fnm></au>
+    <au><snm>Hetru</snm><fnm>C.</fnm></au>
+    <au><snm>Hoffmann</snm><fnm>J.A.</fnm></au>
+    <au><snm>Imler</snm><fnm>J. L.</fnm></au>
+  </aug>
+  <source>Nature Immunology</source>
+  <pubdate>2005</pubdate>
+  <volume>6</volume>
+  <fpage>946</fpage>
+  <lpage>953</lpage>
+</bibl>
+
+<bibl id="B77">
+  <title><p>{Non-specific dsRNA-mediated antiviral response in the honey
+  bee}</p></title>
+  <aug>
+    <au><snm>Flenniken</snm><fnm>M.L.</fnm></au>
+    <au><snm>Andino</snm><fnm>R.</fnm></au>
+  </aug>
+  <source>PLoS ONE</source>
+  <pubdate>2013</pubdate>
+  <volume>8</volume>
+  <fpage>e77263</fpage>
+</bibl>
+
+<bibl id="B78">
   <title><p>edgeR: a Bioconductor package for differential expression analysis
   of digital gene expression data</p></title>
   <aug>
@@ -2613,7 +2963,7 @@ International Joint Conference on Neural Networks,
   <lpage>140</lpage>
 </bibl>
 
-<bibl id="B68">
+<bibl id="B79">
   <title><p>{A unified model for the coevolution of resistance, tolerance, and
   virulence}</p></title>
   <aug>
@@ -2626,7 +2976,7 @@ International Joint Conference on Neural Networks,
   <fpage>2988–3009</fpage>
 </bibl>
 
-<bibl id="B69">
+<bibl id="B80">
   <title><p>{Trans-generational immune priming: Specific enhancement of the
   antimicrobial immune response in the mealworm beetle, Tenebrio
   molitor}</p></title>
@@ -2639,7 +2989,7 @@ International Joint Conference on Neural Networks,
   <fpage>1399–1405</fpage>
 </bibl>
 
-<bibl id="B70">
+<bibl id="B81">
   <title><p>{Variation in the defense strategies of plants: are resistance and
   tolerance mutually exclusive?}</p></title>
   <aug>
@@ -2653,7 +3003,7 @@ International Joint Conference on Neural Networks,
   <fpage>1301–1310</fpage>
 </bibl>
 
-<bibl id="B71">
+<bibl id="B82">
   <title><p>{Evolution of mixed plant defense allocation against natural
   enemies}</p></title>
   <aug>
@@ -2668,7 +3018,7 @@ International Joint Conference on Neural Networks,
   <fpage>1685–1695</fpage>
 </bibl>
 
-<bibl id="B72">
+<bibl id="B83">
   <title><p>{Shared control of epidemiological traits in a coevolutionary model
   of host-parasite interactions}</p></title>
   <aug>
@@ -2681,7 +3031,7 @@ International Joint Conference on Neural Networks,
   <fpage>827–836</fpage>
 </bibl>
 
-<bibl id="B73">
+<bibl id="B84">
   <title><p>{Balancing resistance and infection tolerance through metabolic
   means}</p></title>
   <aug>
@@ -2694,7 +3044,7 @@ International Joint Conference on Neural Networks,
   <fpage>13886–13887</fpage>
 </bibl>
 
-<bibl id="B74">
+<bibl id="B85">
   <title><p>{Transcriptional pausing controls a rapid antiviral innate immune
   response in Drosophila}</p></title>
   <aug>
@@ -2712,24 +3062,7 @@ International Joint Conference on Neural Networks,
   <fpage>531–543</fpage>
 </bibl>
 
-<bibl id="B75">
-  <title><p>{The Iflaviruses Sacbrood virus and Deformed wing virus evoke
-  different transcriptional responses in the honeybee which may facilitate
-  their horizontal or vertical transmission}</p></title>
-  <aug>
-    <au><snm>Ryabov</snm><fnm>E.V.</fnm></au>
-    <au><snm>Fannon</snm><fnm>J.M.</fnm></au>
-    <au><snm>Moore</snm><fnm>J.D.</fnm></au>
-    <au><snm>Wood</snm><fnm>G.R.</fnm></au>
-    <au><snm>Evans</snm><fnm>D.J.</fnm></au>
-  </aug>
-  <source>PeerJ</source>
-  <pubdate>2016</pubdate>
-  <volume>4</volume>
-  <fpage>e1591</fpage>
-</bibl>
-
-<bibl id="B76">
+<bibl id="B86">
   <title><p>{The importance of tissue specificity for RNA-seq: highlighting the
   errors of composite structure extractions}</p></title>
   <aug>
@@ -2743,7 +3076,7 @@ International Joint Conference on Neural Networks,
   <fpage>586</fpage>
 </bibl>
 
-<bibl id="B77">
+<bibl id="B87">
   <title><p>{Quick and easy implementation of the Benjamini-Hochberg procedure
   for controlling the false positive rate in multiple comparisons}</p></title>
   <aug>
@@ -2758,7 +3091,22 @@ International Joint Conference on Neural Networks,
   <lpage>83</lpage>
 </bibl>
 
-<bibl id="B78">
+<bibl id="B88">
+  <title><p>{Age matters: pheromone profiles of larvae differentially influence
+  foraging behaviour in the honeybee, Apis mellifera}</p></title>
+  <aug>
+    <au><snm>Traynor</snm><fnm>K.S.</fnm></au>
+    <au><snm>Conte</snm><fnm>YL</fnm></au>
+    <au><snm>Page</snm><fnm>R.E.</fnm></au>
+  </aug>
+  <source>Animal behaviour</source>
+  <pubdate>2015</pubdate>
+  <volume>99</volume>
+  <fpage>1</fpage>
+  <lpage>-8</lpage>
+</bibl>
+
+<bibl id="B89">
   <title><p>{Finding the missing honey bee genes: lessons learned from a genome
   upgrade}</p></title>
   <aug>
@@ -2770,7 +3118,7 @@ International Joint Conference on Neural Networks,
   <fpage>86</fpage>
 </bibl>
 
-<bibl id="B79">
+<bibl id="B90">
   <title><p>{Hymenoptera Genome Database: integrating genome annotations in
   HymenopteraMine}</p></title>
   <aug>
@@ -2789,7 +3137,7 @@ International Joint Conference on Neural Networks,
   <lpage>800</lpage>
 </bibl>
 
-<bibl id="B80">
+<bibl id="B91">
   <title><p>{GMAP and GSNAP for genomic sequence alignment: Enhancements to
   speed, accuracy, and functionality}</p></title>
   <aug>
@@ -2806,7 +3154,7 @@ International Joint Conference on Neural Networks,
   <lpage>334</lpage>
 </bibl>
 
-<bibl id="B81">
+<bibl id="B92">
   <title><p>{Moderated estimation of fold change and dispersion for RNA-seq
   data with DESeq2}</p></title>
   <aug>
@@ -2820,7 +3168,7 @@ International Joint Conference on Neural Networks,
   <fpage>550</fpage>
 </bibl>
 
-<bibl id="B82">
+<bibl id="B93">
   <title><p>limma powers differential expression analyses for RNA-sequencing
   and microarray studies</p></title>
   <aug>
@@ -2839,7 +3187,7 @@ International Joint Conference on Neural Networks,
   <fpage>e47</fpage>
 </bibl>
 
-<bibl id="B83">
+<bibl id="B94">
   <title><p>{Controlling the false discovery rate: A practical and powerful
   approach to multiple testing}</p></title>
   <aug>
@@ -2854,7 +3202,7 @@ International Joint Conference on Neural Networks,
   <lpage>300</lpage>
 </bibl>
 
-<bibl id="B84">
+<bibl id="B95">
   <title><p>{eulerr}: Area-Proportional {Euler} and {Venn} Diagrams with
   Ellipses</p></title>
   <aug>
@@ -2865,7 +3213,7 @@ International Joint Conference on Neural Networks,
   <note>R package version 4.0.0</note>
 </bibl>
 
-<bibl id="B85">
+<bibl id="B96">
   <title><p>Principal Component Analysis</p></title>
   <aug>
     <au><cnm>{I.T. Jolliffe}</cnm></au>
@@ -2874,7 +3222,7 @@ International Joint Conference on Neural Networks,
   <pubdate>2002</pubdate>
 </bibl>
 
-<bibl id="B86">
+<bibl id="B97">
   <title><p>{The plane with parallel coordinates}</p></title>
   <aug>
     <au><snm>Inselberg</snm><fnm>A.</fnm></au>
@@ -2886,7 +3234,7 @@ International Joint Conference on Neural Networks,
   <lpage>91</lpage>
 </bibl>
 
-<bibl id="B87">
+<bibl id="B98">
   <title><p>Visualizing Data</p></title>
   <aug>
     <au><cnm>{W.S. Cleveland}</cnm></au>
@@ -2895,7 +3243,7 @@ International Joint Conference on Neural Networks,
   <pubdate>1993</pubdate>
 </bibl>
 
-<bibl id="B88">
+<bibl id="B99">
   <title><p>{Exploring gene expression data, using plots}</p></title>
   <aug>
     <au><snm>Cook</snm><fnm>D.</fnm></au>
@@ -2911,7 +3259,7 @@ International Joint Conference on Neural Networks,
   <fpage>151–182</fpage>
 </bibl>
 
-<bibl id="B89">
+<bibl id="B100">
   <title><p>{Effective Clustering Algorithms for Gene Expression
   Data}</p></title>
   <aug>
@@ -2925,7 +3273,7 @@ International Joint Conference on Neural Networks,
   <fpage>4</fpage>
 </bibl>
 
-<bibl id="B90">
+<bibl id="B101">
   <title><p>{Comparative Study on Normalization Procedures for Cluster Analysis
   of Gene Expression Datasets}</p></title>
   <aug>
@@ -2941,7 +3289,7 @@ International Joint Conference on Neural Networks,
   <lpage>2799</lpage>
 </bibl>
 
-<bibl id="B91">
+<bibl id="B102">
   <title><p>{Systematic and integrative analysis of large gene lists using
   DAVID bioinformatics resources}</p></title>
   <aug>
@@ -2956,7 +3304,7 @@ International Joint Conference on Neural Networks,
   <lpage>57</lpage>
 </bibl>
 
-<bibl id="B92">
+<bibl id="B103">
   <title><p>{Bioinformatics enrichment tools: paths toward the comprehensive
   functional analysis of large gene lists}</p></title>
   <aug>
@@ -2971,7 +3319,7 @@ International Joint Conference on Neural Networks,
   <lpage>13</lpage>
 </bibl>
 
-<bibl id="B93">
+<bibl id="B104">
   <title><p>{REVIGO summarizes and visualizes long lists of Gene Ontology
   terms}</p></title>
   <aug>
@@ -2986,7 +3334,7 @@ International Joint Conference on Neural Networks,
   <fpage>e21800</fpage>
 </bibl>
 
-<bibl id="B94">
+<bibl id="B105">
   <title><p>{Gene Expression Omnibus: NCBI gene expression and hybridization
   array data repository}</p></title>
   <aug>
@@ -3001,7 +3349,7 @@ International Joint Conference on Neural Networks,
   <lpage>210</lpage>
 </bibl>
 
-<bibl id="B95">
+<bibl id="B106">
   <title><p>{A new measure for functional similarity of gene products based on
   Gene Ontology}</p></title>
   <aug>
