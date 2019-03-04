@@ -1,10 +1,11 @@
 functionRT <- function(data, type, colNum, PVal){
   rsq <- function (x, y) cor(x, y) ^ 2
   
-  Variables <- read_csv("~/HoneyBeePaper/Variables.csv")
+  #Variables <- read_csv("../Variables.csv")
+  Variables <- read_csv("../PathogenResponse/day3Mortality.csv")
   myVar <- as.data.frame(Variables[,colNum])[,1]
   
-  readFile <- c("../../N_V/DESeq2/ClusterStandard/Sig_4_", "../../ResistanceTolerance/Clustering_Tolerance/Sig_4_", "../../ResistanceTolerance/Clustering_Resistance/Sig_4_")
+  readFile <- c("../N_V/DESeq2/ClusterStandard/Sig_4_", "../ResistanceTolerance/Clustering_Tolerance/Sig_4_", "../ResistanceTolerance/Clustering_Resistance/Sig_4_")
   strVar <- c("virus", "tolerance", "resistance")
   
   getR2 <- function(rf, sv){

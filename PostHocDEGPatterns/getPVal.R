@@ -7,7 +7,7 @@ library(nlme)
 library(onewaytests)
 source("functionRT.R")
 
-data <- as.data.frame(readRDS("../../NC_NR_VC_VR/data/data.Rds"))
+data <- as.data.frame(readRDS("../NC_NR_VC_VR/data/data.Rds"))
 
 PVal <- data.frame()
 PVal <- functionRT(data=data, type="IAPV", colNum=7, PVal=PVal)
