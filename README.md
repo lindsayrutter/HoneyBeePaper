@@ -1,6 +1,6 @@
 # RNA-seq analysis of IAPV and diet in Apis Mellifera
 
-This repository consists of materials for an RNA-seq study that examined IAPV inoculation and monofloral diet quality factors in honeybees. Below is an outline of the analysis scripts, data files, and text files that can found in this repository.
+This repository consists of materials for an RNA-seq study that examined IAPV inoculation and monofloral diet quality factors in honeybees. Below is an outline of the analysis scripts, data files, and text files that can found in this repository. The manuscript presenting this study can be found at: https://doi.org/10.1186/s12864-019-5767-1. 
 
 **Folders containing analysis scripts and data files:** 
 
