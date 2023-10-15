@@ -1,6 +1,6 @@
 # RNA-seq analysis of IAPV and diet in Apis Mellifera
 
-This repository consists of materials for an RNA-seq study that examined IAPV inoculation and monofloral diet quality factors in honeybees. Below is an outline of the analysis scripts, data files, and text files that can found in this repository. The manuscript presenting this study can be found at: https://doi.org/10.1186/s12864-019-5767-1. 
+This repository consists of materials for an RNA-seq study that examined how honeybee health relates to IAPV exposure and monofloral diet. Below is an outline of the analysis scripts, data files, and text files that can found in this repository. The manuscript presenting this study can be found at: https://doi.org/10.1186/s12864-019-5767-1. 
 
 **Folders containing analysis scripts and data files:** 
 
@@ -19,7 +19,7 @@ There is a folder called **Manuscript**, which contains materials related to a m
 
   * **AdditionalFiles:** The supplementary files in our manuscript (n=19)
   * **Figures:** The figures in our manuscript (n=6)
-  * **MakeFiguresFiles:** Reproducible scripts for recreating figures and additional files that used the [bigPint package](https://lrutter.github.io/bigPint/).
+  * **MakeFiguresFiles:** Reproducible scripts for recreating figures and additional files that used the [bigPint package](https://lindsayrutter.github.io/bigPint/).
   * **Text:** Files for creating our manuscript. Our latest manuscript text is located in the file called **manuscript.tex**
   
   
