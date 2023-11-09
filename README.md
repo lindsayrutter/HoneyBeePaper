@@ -1,4 +1,4 @@
-# Diet and natural innoculation in Apis Mellifera
+# Diet and health in Apis Mellifera
 
 This repository consists of materials for an RNA-seq study that examined whether diet can protect honeybee health from natural innoculation. Below is an outline of the analysis scripts, data files, and text files that can found in this repository. The manuscript presenting this study can be found at: https://doi.org/10.1186/s12864-019-5767-1. 
 
